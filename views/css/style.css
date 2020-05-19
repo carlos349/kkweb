@@ -8720,9 +8720,9 @@ h1, h2, h3, h4, h5,
       .card-body ul li span:first-child {
         width: 60%; }
       .card-body ul li span:nth-child(2) {
-        width: 30%; }
+        width: 15%; }
       .card-body ul li span:last-child {
-        width: 10%; }
+        width: 25%;text-align: right; }
 
 .btn-custom {
   color: #fff;
@@ -8918,6 +8918,8 @@ textarea.form-control {
   background: #d9bf77 !important; }
 
 .ftco-section {
+  margin-top: -10%;
+  margin-bottom: 10%;
   padding: 7em 0;
   position: relative; }
   @media (max-width: 767.98px) {

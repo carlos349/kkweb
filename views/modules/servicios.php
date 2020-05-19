@@ -5,7 +5,7 @@
         <div class="row no-gutters slider-text js-fullheight align-items-center justify-content-center">
           <div class="col-md-9 ftco-animate text-center">
             <h1 class="mb-3 bread">Servicios</h1>
-            <p class="breadcrumbs"><span class="mr-2"><a href="index.html">Home</a></span> <span>Servicios</span></p>
+
           </div>
         </div>
       </div>
@@ -14,193 +14,211 @@
 		<section class="ftco-section">
 	  	<div class="container-fluid px-md-5">
 	  		<div class="row justify-content-center mb-5 pb-3">
-          <div class="col-md-12 heading-section ftco-animate text-center">
-            <h2 class="mb-1">Servicios</h2>
-          </div>
-        </div>
-        <div class="row align-items-center">
-        	<div class="col-lg-4">
-        		<div class="row no-gutters">
-        			<div class="col-md-6 d-flex align-items-stretch">
-        				<div class="treatment w-100 text-center ftco-animate border border-right-0 border-bottom-0 p-3 py-4">
-									<div class="icon d-flex justify-content-center align-items-center">
-										<span class="flaticon-candle"></span>
-									</div>
-									<div class="text mt-2">
-										<h3>Salt &amp; Aroma</h3>
-										<p>A small river named Duden flows by their place and supplies.</p>
-									</div>
-								</div>
-        			</div>
-        			<div class="col-md-6 d-flex align-items-stretch">
-        				<div class="treatment w-100 text-center ftco-animate border border-bottom-0 p-3 py-4">
-									<div class="icon d-flex justify-content-center align-items-center">
-										<span class="flaticon-spa-1"></span>
-									</div>
-									<div class="text mt-2">
-										<h3>Hydro</h3>
-										<p>A small river named Duden flows.</p>
-									</div>
-								</div>
-        			</div>
-        			<div class="col-md-6 d-flex align-items-stretch">
-        				<div class="treatment w-100 text-center ftco-animate border border-right-0 p-3 py-4">
-									<div class="icon d-flex justify-content-center align-items-center">
-										<span class="flaticon-stone"></span>
-									</div>
-									<div class="text mt-2">
-										<h3>Hot Stone</h3>
-										<p>A small river named Duden flows by their place and supplies.</p>
-									</div>
-								</div>
-        			</div>
-        			<div class="col-md-6 d-flex align-items-stretch">
-        				<div class="treatment w-100 text-center ftco-animate border p-3 py-4">
-									<div class="icon d-flex justify-content-center align-items-center">
-										<span class="flaticon-lotus"></span>
-									</div>
-									<div class="text mt-2">
-										<h3>Aroma</h3>
-										<p>A small river named Duden flows.</p>
-									</div>
-								</div>
-        			</div>
-        		</div>
-        	</div>
-
-
-        	<div class="col-lg-4 d-flex align-items-stretch">
-        		<div id="accordion" class="myaccordion w-100 text-center py-5 px-1 px-md-4">
-        			<div>
-	        			<h3>Prices</h3>
-	        			<p>Far far away, behind the word mountains, far from the countries Vokalia</p>
-        			</div>
-						  <div class="card">
-						    <div class="card-header" id="headingOne">
-						      <h2 class="mb-0">
-						        <button class="d-flex align-items-center justify-content-between btn btn-link" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-						          Spa Therapies
-						          <i class="fa" aria-hidden="true"></i>
-						        </button>
-						      </h2>
-						    </div>
-						    <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordion">
-						      <div class="card-body text-left">
-						      	<ul>
-						      		<li class="d-flex">
-						      			<span>Face Treatments</span>
-						      			<span>40 min.</span>
-						      			<span>$10</span>
-						      		</li>
-						      		<li class="d-flex">
-						      			<span>Nail Treatments</span>
-						      			<span>30 min.</span>
-						      			<span>$20</span>
-						      		</li>
-						      		<li class="d-flex">
-						      			<span>Medical Treatments</span>
-						      			<span>60 min.</span>
-						      			<span>$10</span>
-						      		</li>
-						      		<li class="d-flex">
-						      			<span>Hair Treatments</span>
-						      			<span>30 min.</span>
-						      			<span>$30</span>
-						      		</li>
-						      	</ul>
-						      </div>
-						    </div>
+                <div class="col-md-12 heading-section ftco-animate text-center">
+                    <h2 class="mb-1">Precios</h2>
+                </div>
+            </div>
+            <div class="row align-items-center">
+        	    <div class="container d-flex align-items-stretch">
+        		    <div id="accordion" class="myaccordion w-100 text-center py-5 px-1 px-md-4">
+                        <div>
+                            <p>10% de descuento en tu primera visita <br> 15% de descuento por recomendación</p>
+                        </div>
+                        <div class="row">
+                            <div class="card col-md-6">
+                                <div class="card-header" id="headingOne">
+                                    <h2 class="mb-0">
+                                        <button class="d-flex align-items-center justify-content-between btn btn-link" data-toggle="collapse" data-target="#manicure" aria-expanded="false" aria-controls="manicure">
+                                            Manicure
+                                            <i class="fa" aria-hidden="true"></i>
+                                        </button>
+                                    </h2>
+                                </div>
+						        <div id="manicure" class="collapse" aria-labelledby="headingOne" data-parent="#accordion">
+						             <div class="card-body text-left">
+                                        <ul>
+                                            <li class="d-flex">
+                                                <span>Tradicional</span>
+                                                <span>40 min.</span>
+                                                <span>$5.000</span>
+                                            </li>
+                                            <li class="d-flex">
+                                                <span>Para hombres</span>
+                                                <span>30 min.</span>
+                                                <span>$4.000</span>
+                                            </li>
+                                            <li class="d-flex">
+                                                <span>Para niñas</span>
+                                                <span>60 min.</span>
+                                                <span>$3.000</span>
+                                            </li>
+                                            <li class="d-flex">
+                                                <span>Permanente</span>
+                                                <span>30 min.</span>
+                                                <span>$12.000</span>
+                                            </li>
+                                            <li class="d-flex">
+                                                <span>Degradé</span>
+                                                <span>30 min.</span>
+                                                <span>$14.000</span>
+                                            </li>
+                                        </ul>
+                                    </div>
+						        </div>
+                          </div>
+                          <div class="card col-md-6">
+                                <div class="card-header" id="headingOne">
+                                    <h2 class="mb-0">
+                                        <button class="d-flex align-items-center justify-content-between btn btn-link" data-toggle="collapse" data-target="#esculpidos" aria-expanded="false" aria-controls="esculpidos">
+                                        Esculpidos en gel
+                                            <i class="fa" aria-hidden="true"></i>
+                                        </button>
+                                    </h2>
+                                </div>
+						        <div id="esculpidos" class="collapse" aria-labelledby="headingOne" data-parent="#accordion">
+						             <div class="card-body text-left">
+                                        <ul>
+                                            <li class="d-flex">
+                                                <span>Tradicional largo 1 ó 2</span>
+                                                <span>40 min.</span>
+                                                <span>$17.000</span>
+                                            </li>
+                                            <li class="d-flex">
+                                                <span>Tradicional largo 3 ó 4</span>
+                                                <span>30 min.</span>
+                                                <span>$22.000</span>
+                                            </li>
+                                            <li class="d-flex">
+                                                <span>Tradicional largo 5 ó +</span>
+                                                <span>60 min.</span>
+                                                <span>$26.000</span>
+                                            </li>
+                                            <li class="d-flex">
+                                                <span>Permanente largo 1 ó 2</span>
+                                                <span>30 min.</span>
+                                                <span>$23.0000</span>
+                                            </li>
+                                            <li class="d-flex">
+                                                <span>Permanente largo 3 ó 4</span>
+                                                <span>30 min.</span>
+                                                <span>$27.0000</span>
+                                            </li>
+                                            <li class="d-flex">
+                                                <span>Permanente largo 5 ó +</span>
+                                                <span>30 min.</span>
+                                                <span>$32.0000</span>
+                                            </li>
+                                            <li class="d-flex">
+                                                <span>Relleno tradicional</span>
+                                                <span>30 min.</span>
+                                                <span>$15.0000</span>
+                                            </li>
+                                            <li class="d-flex">
+                                                <span>Relleno permanente</span>
+                                                <span>30 min.</span>
+                                                <span>$17.0000</span>
+                                            </li>
+                                            <li class="d-flex">
+                                                <span>Baño de gel</span>
+                                                <span>30 min.</span>
+                                                <span>$15.0000</span>
+                                            </li>
+                                        </ul>
+                                    </div>
+						        </div>
+                          </div>
+                          <div class="card col-md-6">
+                                <div class="card-header" id="headingOne">
+                                    <h2 class="mb-0">
+                                        <button class="d-flex align-items-center justify-content-between btn btn-link" data-toggle="collapse" data-target="#pedicure" aria-expanded="false" aria-controls="pedicure">
+                                        Pedicure
+                                            <i class="fa" aria-hidden="true"></i>
+                                        </button>
+                                    </h2>
+                                </div>
+						        <div id="pedicure" class="collapse" aria-labelledby="headingOne" data-parent="#accordion">
+						             <div class="card-body text-left">
+                                        <ul>
+                                            <li class="d-flex">
+                                                <span>Sólo pedicure</span>
+                                                <span>40 min.</span>
+                                                <span>$8.000</span>
+                                            </li>
+                                            <li class="d-flex">
+                                                <span>Tradicional</span>
+                                                <span>30 min.</span>
+                                                <span>$10.000</span>
+                                            </li>
+                                            <li class="d-flex">
+                                                <span>Permanente</span>
+                                                <span>60 min.</span>
+                                                <span>$15.000</span>
+                                            </li>
+                                        </ul>
+                                    </div>
+						        </div>
+                          </div>
+                          <div class="card col-md-6">
+                                <div class="card-header" id="headingOne">
+                                    <h2 class="mb-0">
+                                        <button class="d-flex align-items-center justify-content-between btn btn-link" data-toggle="collapse" data-target="#ondulacion" aria-expanded="false" aria-controls="ondulacion">
+                                        Ondulación/lifting de pestañas
+                                            <i class="fa" aria-hidden="true"></i>
+                                        </button>
+                                    </h2>
+                                </div>
+						        <div id="ondulacion" class="collapse" aria-labelledby="headingOne" data-parent="#accordion">
+						             <div class="card-body text-left">
+                                        <ul>
+                                            <li class="d-flex">
+                                                <span>Sin tinte</span>
+                                                <span>40 min.</span>
+                                                <span>$13.000</span>
+                                            </li>
+                                            <li class="d-flex">
+                                                <span>Con tinte</span>
+                                                <span>30 min.</span>
+                                                <span>$15.000</span>
+                                            </li>
+                                        </ul>
+                                    </div>
+						        </div>
+                          </div>
+                          <div class="card col-md-6">
+                                <div class="card-header" id="headingOne">
+                                    <h2 class="mb-0">
+                                        <button class="d-flex align-items-center justify-content-between btn btn-link" data-toggle="collapse" data-target="#otros" aria-expanded="false" aria-controls="otros">
+                                        Otros
+                                            <i class="fa" aria-hidden="true"></i>
+                                        </button>
+                                    </h2>
+                                </div>
+						        <div id="otros" class="collapse" aria-labelledby="headingOne" data-parent="#accordion">
+						             <div class="card-body text-left">
+                                        <ul>
+                                            <li class="d-flex">
+                                                <span>Parche</span>
+                                                <span>40 min.</span>
+                                                <span>$1.000</span>
+                                            </li>
+                                            <li class="d-flex">
+                                                <span>Uña esculpida</span>
+                                                <span>30 min.</span>
+                                                <span>$2.000</span>
+                                            </li>
+                                            <li class="d-flex">
+                                                <span>Tratamiento IBX</span>
+                                                <span>60 min.</span>
+                                                <span>$5.000</span>
+                                            </li>
+                                        </ul>
+                                    </div>
+						        </div>
 						  </div>
-
-						  <div class="card">
-						    <div class="card-header" id="headingTwo">
-						      <h2 class="mb-0">
-						        <button class="d-flex align-items-center justify-content-between btn btn-link collapsed" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-						          Massage Therapies
-						          <i class="fa" aria-hidden="true"></i>
-						        </button>
-						      </h2>
-						    </div>
-						    <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
-						      <div class="card-body text-left">
-						      	<ul>
-						      		<li class="d-flex">
-						      			<span>Face Treatments</span>
-						      			<span>40 min.</span>
-						      			<span>$10</span>
-						      		</li>
-						      		<li class="d-flex">
-						      			<span>Nail Treatments</span>
-						      			<span>30 min.</span>
-						      			<span>$20</span>
-						      		</li>
-						      		<li class="d-flex">
-						      			<span>Medical Treatments</span>
-						      			<span>60 min.</span>
-						      			<span>$10</span>
-						      		</li>
-						      		<li class="d-flex">
-						      			<span>Hair Treatments</span>
-						      			<span>30 min.</span>
-						      			<span>$30</span>
-						      		</li>
-						      	</ul>
-						      </div>
-						    </div>
-						  </div>
-						</div>
-        	</div>
-
-
-        	<div class="col-lg-4">
-        		<div class="row no-gutters">
-        			<div class="col-md-6 d-flex align-items-stretch">
-        				<div class="treatment w-100 text-center ftco-animate border border-right-0 border-bottom-0 p-3 py-4">
-									<div class="icon d-flex justify-content-center align-items-center">
-										<span class="flaticon-beauty-treatment"></span>
-									</div>
-									<div class="text mt-2">
-										<h3>Relaxation</h3>
-										<p>A small river named Duden flows by their place and supplies.</p>
-									</div>
-								</div>
-        			</div>
-        			<div class="col-md-6 d-flex align-items-stretch">
-        				<div class="treatment w-100 text-center ftco-animate border border-bottom-0 p-3 py-4">
-									<div class="icon d-flex justify-content-center align-items-center">
-										<span class="flaticon-relax"></span>
-									</div>
-									<div class="text mt-2">
-										<h3>Athlete</h3>
-										<p>A small river named Duden flows.</p>
-									</div>
-								</div>
-        			</div>
-        			<div class="col-md-6 d-flex align-items-stretch">
-        				<div class="treatment w-100 text-center ftco-animate border border-right-0 p-3 py-4">
-									<div class="icon d-flex justify-content-center align-items-center">
-										<span class="flaticon-massage"></span>
-									</div>
-									<div class="text mt-2">
-										<h3>Thai</h3>
-										<p>A small river named Duden flows by their place and supplies.</p>
-									</div>
-								</div>
-        			</div>
-        			<div class="col-md-6 d-flex align-items-stretch">
-        				<div class="treatment w-100 text-center ftco-animate border p-3 py-4">
-									<div class="icon d-flex justify-content-center align-items-center">
-										<span class="flaticon-rose"></span>
-									</div>
-									<div class="text mt-2">
-										<h3>Rose</h3>
-										<p>A small river named Duden flows.</p>
-									</div>
-								</div>
-        			</div>
-        		</div>
-        	</div>
-        </div>
+                        </div>
+                    </div>  
+                </div>
+            </div>
 	  	</div>
       </section>
       
