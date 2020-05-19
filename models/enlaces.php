@@ -7,6 +7,7 @@ class EnlacesModels{
 		if( $enlaces == "inicio" ||
 			$enlaces == "Nosotros" ||
 			$enlaces == "Contacto" ||
+			$enlaces == "servicios" ||
 			$enlaces == "Disenos"){
 
 			$module = "views/modules/".$enlaces.".php";

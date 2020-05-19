@@ -8,9 +8,8 @@
 	        <ul class="navbar-nav ml-auto">
 	          <li class="nav-item active"><a href="inicio" class="nav-link">Inicio</a></li>
 	          <li class="nav-item"><a href="Nosotros" class="nav-link">Nosotros</a></li>
-	          <li class="nav-item"><a href="treatments.html" class="nav-link">Servicios</a></li>
+	          <li class="nav-item"><a href="servicios" class="nav-link">Servicios</a></li>
 	          <li class="nav-item"><a href="specialists.html" class="nav-link">Especialistas</a></li>
-			  <li class="nav-item"><a href="pricing.html" class="nav-link">Promociones</a></li>
 			  <li class="nav-item"><a href="pricing.html" class="nav-link">Galeria</a></li>
 	          <li class="nav-item"><a href="contact.html" class="nav-link">Contacto</a></li>
 	        </ul>
