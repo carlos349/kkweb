@@ -9823,3 +9823,7 @@ textarea.form-control {
     border-radius: 5px;
     color: white;
   }
+  .categoryImg{
+    width: 120px;
+    height: 120px;
+  }

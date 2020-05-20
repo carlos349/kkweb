@@ -24,22 +24,22 @@
                         <div class="col-md-12 d-flex align-items-stretch">
                             <div class="treatment w-100 text-center ftco-animate border border-right-0 border-bottom-0 p-3 py-4">
                                         <div class="icon d-flex justify-content-center align-items-center">
-                                            <span class="flaticon-candle"></span>
+                                            <img class="categoryImg" src="views/images/manicure.png" alt="">
                                         </div>
                                         <div class="text mt-2">
                                             <h3>Manicure</h3>
-                                            <p>A small river named Duden flows by their place and supplies.</p>
+                                            <p>Para el cuidado y salud de tus manos.</p>
                                         </div>
                                     </div>
                         </div>
                         <div class="col-md-12 d-flex align-items-stretch">
                             <div class="treatment w-100 text-center ftco-animate border border-bottom-0 p-3 py-4">
                                         <div class="icon d-flex justify-content-center align-items-center">
-                                            <span class="flaticon-spa-1"></span>
+                                            <img class="categoryImg" src="views/images/esculpidos.png" alt="">
                                         </div>
                                         <div class="text mt-2">
                                             <h3>Esculpidos en gel</h3>
-                                            <p>A small river named Duden flows.</p>
+                                            <p>Además de embellecer tus manos, es un tratamiento para evitar onicofagia.</p>
                                         </div>
                                     </div>
                         </div>
@@ -249,22 +249,22 @@
                         <div class="col-md-12 d-flex align-items-stretch">
                             <div class="treatment w-100 text-center ftco-animate border border-right-0 border-bottom-0 p-3 py-4">
                                         <div class="icon d-flex justify-content-center align-items-center">
-                                            <span class="flaticon-candle"></span>
+                                            <img class="categoryImg" src="views/images/pedicure.png" alt="">
                                         </div>
                                         <div class="text mt-2">
                                             <h3>Pedicure</h3>
-                                            <p>A small river named Duden flows by their place and supplies.</p>
+                                            <p>Para el embellecimiento de tus pies.</p>
                                         </div>
                                     </div>
                         </div>
                         <div class="col-md-12 d-flex align-items-stretch">
                             <div class="treatment w-100 text-center ftco-animate border border-bottom-0 p-3 py-4">
                                         <div class="icon d-flex justify-content-center align-items-center">
-                                            <span class="flaticon-spa-1"></span>
+                                            <img class="categoryImg" src="views/images/ibx.png" alt="">
                                         </div>
                                         <div class="text mt-2">
                                             <h3>Ondulación</h3>
-                                            <p>A small river named Duden flows.</p>
+                                            <p>Su agente endurecedor penetra y fusiona las capas superiores de la uña devolviendo la integridad a la placa ungueal.</p>
                                         </div>
                                     </div>
                         </div>

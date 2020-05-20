@@ -123,7 +123,7 @@
     			<div class="col-md-6 col-lg-3">
 						<div class="services text-center ftco-animate">
 							<div class="icon d-flex justify-content-center align-items-center">
-								<span class="flaticon-candle"></span>
+								<img class="categoryImg" src="views/images/manicure.png" alt="">
 							</div>
 							<div class="text mt-3">
 								<h3>Manicure</h3>
@@ -134,7 +134,7 @@
 					<div class="col-md-6 col-lg-3">
 						<div class="services text-center ftco-animate">
 							<div class="icon d-flex justify-content-center align-items-center">
-								<span class="flaticon-beauty-treatment"></span>
+								<img class="categoryImg" src="views/images/pedicure.png" alt="">
 							</div>
 							<div class="text mt-3">
 								<h3>Pedicure</h3>
@@ -145,7 +145,7 @@
 					<div class="col-md-6 col-lg-3">
 						<div class="services text-center ftco-animate">
 							<div class="icon d-flex justify-content-center align-items-center">
-								<span class="flaticon-stone"></span>
+								<img class="categoryImg" src="views/images/esculpidos.png" alt="">
 							</div>
 							<div class="text mt-3">
 								<h3>Esculpido gel</h3>
@@ -156,7 +156,7 @@
 					<div class="col-md-6 col-lg-3">
 						<div class="services text-center ftco-animate">
 							<div class="icon d-flex justify-content-center align-items-center">
-								<span class="flaticon-relax"></span>
+								<img class="categoryImg" src="views/images/ibx.png" alt="">
 							</div>
 							<div class="text mt-3">
 								<h3>Tratamiento IBX</h3>
@@ -381,10 +381,10 @@
             </div>
             <div class="face face2">
                 <div class="content">
-                    <h3>
+                    <h1>
                         <a class="gifBut" href="https://www.linkedin.com/in/adamdipinto/" target="_blank">Regalar</a>
-                    </h3>
-                    <p>$15.000</p>
+                    </h1>
+                    <h2 class="text-center">$15.000</h2>
                 </div>
             </div>
         </div>
@@ -398,10 +398,10 @@
             </div>
             <div class="face face2">
                 <div class="content">
-                    <h3>
+                    <h1>
                         <a class="gifBut" href="https://www.linkedin.com/in/adamdipinto/" target="_blank">Regalar</a>
-                    </h3>
-                    <p>$12.000</p>
+                    </h1>
+                    <h2 class="text-center">$12.000</h2>
                 </div>
             </div>
 		</div>
@@ -415,10 +415,10 @@
             </div>
             <div class="face face2">
                 <div class="content">
-                    <h3>
+                    <h1>
                         <a class="gifBut" href="https://www.linkedin.com/in/adamdipinto/" target="_blank">Regalar</a>
-                    </h3>
-                    <p> $27.000</p>
+                    </h1>
+                    <h2 class="text-center"> $27.000<h2p>
                 </div>
             </div>
         </div>
@@ -434,10 +434,10 @@
             </div>
             <div class="face face2">
                 <div class="content">
-                    <h3>
+                    <h1>
                         <a class="gifBut" href="https://www.linkedin.com/in/adamdipinto/" target="_blank">Regalar</a>
-                    </h3>
-                    <p> $26.500</p>
+                    </h1>
+                    <h2 class="text-center"> $26.500<h2p>
                 </div>
             </div>
         </div>
@@ -451,10 +451,10 @@
             </div>
             <div class="face face2">
                 <div class="content">
-                    <h3>
+                    <h1>
                         <a class="gifBut" href="https://www.linkedin.com/in/adamdipinto/" target="_blank">Regalar</a>
-                    </h3>
-                    <p>$15.000</p>
+                    </h1>
+                    <h2 class="text-center">$15.000</h2>
                 </div>
             </div>
 		</div>
@@ -468,10 +468,10 @@
             </div>
             <div class="face face2">
                 <div class="content">
-                    <h3>
+                    <h1>
                         <a class="gifBut" href="https://www.linkedin.com/in/adamdipinto/" target="_blank">Regalar</a>
-                    </h3>
-                    <p>$13.000</p>
+                    </h1>
+                    <h2 class="text-center">$13.000</h2>
                 </div>
             </div>
         </div>

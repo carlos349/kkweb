@@ -5,7 +5,7 @@
         <div class="row no-gutters slider-text js-fullheight align-items-center justify-content-center">
           <div class="col-md-9 ftco-animate text-center">
             <h1 class="mb-3 bread">Nosotros</h1>
-            <p class="breadcrumbs"><span class="mr-2"><a href="index.html">Home</a></span> <span>About</span></p>
+            
           </div>
         </div>
       </div>
@@ -16,7 +16,7 @@
 				<div class="row justify-content-end">
 					<div class="col-md-6">
 						<div class="heading-section ftco-animate">
-	            <h2 class="mb-4">Benefits of Doing Spa &amp; Massage</h2>
+	            <h2 class="mb-4">K & K Pretty Nails</h2>
 	          </div>
 	          <p class="ftco-animate">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean.</p>
 	          <ul class="mt-5 do-list">
@@ -38,9 +38,9 @@
 						<div class="offer-deal text-center px-2 px-lg-5">
 							<div class="img" style="background-image: url(views/images/offer-deal-1.jpg);"></div>
 							<div class="text mt-4">
-								<h3 class="mb-4">Book Your Treatment</h3>
-								<p class="mb-5">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
-								<p><a href="#" class="btn btn-white px-4 py-3"> Book A Treatment <span class="ion-ios-arrow-round-forward"></span></a></p>
+								<h3 class="mb-4">Primer servicio</h3>
+								<p class="mb-5">Si quieres agendar con nosotros y este es el primer servicio tendrás automáticamente un 10% de descuento en todos los servicios, con excepción de los servicios tradicionales.</p>
+								<p><a href="#" class="btn btn-white px-4 py-3"> ¡Agenda tu servicio! </a></p>
 							</div>
 						</div>
 					</div>
@@ -48,9 +48,9 @@
 						<div class="offer-deal active text-center px-2 px-lg-5">
 							<div class="img" style="background-image: url(views/images/offer-deal-2.jpg);"></div>
 							<div class="text mt-4">
-								<h3 class="mb-4">Great Gift Packages</h3>
-								<p class="mb-5">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
-								<p><a href="#" class="btn btn-white px-4 py-3"> Book A Treatment <span class="ion-ios-arrow-round-forward"></span></a></p>
+								<h3 class="mb-4">Recomendaciones</h3>
+								<p class="mb-5">Premiamos tu fidelidad y recomendación con un 15% por cada persona que recomiendes en todos los servicios con excepción de los servicios tradicionales.</p>
+								<p><a href="#" class="btn btn-white px-4 py-3"> "Link de recomendación" </a></p>
 							</div>
 						</div>
 					</div>
@@ -58,9 +58,9 @@
 						<div class="offer-deal text-center px-2 px-lg-5">
 							<div class="img" style="background-image: url(views/images/offer-deal-3.jpg);"></div>
 							<div class="text mt-4">
-								<h3 class="mb-4">Special Offer &amp; Deal</h3>
-								<p class="mb-5">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
-								<p><a href="#" class="btn btn-white px-4 py-3"> Book A Treatment <span class="ion-ios-arrow-round-forward"></span></a></p>
+								<h3 class="mb-4">Promoción del mes</h3>
+								<p class="mb-5">"Promocion correspondiente" Lorem ipsum dolor sit amet consectetur adipisicing elit. Non nostrum aut inventore sit magnam laboriosam quia a est modi blanditiis ullam molestias </p>
+								<p><a href="#" class="btn btn-white px-4 py-3"> E45TY4323SSF4 </a></p>
 							</div>
 						</div>
 					</div>
@@ -68,56 +68,56 @@
 			</div>
 		</section>
     
-    <section class="ftco-section ftco-section-services bg-light">
-    	<div class="container-fluid px-md-5">
-    		<div class="row">
-    			<div class="col-md-6 col-lg-3">
-						<div class="services text-center ftco-animate">
-							<div class="icon d-flex justify-content-center align-items-center">
-								<span class="flaticon-candle"></span>
-							</div>
-							<div class="text mt-3">
-								<h3>Aromatheraphy</h3>
-								<p>A small river named Duden flows by their place and supplies it with the necessary regelialia. It is a paradisematic country</p>
-							</div>
-						</div>
-					</div>
+		<section class="ftco-section ftco-section-services bg-light">
+			<div class="container-fluid px-md-5">
+				<div class="row">
 					<div class="col-md-6 col-lg-3">
-						<div class="services text-center ftco-animate">
-							<div class="icon d-flex justify-content-center align-items-center">
-								<span class="flaticon-beauty-treatment"></span>
+							<div class="services text-center ftco-animate">
+								<div class="icon d-flex justify-content-center align-items-center">
+									<img class="categoryImg" src="views/images/manicure.png" alt="">
+								</div>
+								<div class="text mt-3">
+									<h3>Manicure</h3>
+									<p>Para el cuidado y salud de tus manos.</p>
+								</div>
 							</div>
-							<div class="text mt-3">
-								<h3>Skin Care</h3>
-								<p>A small river named Duden flows by their place and supplies it with the necessary regelialia. It is a paradisematic country</p>
+						</div>
+						<div class="col-md-6 col-lg-3">
+							<div class="services text-center ftco-animate">
+								<div class="icon d-flex justify-content-center align-items-center">
+									<img class="categoryImg" src="views/images/pedicure.png" alt="">
+								</div>
+								<div class="text mt-3">
+									<h3>Pedicure</h3>
+									<p>Para el embellecimiento de tus pies.</p>
+								</div>
+							</div>
+						</div>
+						<div class="col-md-6 col-lg-3">
+							<div class="services text-center ftco-animate">
+								<div class="icon d-flex justify-content-center align-items-center">
+									<img class="categoryImg" src="views/images/esculpidos.png" alt="">
+								</div>
+								<div class="text mt-3">
+									<h3>Esculpido gel</h3>
+									<p>Además de embellecer tus manos, es un tratamiento para evitar onicofagia.</p>
+								</div>
+							</div>
+						</div>
+						<div class="col-md-6 col-lg-3">
+							<div class="services text-center ftco-animate">
+								<div class="icon d-flex justify-content-center align-items-center">
+									<img class="categoryImg" src="views/images/ibx.png" alt="">
+								</div>
+								<div class="text mt-3">
+									<h3>Tratamiento IBX</h3>
+									<p>Su agente endurecedor penetra y fusiona las capas superiores de la uña devolviendo la integridad a la placa ungueal.</p>
+								</div>
 							</div>
 						</div>
 					</div>
-					<div class="col-md-6 col-lg-3">
-						<div class="services text-center ftco-animate">
-							<div class="icon d-flex justify-content-center align-items-center">
-								<span class="flaticon-stone"></span>
-							</div>
-							<div class="text mt-3">
-								<h3>Herbal Spa</h3>
-								<p>A small river named Duden flows by their place and supplies it with the necessary regelialia. It is a paradisematic country</p>
-							</div>
-						</div>
-					</div>
-					<div class="col-md-6 col-lg-3">
-						<div class="services text-center ftco-animate">
-							<div class="icon d-flex justify-content-center align-items-center">
-								<span class="flaticon-relax"></span>
-							</div>
-							<div class="text mt-3">
-								<h3>Body Massage</h3>
-								<p>A small river named Duden flows by their place and supplies it with the necessary regelialia. It is a paradisematic country</p>
-							</div>
-						</div>
-					</div>
-				</div>
-    	</div>
-    </section>
+			</div>
+		</section>
 
     <section class="ftco-section testimony-section">
       <div class="container">
