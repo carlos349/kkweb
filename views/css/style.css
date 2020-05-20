@@ -8918,8 +8918,6 @@ textarea.form-control {
   background: #d9bf77 !important; }
 
 .ftco-section {
-  margin-top: -10%;
-  margin-bottom: 10%;
   padding: 7em 0;
   position: relative; }
   @media (max-width: 767.98px) {
@@ -9693,15 +9691,16 @@ textarea.form-control {
     stroke-dasharray: 89, 200;
     stroke-dashoffset: -136px; } }
   .gifCard {
-      width: 1000px;
       position: relative;
       display: flex;
       justify-content: space-between;
+      margin-bottom: 35%;
   }
   
   .gifCard .cardGif {
       position: relative;
       border-radius: 10px;
+      max-height: 0;
   }
   
   .gifCard .cardGif .icon {
@@ -9749,8 +9748,7 @@ textarea.form-control {
   }
   
   .gifCard .cardGif .face {
-      width: 300px;
-      height: 200px;
+      height: 340px;
       transition: 0.5s;
   }
   
@@ -9761,7 +9759,7 @@ textarea.form-control {
       justify-content: center;
       align-items: center;
       z-index: 1;
-      transform: translateY(100px);
+      transform: translateY(240px);
   }
   
   .gifCard .cardGif:hover .face.face1{
@@ -9817,4 +9815,11 @@ textarea.form-control {
   .gifCard a {
       text-decoration: none;
       color: #414141;
+  }
+
+  .gifBut{
+    background-color: #ffbdc5;
+    padding: 15px;
+    border-radius: 5px;
+    color: white;
   }

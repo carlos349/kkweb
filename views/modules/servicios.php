@@ -1,5 +1,5 @@
 <?php include 'cabecera.php'; ?>
-<section class="hero-wrap hero-wrap-2" style="background-image: url('images/bg_2.jpg');" data-stellar-background-ratio="0.5">
+<section class="hero-wrap hero-wrap-2" style="background-image: url('views/images/bg_2.jpg');" data-stellar-background-ratio="0.5">
       <div class="overlay"></div>
       <div class="container">
         <div class="row no-gutters slider-text js-fullheight align-items-center justify-content-center">
@@ -19,13 +19,39 @@
                 </div>
             </div>
             <div class="row align-items-center">
-        	    <div class="container d-flex align-items-stretch">
+                <div class="col-lg-4">
+                    <div class="row no-gutters">
+                        <div class="col-md-12 d-flex align-items-stretch">
+                            <div class="treatment w-100 text-center ftco-animate border border-right-0 border-bottom-0 p-3 py-4">
+                                        <div class="icon d-flex justify-content-center align-items-center">
+                                            <span class="flaticon-candle"></span>
+                                        </div>
+                                        <div class="text mt-2">
+                                            <h3>Manicure</h3>
+                                            <p>A small river named Duden flows by their place and supplies.</p>
+                                        </div>
+                                    </div>
+                        </div>
+                        <div class="col-md-12 d-flex align-items-stretch">
+                            <div class="treatment w-100 text-center ftco-animate border border-bottom-0 p-3 py-4">
+                                        <div class="icon d-flex justify-content-center align-items-center">
+                                            <span class="flaticon-spa-1"></span>
+                                        </div>
+                                        <div class="text mt-2">
+                                            <h3>Esculpidos en gel</h3>
+                                            <p>A small river named Duden flows.</p>
+                                        </div>
+                                    </div>
+                        </div>
+                    </div>
+                </div>
+        	    <div class="col-lg-4 d-flex align-items-stretch">
         		    <div id="accordion" class="myaccordion w-100 text-center py-5 px-1 px-md-4">
                         <div>
                             <p>10% de descuento en tu primera visita <br> 15% de descuento por recomendación</p>
                         </div>
                         <div class="row">
-                            <div class="card col-md-6">
+                            <div class="card col-md-12">
                                 <div class="card-header" id="headingOne">
                                     <h2 class="mb-0">
                                         <button class="d-flex align-items-center justify-content-between btn btn-link" data-toggle="collapse" data-target="#manicure" aria-expanded="false" aria-controls="manicure">
@@ -39,7 +65,7 @@
                                         <ul>
                                             <li class="d-flex">
                                                 <span>Tradicional</span>
-                                                <span>40 min.</span>
+                                                <span>30 min.</span>
                                                 <span>$5.000</span>
                                             </li>
                                             <li class="d-flex">
@@ -49,24 +75,24 @@
                                             </li>
                                             <li class="d-flex">
                                                 <span>Para niñas</span>
-                                                <span>60 min.</span>
+                                                <span>15 min.</span>
                                                 <span>$3.000</span>
                                             </li>
                                             <li class="d-flex">
                                                 <span>Permanente</span>
-                                                <span>30 min.</span>
+                                                <span>60 min.</span>
                                                 <span>$12.000</span>
                                             </li>
                                             <li class="d-flex">
                                                 <span>Degradé</span>
-                                                <span>30 min.</span>
+                                                <span>60 min.</span>
                                                 <span>$14.000</span>
                                             </li>
                                         </ul>
                                     </div>
 						        </div>
                           </div>
-                          <div class="card col-md-6">
+                          <div class="card col-md-12">
                                 <div class="card-header" id="headingOne">
                                     <h2 class="mb-0">
                                         <button class="d-flex align-items-center justify-content-between btn btn-link" data-toggle="collapse" data-target="#esculpidos" aria-expanded="false" aria-controls="esculpidos">
@@ -80,32 +106,32 @@
                                         <ul>
                                             <li class="d-flex">
                                                 <span>Tradicional largo 1 ó 2</span>
-                                                <span>40 min.</span>
+                                                <span>120 min.</span>
                                                 <span>$17.000</span>
                                             </li>
                                             <li class="d-flex">
                                                 <span>Tradicional largo 3 ó 4</span>
-                                                <span>30 min.</span>
+                                                <span>120 min.</span>
                                                 <span>$22.000</span>
                                             </li>
                                             <li class="d-flex">
                                                 <span>Tradicional largo 5 ó +</span>
-                                                <span>60 min.</span>
+                                                <span>150 min.</span>
                                                 <span>$26.000</span>
                                             </li>
                                             <li class="d-flex">
                                                 <span>Permanente largo 1 ó 2</span>
-                                                <span>30 min.</span>
+                                                <span>120 min.</span>
                                                 <span>$23.0000</span>
                                             </li>
                                             <li class="d-flex">
                                                 <span>Permanente largo 3 ó 4</span>
-                                                <span>30 min.</span>
+                                                <span>150 min.</span>
                                                 <span>$27.0000</span>
                                             </li>
                                             <li class="d-flex">
                                                 <span>Permanente largo 5 ó +</span>
-                                                <span>30 min.</span>
+                                                <span>180 min.</span>
                                                 <span>$32.0000</span>
                                             </li>
                                             <li class="d-flex">
@@ -115,19 +141,19 @@
                                             </li>
                                             <li class="d-flex">
                                                 <span>Relleno permanente</span>
-                                                <span>30 min.</span>
+                                                <span>120 min.</span>
                                                 <span>$17.0000</span>
                                             </li>
                                             <li class="d-flex">
                                                 <span>Baño de gel</span>
-                                                <span>30 min.</span>
+                                                <span>90 min.</span>
                                                 <span>$15.0000</span>
                                             </li>
                                         </ul>
                                     </div>
 						        </div>
                           </div>
-                          <div class="card col-md-6">
+                          <div class="card col-md-12">
                                 <div class="card-header" id="headingOne">
                                     <h2 class="mb-0">
                                         <button class="d-flex align-items-center justify-content-between btn btn-link" data-toggle="collapse" data-target="#pedicure" aria-expanded="false" aria-controls="pedicure">
@@ -141,12 +167,12 @@
                                         <ul>
                                             <li class="d-flex">
                                                 <span>Sólo pedicure</span>
-                                                <span>40 min.</span>
+                                                <span>45 min.</span>
                                                 <span>$8.000</span>
                                             </li>
                                             <li class="d-flex">
                                                 <span>Tradicional</span>
-                                                <span>30 min.</span>
+                                                <span>60 min.</span>
                                                 <span>$10.000</span>
                                             </li>
                                             <li class="d-flex">
@@ -158,7 +184,7 @@
                                     </div>
 						        </div>
                           </div>
-                          <div class="card col-md-6">
+                          <div class="card col-md-12">
                                 <div class="card-header" id="headingOne">
                                     <h2 class="mb-0">
                                         <button class="d-flex align-items-center justify-content-between btn btn-link" data-toggle="collapse" data-target="#ondulacion" aria-expanded="false" aria-controls="ondulacion">
@@ -172,19 +198,19 @@
                                         <ul>
                                             <li class="d-flex">
                                                 <span>Sin tinte</span>
-                                                <span>40 min.</span>
+                                                <span>45 min.</span>
                                                 <span>$13.000</span>
                                             </li>
                                             <li class="d-flex">
                                                 <span>Con tinte</span>
-                                                <span>30 min.</span>
+                                                <span>60 min.</span>
                                                 <span>$15.000</span>
                                             </li>
                                         </ul>
                                     </div>
 						        </div>
                           </div>
-                          <div class="card col-md-6">
+                          <div class="card col-md-12">
                                 <div class="card-header" id="headingOne">
                                     <h2 class="mb-0">
                                         <button class="d-flex align-items-center justify-content-between btn btn-link" data-toggle="collapse" data-target="#otros" aria-expanded="false" aria-controls="otros">
@@ -198,17 +224,17 @@
                                         <ul>
                                             <li class="d-flex">
                                                 <span>Parche</span>
-                                                <span>40 min.</span>
+                                                <span>15 min.</span>
                                                 <span>$1.000</span>
                                             </li>
                                             <li class="d-flex">
                                                 <span>Uña esculpida</span>
-                                                <span>30 min.</span>
+                                                <span>15 min.</span>
                                                 <span>$2.000</span>
                                             </li>
                                             <li class="d-flex">
                                                 <span>Tratamiento IBX</span>
-                                                <span>60 min.</span>
+                                                <span>30 min.</span>
                                                 <span>$5.000</span>
                                             </li>
                                         </ul>
@@ -217,6 +243,32 @@
 						  </div>
                         </div>
                     </div>  
+                </div>
+                <div class="col-lg-4">
+                    <div class="row no-gutters">
+                        <div class="col-md-12 d-flex align-items-stretch">
+                            <div class="treatment w-100 text-center ftco-animate border border-right-0 border-bottom-0 p-3 py-4">
+                                        <div class="icon d-flex justify-content-center align-items-center">
+                                            <span class="flaticon-candle"></span>
+                                        </div>
+                                        <div class="text mt-2">
+                                            <h3>Pedicure</h3>
+                                            <p>A small river named Duden flows by their place and supplies.</p>
+                                        </div>
+                                    </div>
+                        </div>
+                        <div class="col-md-12 d-flex align-items-stretch">
+                            <div class="treatment w-100 text-center ftco-animate border border-bottom-0 p-3 py-4">
+                                        <div class="icon d-flex justify-content-center align-items-center">
+                                            <span class="flaticon-spa-1"></span>
+                                        </div>
+                                        <div class="text mt-2">
+                                            <h3>Ondulación</h3>
+                                            <p>A small river named Duden flows.</p>
+                                        </div>
+                                    </div>
+                        </div>
+                    </div>
                 </div>
             </div>
 	  	</div>

@@ -364,61 +364,114 @@
 
 
     <section class="ftco-section bg-light">
-      <div class="container">
+      <div class="container-fluid">
         <div class="row justify-content-center mb-5 pb-3">
           <div class="col-md-7 heading-section ftco-animate text-center">
             <h2 class="mb-1">Gif Cards</h2>
           </div>
 		</div>
-		<div class="container gifCard">
-        <div class="cardGif">
+		<div class="container-fluid gifCard">
+        <div  class=" col-lg-4 cardGif">
             <div class="face face1">
                 <div class="content">
-                    <div class="icon">
-                        <i class="gifI" aria-hidden="true">#1 </i>
+                    <div style="background-image: url('views/images/1.png');background-color: transparent !important; background-size: cover;" class="icon">
+                        <i class="gifI" aria-hidden="true"> </i>
                     </div>
                 </div>
             </div>
             <div class="face face2">
                 <div class="content">
                     <h3>
-                        <a href="https://www.linkedin.com/in/adamdipinto/" target="_blank">Regalar</a>
+                        <a class="gifBut" href="https://www.linkedin.com/in/adamdipinto/" target="_blank">Regalar</a>
                     </h3>
-                    <p>Manos y pies tradicionales $15.000</p>
+                    <p>$15.000</p>
                 </div>
             </div>
         </div>
-        <div class="cardGif">
+        <div  class=" col-lg-4 cardGif">
             <div class="face face1">
                 <div class="content">
-                    <div class="icon">
-                        <i class="fa fa-twitter-square gifI" aria-hidden="true"></i>
+                    <div style="background-image: url('views/images/2.png');background-color: transparent !important; background-size: cover;" class="icon">
+                        <i class="gifI" aria-hidden="true"> </i>
                     </div>
                 </div>
             </div>
             <div class="face face2">
                 <div class="content">
                     <h3>
-                        <a href="https://twitter.com/AdamDipinto" target="_blank">@AdamDipinto</a>
+                        <a class="gifBut" href="https://www.linkedin.com/in/adamdipinto/" target="_blank">Regalar</a>
                     </h3>
-                    <p>This is where I read news and network with different social groups.</p>
+                    <p>$12.000</p>
+                </div>
+            </div>
+		</div>
+		<div  class=" col-lg-4 cardGif">
+            <div class="face face1">
+                <div class="content">
+                    <div style="background-image: url('views/images/3.png');background-color: transparent !important; background-size: cover;" class="icon">
+                        <i class="gifI" aria-hidden="true"> </i>
+                    </div>
+                </div>
+            </div>
+            <div class="face face2">
+                <div class="content">
+                    <h3>
+                        <a class="gifBut" href="https://www.linkedin.com/in/adamdipinto/" target="_blank">Regalar</a>
+                    </h3>
+                    <p> $27.000</p>
                 </div>
             </div>
         </div>
-        <div class="cardGif">
+	</div>
+	<div class="container-fluid gifCard">
+        <div  class=" col-lg-4 cardGif">
             <div class="face face1">
                 <div class="content">
-                    <div class="icon">
-                        <i class="fa fa-github-square gifI" aria-hidden="true"></i>
+                    <div style="background-image: url('views/images/4.png');background-color: transparent !important; background-size: cover;" class="icon">
+                        <i class="gifI" aria-hidden="true"> </i>
                     </div>
                 </div>
             </div>
             <div class="face face2">
                 <div class="content">
                     <h3>
-                        <a href="https://github.com/atom888" target="_blank">atom888</a>
+                        <a class="gifBut" href="https://www.linkedin.com/in/adamdipinto/" target="_blank">Regalar</a>
                     </h3>
-                    <p>This is where I share code and work on projects.</p>
+                    <p> $26.500</p>
+                </div>
+            </div>
+        </div>
+        <div  class=" col-lg-4 cardGif">
+            <div class="face face1">
+                <div class="content">
+                    <div style="background-image: url('views/images/5.png');background-color: transparent !important; background-size: cover;" class="icon">
+                        <i class="gifI" aria-hidden="true"> </i>
+                    </div>
+                </div>
+            </div>
+            <div class="face face2">
+                <div class="content">
+                    <h3>
+                        <a class="gifBut" href="https://www.linkedin.com/in/adamdipinto/" target="_blank">Regalar</a>
+                    </h3>
+                    <p>$15.000</p>
+                </div>
+            </div>
+		</div>
+		<div  class=" col-lg-4 cardGif">
+            <div class="face face1">
+                <div class="content">
+                    <div style="background-image: url('views/images/6.png');background-color: transparent !important; background-size: cover;" class="icon">
+                        <i class="gifI" aria-hidden="true"> </i>
+                    </div>
+                </div>
+            </div>
+            <div class="face face2">
+                <div class="content">
+                    <h3>
+                        <a class="gifBut" href="https://www.linkedin.com/in/adamdipinto/" target="_blank">Regalar</a>
+                    </h3>
+                    <p>$13.000</p>
                 </div>
             </div>
         </div>
