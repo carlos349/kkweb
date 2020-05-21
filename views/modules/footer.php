@@ -3,8 +3,8 @@
         <div class="row d-flex">
           <div class="col-md">
             <div class="ftco-footer-widget mb-4">
-              <h2 class="ftco-heading-2">Energen</h2>
-              <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
+              <h2 class="ftco-heading-2">K&KPrettynails</h2>
+              <p>Simplemente un spa hecho a tu medida.</p>
               <ul class="ftco-footer-social list-unstyled float-lft mt-3">
                 <li class="ftco-animate"><a href="https://www.facebook.com/kkprettynails"><span class="icon-facebook"></span></a></li>
                 <li class="ftco-animate"><a href="https://www.instagram.com/kkprettynails/?hl=es-la"><span class="icon-instagram"></span></a></li>
@@ -15,10 +15,10 @@
             <div class="ftco-footer-widget mb-4 ml-md-4">
               <h2 class="ftco-heading-2">Popular Links</h2>
               <ul class="list-unstyled">
-                <li><a href="#">Aromatheraphy</a></li>
-                <li><a href="#">Skin Care</a></li>
-                <li><a href="#">Herbal Spa</a></li>
-                <li><a href="#">Body Massage</a></li>
+                <li><a href="#">Manicure</a></li>
+                <li><a href="#">Pedicure</a></li>
+                <li><a href="#">Esculpidos</a></li>
+                <li><a href="#">IBX</a></li>
               </ul>
             </div>
           </div>
@@ -26,11 +26,11 @@
             <div class="ftco-footer-widget mb-4">
               <h2 class="ftco-heading-2">Quick Links</h2>
               <ul class="list-unstyled">
-                <li><a href="#">About</a></li>
-                <li><a href="#">Our Spa</a></li>
-                <li><a href="#">Treatments</a></li>
-                <li><a href="#">Specialists</a></li>
-                <li><a href="#">Contact</a></li>
+                <li><a href="#">Nosotros</a></li>
+                <li><a href="#">Servicios</a></li>
+                <li><a href="#">Especialistas</a></li>
+                <li><a href="#">Galeria</a></li>
+                <li><a href="#">Contacto</a></li>
               </ul>
             </div>
           </div>

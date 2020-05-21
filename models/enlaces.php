@@ -7,6 +7,8 @@ class EnlacesModels{
 		if( $enlaces == "inicio" ||
 			$enlaces == "Nosotros" ||
 			$enlaces == "Contacto" ||
+			$enlaces == "Galeria" ||
+			$enlaces == "Especialistas" ||
 			$enlaces == "servicios" ||
 			$enlaces == "Disenos"){
 

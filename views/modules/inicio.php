@@ -7,11 +7,11 @@
           	<div class="icon">
 				<img style="width:30%" src="views/images/logokk.png" alt="">
           	</div>
-            <h1 style="color:#605B56">K&K PRETTYNAILS.COM</h1>
+            <h1 style="color:#605B56">K&KPRETTYNAILS.COM</h1>
             <div class="row justify-content-center">
             <p>
-            	<a href="#" class="btn btn-primary p-3 px-5 py-4 mr-md-2">Agendar</a>
-            	<a href="#" class="btn btn-outline-primary p-3 px-5 py-4 ml-md-2">Galeria</a>
+            	<a href="Contacto" class="btn btn-primary p-3 px-5 py-4 mr-md-2">Agendar</a>
+            	<a href="Galeria" class="btn btn-outline-primary p-3 px-5 py-4 ml-md-2">Galeria</a>
             </p>
           </div>
         </div>
@@ -23,11 +23,26 @@
         <div class="row justify-content-center">
         	<div class="col-md-10">
         		<div class="row">
-		          <div class="col-md-6 col-lg-3 d-flex justify-content-center counter-wrap ftco-animate">
+		          
+		          
+				  <div class="col-md-6 col-lg-5 d-flex justify-content-center counter-wrap ftco-animate">
 		            <div class="block-18 text-center">
 		              <div class="text">
-		              	<strong class="number" data-number="2560">0</strong>
-		              	<span>Happy Customers</span>
+						  <strong class="number" data-number="1">0</strong>
+						  <strong >Año</strong>
+						  <strong class="number" data-number="3">0</strong>
+						  <strong >Meses</strong>
+						  <strong class="number" data-number="10">10</strong>
+						  <strong >Dias</strong>
+		              	<span>Tiempo de servicio</span>
+		              </div>
+		            </div>
+		          </div>
+		          <div class="col-md-6 col-lg-4 d-flex justify-content-center counter-wrap ftco-animate">
+		            <div class="block-18 text-center">
+		              <div class="text">
+		              	<strong class="number" data-number="10253">0</strong>
+		              	<span>Seguidores de instagram</span>
 		              </div>
 		            </div>
 		          </div>
@@ -35,26 +50,10 @@
 		            <div class="block-18 text-center">
 		              <div class="text">
 		              	<strong class="number" data-number="60">0</strong>
-		              	<span>Treatments</span>
+		              	<span>Clientes</span>
 		              </div>
 		            </div>
-		          </div>
-		          <div class="col-md-6 col-lg-3 d-flex justify-content-center counter-wrap ftco-animate">
-		            <div class="block-18 text-center">
-		              <div class="text">
-		              	<strong class="number" data-number="50">0</strong>
-		              	<span>Years of Experience</span>
-		              </div>
-		            </div>
-		          </div>
-		          <div class="col-md-6 col-lg-3 d-flex justify-content-center counter-wrap ftco-animate">
-		            <div class="block-18 text-center">
-		              <div class="text">
-		              	<strong class="number" data-number="100">0</strong>
-		              	<span>Lesson Conducted</span>
-		              </div>
-		            </div>
-		          </div>
+				  </div>
 		        </div>
 		      </div>
         </div>
@@ -167,201 +166,6 @@
 				</div>
     	</div>
     </section>
-
-	  <!-- <section class="ftco-section">
-	  	<div class="container-fluid px-md-5">
-	  		<div class="row justify-content-center mb-5 pb-3">
-          <div class="col-md-12 heading-section ftco-animate text-center">
-            <h3 class="subheading">Services</h3>
-            <h2 class="mb-1">Treatments</h2>
-          </div>
-        </div>
-        <div class="row align-items-center">
-        	<div class="col-lg-4">
-        		<div class="row no-gutters">
-        			<div class="col-md-6 d-flex align-items-stretch">
-        				<div class="treatment w-100 text-center ftco-animate border border-right-0 border-bottom-0 p-3 py-4">
-									<div class="icon d-flex justify-content-center align-items-center">
-										<span class="flaticon-candle"></span>
-									</div>
-									<div class="text mt-2">
-										<h3>Salt &amp; Aroma</h3>
-										<p>A small river named Duden flows by their place and supplies.</p>
-									</div>
-								</div>
-        			</div>
-        			<div class="col-md-6 d-flex align-items-stretch">
-        				<div class="treatment w-100 text-center ftco-animate border border-bottom-0 p-3 py-4">
-									<div class="icon d-flex justify-content-center align-items-center">
-										<span class="flaticon-spa-1"></span>
-									</div>
-									<div class="text mt-2">
-										<h3>Hydro</h3>
-										<p>A small river named Duden flows.</p>
-									</div>
-								</div>
-        			</div>
-        			<div class="col-md-6 d-flex align-items-stretch">
-        				<div class="treatment w-100 text-center ftco-animate border border-right-0 p-3 py-4">
-									<div class="icon d-flex justify-content-center align-items-center">
-										<span class="flaticon-stone"></span>
-									</div>
-									<div class="text mt-2">
-										<h3>Hot Stone</h3>
-										<p>A small river named Duden flows by their place and supplies.</p>
-									</div>
-								</div>
-        			</div>
-        			<div class="col-md-6 d-flex align-items-stretch">
-        				<div class="treatment w-100 text-center ftco-animate border p-3 py-4">
-									<div class="icon d-flex justify-content-center align-items-center">
-										<span class="flaticon-lotus"></span>
-									</div>
-									<div class="text mt-2">
-										<h3>Aroma</h3>
-										<p>A small river named Duden flows.</p>
-									</div>
-								</div>
-        			</div>
-        		</div>
-        	</div>
-
-
-        	<div class="col-lg-4 d-flex align-items-stretch">
-        		<div id="accordion" class="myaccordion w-100 text-center py-5 px-1 px-md-4">
-        			<div>
-	        			<h3>Prices</h3>
-	        			<p>Far far away, behind the word mountains, far from the countries Vokalia</p>
-        			</div>
-						  <div class="card">
-						    <div class="card-header" id="headingOne">
-						      <h2 class="mb-0">
-						        <button class="d-flex align-items-center justify-content-between btn btn-link" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-						          Spa Therapies
-						          <i class="fa" aria-hidden="true"></i>
-						        </button>
-						      </h2>
-						    </div>
-						    <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordion">
-						      <div class="card-body text-left">
-						      	<ul>
-						      		<li class="d-flex">
-						      			<span>Face Treatments</span>
-						      			<span>40 min.</span>
-						      			<span>$10</span>
-						      		</li>
-						      		<li class="d-flex">
-						      			<span>Nail Treatments</span>
-						      			<span>30 min.</span>
-						      			<span>$20</span>
-						      		</li>
-						      		<li class="d-flex">
-						      			<span>Medical Treatments</span>
-						      			<span>60 min.</span>
-						      			<span>$10</span>
-						      		</li>
-						      		<li class="d-flex">
-						      			<span>Hair Treatments</span>
-						      			<span>30 min.</span>
-						      			<span>$30</span>
-						      		</li>
-						      	</ul>
-						      </div>
-						    </div>
-						  </div>
-
-						  <div class="card">
-						    <div class="card-header" id="headingTwo">
-						      <h2 class="mb-0">
-						        <button class="d-flex align-items-center justify-content-between btn btn-link collapsed" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-						          Massage Therapies
-						          <i class="fa" aria-hidden="true"></i>
-						        </button>
-						      </h2>
-						    </div>
-						    <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
-						      <div class="card-body text-left">
-						      	<ul>
-						      		<li class="d-flex">
-						      			<span>Face Treatments</span>
-						      			<span>40 min.</span>
-						      			<span>$10</span>
-						      		</li>
-						      		<li class="d-flex">
-						      			<span>Nail Treatments</span>
-						      			<span>30 min.</span>
-						      			<span>$20</span>
-						      		</li>
-						      		<li class="d-flex">
-						      			<span>Medical Treatments</span>
-						      			<span>60 min.</span>
-						      			<span>$10</span>
-						      		</li>
-						      		<li class="d-flex">
-						      			<span>Hair Treatments</span>
-						      			<span>30 min.</span>
-						      			<span>$30</span>
-						      		</li>
-						      	</ul>
-						      </div>
-						    </div>
-						  </div>
-						</div>
-        	</div>
-
-
-        	<div class="col-lg-4">
-        		<div class="row no-gutters">
-        			<div class="col-md-6 d-flex align-items-stretch">
-        				<div class="treatment w-100 text-center ftco-animate border border-right-0 border-bottom-0 p-3 py-4">
-									<div class="icon d-flex justify-content-center align-items-center">
-										<span class="flaticon-beauty-treatment"></span>
-									</div>
-									<div class="text mt-2">
-										<h3>Relaxation</h3>
-										<p>A small river named Duden flows by their place and supplies.</p>
-									</div>
-								</div>
-        			</div>
-        			<div class="col-md-6 d-flex align-items-stretch">
-        				<div class="treatment w-100 text-center ftco-animate border border-bottom-0 p-3 py-4">
-									<div class="icon d-flex justify-content-center align-items-center">
-										<span class="flaticon-relax"></span>
-									</div>
-									<div class="text mt-2">
-										<h3>Athlete</h3>
-										<p>A small river named Duden flows.</p>
-									</div>
-								</div>
-        			</div>
-        			<div class="col-md-6 d-flex align-items-stretch">
-        				<div class="treatment w-100 text-center ftco-animate border border-right-0 p-3 py-4">
-									<div class="icon d-flex justify-content-center align-items-center">
-										<span class="flaticon-massage"></span>
-									</div>
-									<div class="text mt-2">
-										<h3>Thai</h3>
-										<p>A small river named Duden flows by their place and supplies.</p>
-									</div>
-								</div>
-        			</div>
-        			<div class="col-md-6 d-flex align-items-stretch">
-        				<div class="treatment w-100 text-center ftco-animate border p-3 py-4">
-									<div class="icon d-flex justify-content-center align-items-center">
-										<span class="flaticon-rose"></span>
-									</div>
-									<div class="text mt-2">
-										<h3>Rose</h3>
-										<p>A small river named Duden flows.</p>
-									</div>
-								</div>
-        			</div>
-        		</div>
-        	</div>
-        </div>
-	  	</div>
-	  </section> -->
-
 
     <section class="ftco-section bg-light">
       <div class="container-fluid">
@@ -476,69 +280,6 @@
             </div>
         </div>
     </div>
-        <!-- <div class="row">
-	        <div class="col-md-4 ftco-animate">
-	          <div class="block-7">
-	            <div class="text-center">
-	            <h2 class="heading">Year Card</h2>
-	            <span class="price"><sup>$</sup> <span class="number">449</span></span>
-	            <span class="excerpt d-block">For 1 Year</span>
-	            
-	            <h3 class="heading-2 my-4">Enjoy All The Features</h3>
-	            
-	            <ul class="pricing-text mb-5">
-	              <li>Face Treatments</li>
-	              <li>Nail Treatments</li>
-	              <li>Medical Treatments</li>
-	              <li>Hair Removal</li>
-	            </ul>
-
-	            <a href="#" class="btn btn-primary d-block px-2 py-4">Get Started</a>
-	            </div>
-	          </div>
-	        </div>
-	        <div class="col-md-4 ftco-animate">
-	          <div class="block-7">
-	            <div class="text-center">
-	            <h2 class="heading">Monthly Card</h2>
-	            <span class="price"><sup>$</sup> <span class="number">200</span></span>
-	            <span class="excerpt d-block">For 1 Month</span>
-	            
-	            <h3 class="heading-2 my-4">Enjoy All The Features</h3>
-	            
-	            <ul class="pricing-text mb-5">
-	              <li>Face Treatments</li>
-	              <li>Nail Treatments</li>
-	              <li>Medical Treatments</li>
-	              <li>Hair Removal</li>
-	            </ul>
-
-	            <a href="#" class="btn btn-primary d-block px-2 py-4">Get Started</a>
-	            </div>
-	          </div>
-	        </div>
-	        <div class="col-md-4 ftco-animate">
-	          <div class="block-7">
-	            <div class="text-center">
-	            <h2 class="heading">Weekly Card</h2>
-	            <span class="price"><sup>$</sup> <span class="number">85</span></span>
-	            <span class="excerpt d-block">For 1 Week</span>
-	            
-	            <h3 class="heading-2 my-4">Enjoy All The Features</h3>
-	            
-	            <ul class="pricing-text mb-5">
-	              <li>Face Treatments</li>
-	              <li>Nail Treatments</li>
-	              <li>Medical Treatments</li>
-	              <li>Hair Removal</li>
-	            </ul>
-
-	            <a href="#" class="btn btn-primary d-block px-2 py-4">Get Started</a>
-	            </div>
-	          </div>
-	        </div>
-	      </div>
-      </div> -->
     </section>
 
 
@@ -734,7 +475,14 @@
         </div>
       </div>
     </section>
-
+	<script src="views/js/jquery.min.js"></script>
+	<script>	
+    $(document).ready(function(){
+        $(".nav-item").removeClass("active");
+        $("#inicio").addClass("active");
+      
+    });
+  </script>
 	<?php include 'footer.php'; ?>
 
    
