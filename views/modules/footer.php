@@ -13,7 +13,7 @@
           </div>
           <div class="col-md">
             <div class="ftco-footer-widget mb-4 ml-md-4">
-              <h2 class="ftco-heading-2">Popular Links</h2>
+              <h2 class="ftco-heading-2">Enlaces populares</h2>
               <ul class="list-unstyled">
                 <li><a href="#">Manicure</a></li>
                 <li><a href="#">Pedicure</a></li>
@@ -24,7 +24,7 @@
           </div>
           <div class="col-md">
             <div class="ftco-footer-widget mb-4">
-              <h2 class="ftco-heading-2">Quick Links</h2>
+              <h2 class="ftco-heading-2">Enlaces rapidos</h2>
               <ul class="list-unstyled">
                 <li><a href="#">Nosotros</a></li>
                 <li><a href="#">Servicios</a></li>
@@ -36,7 +36,7 @@
           </div>
           <div class="col-md">
             <div class="ftco-footer-widget mb-4">
-              <h2 class="ftco-heading-2">Have a Questions?</h2>
+              <h2 class="ftco-heading-2">Preguntas?</h2>
               <div class="block-23 mb-3">
                 <ul>
                   <li><span class="icon icon-map-marker"></span><span class="text">203 Fake St. Mountain View, San Francisco, California, USA</span></li>
