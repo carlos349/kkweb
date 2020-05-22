@@ -16,7 +16,7 @@
 				<div class="row justify-content-end">
 					<div class="col-md-6">
 						<div class="heading-section ftco-animate">
-	            <h2 class="mb-4">K & K Pretty Nails</h2>
+	            <h2 class="mb-4" style="font-family: 'Prata', serif;">K & K Pretty Nails</h2>
 	          </div>
 	          <p class="ftco-animate">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean.</p>
 	          <ul class="mt-5 do-list">

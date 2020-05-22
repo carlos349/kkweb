@@ -25,16 +25,16 @@
 	              <h2 class="h4">Información de contacto</h2>
 	            </div>
 	            <div class="col-md-12 mb-3">
-	              <p><span>Direción:</span> 198 West 21th Street, Suite 721 New York NY 10016</p>
+	              <p><span>Direción:</span> Av. Pedro de Valdivia 3474 Caracol Ñuñoa, Local 53-B Ñuñoa, Chile</p>
 	            </div>
 	            <div class="col-md-12 mb-3">
-	              <p><span>Telefono:</span> <a href="tel://1234567920">+ 1235 2355 98</a></p>
+	              <p><span>Telefono:</span> <a href="tel://1234567920">+56 972 628 949</a></p>
 	            </div>
 	            <div class="col-md-12 mb-3">
-	              <p><span>Correo:</span> <a href="mailto:info@yoursite.com">info@yoursite.com</a></p>
+	              <p><span>Correo:</span> <a href="mailto:info@yoursite.com">kkprettynails@gmail.com</a></p>
 	            </div>
 	            <div class="col-md-12 mb-3">
-	              <p><span>Instagram:</span> <a href="#">K&KPrettynails</a></p>
+	              <p><span>Instagram:</span> <a href="#">kkprettynails</a></p>
 	            </div>
 						</div>
 					</div>
