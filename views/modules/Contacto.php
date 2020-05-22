@@ -22,7 +22,7 @@
 					<div class="col-md-4 contact-info ftco-animate bg-light p-4">
 						<div class="row">
 							<div class="col-md-12 mb-4">
-	              <h2 class="h4">Información de contacto</h2>
+	              <h2 class="h4" style="font-size: 30px;">Información de contacto</h2>
 	            </div>
 	            <div class="col-md-12 mb-3">
 	              <p><span>Direción:</span> Av. Pedro de Valdivia 3474 Caracol Ñuñoa, Local 53-B Ñuñoa, Chile</p>
