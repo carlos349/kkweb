@@ -6,12 +6,12 @@
 	      </button>
 	      <div class="collapse navbar-collapse" id="ftco-nav">
 	        <ul class="navbar-nav ml-auto">
-	          <li id="inicio" class="nav-item"><a href="inicio" class="nav-link">Inicio</a></li>
-	          <li id="nosotros" class="nav-item"><a href="Nosotros" class="nav-link">Nosotros</a></li>
-	          <li id="servicios" class="nav-item"><a href="servicios" class="nav-link">Servicios</a></li>
-	          <li id="especialistas" class="nav-item"><a href="Especialistas" class="nav-link">Especialistas</a></li>
-			  <li id="galeria" class="nav-item"><a href="Galeria" class="nav-link">Galeria</a></li>
-	          <li id="contacto" class="nav-item"><a href="Contacto" class="nav-link">Contacto</a></li>
+	          <li id="inicio" class="nav-item"><a href="inicio" class="nav-link"> <b>Inicio</b> </a></li>
+	          <li id="nosotros" class="nav-item"><a href="Nosotros" class="nav-link"> <b>Nosotros</b></a></li>
+	          <li id="servicios" class="nav-item"><a href="servicios" class="nav-link"> <b>Servicios</b></a></li>
+	          <!-- <li id="especialistas" class="nav-item"><a href="Especialistas" class="nav-link">Especialistas</a></li> -->
+			  <li id="galeria" class="nav-item"><a href="Galeria" class="nav-link"> <b>Galeria</b></a></li>
+	          <li id="contacto" class="nav-item"><a href="Contacto" class="nav-link"> <b>Contacto</b></a></li>
 	        </ul>
 	      </div>
 		  </div>

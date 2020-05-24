@@ -8138,7 +8138,7 @@ body {
   font-size: 18px;
   line-height: 1.8;
   font-weight: 600;
-  color: #a6a6a6; }
+  color: black; }
   body.menu-show {
     overflow: hidden;
     position: fixed;
@@ -8152,7 +8152,7 @@ a {
   -webkit-transition: .3s all ease;
   -o-transition: .3s all ease;
   transition: .3s all ease;
-  color: #d9bf77; }
+  color: black; }
   a:hover, a:active, a:focus {
     color: #d9bf77;
     outline: none !important;
@@ -8162,7 +8162,7 @@ h1, h2, h3, h4, h5,
 .h1, .h2, .h3, .h4, .h5 {
   line-height: 1.4;
   color: #000;
-  font-weight: 400; }
+  font-weight: 600; }
 
 .text-primary {
   color: #d9bf77 !important; }
@@ -8198,7 +8198,7 @@ h1, h2, h3, h4, h5,
     .ftco-navbar-light .navbar-nav {
       padding-bottom: 10px; } }
   .ftco-navbar-light .navbar-nav > .nav-item > .nav-link {
-    font-size: 12px;
+    font-size: 17px;
     padding-top: 1.5rem;
     padding-bottom: 1.5rem;
     padding-left: 20px;

@@ -116,7 +116,7 @@
 			</div>
 		</section>
     
-    <section class="ftco-section ftco-section-services bg-light">
+    <section class="ftco-section ftco-section-services bg-light pb-0">
     	<div class="container-fluid px-md-5">
     		<div class="row">
     			<div class="col-md-6 col-lg-3">
@@ -169,7 +169,7 @@
 
     <section class="ftco-section bg-light">
       <div class="container-fluid">
-        <div class="row justify-content-center mb-5 pb-3">
+        <div class="row justify-content-center mb-0 pb-0">
           <div class="col-md-7 heading-section ftco-animate text-center">
             <h2 class="mb-1">Gif Cards</h2>
           </div>
