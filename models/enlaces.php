@@ -10,7 +10,8 @@ class EnlacesModels{
 			$enlaces == "Galeria" ||
 			$enlaces == "Especialistas" ||
 			$enlaces == "servicios" ||
-			$enlaces == "Disenos"){
+			$enlaces == "Disenos" ||
+			$enlaces == "Cita"){
 
 			$module = "views/modules/".$enlaces.".php";
 
