@@ -39,13 +39,6 @@
                 </a>
             </div>
             <div class="col-md-3 ftco-animate">
-                <a href="views/images/g4.jpeg" class="gallery image-popup img d-flex align-items-center" style="background-image: url(views/images/g4.jpeg);">
-                    <div class="icon mb-4 d-flex align-items-center justify-content-center">
-                    <span class="icon-plus"></span>
-                </div>
-                </a>
-            </div>
-            <div class="col-md-3 ftco-animate">
                 <a href="views/images/g5.jpeg" class="gallery image-popup img d-flex align-items-center" style="background-image: url(views/images/g5.jpeg);">
                     <div class="icon mb-4 d-flex align-items-center justify-content-center">
                     <span class="icon-plus"></span>
@@ -131,20 +124,6 @@
             </div>
             <div class="col-md-3 ftco-animate">
                 <a href="views/images/g17.jpeg" class="gallery image-popup img d-flex align-items-center" style="background-image: url(views/images/g17.jpeg);">
-                    <div class="icon mb-4 d-flex align-items-center justify-content-center">
-                    <span class="icon-plus"></span>
-                </div>
-                </a>
-            </div>
-            <div class="col-md-3 ftco-animate">
-                <a href="views/images/g18.jpeg" class="gallery image-popup img d-flex align-items-center" style="background-image: url(views/images/g18.jpeg);">
-                    <div class="icon mb-4 d-flex align-items-center justify-content-center">
-                    <span class="icon-plus"></span>
-                </div>
-                </a>
-            </div>
-            <div class="col-md-3 ftco-animate">
-                <a href="views/images/g19.jpeg" class="gallery image-popup img d-flex align-items-center" style="background-image: url(views/images/g19.jpeg);">
                     <div class="icon mb-4 d-flex align-items-center justify-content-center">
                     <span class="icon-plus"></span>
                 </div>
