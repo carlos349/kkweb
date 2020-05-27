@@ -11,6 +11,7 @@ class EnlacesModels{
 			$enlaces == "Especialistas" ||
 			$enlaces == "servicios" ||
 			$enlaces == "Disenos" ||
+			$enlaces == "Ingreso" ||
 			$enlaces == "Cita"){
 
 			$module = "views/modules/".$enlaces.".php";

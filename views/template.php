@@ -49,7 +49,20 @@
   <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBVWaKrjvy3MaE7SQ74_uJiULgl1JY0H2s&sensor=false"></script>
   <script src="views/js/google-map.js"></script>
   <script src="views/js/main.js"></script>
-  
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.19.2/axios.min.js"></script>
+  <script>
+    $(document).ready(() => {
+      $('.system-login').on('click', () => {
+        fetch('https://jsonplaceholder.typicode.com/todos/1')
+        .then(res => {
+          console.log(res)
+        })
+        .catch(err => {
+          console.log(err)
+        })
+      })
+    });
+  </script>
 </body>
 
 </html>
