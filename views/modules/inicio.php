@@ -166,7 +166,6 @@
 				</div>
     	</div>
     </section>
-
     <section class="ftco-section bg-light">
       <div class="container-fluid">
         <div class="row justify-content-center mb-0 pb-0">
@@ -174,112 +173,49 @@
             <h2 class="mb-1">Gif Cards</h2>
           </div>
 		</div>
-		<div class="container-fluid gifCard">
-        <div  class=" col-lg-4 cardGif">
-            <div class="face face1">
-                <div class="content">
-                    <div style="background-image: url('views/images/1.png');background-color: transparent !important; background-size: cover;" class="icon">
-                        <i class="gifI" aria-hidden="true"> </i>
-                    </div>
-                </div>
-            </div>
-            <div class="face face2">
-                <div class="content">
-                    <h1>
-                        <a class="gifBut" href="https://www.linkedin.com/in/adamdipinto/" target="_blank">Regalar</a>
-                    </h1>
-                    <h2 class="text-center">$15.000</h2>
-                </div>
-            </div>
-        </div>
-        <div  class=" col-lg-4 cardGif">
-            <div class="face face1">
-                <div class="content">
-                    <div style="background-image: url('views/images/2.png');background-color: transparent !important; background-size: cover;" class="icon">
-                        <i class="gifI" aria-hidden="true"> </i>
-                    </div>
-                </div>
-            </div>
-            <div class="face face2">
-                <div class="content">
-                    <h1>
-                        <a class="gifBut" href="https://www.linkedin.com/in/adamdipinto/" target="_blank">Regalar</a>
-                    </h1>
-                    <h2 class="text-center">$12.000</h2>
-                </div>
-            </div>
-		</div>
-		<div  class=" col-lg-4 cardGif">
-            <div class="face face1">
-                <div class="content">
-                    <div style="background-image: url('views/images/3.png');background-color: transparent !important; background-size: cover;" class="icon">
-                        <i class="gifI" aria-hidden="true"> </i>
-                    </div>
-                </div>
-            </div>
-            <div class="face face2">
-                <div class="content">
-                    <h1>
-                        <a class="gifBut" href="https://www.linkedin.com/in/adamdipinto/" target="_blank">Regalar</a>
-                    </h1>
-                    <h2 class="text-center"> $27.000<h2p>
-                </div>
-            </div>
-        </div>
-	</div>
-	<div class="container-fluid gifCard">
-        <div  class=" col-lg-4 cardGif">
-            <div class="face face1">
-                <div class="content">
-                    <div style="background-image: url('views/images/4.png');background-color: transparent !important; background-size: cover;" class="icon">
-                        <i class="gifI" aria-hidden="true"> </i>
-                    </div>
-                </div>
-            </div>
-            <div class="face face2">
-                <div class="content">
-                    <h1>
-                        <a class="gifBut" href="https://www.linkedin.com/in/adamdipinto/" target="_blank">Regalar</a>
-                    </h1>
-                    <h2 class="text-center"> $26.500<h2p>
-                </div>
-            </div>
-        </div>
-        <div  class=" col-lg-4 cardGif">
-            <div class="face face1">
-                <div class="content">
-                    <div style="background-image: url('views/images/5.png');background-color: transparent !important; background-size: cover;" class="icon">
-                        <i class="gifI" aria-hidden="true"> </i>
-                    </div>
-                </div>
-            </div>
-            <div class="face face2">
-                <div class="content">
-                    <h1>
-                        <a class="gifBut" href="https://www.linkedin.com/in/adamdipinto/" target="_blank">Regalar</a>
-                    </h1>
-                    <h2 class="text-center">$15.000</h2>
-                </div>
-            </div>
-		</div>
-		<div  class=" col-lg-4 cardGif">
-            <div class="face face1">
-                <div class="content">
-                    <div style="background-image: url('views/images/6.png');background-color: transparent !important; background-size: cover;" class="icon">
-                        <i class="gifI" aria-hidden="true"> </i>
-                    </div>
-                </div>
-            </div>
-            <div class="face face2">
-                <div class="content">
-                    <h1>
-                        <a class="gifBut" href="https://www.linkedin.com/in/adamdipinto/" target="_blank">Regalar</a>
-                    </h1>
-                    <h2 class="text-center">$13.000</h2>
-                </div>
-            </div>
-        </div>
-    </div>
+		<main class="page-content">
+			<div class="gifCard">
+			  <div class="gifContent">
+				
+				
+				<button class="gifBut">Regalar</button>
+				<p style="font-size: 35px;" class="copy">$15.000</p>
+			  </div>
+			</div>
+			<div class="gifCard">
+			  <div class="gifContent">
+				<button class="gifBut">Regalar</button>
+				<p style="font-size: 35px;" class="copy">$12.000</p>
+			  </div>
+			</div>
+			<div class="gifCard">
+			  <div class="gifContent">
+				
+				<button class="gifBut">Regalar</button>
+				<p style="font-size: 35px;" class="copy">$27.000</p>
+			  </div>
+			</div>
+			<div class="gifCard">
+			  <div class="gifContent">
+				<button class="gifBut">Regalar</button>
+				<p style="font-size: 35px;" class="copy">$26.500</p>
+			  </div>
+			</div>
+			<div class="gifCard">
+				<div class="gifContent">
+				 
+				  <button class="gifBut">Regalar</button>
+				  <p style="font-size: 35px;" class="copy">$15.000</p>
+				</div>
+			  </div>
+			  <div class="gifCard">
+				<div class="gifContent">
+				  
+				  <button class="gifBut">Regalar</button>
+				  <p style="font-size: 35px;" class="copy">$13.000</p>
+				</div>
+			  </div>
+		  </main>
     </section>
 
 
