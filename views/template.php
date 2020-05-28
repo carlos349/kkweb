@@ -51,6 +51,7 @@
   <script src="views/js/main.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.19.2/axios.min.js"></script>
   <script>
+    const endpoint = 'localhost:4200'
     $(document).ready(() => {
       $('.system-login').on('click', () => {
         fetch('https://jsonplaceholder.typicode.com/todos/1')
@@ -61,6 +62,7 @@
           console.log(err)
         })
       })
+      
     });
   </script>
 </body>

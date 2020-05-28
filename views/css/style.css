@@ -9915,3 +9915,21 @@ figure {
         columns: 1;
     }
 }
+
+/* styles dates section */
+
+.style-collapse-dates{
+  background-color: transparent;
+  border: solid 1px #605b56;
+  font-size: 1rem;
+}
+.style-dates-cards .card-header{
+  background-color: transparent;
+  border:none;
+}
+.style-dates-cards{
+  border:none;  
+}
+.style-dates-cards .card-body{
+  border:none;
+}
