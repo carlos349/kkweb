@@ -13,6 +13,7 @@
 			  <li id="galery" class="nav-item"><a href="Galeria" class="nav-link"> <b>Galeria</b></a></li>
 	          <li id="contacto" class="nav-item"><a href="Contacto" class="nav-link"> <b>Contacto</b></a></li>
 			  <li id="contacto" class="nav-item"><a href="Cita" class="nav-link">Agendar</a></li>
+			  <li id="contacto" class="nav-item"><a href="Ingreso" class="nav-link">Ingresar</a></li>
 	        </ul>
 	      </div>
 		  </div>

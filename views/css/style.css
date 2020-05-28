@@ -8200,7 +8200,7 @@ h1, h2, h3, h4, h5,
     .ftco-navbar-light .navbar-nav {
       padding-bottom: 10px; } }
   .ftco-navbar-light .navbar-nav > .nav-item > .nav-link {
-    font-size: 17px;
+    font-size: 12px;
     padding-top: 1.5rem;
     padding-bottom: 1.5rem;
     padding-left: 20px;
@@ -9711,6 +9711,20 @@ textarea.form-control {
     height: 120px;
     border-radius: 50%;
   }
+  .Card-login{
+    background-color: #fff;
+    width: 35%;
+    padding: 20px 40px;
+  }
+  .Card-login a{ 
+    cursor: pointer;
+    font-size:14px !important;
+    font-weight: 600;
+  }
+  .Card-login a:hover{ 
+    color:#a9e5e5;
+  }
+  
 
   #galeria {
     margin: 1rem auto;
@@ -9784,6 +9798,23 @@ figure {
     }
 }
 
+/* styles dates section */
+
+.style-collapse-dates{
+  background-color: transparent;
+  border: solid 1px #605b56;
+  font-size: 1rem;
+}
+.style-dates-cards .card-header{
+  background-color: transparent;
+  border:none;
+}
+.style-dates-cards{
+  border:none;  
+}
+.style-dates-cards .card-body{
+  border:none;
+}
 
 .page-content {
   display: grid;

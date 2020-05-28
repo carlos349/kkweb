@@ -9614,3 +9614,10 @@ textarea.form-control {
   100% {
     stroke-dasharray: 89, 200;
     stroke-dashoffset: -136px; } }
+
+
+.Card-login{
+  background-color: #fff;
+  width: 20%;
+  height: 40vh;
+}
