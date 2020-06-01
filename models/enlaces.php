@@ -9,9 +9,11 @@ class EnlacesModels{
 			$enlaces == "Contacto" ||
 			$enlaces == "Galeria" ||
 			$enlaces == "Especialistas" ||
+			$enlaces == "cerrarSesion" ||
 			$enlaces == "servicios" ||
 			$enlaces == "Disenos" ||
-			$enlaces == "Ingreso" ||){
+			$enlaces == "Registro" ||
+			$enlaces == "Ingreso"  ) {
 
 			$module = "views/modules/".$enlaces.".php";
 

@@ -1,6 +1,6 @@
 <nav class="navbar navbar-expand-lg navbar-dark ftco_navbar bg-dark ftco-navbar-light" id="ftco-navbar">
 	    <div class="container">
-	      <a style="color:#605B56;margin-right:150px;font-family: 'Prata', serif;" class="navbar-brand" href="index.html"><img style="width:30%" src="views/images/logokk.png" alt="">K&K Pretty Nails</a>
+	      <a style="color:#605B56;margin-right:150px;font-family: 'Prata', serif;" class="navbar-brand" href="inicio"><img style="width:30%" src="views/images/logokk.png" alt="">K&K Pretty Nails</a>
 	      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
 	        <span class="oi oi-menu"></span> Menu
 	      </button>
@@ -13,7 +13,23 @@
 			  <li id="galery" class="nav-item"><a href="Galeria" class="nav-link"> <b>Galeria</b></a></li>
 	          <li id="contacto" class="nav-item"><a href="Contacto" class="nav-link"> <b>Contacto</b></a></li>
 			  <li id="contacto" class="nav-item"><a href="Cita" class="nav-link">Agendar</a></li>
-			  <li id="contacto" class="nav-item"><a href="Ingreso" class="nav-link">Ingresar</a></li>
+			  
+			  <li>
+			  <?php 
+			  if (isset($_SESSION['correo'])) {
+				  
+				  ?>
+				  <li id="contacto" class="nav-item"><a href="cerrarSesion" class="nav-link">Cerrar sesión</a></li>
+				  <li id="contacto"  class="nav-item"><a style="font-size:13px !important;font-weight:600" href="cerrarSesion" class="nav-link"><?php echo $_SESSION['nombre']." ".$_SESSION['apellido']?></a></li>
+				  <?php
+				  
+			  }
+			  else{
+				  ?><li id="contacto" class="nav-item"><a href="Ingreso" class="nav-link">Ingresar</a></li><?php
+			  } 
+			  ?>
+			  </li>
+			  
 	        </ul>
 	      </div>
 		  </div>

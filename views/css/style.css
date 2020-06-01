@@ -10022,3 +10022,8 @@ figure {
             transition-duration: 0s;
   }
 }
+input::placeholder {
+  color:rgba(0, 0, 0, 0,0.5) !important;
+  font-size: 15px;
+  font-weight: 600;
+ }
