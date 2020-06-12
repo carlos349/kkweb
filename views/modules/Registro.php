@@ -33,11 +33,22 @@
                     <div class="form-group">
                         <input type="text" class="form-control Mail-login" name="correo" placeholder="Correo">
                     </div>
+
+                    
                     <div class="form-group">
-                        <input type="text" class="form-control Mail-login" name="pass" placeholder="Contraseña">
+                        <input type="text" class="form-control Mail-login" name="correo" placeholder="Instagram (Opcional)">
+                    </div>
+
+                    
+                    <div class="form-group">
+                        <input type="text" class="form-control Mail-login" name="correo" placeholder="Codigo Referido (Opcional)">
+                    </div>
+
+                    <div class="form-group">
+                        <input type="password" class="form-control Mail-login" name="pass" placeholder="Contraseña">
                     </div>
                     <div class="form-group">
-                        <input type="text" class="form-control Mail-login" name="rPass" placeholder="Repetir contraseña">
+                        <input type="password" class="form-control Mail-login" name="rPass" placeholder="Repetir contraseña">
                     </div>
                     <div class="form-group align-items-rigth" style="display: inline-block" >
                         <input type="submit" value="Registrar" class="btn btn-primary py-2 px-4 system-login">

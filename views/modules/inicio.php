@@ -1,4 +1,5 @@
 <?php include 'cabecera.php'; ?>
+
 <section class="hero-wrap js-fullheight" style="background-image: url('views/images/bg_1.jpg');" data-stellar-background-ratio="0.5">
       <div class="overlay"></div>
       <div class="container">
@@ -10,8 +11,8 @@
             <h1 style="color:#605B56">K&KPRETTYNAILS.COM</h1>
             <div class="row justify-content-center">
             <p>
-            	<a href="Contacto" class="btn btn-primary p-3 px-5 py-4 mr-md-2">Agendar</a>
-            	<a href="Galeria" class="btn btn-outline-primary p-3 px-5 py-4 ml-md-2">Galeria</a>
+            	<a href="Contacto" style="font-size: 1em;" class="btn btn-primary p-3 px-5 py-4 mr-md-2">Agendar</a>
+            	<a href="Galeria" style="font-size: 1em;" class="btn btn-outline-primary p-3 px-5 py-4 ml-md-2">Galeria</a>
             </p>
           </div>
         </div>
@@ -29,11 +30,11 @@
 		            <div class="block-18 text-center">
 		              <div class="text">
 						  <strong class="number" data-number="1">0</strong>
-						  <strong >Año</strong>
+						  <strong style="font-weight: 300;" >Año</strong>
 						  <strong class="number" data-number="3">0</strong>
-						  <strong >Meses</strong>
+						  <strong style="font-weight: 300;">Meses</strong>
 						  <strong class="number" data-number="10">10</strong>
-						  <strong >Dias</strong>
+						  <strong style="font-weight: 300;">Dias</strong>
 		              	<span>Tiempo de servicio</span>
 		              </div>
 		            </div>
@@ -64,9 +65,13 @@
 				<div class="row justify-content-end">
 					<div class="col-md-6">
 						<div class="heading-section ftco-animate">
-	            <h2 style="font-family: 'Prata', serif;" class="mb-4">K & K Pretty Nails</h2>
+	            <h2 style="font-family: 'Prata', serif;" class="mb-4">K&K Pretty Nails</h2>
 	          </div>
-	          <p class="ftco-animate">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean.</p>
+	          <p style="text-align: justify; color: red;" class="ftco-animate">Lo que comenzó como un hobby se fue convirtiendo en una profesión para la fundadora Katriel Capacho por lo que el 24 de abril de 2019 decidimos llevar esto al siguiente nivel creando un local en el cual nos dedicamos no sólo al embellecimiento de las uñas sino al cuidado de las mismas. <br><br>
+				Desde el principio nuestra prioridad que tu visita a nuestro establecimiento es que tengas una experiencia agradable y única, con atención personalizada y asesorías en el bienestar de tus uñas, ya que más allá de la belleza que consigas en el mantenimiento mensual, sea fundamental el cuidado para que se conserven sanas y fuertes. <br><br>
+				Nuestro estándar de calidad lo medimos en base al resultado del servicio, donde la calidad del trabajo y atención sea lo más importante. <br><br>
+				Cuidamos cada detalle minuciosamente desde la atención al cliente hasta los servicios para que la experiencia sea inolvidable para cada una de ustedes. <br><br>
+				Es por esto y muchas razones más que en K&K Pretty Nails hacemos nuestro trabajo con cariño y esfuerzo porque al final del día sigue siendo un hobby para nosotros con la diferencia que buscamos cada día profesionalizar más nuestros servicios para garantizar que cada minuto en nuestro local valga la pena..</p>
 	          <ul class="mt-5 do-list">
 	          	<li class="ftco-animate"><a href="#"><span class="ion-ios-checkmark-circle mr-3"></span>Spa &amp; Massage boosts brain power</a></li>
 	          	<li class="ftco-animate"><a href="#"><span class="ion-ios-checkmark-circle mr-3"></span>Spa &amp; Massage helps you to breathe better</a></li>
@@ -78,7 +83,48 @@
 				</div>
 			</div>
 		</section>
-		
+		<section class="ftco-section ftco-section-services bg-light pb-3 pt-3">
+			<div class="container-fluid px-md-5 pb-5 pt-5">
+				<div class="row">
+					<div  class="col-md-6 col-lg-3">
+							<div style="background-image: url('views/images/manicurre.jpeg');background-size: cover;border-radius: 5px;height: 230px" class="services text-center ftco-animate">
+								
+								<div style="background-color: #ffffff80;border-radius: 5px;" class="text mt-3 p-5">
+									<strong style="font-size: 30px;">Manicure</strong>
+									<p>Para el cuidado y salud de tus manos. <br><br></p>
+								</div>
+							</div>
+						</div>
+						<div  class="col-md-6 col-lg-3">
+							<div style="background-image: url('views/images/pedicure.jpeg');background-size: cover;border-radius: 5px;height: 230px" class="services text-center ftco-animate">
+								
+								<div style="background-color: #ffffff80;border-radius: 5px;" class="text mt-3 p-5">
+									<strong style="font-size: 30px;">Pedicure</strong>
+									<p>Para el embellecimiento de tus pies. <br><br></p>
+								</div>
+							</div>
+						</div>
+						<div  class="col-md-6 col-lg-3">
+							<div style="background-image: url('views/images/esmalte.jpeg');background-size: cover;border-radius: 5px;height: 230px" class="services text-center ftco-animate">
+								
+								<div style="background-color: #ffffff80;border-radius: 5px;" class="text mt-3 p-5">
+									<strong style="font-size: 30px;">Esculpido gel</strong>
+									<p>Además de embellecer tus manos, es un tratamiento para evitar onicofagia.</p>
+								</div>
+							</div>
+						</div>
+						<div  class="col-md-6 col-lg-3">
+							<div style="background-image: url('views/images/ibx.jpeg');background-size: cover;border-radius: 5px;height: 230px;background-position-y: center;" class="services text-center ftco-animate">
+								
+								<div style="background-color: #ffffff80;border-radius: 5px;" class="text mt-3 p-5">
+									<strong style="font-size: 30px;">Tratamiento IBX</strong>
+									<p>Tratamiento para endurecer tus uñas. <br><br></p>
+								</div>
+							</div>
+						</div>
+					</div>
+			</div>
+		</section>
 		<section class="ftco-section ftco-no-pt ftco-no-pb">
 			<div class="container">
 				<div class="row no-gutters">
@@ -116,106 +162,16 @@
 			</div>
 		</section>
     
-    <section class="ftco-section ftco-section-services bg-light pb-0">
-    	<div class="container-fluid px-md-5">
-    		<div class="row">
-    			<div class="col-md-6 col-lg-3">
-						<div class="services text-center ftco-animate">
-							<div class="icon d-flex justify-content-center align-items-center">
-								<img class="categoryImg" src="views/images/manicure.png" alt="">
-							</div>
-							<div class="text mt-3">
-								<strong style="font-size: 30px;">Manicure</strong>
-								<p>Para el cuidado y salud de tus manos.</p>
-							</div>
-						</div>
-					</div>
-					<div class="col-md-6 col-lg-3">
-						<div class="services text-center ftco-animate">
-							<div class="icon d-flex justify-content-center align-items-center">
-								<img class="categoryImg" src="views/images/pedicure.png" alt="">
-							</div>
-							<div class="text mt-3">
-								<strong style="font-size: 30px;">Pedicure</strong>
-								<p>Para el embellecimiento de tus pies.</p>
-							</div>
-						</div>
-					</div>
-					<div class="col-md-6 col-lg-3">
-						<div class="services text-center ftco-animate">
-							<div class="icon d-flex justify-content-center align-items-center">
-								<img class="categoryImg" src="views/images/esculpidos.png" alt="">
-							</div>
-							<div class="text mt-3">
-								<strong style="font-size: 30px;">Esculpido gel</strong>
-								<p>Además de embellecer tus manos, es un tratamiento para evitar onicofagia.</p>
-							</div>
-						</div>
-					</div>
-					<div class="col-md-6 col-lg-3">
-						<div class="services text-center ftco-animate">
-							<div class="icon d-flex justify-content-center align-items-center">
-								<img class="categoryImg" src="views/images/ibx.png" alt="">
-							</div>
-							<div class="text mt-3">
-								<strong style="font-size: 30px;">Tratamiento IBX</strong>
-								<p>Tratamiento para endurecer tus uñas.</p>
-							</div>
-						</div>
-					</div>
-				</div>
-    	</div>
-    </section>
+    
     <section class="ftco-section bg-light">
       <div class="container-fluid">
         <div class="row justify-content-center mb-0 pb-0">
           <div class="col-md-7 heading-section ftco-animate text-center">
-            <h2 class="mb-1">Gif Cards</h2>
+            <h2 class="mb-1">Gift Cards</h2>
           </div>
 		</div>
-		<main class="page-content">
-			<div class="gifCard">
-			  <div class="gifContent">
-				
-				
-				<button class="gifBut">Regalar</button>
-				<p style="font-size: 35px;" class="copy">$15.000</p>
-			  </div>
-			</div>
-			<div class="gifCard">
-			  <div class="gifContent">
-				<button class="gifBut">Regalar</button>
-				<p style="font-size: 35px;" class="copy">$12.000</p>
-			  </div>
-			</div>
-			<div class="gifCard">
-			  <div class="gifContent">
-				
-				<button class="gifBut">Regalar</button>
-				<p style="font-size: 35px;" class="copy">$27.000</p>
-			  </div>
-			</div>
-			<div class="gifCard">
-			  <div class="gifContent">
-				<button class="gifBut">Regalar</button>
-				<p style="font-size: 35px;" class="copy">$26.500</p>
-			  </div>
-			</div>
-			<div class="gifCard">
-				<div class="gifContent">
-				 
-				  <button class="gifBut">Regalar</button>
-				  <p style="font-size: 35px;" class="copy">$15.000</p>
-				</div>
-			  </div>
-			  <div class="gifCard">
-				<div class="gifContent">
-				  
-				  <button class="gifBut">Regalar</button>
-				  <p style="font-size: 35px;" class="copy">$13.000</p>
-				</div>
-			  </div>
-		  </main>
+		<?php include 'gifcard.php'; ?>
+		
     </section>
 
 
@@ -250,7 +206,7 @@
                   </div>
                 </div>
               </div>
-              <div class="item">
+              <!-- <div class="item">
                 <div class="testimony-wrap p-4 pb-5">
                   <div class="text">
                     <div class="line pl-5">
@@ -270,8 +226,8 @@
                     </div>
                   </div>
                 </div>
-              </div>
-              <div class="item">
+              </div> -->
+              <!-- <div class="item">
                 <div class="testimony-wrap p-4 pb-5">
                   <div class="text">
                     <div class="line pl-5">
@@ -291,8 +247,8 @@
                     </div>
                   </div>
                 </div>
-              </div>
-              <div class="item">
+              </div> -->
+              <!-- <div class="item">
                 <div class="testimony-wrap p-4 pb-5">
                   <div class="text">
                     <div class="line pl-5">
@@ -312,7 +268,7 @@
                     </div>
                   </div>
                 </div>
-              </div>
+              </div> -->
               <div class="item">
                 <div class="testimony-wrap p-4 pb-5">
                   <div class="text">

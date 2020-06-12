@@ -12,6 +12,7 @@ class EnlacesModels{
 			$enlaces == "cerrarSesion" ||
 			$enlaces == "servicios" ||
 			$enlaces == "Disenos" ||
+			$enlaces == "panel" ||
 			$enlaces == "Registro" ||
 			$enlaces == "Ingreso"  ) {
 
