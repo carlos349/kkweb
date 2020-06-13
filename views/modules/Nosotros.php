@@ -24,11 +24,11 @@
 				Cuidamos cada detalle minuciosamente desde la atención al cliente hasta los servicios para que la experiencia sea inolvidable para cada una de ustedes. <br><br>
 				Es por esto y muchas razones más que en K&K Pretty Nails hacemos nuestro trabajo con cariño y esfuerzo porque al final del día sigue siendo un hobby para nosotros con la diferencia que buscamos cada día profesionalizar más nuestros servicios para garantizar que cada minuto en nuestro local valga la pena.</p>
 	          <ul class="mt-5 do-list">
-	          	<li class="ftco-animate"><a href="#"><span class="ion-ios-checkmark-circle mr-3"></span>Spa &amp; Massage boosts brain power</a></li>
-	          	<li class="ftco-animate"><a href="#"><span class="ion-ios-checkmark-circle mr-3"></span>Spa &amp; Massage helps you to breathe better</a></li>
-	          	<li class="ftco-animate"><a href="#"><span class="ion-ios-checkmark-circle mr-3"></span>Spa &amp; Massage improves your strength</a></li>
-	          	<li class="ftco-animate"><a href="#"><span class="ion-ios-checkmark-circle mr-3"></span>Spa &amp; Massage helps you to focus</a></li>
-	          	<li class="ftco-animate"><a href="#"><span class="ion-ios-checkmark-circle mr-3"></span>Spa &amp; Massage helps give meaning to your day</a></li>
+				<li class="ftco-animate"><a href="#"><span class="ion-ios-checkmark-circle mr-3"></span>Perfeccionismo</a></li>
+				<li class="ftco-animate"><a href="#"><span class="ion-ios-checkmark-circle mr-3"></span>Empatía</a></li>
+				<li class="ftco-animate"><a href="#"><span class="ion-ios-checkmark-circle mr-3"></span>Amabilidad</a></li>
+				<li class="ftco-animate"><a href="#"><span class="ion-ios-checkmark-circle mr-3"></span>Profesionalismo</a></li>
+				<li class="ftco-animate"><a href="#"><span class="ion-ios-checkmark-circle mr-3"></span>Eficacia</a></li>
 	          </ul>
 					</div>
 				</div>
