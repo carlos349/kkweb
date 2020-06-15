@@ -223,12 +223,8 @@ h6 {
                                         <div class="card-body text-left">
                                             <p style="font-size: 1.5em;" class="card-text">Manicure y pedicure tradicional </p>
                                             
-                                            
-                                            <div class="promotion-price">
-                                                <div class="promotion-price-desc">Now</div>
-                                                <div class="promotion-price-text">$ 15.000</div>                                    
-                                            </div>
-                                        </div>
+                                          </div>
+                                          <p style="text-align: right;padding-right:30px;padding-bottom: 30px;font-size: 1.3em;font-weight: 700;">$ 15.000</p>
                                         <div class="card-footer"><a style="background-color: #605b56;color:white;font-size: 1em;" href="#" class="btn btn-warning">Regalar</a></div>
                                     </div>
                                 </div>
@@ -241,11 +237,9 @@ h6 {
                                         <div class="card-body text-left">
                                             <p style="font-size: 1.5em;" class="card-text">Manicure permanente </p>
                                             
-                                            <div class="promotion-price">
-                                                <div class="promotion-price-desc">Now</div>
-                                                <div class="promotion-price-text">$ 12.000</div>                                    
-                                            </div>
+                                            
                                         </div>
+                                        <p style="text-align: right;padding-right:30px;padding-bottom: 30px;font-size: 1.3em;font-weight: 700;">$ 12.000</p>
                                         <div class="card-footer"><a style="background-color: #605b56;color:white;font-size: 1em;" href="#" class="btn btn-warning">Regalar</a></div>
                                     </div>
                                 </div>
@@ -258,11 +252,9 @@ h6 {
                                         <div class="card-body text-left">
                                             <p style="font-size: 1.5em;" class="card-text">Manicure y pedicure permanente </p>
                                             
-                                            <div class="promotion-price">
-                                                <div class="promotion-price-desc">Now</div>
-                                                <div class="promotion-price-text">$ 27.000</div>                                    
-                                            </div>
+                                           
                                         </div>
+                                        <p style="text-align: right;padding-right:30px;padding-bottom: 30px;font-size: 1.3em;font-weight: 700;">$ 27.000</p>
                                         <div class="card-footer"><a style="background-color: #605b56;color:white;font-size: 1em;" href="#" class="btn btn-warning">Regalar</a></div>
                                     </div>
                                 </div>
@@ -275,11 +267,9 @@ h6 {
                                         <div class="card-body text-left">
                                             <p style="font-size: 1.5em;" class="card-text">Manicure permanente y ondulación de pestañas </p>
                                             
-                                            <div class="promotion-price">
-                                                <div class="promotion-price-desc">Now</div>
-                                                <div class="promotion-price-text">$ 26.500</div>                                    
-                                            </div>
+                                            
                                         </div>
+                                        <p style="text-align: right;padding-right:30px;padding-bottom: 30px;font-size: 1.3em;font-weight: 700;">$ 26.500</p>
                                         <div class="card-footer"><a style="background-color: #605b56;color:white;font-size: 1em;" href="#" class="btn btn-warning">Regalar</a></div>
                                     </div>
                                 </div>
@@ -292,11 +282,9 @@ h6 {
                                             <div class="card-body text-left">
                                                 <p style="font-size: 1.5em;" class="card-text">Ondulación con tinte </p>
                                                 
-                                                <div class="promotion-price">
-                                                    <div class="promotion-price-desc">Now</div>
-                                                    <div class="promotion-price-text">$ 15.000</div>                                    
-                                                </div>
+                                                
                                             </div>
+                                            <p style="text-align: right;padding-right:30px;padding-bottom: 30px;font-size: 1.3em;font-weight: 700;">$ 15.000</p>
                                             <div class="card-footer"><a style="background-color: #605b56;color:white;font-size: 1em;" href="#" class="btn btn-warning">Regalar</a></div>
                                         </div>
                                     </div>
@@ -309,11 +297,9 @@ h6 {
                                             <div class="card-body text-left">
                                                 <p style="font-size: 1.5em;" class="card-text">Ondulación sin tinte </p>
                                                 
-                                                <div class="promotion-price">
-                                                    <div class="promotion-price-desc">Now</div>
-                                                    <div class="promotion-price-text">$ 13.000</div>                                    
-                                                </div>
+                                                
                                             </div>
+                                            <p style="text-align: right;padding-right:30px;padding-bottom: 30px;font-size: 1.3em;font-weight: 700;">$ 13.000</p>
                                             <div class="card-footer"><a style="background-color: #605b56;color:white;font-size: 1em;" href="#" class="btn btn-warning">Regalar</a></div>
                                         </div>
                                     </div>

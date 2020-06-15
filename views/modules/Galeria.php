@@ -15,7 +15,7 @@
     <section style="-webkit-box-shadow: -1px -5px 6px -6px rgba(0,0,0,0.36);
     -moz-box-shadow: -1px -5px 6px -6px rgba(0,0,0,0.36);
     box-shadow: -1px -5px 6px -6px rgba(0,0,0,0.36);" class="ftco-section contact-section">
-    <h1 class="text-center mb-5">Nuestro trabajo</h1>
+    
         <!-- <div class="row container-fluid">
             <div class="col-md-3 ftco-animate">
                 <a href="views/images/g1.jpeg" class="gallery image-popup img d-flex align-items-center" style="background-image: url(views/images/g1.jpeg);">

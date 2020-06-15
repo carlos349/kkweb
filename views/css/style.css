@@ -9758,7 +9758,7 @@ article {
     margin:0 0 20px 0;
     text-align: center;
     max-width: 100%;
-    filter: opacity(70%);
+    
 
     /*Evitamos que se corte al cambiar de columna*/
     break-inside: avoid;
@@ -9954,12 +9954,10 @@ figure {
   letter-spacing: 0.025rem;
   text-transform: uppercase;
   color: white;
-  background-color: black;
+  
   border: none;
 }
-.btn:hover {
-  background-color: #0d0d0d;
-}
+
 .btn:focus {
   outline: 1px dashed yellow;
   outline-offset: 3px;

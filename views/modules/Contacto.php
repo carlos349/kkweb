@@ -19,7 +19,7 @@
         box-shadow: -1px -5px 6px -6px rgba(0,0,0,0.36);" class="ftco-section contact-section">
       <div class="container">
         <div class="row block-9">
-					<div class="col-md-4 contact-info ftco-animate bg-light p-4">
+					<div class="col-md-6 contact-info ftco-animate bg-light p-4">
 						<div class="row">
 							<div class="col-md-12 mb-4">
 	              <h2 class="h4" style="font-size: 30px;">Información de contacto</h2>
@@ -38,7 +38,7 @@
 	            </div>
 						</div>
 					</div>
-					<div class="col-md-1"></div>
+					<!-- <div class="col-md-1"></div> -->
           <div class="col-md-6 ftco-animate">
             <form action="#" class="contact-form">
             	<div class="row">
