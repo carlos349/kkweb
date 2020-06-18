@@ -26,7 +26,7 @@
                         <div class="col-md-12 d-flex align-items-stretch">
                             <div class="treatment w-100 text-center ftco-animate border p-3 py-4">
                                         <div class="icon d-flex justify-content-center align-items-center">
-                                            <img class="categoryImg" src="views/images/manicure.png" alt="">
+                                            <img class="categoryImg" src="views/images/manicurre.jpeg" alt="">
                                         </div>
                                         <div class="text mt-2">
                                             <strong style="font-size: 30px;">Manicure</strong>
@@ -37,7 +37,7 @@
                         <div class="col-md-12 d-flex align-items-stretch">
                             <div class="treatment w-100 text-center ftco-animate border  p-3 py-4">
                                         <div class="icon d-flex justify-content-center align-items-center">
-                                            <img class="categoryImg" src="views/images/esculpidos.png" alt="">
+                                            <img class="categoryImg" src="views/images/esmalte.jpeg" alt="">
                                         </div>
                                         <div class="text mt-2">
                                             <strong style="font-size: 30px;">Esculpidos en gel</strong>
@@ -251,7 +251,7 @@
                         <div class="col-md-12 d-flex align-items-stretch">
                             <div class="treatment w-100 text-center ftco-animate border p-3 py-4">
                                         <div class="icon d-flex justify-content-center align-items-center">
-                                            <img class="categoryImg" src="views/images/pedicure.png" alt="">
+                                            <img class="categoryImg" src="views/images/pedicure.jpeg" alt="">
                                         </div>
                                         <div class="text mt-2">
                                             <strong style="font-size: 30px;">Pedicure</strong>
@@ -262,7 +262,7 @@
                         <div class="col-md-12 d-flex align-items-stretch">
                             <div class="treatment w-100 text-center ftco-animate border p-3 py-4">
                                         <div class="icon d-flex justify-content-center align-items-center">
-                                            <img class="categoryImg" src="views/images/ibx.png" alt="">
+                                            <img class="categoryImg" src="views/images/ibx.jpeg" alt="">
                                         </div>
                                         <div class="text mt-2">
                                             <strong style="font-size: 30px;">Tratamiento IBX</strong>
@@ -277,6 +277,11 @@
       </section>
       <section class="ftco-section ftco-no-pt ftco-no-pb">
         <div class="container">
+            <div class="row justify-content-center mb-0 pb-0">
+                <div class="col-md-7 heading-section ftco-animate text-center">
+                  <h2 style="font-family: 'Prata', serif;" class="mb-1">Promociones</h2>
+                </div>
+              </div>
             <div class="row no-gutters">
                 <div class="col-md-4 d-flex align-items-stretch">
                     <div class="offer-deal text-center px-2 px-lg-5">
@@ -293,7 +298,7 @@
                         <div class="img" style="background-image: url(views/images/offer-deal-2.jpg);"></div>
                         <div class="text mt-4">
                             <h3 class="mb-4" style="font-size: 30px;">Recomendaciones</h3>
-                            <p class="mb-5">Premiamos tu fidelidad y recomendación con un 15% por cada persona que recomiendes en todos los servicios con excepción de los servicios tradicionales.</p>
+                            <p class="mb-5">Premiamos tu fidelidad y recomendación con un 15% por cada persona que recomiendes en todos los servicios con excepción de los servicios tradicionales.</p><br>
                             <p><a href="#" class="btn btn-white px-4 py-3"> "Link de recomendación" </a></p>
                         </div>
                     </div>
@@ -303,7 +308,7 @@
                         <div class="img" style="background-image: url(views/images/offer-deal-3.jpg);"></div>
                         <div class="text mt-4">
                             <h3 class="mb-4" style="font-size: 30px;">Promoción del mes</h3>
-                            <p class="mb-5">"Promocion correspondiente" Lorem ipsum dolor sit amet consectetur adipisicing elit. Non nostrum aut inventore sit magnam laboriosam quia a est modi blanditiis ullam molestias </p>
+                            <p class="mb-5">"Promocion correspondiente" Lorem ipsum dolor sit amet consectetur adipisicing elit. Non nostrum aut inventore sit magnam laboriosam quia a est modi blanditiis ullam molestias </p><br>
                             <p><a href="#" class="btn btn-white px-4 py-3"> E45TY4323SSF4 </a></p>
                         </div>
                     </div>
@@ -316,115 +321,11 @@
         <div class="container-fluid">
           <div class="row justify-content-center mb-5 pb-3">
             <div class="col-md-7 heading-section ftco-animate text-center">
-              <h2 class="mb-1">Gif Cards</h2>
+              <h2 style="font-family: 'Prata', serif;" class="mb-1">Gift Cards</h2>
             </div>
           </div>
-          <div class="container-fluid gifCard">
-          <div  class=" col-lg-4 cardGif">
-              <div class="face face1">
-                  <div class="content">
-                      <div style="background-image: url('views/images/1.png');background-color: transparent !important; background-size: cover;" class="icon">
-                          <i class="gifI" aria-hidden="true"> </i>
-                      </div>
-                  </div>
-              </div>
-              <div class="face face2">
-                  <div class="content">
-                      <h1>
-                          <a class="gifBut" href="https://www.linkedin.com/in/adamdipinto/" target="_blank">Regalar</a>
-                      </h1>
-                      <h2 class="text-center">$15.000</h2>
-                  </div>
-              </div>
-          </div>
-          <div  class=" col-lg-4 cardGif">
-              <div class="face face1">
-                  <div class="content">
-                      <div style="background-image: url('views/images/2.png');background-color: transparent !important; background-size: cover;" class="icon">
-                          <i class="gifI" aria-hidden="true"> </i>
-                      </div>
-                  </div>
-              </div>
-              <div class="face face2">
-                  <div class="content">
-                      <h1>
-                          <a class="gifBut" href="https://www.linkedin.com/in/adamdipinto/" target="_blank">Regalar</a>
-                      </h1>
-                      <h2 class="text-center">$12.000</h2>
-                  </div>
-              </div>
-          </div>
-          <div  class=" col-lg-4 cardGif">
-              <div class="face face1">
-                  <div class="content">
-                      <div style="background-image: url('views/images/3.png');background-color: transparent !important; background-size: cover;" class="icon">
-                          <i class="gifI" aria-hidden="true"> </i>
-                      </div>
-                  </div>
-              </div>
-              <div class="face face2">
-                  <div class="content">
-                      <h1>
-                          <a class="gifBut" href="https://www.linkedin.com/in/adamdipinto/" target="_blank">Regalar</a>
-                      </h1>
-                      <h2 class="text-center"> $27.000<h2p>
-                  </div>
-              </div>
-          </div>
-      </div>
-      <div class="container-fluid gifCard">
-          <div  class=" col-lg-4 cardGif">
-              <div class="face face1">
-                  <div class="content">
-                      <div style="background-image: url('views/images/4.png');background-color: transparent !important; background-size: cover;" class="icon">
-                          <i class="gifI" aria-hidden="true"> </i>
-                      </div>
-                  </div>
-              </div>
-              <div class="face face2">
-                  <div class="content">
-                      <h1>
-                          <a class="gifBut" href="https://www.linkedin.com/in/adamdipinto/" target="_blank">Regalar</a>
-                      </h1>
-                      <h2 class="text-center"> $26.500<h2p>
-                  </div>
-              </div>
-          </div>
-          <div  class=" col-lg-4 cardGif">
-              <div class="face face1">
-                  <div class="content">
-                      <div style="background-image: url('views/images/5.png');background-color: transparent !important; background-size: cover;" class="icon">
-                          <i class="gifI" aria-hidden="true"> </i>
-                      </div>
-                  </div>
-              </div>
-              <div class="face face2">
-                  <div class="content">
-                      <h1>
-                          <a class="gifBut" href="https://www.linkedin.com/in/adamdipinto/" target="_blank">Regalar</a>
-                      </h1>
-                      <h2 class="text-center">$15.000</h2>
-                  </div>
-              </div>
-          </div>
-          <div  class=" col-lg-4 cardGif">
-              <div class="face face1">
-                  <div class="content">
-                      <div style="background-image: url('views/images/6.png');background-color: transparent !important; background-size: cover;" class="icon">
-                          <i class="gifI" aria-hidden="true"> </i>
-                      </div>
-                  </div>
-              </div>
-              <div class="face face2">
-                  <div class="content">
-                      <h1>
-                          <a class="gifBut" href="https://www.linkedin.com/in/adamdipinto/" target="_blank">Regalar</a>
-                      </h1>
-                      <h2 class="text-center">$13.000</h2>
-                  </div>
-              </div>
-          </div>
-      </div>
+          <?php include 'gifcard.php'; ?>
+     
       </section>
       <script src="views/js/jquery.min.js"></script>
 	<script>	

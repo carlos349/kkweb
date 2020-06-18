@@ -62,6 +62,7 @@
     </section>
 		<section class="ftco-section ftco-intro" style="background-image: url(views/images/intro.jpg);">
 			<div class="container">
+				
 				<div class="row justify-content-end">
 					<div class="col-md-6">
 						<div class="heading-section ftco-animate">
@@ -85,43 +86,47 @@
 			<div class="container-fluid px-md-5 pb-5 pt-5">
 				<div class="row">
 					<div  class="col-md-6 col-lg-3">
-							<div style="background-image: url('views/images/manicurre.jpeg');background-size: cover;border-radius: 50%;height: 300px;width: 350px;" class="services text-center ftco-animate">
-								
-								
+						<div class="treatment w-100 text-center ftco-animate  p-3 py-4">
+							<div class="icon d-flex justify-content-center align-items-center">
+								<img class="categoryImg" src="views/images/manicurre.jpeg" alt="">
 							</div>
-							<div style="background-color: #ffffff80;border-radius: 5px;" class="text mt-3 pt-5 pb-5">
+							<div class="text mt-2">
 								<strong style="font-size: 30px;">Manicure</strong>
-								<p>Para el cuidado y salud de tus manos. <br><br></p>
+								<p>Para el cuidado y salud de tus manos.</p>
+							</div>
+						</div>
+						</div>
+						<div  class="col-md-6 col-lg-3">
+							<div class="treatment w-100 text-center ftco-animate   p-3 py-4">
+								<div class="icon d-flex justify-content-center align-items-center">
+									<img class="categoryImg" src="views/images/esmalte.jpeg" alt="">
+								</div>
+								<div class="text mt-2">
+									<strong style="font-size: 30px;">Esculpidos en gel</strong>
+									<p>Además de embellecer tus manos, es un tratamiento para evitar onicofagia.</p>
+								</div>
 							</div>
 						</div>
 						<div  class="col-md-6 col-lg-3">
-							<div style="background-image: url('views/images/pedicure.jpeg');background-size: cover;border-radius: 50%;height: 300px;width: 350px;" class="services text-center ftco-animate">
-								
-								
-							</div>
-							<div style="background-color: #ffffff80;border-radius: 5px;" class="text mt-3 p-5">
-								<strong style="font-size: 30px;">Pedicure</strong>
-								<p>Para el embellecimiento de tus pies. <br><br></p>
-							</div>
-						</div>
-						<div  class="col-md-6 col-lg-3">
-							<div style="background-image: url('views/images/esmalte.jpeg');background-size: cover;border-radius: 50%;height: 300px;width: 350px;" class="services text-center ftco-animate">
-								
-								
-							</div>
-							<div style="background-color: #ffffff80;border-radius: 5px;" class="text mt-3 p-5">
-								<strong style="font-size: 30px;">Esculpido gel</strong>
-								<p>Además de embellecer tus manos, es un tratamiento para evitar onicofagia.</p>
+							<div class="treatment w-100 text-center ftco-animate  p-3 py-4">
+								<div class="icon d-flex justify-content-center align-items-center">
+									<img class="categoryImg" src="views/images/pedicure.jpeg" alt="">
+								</div>
+								<div class="text mt-2">
+									<strong style="font-size: 30px;">Pedicure</strong>
+									<p>Para el embellecimiento de tus pies.</p>
+								</div>
 							</div>
 						</div>
 						<div  class="col-md-6 col-lg-3">
-							<div style="background-image: url('views/images/ibx.jpeg');background-size: cover;border-radius: 50%;height: 300px;width: 350px;background-position-y: center;" class="services text-center ftco-animate">
-								
-								
-							</div>
-							<div style="background-color: #ffffff80;border-radius: 5px;" class="text mt-3 p-5">
-								<strong style="font-size: 30px;">Tratamiento IBX</strong>
-								<p>Tratamiento para endurecer tus uñas. <br><br></p>
+							<div class="treatment w-100 text-center ftco-animate  p-3 py-4">
+								<div class="icon d-flex justify-content-center align-items-center">
+									<img class="categoryImg" src="views/images/ibx.jpeg" alt="">
+								</div>
+								<div class="text mt-2">
+									<strong style="font-size: 30px;">Tratamiento IBX</strong>
+									<p>Tratamiento para endurecer tus uñas.</p>
+								</div>
 							</div>
 						</div>
 					</div>
@@ -129,6 +134,11 @@
 		</section>
 		<section class="ftco-section ftco-no-pt ftco-no-pb">
 			<div class="container">
+				<div class="row justify-content-center mb-0 pb-0">
+					<div class="col-md-7 heading-section ftco-animate text-center">
+					  <h2 style="font-family: 'Prata', serif;" class="mb-1">Promociones</h2>
+					</div>
+				  </div>
 				<div class="row no-gutters">
 					<div class="col-md-4 d-flex align-items-stretch">
 						<div class="offer-deal text-center px-2 px-lg-5">
@@ -169,7 +179,7 @@
       <div class="container-fluid">
         <div class="row justify-content-center mb-0 pb-0">
           <div class="col-md-7 heading-section ftco-animate text-center">
-            <h2 class="mb-1">Gift Cards</h2>
+            <h2 style="font-family: 'Prata', serif;" class="mb-1">Gift Cards</h2>
           </div>
 		</div>
 		<?php include 'gifcard.php'; ?>
@@ -192,7 +202,7 @@
                 <div class="testimony-wrap p-4 pb-5">
                   <div class="text">
                   	<div class="line pl-5">
-	                    <p class="mb-4 pb-1">Las más lindas del mundo mundial. No puedo creer las uñas que tenían antes, y ahora... ¡Bellas bellas!<br></p>
+	                    <p class="mb-4 pb-1"> <br><br> Las más lindas del mundo mundial. No puedo creer las uñas que tenían antes, y ahora... ¡Bellas bellas!<br></p>
 	                    <span class="quote d-flex align-items-center justify-content-center">
 	                      <i class="icon-quote-left"></i>
 	                    </span>
@@ -275,7 +285,7 @@
                 <div class="testimony-wrap p-4 pb-5">
                   <div class="text">
                     <div class="line pl-5">
-	                    <p class="mb-4 pb-1">Las extraño con todo mi ser, las espero, no he engañado a K&K por nada del mundo, prefiero esperar que hacerme las uñas con quien no confío.</p>
+	                    <p class="mb-4 pb-1"> <br> Las extraño con todo mi ser, las espero, no he engañado a K&K por nada del mundo, prefiero esperar que hacerme las uñas con quien no confío.</p>
 	                    <span class="quote d-flex align-items-center justify-content-center">
 	                      <i class="icon-quote-left"></i>
 	                    </span>

@@ -10,7 +10,7 @@
   box-shadow: 0px 0px 18px -3px rgba(143, 143, 143, 0.5);
 }
 
-.card:hover {
+.card-gif:hover {
   box-shadow: 0px 0px 20px -3px rgba(143, 143, 143, 0.75);
 }
 
@@ -58,7 +58,7 @@ h6 {
   border-color: #ff9900;
 }
 
-.card {
+.card-gif {
   
   -webkit-transition: .5s ease;
   transition: .5s ease;
@@ -77,23 +77,23 @@ h6 {
   -webkit-transition: .5s ease;
   transition: .5s ease;
 }
-.card:hover {
+.card-gif:hover {
   border-color: #98d7b8;
   -webkit-transform: perspective(0em) rotateX(0deg) rotateY(0deg) rotateZ(0deg);
           transform: perspective(0em) rotateX(0deg) rotateY(0deg) rotateZ(0deg);
 }
-.card:hover .card-header, .card:hover .card-footer {
+.card-gif:hover .card-header, .card-gif:hover .card-footer {
   color: #ba8b00;
   border-color: #98d7b8;
   background-color: #98d7b8;
 }
-.card:hover .promotion-promo {
+.card-gif:hover .promotion-promo {
   -webkit-transform: scale(1.175) translateY(2.5px);
           transform: scale(1.175) translateY(2.5px);
   -webkit-transform-origin: left center;
           transform-origin: left center;
 }
-.card:hover .promotion-price {
+.card-gif:hover .promotion-price {
   -webkit-transform: translate(2.5px, 17.5px) scale(1.15);
           transform: translate(2.5px, 17.5px) scale(1.15);
   -webkit-transform-origin: center right;
@@ -106,7 +106,7 @@ h6 {
   padding-top: 2rem;
   padding-bottom: 2rem;
 }
-.card .btn {
+.card-gif .btn {
   font-weight: bold;
   text-transform: uppercase;
 }
@@ -176,12 +176,13 @@ h6 {
   color: rgba(0, 0, 0, 0.1);
   z-index: 0;
 }
-.card-animate .card:hover .card-body:before {
+.card-animate .card-gif:hover .card-body:before {
   -webkit-transform: translate(10px, -10px);
           transform: translate(10px, -10px);
 }
 .card-animate .card-text {
   font-size: 1.5em !important;
+  text-align: center;
   margin-top: 2rem;
   margin-bottom: 2rem;
 }
@@ -216,11 +217,11 @@ h6 {
                             <div class="card-deck no-gutters">
     
                                 <div class="col-12 col-sm-6 col-md-4">
-                                    <div class="card h-100 mb-4">                    
+                                    <div class="card-gif card h-100 mb-4">                    
                                         <div class="card-header">                                
                                             <h5 class="card-title m-0 p-0 font-weight-bolder">Gift Card</h5>
                                         </div>
-                                        <div class="card-body text-left">
+                                        <div class="card-body ">
                                             <p style="font-size: 1.5em;" class="card-text">Manicure y pedicure tradicional </p>
                                             
                                           </div>
@@ -230,11 +231,11 @@ h6 {
                                 </div>
 
                                 <div class="col-12 col-sm-6 col-md-4">
-                                    <div class="card h-100 mb-4">                    
+                                    <div class="card-gif card h-100 mb-4">                    
                                         <div class="card-header">                                
                                             <h5 class="card-title m-0 p-0 font-weight-bolder ">Gift Card</h5>
                                         </div>
-                                        <div class="card-body text-left">
+                                        <div class="card-body ">
                                             <p style="font-size: 1.5em;" class="card-text">Manicure permanente </p>
                                             
                                             
@@ -245,11 +246,11 @@ h6 {
                                 </div>
 
                                 <div class="col-12 col-sm-6 col-md-4">
-                                    <div class="card h-100 mb-4">                    
+                                    <div class="card-gif card h-100 mb-4">                    
                                         <div class="card-header">                                
                                             <h5 class="card-title m-0 p-0 font-weight-bolder ">Gift Card</h5>
                                         </div>
-                                        <div class="card-body text-left">
+                                        <div class="card-body ">
                                             <p style="font-size: 1.5em;" class="card-text">Manicure y pedicure permanente </p>
                                             
                                            
@@ -260,11 +261,11 @@ h6 {
                                 </div>
 
                                 <div class="col-12 col-sm-6 col-md-4 mt-5">
-                                    <div class="card h-100 mb-4">                    
+                                    <div class="card-gif card h-100 mb-4">                    
                                         <div class="card-header">                                
                                             <h5 class="card-title m-0 p-0 font-weight-bolder ">Gift Card</h5>
                                         </div>
-                                        <div class="card-body text-left">
+                                        <div class="card-body ">
                                             <p style="font-size: 1.5em;" class="card-text">Manicure permanente y ondulación de pestañas </p>
                                             
                                             
@@ -275,11 +276,11 @@ h6 {
                                 </div>
                                 
                                     <div class="col-12 col-sm-6 col-md-4 mt-5">
-                                        <div class="card h-100 mb-4">                    
+                                        <div class="card-gif card h-100 mb-4">                    
                                             <div class="card-header">                                
                                                 <h5 class="card-title m-0 p-0 font-weight-bolder ">Gift Card</h5>
                                             </div>
-                                            <div class="card-body text-left">
+                                            <div class="card-body ">
                                                 <p style="font-size: 1.5em;" class="card-text">Ondulación con tinte </p>
                                                 
                                                 
@@ -290,11 +291,11 @@ h6 {
                                     </div>
     
                                     <div class="col-12 col-sm-6 col-md-4 mt-5">
-                                        <div class="card h-100 mb-4">                    
+                                        <div class="card-gif card h-100 mb-4">                    
                                             <div class="card-header">                                
                                                 <h5 class="card-title m-0 p-0 font-weight-bolder ">Gift Card</h5>
                                             </div>
-                                            <div class="card-body text-left">
+                                            <div class="card-body ">
                                                 <p style="font-size: 1.5em;" class="card-text">Ondulación sin tinte </p>
                                                 
                                                 

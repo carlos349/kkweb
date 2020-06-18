@@ -54,7 +54,7 @@
                 <div class="testimony-wrap p-4 pb-5">
                   <div class="text">
                   	<div class="line pl-5">
-	                    <p class="mb-4 pb-1">Las más lindas del mundo mundial. No puedo creer las pocas uñas que antes tenía y ahora bellas, bellas!!!!! <br></p>
+	                    <p class="mb-4 pb-1"> <br><br> Las más lindas del mundo mundial. No puedo creer las pocas uñas que antes tenía y ahora bellas, bellas!!!!! <br></p>
 	                    <span class="quote d-flex align-items-center justify-content-center">
 	                      <i class="icon-quote-left"></i>
 	                    </span>
@@ -70,11 +70,11 @@
                   </div>
                 </div>
               </div>
-              <div class="item">
+              <!-- <div class="item">
                 <div class="testimony-wrap p-4 pb-5">
                   <div class="text">
                     <div class="line pl-5">
-	                    <p class="mb-4 pb-1">Las extraño con todo mi ser, las espero, no he engañado a K&K porn nada del mundo, prefiero esperar que hacerme las ulitas en otra parte jajajajajaja me da desconfianza otro lugar.</p>
+	                    <p class="mb-4 pb-1"> <br> Las extraño con todo mi ser, las espero, no he engañado a K&K porn nada del mundo, prefiero esperar que hacerme las ulitas en otra parte jajajajajaja me da desconfianza otro lugar.</p>
 	                    <span class="quote d-flex align-items-center justify-content-center">
 	                      <i class="icon-quote-left"></i>
 	                    </span>
@@ -90,8 +90,8 @@
                     </div>
                   </div>
                 </div>
-              </div>
-              <div class="item">
+              </div> -->
+              <!-- <div class="item">
                 <div class="testimony-wrap p-4 pb-5">
                   <div class="text">
                     <div class="line pl-5">
@@ -111,8 +111,8 @@
                     </div>
                   </div>
                 </div>
-              </div>
-              <div class="item">
+              </div> -->
+              <!-- <div class="item">
                 <div class="testimony-wrap p-4 pb-5">
                   <div class="text">
                     <div class="line pl-5">
@@ -132,12 +132,12 @@
                     </div>
                   </div>
                 </div>
-              </div>
+              </div> -->
               <div class="item">
                 <div class="testimony-wrap p-4 pb-5">
                   <div class="text">
                     <div class="line pl-5">
-	                    <p class="mb-4 pb-1">Las extraño con todo mi ser, las espero, no he engañado a K&K porn nada del mundo, prefiero esperar que hacerme las ulitas en otra parte jajajajajaja me da desconfianza otro lugar.</p>
+	                    <p class="mb-4 pb-1"> <br> Las extraño con todo mi ser, las espero, no he engañado a K&K porn nada del mundo, prefiero esperar que hacerme las ulitas en otra parte jajajajajaja me da desconfianza otro lugar.</p>
 	                    <span class="quote d-flex align-items-center justify-content-center">
 	                      <i class="icon-quote-left"></i>
 	                    </span>
