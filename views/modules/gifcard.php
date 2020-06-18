@@ -6,319 +6,159 @@
     <title>Document</title>
     
     <style>
-        .box-shadow {
-  box-shadow: 0px 0px 18px -3px rgba(143, 143, 143, 0.5);
-}
-
-.card-gif:hover {
-  box-shadow: 0px 0px 20px -3px rgba(143, 143, 143, 0.75);
-}
-
-.box-shadow-dark {
-  box-shadow: 3px 3px 11px -3px rgba(0, 0, 0, 0.25);
-}
-
-
-
-section {
-  padding-top: 2rem;
-  padding-bottom: 2rem;
-}
-
-h6 {
-  color: #990000;
-}
-
-.font-weight-bolder {
-  font-weight: 900;
-}
-
-.display-1, .display-2, .display-3, .display-4 {
-  font-weight: 900;
-}
-
-.heading-big {
-  font-weight: 800;
-  text-transform: uppercase;
-  color: red;
-  margin: 0;
-  padding: .15rem 0;
-  line-height: 1.2;
-  font-size: 2rem;
-  -webkit-transition: color .5s ease-in, border-color .5s ease-in-out;
-  transition: color .5s ease-in, border-color .5s ease-in-out;
-}
-.heading-big-square {
-  padding: 1rem 1rem;
-  border: 10px solid red;
-  margin: .5rem auto 1rem auto;
-}
-.heading-big:hover {
-  color: #ff9900;
-  border-color: #ff9900;
-}
-
-.card-gif {
-  
-  -webkit-transition: .5s ease;
-  transition: .5s ease;
-  border-radius: 0;
-  -webkit-transform: perspective(3em) rotateX(0deg) rotateY(-1.175deg) rotateZ(-1deg);
-          transform: perspective(3em) rotateX(0deg) rotateY(-1.175deg) rotateZ(-1deg);
-}
-.card-header {
-  border-radius: 0;
-}
-.card-footer {
-  padding-top: 1rem;
-  padding-bottom: 1rem;
-}
-.card-header, .card-footer {
-  -webkit-transition: .5s ease;
-  transition: .5s ease;
-}
-.card-gif:hover {
-  border-color: #98d7b8;
-  -webkit-transform: perspective(0em) rotateX(0deg) rotateY(0deg) rotateZ(0deg);
-          transform: perspective(0em) rotateX(0deg) rotateY(0deg) rotateZ(0deg);
-}
-.card-gif:hover .card-header, .card-gif:hover .card-footer {
-  color: #ba8b00;
-  border-color: #98d7b8;
-  background-color: #98d7b8;
-}
-.card-gif:hover .promotion-promo {
-  -webkit-transform: scale(1.175) translateY(2.5px);
-          transform: scale(1.175) translateY(2.5px);
-  -webkit-transform-origin: left center;
-          transform-origin: left center;
-}
-.card-gif:hover .promotion-price {
-  -webkit-transform: translate(2.5px, 17.5px) scale(1.15);
-          transform: translate(2.5px, 17.5px) scale(1.15);
-  -webkit-transform-origin: center right;
-          transform-origin: center right;
-}
-.card-body {
+       .flip {
   position: relative;
-  z-index: 0;
-  overflow: hidden;
-  padding-top: 2rem;
-  padding-bottom: 2rem;
+  -webkit-box-shadow: 10px 10px 27px -5px rgba(0,0,0,0.54);
+-moz-box-shadow: 10px 10px 27px -5px rgba(0,0,0,0.54);
+box-shadow: 10px 10px 27px -5px rgba(0,0,0,0.54);
+border-radius: 10px;
+
 }
-.card-gif .btn {
-  font-weight: bold;
-  text-transform: uppercase;
+.flip > .front,
+.flip > .back {
+  display: block;
+  transition-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  transition-duration: .5s;
+  transition-property: transform, opacity;
+}
+.flip > .front {
+  transform: rotateY(0deg);
+}
+.flip > .back {
+  position: absolute;
+  opacity: 0;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: 100%;
+  transform: rotateY(-180deg);
+}
+.flip:hover > .front {
+  transform: rotateY(180deg);
+}
+.flip:hover > .back {
+  opacity: 1;
+  transform: rotateY(0deg);
+}
+.flip.flip-vertical > .back {
+  transform: rotateX(-180deg);
+}
+.flip.flip-vertical:hover > .front {
+  transform: rotateX(180deg);
+}
+.flip.flip-vertical:hover > .back {
+  transform: rotateX(0deg);
 }
 
-.promotion-promo {
-  font-weight: 700;
-  font-size: 1.15rem;
-  color: red;
-  font-family: "Montserrat", sans-serif;
-  text-decoration: line-through;
-  -webkit-transition: .25s linear;
-  transition: .25s linear;
+.flip {
+  position: relative;
+  display: inline-block;
+  margin-right: 2px;
+  margin-bottom: 1em;
+  width: 400px;
 }
-.promotion-price {
-  position: absolute;
-  bottom: 0;
-  right: 0;
-  background: #98d7b8;
-  width: 92px;
-  height: 92px;
-  padding-bottom: 0rem;
-  padding-top: 1.25rem;
-  text-align: center;
-  font-weight: 700;
-  font-family: "Montserrat", sans-serif;
-  font-size: 1.1rem;
-  border-radius: 5rem;
-  color: black;
-  z-index: -1;
-  -webkit-transform: translate(5px, 27.5px) rotate(-9deg);
-          transform: translate(5px, 27.5px) rotate(-9deg);
-  border: 1px dashed #fff;
-  -webkit-transition: .25s linear;
-  transition: .25s linear;
-  line-height: 1.15;
-}
-.promotion-price-desc {
-  padding: 0;
-  margin: 0 auto;
-  text-transform: uppercase;
-  font-size: .9rem;
+.flip > .front,
+.flip > .back {
   display: block;
+  color: white;
+  width: inherit;
+  background-size: cover !important;
+  background-position: center !important;
+  height: 220px;
+  padding: 1em 2em;
+  background: #fbf2f6;
+  border-radius: 10px;
 }
-.promotion-price-text {
-  padding: 0;
-  margin: 0 auto;
-  font-weight: 900;
+.flip > .front p,
+.flip > .back p {
+  font-size: 0.9125rem;
+  line-height: 160%;
+  color: #999;
 }
 
-.card-animate {
-  counter-reset: section;
-}
-.card-animate .card-body:before {
-  -webkit-transition: .5s ease;
-  transition: .5s ease;
-  counter-increment: section;
-  content: "" counter(section) "";
-  display: block;
-  font-size: 15rem;
-  font-weight: 900;
-  position: absolute;
-  bottom: 5rem;
-  line-height: 0;
-  left: -.85rem;
-  padding: 0;
-  margin: 0;
-  color: rgba(0, 0, 0, 0.1);
-  z-index: 0;
-}
-.card-animate .card-gif:hover .card-body:before {
-  -webkit-transform: translate(10px, -10px);
-          transform: translate(10px, -10px);
-}
-.card-animate .card-text {
-  font-size: 1.5em !important;
-  text-align: center;
-  margin-top: 2rem;
-  margin-bottom: 2rem;
-}
-.card-animate .card-title {
-  color: black !important;
-  font-weight: 900;
-  text-transform: uppercase;
+.text-shadow {
+  text-shadow: 1px 1px rgba(0, 0, 0, 0.04), 2px 2px rgba(0, 0, 0, 0.04), 3px 3px rgba(0, 0, 0, 0.04), 4px 4px rgba(0, 0, 0, 0.04), 0.125rem 0.125rem rgba(0, 0, 0, 0.04), 6px 6px rgba(0, 0, 0, 0.04), 7px 7px rgba(0, 0, 0, 0.04), 8px 8px rgba(0, 0, 0, 0.04), 9px 9px rgba(0, 0, 0, 0.04), 0.3125rem 0.3125rem rgba(0, 0, 0, 0.04), 11px 11px rgba(0, 0, 0, 0.04), 12px 12px rgba(0, 0, 0, 0.04), 13px 13px rgba(0, 0, 0, 0.04), 14px 14px rgba(0, 0, 0, 0.04), 0.625rem 0.625rem rgba(0, 0, 0, 0.04), 16px 16px rgba(0, 0, 0, 0.04), 17px 17px rgba(0, 0, 0, 0.04), 18px 18px rgba(0, 0, 0, 0.04), 19px 19px rgba(0, 0, 0, 0.04), 1.25rem 1.25rem rgba(0, 0, 0, 0.04);
 }
 
     </style>
 </head>
 <body>
-    <section>
-        <!-- heading -->
-        <div class="container">
-            <div class="row">			
-                <div class="mx-auto">
-                    <div class="col-lg-12">				
-                        									
-                    </div>
-                </div>
-            </div>
+   
+
+    <center>
+        
+    <div class="flip">
+        <div class="front" style="background-image: url(views/images/gift.jpg)">
+          
         </div>
-        
-        <!-- cards -->
-        <div class="container">
-            <div class="row">			
-                <div class="mx-auto">
-                    <div class="col-lg-12">
-                        <div class="text-center my-3">
-                            						
-                            <div class="card-deck no-gutters">
-    
-                                <div class="col-12 col-sm-6 col-md-4">
-                                    <div class="card-gif card h-100 mb-4">                    
-                                        <div class="card-header">                                
-                                            <h5 class="card-title m-0 p-0 font-weight-bolder">Gift Card</h5>
-                                        </div>
-                                        <div class="card-body ">
-                                            <p style="font-size: 1.5em;" class="card-text">Manicure y pedicure tradicional </p>
-                                            
-                                          </div>
-                                          <p style="text-align: right;padding-right:30px;padding-bottom: 30px;font-size: 1.3em;font-weight: 700;">$ 15.000</p>
-                                        <div class="card-footer"><a style="background-color: #605b56;color:white;font-size: 1em;" href="#" class="btn btn-warning">Regalar</a></div>
-                                    </div>
-                                </div>
-
-                                <div class="col-12 col-sm-6 col-md-4">
-                                    <div class="card-gif card h-100 mb-4">                    
-                                        <div class="card-header">                                
-                                            <h5 class="card-title m-0 p-0 font-weight-bolder ">Gift Card</h5>
-                                        </div>
-                                        <div class="card-body ">
-                                            <p style="font-size: 1.5em;" class="card-text">Manicure permanente </p>
-                                            
-                                            
-                                        </div>
-                                        <p style="text-align: right;padding-right:30px;padding-bottom: 30px;font-size: 1.3em;font-weight: 700;">$ 12.000</p>
-                                        <div class="card-footer"><a style="background-color: #605b56;color:white;font-size: 1em;" href="#" class="btn btn-warning">Regalar</a></div>
-                                    </div>
-                                </div>
-
-                                <div class="col-12 col-sm-6 col-md-4">
-                                    <div class="card-gif card h-100 mb-4">                    
-                                        <div class="card-header">                                
-                                            <h5 class="card-title m-0 p-0 font-weight-bolder ">Gift Card</h5>
-                                        </div>
-                                        <div class="card-body ">
-                                            <p style="font-size: 1.5em;" class="card-text">Manicure y pedicure permanente </p>
-                                            
-                                           
-                                        </div>
-                                        <p style="text-align: right;padding-right:30px;padding-bottom: 30px;font-size: 1.3em;font-weight: 700;">$ 27.000</p>
-                                        <div class="card-footer"><a style="background-color: #605b56;color:white;font-size: 1em;" href="#" class="btn btn-warning">Regalar</a></div>
-                                    </div>
-                                </div>
-
-                                <div class="col-12 col-sm-6 col-md-4 mt-5">
-                                    <div class="card-gif card h-100 mb-4">                    
-                                        <div class="card-header">                                
-                                            <h5 class="card-title m-0 p-0 font-weight-bolder ">Gift Card</h5>
-                                        </div>
-                                        <div class="card-body ">
-                                            <p style="font-size: 1.5em;" class="card-text">Manicure permanente y ondulación de pestañas </p>
-                                            
-                                            
-                                        </div>
-                                        <p style="text-align: right;padding-right:30px;padding-bottom: 30px;font-size: 1.3em;font-weight: 700;">$ 26.500</p>
-                                        <div class="card-footer"><a style="background-color: #605b56;color:white;font-size: 1em;" href="#" class="btn btn-warning">Regalar</a></div>
-                                    </div>
-                                </div>
-                                
-                                    <div class="col-12 col-sm-6 col-md-4 mt-5">
-                                        <div class="card-gif card h-100 mb-4">                    
-                                            <div class="card-header">                                
-                                                <h5 class="card-title m-0 p-0 font-weight-bolder ">Gift Card</h5>
-                                            </div>
-                                            <div class="card-body ">
-                                                <p style="font-size: 1.5em;" class="card-text">Ondulación con tinte </p>
-                                                
-                                                
-                                            </div>
-                                            <p style="text-align: right;padding-right:30px;padding-bottom: 30px;font-size: 1.3em;font-weight: 700;">$ 15.000</p>
-                                            <div class="card-footer"><a style="background-color: #605b56;color:white;font-size: 1em;" href="#" class="btn btn-warning">Regalar</a></div>
-                                        </div>
-                                    </div>
-    
-                                    <div class="col-12 col-sm-6 col-md-4 mt-5">
-                                        <div class="card-gif card h-100 mb-4">                    
-                                            <div class="card-header">                                
-                                                <h5 class="card-title m-0 p-0 font-weight-bolder ">Gift Card</h5>
-                                            </div>
-                                            <div class="card-body ">
-                                                <p style="font-size: 1.5em;" class="card-text">Ondulación sin tinte </p>
-                                                
-                                                
-                                            </div>
-                                            <p style="text-align: right;padding-right:30px;padding-bottom: 30px;font-size: 1.3em;font-weight: 700;">$ 13.000</p>
-                                            <div class="card-footer"><a style="background-color: #605b56;color:white;font-size: 1em;" href="#" class="btn btn-warning">Regalar</a></div>
-                                        </div>
-                                    </div>
-
-                                
-
-                                
-    
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
+        <div class="back">
+          <h2 >Manicure y pedicure tradicional</h2>
+          
+          <h4 style="color: #418803;">$ 15.000</h4>
+          <p><a href="#" class="btn btn-white px-4 py-3"> Regalar </a></p>
         </div>
+    </div>
+    <div class="flip">
+        <div class="front" style="background-image: url(views/images/gift.jpg)">
+          
+        </div>
+        <div class="back">
+          <br>
+          <h2 >Manicure permanente</h2> 
+          <h4 style="color: #418803;">$ 12.000</h4>
+          <p><a href="#" class="btn btn-white px-4 py-3"> Regalar </a></p>
+        </div>
+    </div>
+    <div class="flip">
+        <div class="front" style="background-image: url(views/images/gift.jpg)">
+          
+        </div>
+        <div class="back">
+          <h2 >Manicure y pedicure permanente</h2>
+          <h4 style="color: #418803;">$ 27.000</h4>
+          <p><a href="#" class="btn btn-white px-4 py-3"> Regalar </a></p>
+        </div>
+    </div>
+    <br>
+    <div class="flip">
+      <div class="front" style="background-image: url(views/images/gift.jpg)">
         
-        
-        <!-- cards::before -->
-        
-    </section>
+      </div>
+      <div class="back">
+        <h3 >Manicure permanente y ondulación de pestañas</h3>
+        <h4 style="color: #418803;">$ 26.500</h4>
+        <p><a href="#" class="btn btn-white px-4 py-3"> Regalar </a></p>
+      </div>
+  </div>
+  <div class="flip">
+    <div class="front" style="background-image: url(views/images/gift.jpg)">
+      
+    </div>
+    <div class="back">
+      <br>
+      <h2 >Ondulación con tinte</h2>
+      <h4 style="color: #418803;">$ 15.000</h4>
+      <p><a href="#" class="btn btn-white px-4 py-3"> Regalar </a></p>
+    </div>
+</div>
+<div class="flip">
+  <div class="front" style="background-image: url(views/images/gift.jpg)">
+    
+  </div>
+  <div class="back">
+    <br>
+    <h2 >Ondulación sin tinte</h2>
+    <h4 style="color: #418803;">$ 13.000</h4>
+    <p><a href="#" class="btn btn-white px-4 py-3"> Regalar </a></p>
+  </div>
+</div>
+
+    <br>
+    <br>
+
+    
+  </center>
+
+    
 </body>
 </html>

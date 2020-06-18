@@ -317,7 +317,7 @@
         </div>
     </section>
 
-      <section class="ftco-section bg-light">
+      <section style="background-color: #d4cdcd;" class="ftco-section">
         <div class="container-fluid">
           <div class="row justify-content-center mb-5 pb-3">
             <div class="col-md-7 heading-section ftco-animate text-center">
