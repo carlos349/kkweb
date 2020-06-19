@@ -53,8 +53,9 @@ border-radius: 10px;
 .flip {
   position: relative;
   display: inline-block;
-  margin-right: 2px;
-  margin-bottom: 1em;
+  margin-right: 20px;
+  margin-left: 20px;
+  margin-bottom: 2em;
   width: 400px;
 }
 .flip > .front,
@@ -92,9 +93,9 @@ border-radius: 10px;
           
         </div>
         <div class="back">
-          <h2 >Manicure y pedicure tradicional</h2>
+          <h3 style="font-weight:300" >Manicure y pedicure tradicional</h3>
           
-          <h4 style="color: #418803;">$ 15.000</h4>
+          <h4 ><i style="color: #77a464;" class="fa fa-money"></i> 15.000,00</h4>
           <p><a href="#" class="btn btn-white px-4 py-3"> Regalar </a></p>
         </div>
     </div>
@@ -104,8 +105,8 @@ border-radius: 10px;
         </div>
         <div class="back">
           <br>
-          <h2 >Manicure permanente</h2> 
-          <h4 style="color: #418803;">$ 12.000</h4>
+          <h3 style="font-weight:300" >Manicure permanente</h3> 
+          <h4 ><i style="color: #77a464;" class="fa fa-money"></i> 12.000,00</h4>
           <p><a href="#" class="btn btn-white px-4 py-3"> Regalar </a></p>
         </div>
     </div>
@@ -114,8 +115,8 @@ border-radius: 10px;
           
         </div>
         <div class="back">
-          <h2 >Manicure y pedicure permanente</h2>
-          <h4 style="color: #418803;">$ 27.000</h4>
+          <h3 style="font-weight:300" >Manicure y pedicure permanente</h3>
+          <h4 ><i style="color: #77a464;" class="fa fa-money"></i> 27.000,00</h4>
           <p><a href="#" class="btn btn-white px-4 py-3"> Regalar </a></p>
         </div>
     </div>
@@ -125,8 +126,9 @@ border-radius: 10px;
         
       </div>
       <div class="back">
-        <h3 >Manicure permanente y ondulación de pestañas</h3>
-        <h4 style="color: #418803;">$ 26.500</h4>
+        <h3 style="font-weight:300" >Manicure permanente y ondulación de pestañas</h3>
+        
+        <h4 > <i style="color: #77a464;" class="fa fa-money"></i> 26.500,00</h4>
         <p><a href="#" class="btn btn-white px-4 py-3"> Regalar </a></p>
       </div>
   </div>
@@ -136,8 +138,8 @@ border-radius: 10px;
     </div>
     <div class="back">
       <br>
-      <h2 >Ondulación con tinte</h2>
-      <h4 style="color: #418803;">$ 15.000</h4>
+      <h3 style="font-weight:300" >Ondulación con tinte</h3>
+      <h4 ><i style="color: #77a464;" class="fa fa-money"></i> 15.000,00</h4>
       <p><a href="#" class="btn btn-white px-4 py-3"> Regalar </a></p>
     </div>
 </div>
@@ -147,8 +149,8 @@ border-radius: 10px;
   </div>
   <div class="back">
     <br>
-    <h2 >Ondulación sin tinte</h2>
-    <h4 style="color: #418803;">$ 13.000</h4>
+    <h3 style="font-weight:300" >Ondulación sin tinte</h3>
+    <h4 ><i style="color: #77a464;" class="fa fa-money"></i> 13.000,00</h4>
     <p><a href="#" class="btn btn-white px-4 py-3"> Regalar </a></p>
   </div>
 </div>

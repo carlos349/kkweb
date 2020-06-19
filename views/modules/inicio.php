@@ -70,7 +70,7 @@
 	          </div>
 	          <p style="text-align: justify;" class="ftco-animate">Lo que comenzó como un hobby se fue convirtiendo en una profesión para la fundadora Katriel Capacho por lo que el 24 de abril de 2019 decidimos llevar esto al siguiente nivel creando un local en el cual nos dedicamos no sólo al embellecimiento de las uñas sino al cuidado de las mismas. <br><br>
 				</p>
-				<a href="Nosotros" style="font-size: 1em;" class="btn btn-primary p-3 px-5 py-4 mr-md-2">Ir a nosotros</a>
+				<a href="Nosotros#Us" style="font-size: 1em;" class="btn btn-primary p-3 px-5 py-4 mr-md-2">Ir a nosotros</a>
 	          <ul class="mt-5 do-list">
 	          	<li class="ftco-animate"><a href="#"><span class="ion-ios-checkmark-circle mr-3"></span>Perfeccionismo</a></li>
 	          	<li class="ftco-animate"><a href="#"><span class="ion-ios-checkmark-circle mr-3"></span>Empatía</a></li>
@@ -82,7 +82,7 @@
 				</div>
 			</div>
 		</section>
-		<section class="ftco-section ftco-section-services bg-light pb-3 pt-3">
+		<section class="ftco-section ftco-section-services bg-light pb-3">
 			<div class="container-fluid px-md-5 pb-5 pt-5">
 				<div class="row">
 					<div  class="col-md-6 col-lg-3">
@@ -136,7 +136,7 @@
 			<div class="container">
 				<div class="row justify-content-center mb-0 pb-0">
 					<div class="col-md-7 heading-section ftco-animate text-center">
-					  <h2 style="font-family: 'Prata', serif;" class="mb-1">Promociones</h2>
+					  <h2 style="font-family: 'Prata', serif;" class="mb-1">PROMOCIONES</h2>
 					</div>
 				  </div>
 				<div class="row no-gutters">
@@ -179,7 +179,7 @@
       <div class="container-fluid">
         <div class="row justify-content-center mb-0 pb-0">
           <div class="col-md-7 heading-section ftco-animate text-center">
-            <h2 style="font-family: 'Prata', serif;" class="mb-1">Gift Cards</h2>
+            <h2 style="font-family: 'Prata', serif;" class="mb-1">GIFT CARDS</h2>
           </div>
 		</div>
 		<?php include 'gifcard.php'; ?>
@@ -192,7 +192,7 @@
         <div class="row justify-content-center mb-5 pb-3">
           <div class="col-md-10 heading-section ftco-animate text-center">
             
-            <h2 style="font-family: 'Prata', serif;" class="mb-1">Nuestros clientes dicen</h2>
+            <h2 style="font-family: 'Prata', serif;" class="mb-1">NUESTROS CLIENTES DICEN</h2>
           </div>
         </div>
         <div class="row ftco-animate">
@@ -314,8 +314,8 @@
       <div class="container">
         <div class="row justify-content-center mb-5 pb-3">
           <div class="col-md-7 heading-section ftco-animate text-center">
-            <h3 class="subheading">Blog</h3>
-            <h2 class="mb-1">Recent Posts</h2>
+            
+            <h2 style="font-family: 'Prata', serif;" class="mb-1">INSTAGRAM</h2>
           </div>
         </div>
         <div class="row d-flex">

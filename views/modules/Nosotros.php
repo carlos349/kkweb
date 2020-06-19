@@ -4,19 +4,19 @@
       <div class="container">
         <div class="row no-gutters slider-text js-fullheight align-items-center justify-content-center">
           <div class="col-md-9 ftco-animate text-center">
-            <h1 class="mb-3 bread">Nosotros</h1>
+            <h1 class="mb-3 ">Nosotros</h1>
             
           </div>
         </div>
       </div>
     </section>
 		
-		<section class="ftco-section ftco-intro" style="background-image: url(views/images/intro.jpg);">
+		<section id="Us" class="ftco-section ftco-intro pb-0" style="background-image: url(views/images/intro.jpg);">
 			<div class="container">
 				<div class="row justify-content-end">
 					<div class="col-md-6">
 						<div class="heading-section ftco-animate">
-	            <h2 class="mb-4" style="font-family: 'Prata', serif;">K&K Pretty Nails</h2>
+	            <h2 class="mb-4 bread" style="font-family: 'Prata', serif;">K&K Pretty Nails</h2>
 	          </div>
 	          <p class="ftco-animate">Lo que comenzó como un hobby se fue convirtiendo en una profesión para la fundadora Katriel Capacho por lo que el 24 de abril de 2019 decidimos llevar esto al siguiente nivel creando un local en el cual nos dedicamos no sólo al embellecimiento de las uñas sino al cuidado de las mismas. <br><br>
 				Desde el principio nuestra prioridad que tu visita a nuestro establecimiento es que tengas una experiencia agradable y única, con atención personalizada y asesorías en el bienestar de tus uñas, ya que más allá de la belleza que consigas en el mantenimiento mensual, sea fundamental el cuidado para que se conserven sanas y fuertes. <br><br>

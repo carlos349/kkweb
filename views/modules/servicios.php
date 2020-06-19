@@ -20,7 +20,7 @@
                     <h2 style="font-family: 'Prata', serif;">Precios</h2>
                 </div>
             </div>
-            <div class="row align-items-center">
+            <div style="height: 100vh;" class="row align-items-center">
                 <div class="col-lg-4">
                     <div class="row no-gutters">
                         <div class="col-md-12 d-flex align-items-stretch">
@@ -56,13 +56,13 @@
                             <div class="card col-md-12">
                                 <div class="card-header" id="headingOne">
                                     <h2 class="mb-0">
-                                        <button class="d-flex align-items-center justify-content-between btn btn-link" data-toggle="collapse" data-target="#manicure" aria-expanded="false" aria-controls="manicure">
+                                        <button class="d-flex align-items-center justify-content-between btn btn-link" data-toggle="collapse" data-target="#manicure" aria-expanded="true" aria-controls="manicure">
                                             Manicure
-                                            <i class="fa" aria-hidden="true"></i>
+                                            <i class="fa" aria-hidden="false"></i>
                                         </button>
                                     </h2>
                                 </div>
-						        <div id="manicure" class="collapse" aria-labelledby="headingOne" data-parent="#accordion">
+						        <div id="manicure" class="collapse show" aria-labelledby="headingOne" data-parent="#accordion">
 						             <div class="card-body text-left">
                                         <ul>
                                             <li class="d-flex">
@@ -95,15 +95,15 @@
 						        </div>
                           </div>
                           <div class="card col-md-12">
-                                <div class="card-header" id="headingOne">
+                                <div class="card-header" id="headingTwo">
                                     <h2 class="mb-0">
-                                        <button class="d-flex align-items-center justify-content-between btn btn-link" data-toggle="collapse" data-target="#esculpidos" aria-expanded="false" aria-controls="esculpidos">
+                                        <button class="d-flex align-items-center justify-content-between btn btn-link collapsed" data-toggle="collapse" data-target="#esculpidos" aria-expanded="false" aria-controls="esculpidos">
                                         Esculpidos en gel
                                             <i class="fa" aria-hidden="true"></i>
                                         </button>
                                     </h2>
                                 </div>
-						        <div id="esculpidos" class="collapse" aria-labelledby="headingOne" data-parent="#accordion">
+						        <div id="esculpidos" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
 						             <div class="card-body text-left">
                                         <ul>
                                             <li class="d-flex">
@@ -156,15 +156,15 @@
 						        </div>
                           </div>
                           <div class="card col-md-12">
-                                <div class="card-header" id="headingOne">
+                                <div class="card-header" id="headingThree">
                                     <h2 class="mb-0">
-                                        <button class="d-flex align-items-center justify-content-between btn btn-link" data-toggle="collapse" data-target="#pedicure" aria-expanded="false" aria-controls="pedicure">
+                                        <button class="d-flex align-items-center justify-content-between btn btn-link collapsed" data-toggle="collapse" data-target="#pedicure" aria-expanded="false" aria-controls="pedicure">
                                         Pedicure
                                             <i class="fa" aria-hidden="true"></i>
                                         </button>
                                     </h2>
                                 </div>
-						        <div id="pedicure" class="collapse" aria-labelledby="headingOne" data-parent="#accordion">
+						        <div id="pedicure" class="collapse" aria-labelledby="headingThree" data-parent="#accordion">
 						             <div class="card-body text-left">
                                         <ul>
                                             <li class="d-flex">
@@ -187,15 +187,15 @@
 						        </div>
                           </div>
                           <div class="card col-md-12">
-                                <div class="card-header" id="headingOne">
+                                <div class="card-header" id="headingFour">
                                     <h2 class="mb-0">
-                                        <button class="d-flex align-items-center justify-content-between btn btn-link" data-toggle="collapse" data-target="#ondulacion" aria-expanded="false" aria-controls="ondulacion">
+                                        <button class="d-flex align-items-center justify-content-between btn btn-link collapsed" data-toggle="collapse" data-target="#ondulacion" aria-expanded="false" aria-controls="ondulacion">
                                         Ondulación/lifting de pestañas
                                             <i class="fa" aria-hidden="true"></i>
                                         </button>
                                     </h2>
                                 </div>
-						        <div id="ondulacion" class="collapse" aria-labelledby="headingOne" data-parent="#accordion">
+						        <div id="ondulacion" class="collapse" aria-labelledby="headingFour" data-parent="#accordion">
 						             <div class="card-body text-left">
                                         <ul>
                                             <li class="d-flex">
@@ -213,15 +213,15 @@
 						        </div>
                           </div>
                           <div class="card col-md-12">
-                                <div class="card-header" id="headingOne">
+                                <div class="card-header" id="headingFive">
                                     <h2 class="mb-0">
-                                        <button class="d-flex align-items-center justify-content-between btn btn-link" data-toggle="collapse" data-target="#otros" aria-expanded="false" aria-controls="otros">
+                                        <button class="d-flex align-items-center justify-content-between btn btn-link collapsed" data-toggle="collapse" data-target="#otros" aria-expanded="false" aria-controls="otros">
                                         Otros
                                             <i class="fa" aria-hidden="true"></i>
                                         </button>
                                     </h2>
                                 </div>
-						        <div id="otros" class="collapse" aria-labelledby="headingOne" data-parent="#accordion">
+						        <div id="otros" class="collapse" aria-labelledby="headingFive" data-parent="#accordion">
 						             <div class="card-body text-left">
                                         <ul>
                                             <li class="d-flex">
