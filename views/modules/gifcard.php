@@ -88,7 +88,7 @@ border-radius: 10px;
       margin-right: 20px;
       margin-left: 20px;
       margin-bottom: 2em;
-      width: 288px;
+      width: 270px;
   }
 
   .flip h3 {
