@@ -181,7 +181,7 @@
         </div> -->
         <section id="galeria">
             <article>
-                <a target="_blank" href="views/images/g1.jpeg">
+                <a target="_blank" class="image-popup img d-flex align-items-center" href="views/images/g1.jpeg">
                     
                         <img src="views/images/g1.jpeg" />
                 </a>
