@@ -12,7 +12,7 @@
 	          <!-- <li id="especialistas" class="nav-item"><a href="Especialistas" class="nav-link">Especialistas</a></li> -->
 			  <li id="galery" class="nav-item"><a href="Galeria" class="nav-link"> <b>Galería</b></a></li>
 	          <li id="contacto" class="nav-item"><a href="Contacto" class="nav-link"> <b>Contacto</b></a></li>
-			  <li id="contacto" class="nav-item"><a href="http://kkprettynails.cl/#/agendamientoCliente" class="nav-link">Agendar</a></li>
+			  <li id="contacto" class="nav-item"><a href="http://syswa.net/#/agendamientoCliente" class="nav-link">Agendar</a></li>
 			  
 			  <li>
 			  <?php 

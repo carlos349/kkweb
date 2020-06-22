@@ -15,10 +15,10 @@
             <div class="ftco-footer-widget mb-4 ml-md-4">
               <h2 class="ftco-heading-2">Enlaces populares</h2>
               <ul class="list-unstyled">
-                <li><a href="#">Manicure</a></li>
-                <li><a href="#">Pedicure</a></li>
-                <li><a href="#">Esculpidos</a></li>
-                <li><a href="#">IBX</a></li>
+                <li><a href="https://es.wikipedia.org/wiki/Manicura_(actividad)">Manicure</a></li>
+                <li><a href="https://definicion.de/pedicuria/">Pedicure</a></li>
+                <li><a href="https://www.educativo.net/articulos/que-son-las-unias-esculpidas-1089.html">Esculpidos</a></li>
+                <li><a href="http://bobellezza.com/los-beneficios-del-sistema-ibx/">IBX</a></li>
               </ul>
             </div>
           </div>
@@ -26,11 +26,11 @@
             <div class="ftco-footer-widget mb-4">
               <h2 class="ftco-heading-2">Enlaces rápidos</h2>
               <ul class="list-unstyled">
-                <li><a href="#">Nosotros</a></li>
-                <li><a href="#">Servicios</a></li>
-                <li><a href="#">Especialistas</a></li>
-                <li><a href="#">Galería</a></li>
-                <li><a href="#">Contacto</a></li>
+                <li><a href="Nosotros">Nosotros</a></li>
+                <li><a href="servicios">Servicios</a></li>
+                <!-- <li><a href="#">Especialistas</a></li> -->
+                <li><a href="Galeria">Galería</a></li>
+                <li><a href="Contacto">Contacto</a></li>
               </ul>
             </div>
           </div>

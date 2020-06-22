@@ -11,7 +11,7 @@
             <h1 style="color:#605B56;font-size: 2vw !important;">K&KPRETTYNAILS.COM</h1>
             <div class="row justify-content-center">
             <p>
-            	<a href="Contacto" style="font-size: 1em;" class="btn btn-primary p-3 px-5 py-4 mr-md-2">Agendar</a>
+            	<a href="http://syswa.net/#/agendamientoCliente" style="font-size: 1em;" class="btn btn-primary p-3 px-5 py-4 mr-md-2">Agendar</a>
             	<a href="Galeria" style="font-size: 1em;" class="btn btn-outline-primary p-3 px-5 py-4 ml-md-2">Galeria</a>
             </p>
           </div>
@@ -146,7 +146,7 @@
 							<div class="text mt-4">
 								<h3 class="mb-4" style="font-size: 30px;">Primer servicio</h3>
 								<p class="mb-5">Si quieres agendar con nosotros y este es el primer servicio tendrás automáticamente un 10% de descuento en tu primera atención, con excepción de los servicios tradicionales.</p>
-								<p><a href="#" class="btn btn-white px-4 py-3"> ¡Agenda tu servicio! </a></p>
+								<p><a href="http://syswa.net/#/agendamientoCliente" class="btn btn-white px-4 py-3"> ¡Agenda tu servicio! </a></p>
 							</div>
 						</div>
 					</div>
