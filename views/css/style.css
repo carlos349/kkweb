@@ -8569,7 +8569,7 @@ h1, h2, h3, h4, h5,
       color: #fff; }
 
 .ftco-intro {
-  background-size: cover;
+  
   background-repeat: no-repeat;
   background-position: top center; }
 
@@ -9794,6 +9794,8 @@ figure {
 
 }
 
+
+}
 /* Móviles en vertical */
 
 @media (max-width: 480px) {
@@ -9838,4 +9840,11 @@ figure {
     grid-template-columns: repeat(2, 1fr);
   }
 }
-
+@media (max-width: 1200px) { 
+  .card-body ul li {
+    font-size: 10px;
+    font-weight: 400;
+    list-style: none;
+    margin-bottom: 15px;}
+    
+}

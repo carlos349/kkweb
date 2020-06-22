@@ -7,7 +7,7 @@
       <div class="container">
         <div class="row no-gutters slider-text js-fullheight align-items-center justify-content-center">
           <div class="col-md-9 ftco-animate text-center">
-            <h1 class="mb-3 bread">Contactanos</h1>
+            <h1 class="mb-3 bread">Contáctanos</h1>
             
           </div>
         </div>
@@ -28,7 +28,7 @@
 	              <p><span>Direción:</span> Av. Pedro de Valdivia 3474 Caracol Ñuñoa, Local 53-B Ñuñoa, Chile</p>
 	            </div>
 	            <div class="col-md-12 mb-3">
-	              <p><span>Telefono:</span> <a href="tel://1234567920">+56 9 7262 8949</a></p>
+	              <p><span>Teléfono:</span> <a href="tel://1234567920">+56 9 7262 8949</a></p>
 	            </div>
 	            <div class="col-md-12 mb-3">
 	              <p><span>Correo:</span> <a href="mailto:info@yoursite.com">kkprettynails@gmail.com</a></p>

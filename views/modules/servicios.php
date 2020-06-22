@@ -20,7 +20,7 @@
                     <h2 style="font-family: 'Prata', serif;">Precios</h2>
                 </div>
             </div>
-            <div style="height: 100vh;" class="row align-items-center">
+            <div  class="row align-items-center">
                 <div class="col-lg-4">
                     <div class="row no-gutters">
                         <div class="col-md-12 d-flex align-items-stretch">
@@ -30,7 +30,7 @@
                                         </div>
                                         <div class="text mt-2">
                                             <strong style="font-size: 30px;">Manicure</strong>
-                                            <p>Para el cuidado y salud de tus manos.</p>
+                                            <p>Cuidado y salud de tus manos.</p>
                                         </div>
                                     </div>
                         </div>
@@ -47,7 +47,7 @@
                         </div>
                     </div>
                 </div>
-        	    <div class="col-lg-4 d-flex align-items-stretch">
+        	    <div  style="height: 100vh;" class="col-lg-4 d-flex align-items-stretch">
         		    <div id="accordion" class="myaccordion w-100 text-center py-5 px-1 px-md-4">
                         <div>
                             <p>10% de descuento en tu primera visita <br> 15% de descuento por recomendación</p>
@@ -255,7 +255,7 @@
                                         </div>
                                         <div class="text mt-2">
                                             <strong style="font-size: 30px;">Pedicure</strong>
-                                            <p>Para el embellecimiento de tus pies.</p>
+                                            <p>Embellecimiento de tus pies.</p>
                                         </div>
                                     </div>
                         </div>
@@ -265,7 +265,7 @@
                                             <img class="categoryImg" src="views/images/ibx.jpeg" alt="">
                                         </div>
                                         <div class="text mt-2">
-                                            <strong style="font-size: 30px;">Tratamiento IBX</strong>
+                                            <strong style="font-size: 30px;">IBX</strong>
                                             <p>Tratamiento para endurecer tus uñas.</p>
                                         </div>
                                     </div>
@@ -288,7 +288,7 @@
                         <div class="img" style="background-image: url(views/images/offer-deal-1.jpg);"></div>
                         <div class="text mt-4">
                             <h3 class="mb-4" style="font-size: 30px;">Primer servicio</h3>
-                            <p class="mb-5">Si quieres agendar con nosotros y este es el primer servicio tendrás automáticamente un 10% de descuento en todos los servicios, con excepción de los servicios tradicionales.</p>
+                            <p class="mb-5">Si quieres agendar con nosotros y este es el primer servicio tendrás automáticamente un 10% de descuento en tu primera atención, con excepción de los servicios tradicionales.</p>
                             <p><a href="#" class="btn btn-white px-4 py-3"> ¡Agenda tu servicio! </a></p>
                         </div>
                     </div>
@@ -299,7 +299,7 @@
                         <div class="text mt-4">
                             <h3 class="mb-4" style="font-size: 30px;">Recomendaciones</h3>
                             <p class="mb-5">Premiamos tu fidelidad y recomendación con un 15% por cada persona que recomiendes en todos los servicios con excepción de los servicios tradicionales.</p><br>
-                            <p><a href="#" class="btn btn-white px-4 py-3"> "Link de recomendación" </a></p>
+                            <p><a href="#" class="btn btn-white px-4 py-3"> Próximamente </a></p>
                         </div>
                     </div>
                 </div>
@@ -307,9 +307,9 @@
                     <div class="offer-deal text-center px-2 px-lg-5">
                         <div class="img" style="background-image: url(views/images/offer-deal-3.jpg);"></div>
                         <div class="text mt-4">
-                            <h3 class="mb-4" style="font-size: 30px;">Promoción del mes</h3>
-                            <p class="mb-5">"Promocion correspondiente" Lorem ipsum dolor sit amet consectetur adipisicing elit. Non nostrum aut inventore sit magnam laboriosam quia a est modi blanditiis ullam molestias </p><br>
-                            <p><a href="#" class="btn btn-white px-4 py-3"> E45TY4323SSF4 </a></p>
+                            <h3 class="mb-4" style="font-size: 30px;">Promoción del mes</h3> 
+                            <p class="mb-5">Próximamente </p><br><br><br><br><br>
+                            <p><a disabled href="#" class="btn btn-white px-4 py-3"> Deshabilitado </a></p>
                         </div>
                     </div>
                 </div>

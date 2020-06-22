@@ -24,19 +24,19 @@
           </div>
           <div class="col-md">
             <div class="ftco-footer-widget mb-4">
-              <h2 class="ftco-heading-2">Enlaces rapidos</h2>
+              <h2 class="ftco-heading-2">Enlaces rápidos</h2>
               <ul class="list-unstyled">
                 <li><a href="#">Nosotros</a></li>
                 <li><a href="#">Servicios</a></li>
                 <li><a href="#">Especialistas</a></li>
-                <li><a href="#">Galeria</a></li>
+                <li><a href="#">Galería</a></li>
                 <li><a href="#">Contacto</a></li>
               </ul>
             </div>
           </div>
           <div class="col-md">
             <div class="ftco-footer-widget mb-4">
-              <h2 class="ftco-heading-2">Preguntas?</h2>
+              <h2 class="ftco-heading-2">Contáctanos</h2>
               <div class="block-23 mb-3">
                 <ul>
                   <li><span class="icon icon-map-marker"></span><span class="text">Av. Pedro de Valdivia 3474 Caracol Ñuñoa, Local 53-B Ñuñoa, Chile</span></li>
