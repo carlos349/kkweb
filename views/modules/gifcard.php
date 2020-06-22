@@ -92,7 +92,7 @@ border-radius: 10px;
   }
 
   .flip h3 {
-    font-size: 1.2em;
+    font-size: 1.1em;
   }
 }
 
