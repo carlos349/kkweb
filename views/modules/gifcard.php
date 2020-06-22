@@ -92,6 +92,20 @@ border-radius: 10px;
       margin-right: 20px;
       margin-left: 20px;
       margin-bottom: 2em;
+      width: 400px;
+  }
+
+  .flip h3 {
+    font-size: 1.1em;
+  }
+}
+@media (max-width: 1200px) {
+  .flip {
+      position: relative;
+      display: inline-block;
+      margin-right: 20px;
+      margin-left: 20px;
+      margin-bottom: 2em;
       width: 270px;
   }
 

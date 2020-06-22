@@ -9845,6 +9845,44 @@ figure {
 }
 @media (max-width: 1400px) { 
   .card-body ul li {
+    font-size: 14px;
+    font-weight: 400;
+    list-style: none;
+    margin-bottom: 15px;}
+    .myaccordion .btn {
+      width: 100%;
+      font-weight: normal;
+      color: #000;
+      padding: 0;
+      text-transform: capitalize;
+      letter-spacing: 0;
+      font-size: 14px;
+  }
+  .myaccordion .fa {
+    font-size: 14px;
+}
+.desc p {
+  font-size: 14px;
+}
+.myaccordion{
+  padding-top: 10px;
+}
+.prom{
+  margin-top: -10%;
+}
+.testimony-wrap p{
+  font-size: 12px;
+}
+.treatment strong {
+  font-size: 20px;
+}
+.treatment p {
+  font-size: 12px;
+}
+    
+}
+@media (max-width: 1200px) { 
+  .card-body ul li {
     font-size: 10px;
     font-weight: 400;
     list-style: none;
