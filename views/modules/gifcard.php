@@ -85,7 +85,7 @@ border-radius: 10px;
   transition-property: transform, opacity;
 }
 
-@media (max-width: 14000px) {
+@media (max-width: 1400px) {
   .flip {
       position: relative;
       display: inline-block;
