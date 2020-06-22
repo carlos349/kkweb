@@ -9843,7 +9843,7 @@ figure {
     grid-template-columns: repeat(2, 1fr);
   }
 }
-@media (max-width: 1360px) { 
+@media (max-width: 1400px) { 
   .card-body ul li {
     font-size: 10px;
     font-weight: 400;

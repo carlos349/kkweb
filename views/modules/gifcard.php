@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    
+    <script src="views/js/jquery.min.js"></script>
     <style>
        .flip {
   position: relative;
@@ -80,8 +80,12 @@ border-radius: 10px;
 .text-shadow {
   text-shadow: 1px 1px rgba(0, 0, 0, 0.04), 2px 2px rgba(0, 0, 0, 0.04), 3px 3px rgba(0, 0, 0, 0.04), 4px 4px rgba(0, 0, 0, 0.04), 0.125rem 0.125rem rgba(0, 0, 0, 0.04), 6px 6px rgba(0, 0, 0, 0.04), 7px 7px rgba(0, 0, 0, 0.04), 8px 8px rgba(0, 0, 0, 0.04), 9px 9px rgba(0, 0, 0, 0.04), 0.3125rem 0.3125rem rgba(0, 0, 0, 0.04), 11px 11px rgba(0, 0, 0, 0.04), 12px 12px rgba(0, 0, 0, 0.04), 13px 13px rgba(0, 0, 0, 0.04), 14px 14px rgba(0, 0, 0, 0.04), 0.625rem 0.625rem rgba(0, 0, 0, 0.04), 16px 16px rgba(0, 0, 0, 0.04), 17px 17px rgba(0, 0, 0, 0.04), 18px 18px rgba(0, 0, 0, 0.04), 19px 19px rgba(0, 0, 0, 0.04), 1.25rem 1.25rem rgba(0, 0, 0, 0.04);
 }
+.register , .logging{
+  transition-duration: .5s;
+  transition-property: transform, opacity;
+}
 
-@media (max-width: 1360px) {
+@media (max-width: 14000px) {
   .flip {
       position: relative;
       display: inline-block;
@@ -99,7 +103,69 @@ border-radius: 10px;
     </style>
 </head>
 <body>
-   
+  <div class="modal fade" id="giftModal" data-backdrop="static" data-keyboard="false" tabindex="-1" role="dialog" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="staticBackdropLabel">Gift Card</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <div class="row">
+            <div  class="col-6 py-5">
+              <div class="text-center py-5" style="background-color: #fbf2f6;border-radius:5px"><h2 >Manicure y pedicure tradicional</h2><h4 style="font-weight: 600 !important;text-align: center;" ><i style="color: #77a464;" class="fa fa-money"></i> 15.000,00</h4></div>
+              
+            </div>
+            <div style="background-color: white;" class="col-6"> 
+              <h3 class="hH">Registrate para continuar</h3>
+              <h3 style="display: none;" class="hH">Ingresa para continuar</h3>
+              <form class="py-2 register" method="post">
+               
+                <div class="contact-form">
+                    <div class="form-group">
+                        <input type="text" class="form-control Mail-login" name="nombre" placeholder="Nombre">
+                    </div>
+                    <div class="form-group">
+                        <input type="text" class="form-control Mail-login" name="apellido" placeholder="Apellido">
+                    </div>
+
+                    <div class="form-group">
+                        <input type="text" class="form-control Mail-login" name="correo" placeholder="Correo">
+                    </div>
+                    <div class="form-group">
+                      <input type="password" class="form-control Mail-login" name="pass" placeholder="Contraseña">
+                  </div>
+                    <div class="form-group align-items-rigth" style="display: inline-block" >
+                        <input type="submit" value="Proceder" class="btn btn-primary py-2 px-4 system-login">
+                        
+                    </div>
+                </div> 
+                <a style="cursor: pointer;" class="text-center acc">¿Ya tienes una cuenta?</a>
+            </form>
+            <form style="display: none;" class="logging py-2" method="post">
+              <div class="contact-form">
+                  <div class="form-group">
+                      <input type="text" class="form-control Mail-login" name="usuarioIngreso" placeholder="Correo">
+                  </div>
+                  <div class="form-group">
+                      <input type="text" class="form-control Pass-login" name="passwordIngreso" placeholder="Contraseña">
+                  </div>
+                  <div class="form-group align-items-rigth" style="display: inline-block" >
+                      <input type="submit" value="Procesar" class="btn btn-primary py-2 px-4 system-login"><br>
+                      <a style="cursor: pointer;" class="acc">¿No estás registrado?</a>
+                  </div>
+              </div>
+            </form> 
+           
+            </div>
+          </div>
+        </div>
+      
+      </div>
+    </div>
+  </div>
 
     <center>
         
@@ -111,7 +177,7 @@ border-radius: 10px;
           <h3 style="font-weight:300" >Manicure y pedicure tradicional</h3>
           
           <h4 style="font-weight: 600 !important;" ><i style="color: #77a464;" class="fa fa-money"></i> 15.000,00</h4>
-          <p><a href="#" class="btn btn-white px-4 py-3"> Regalar </a></p>
+          <p><button data-toggle="modal" data-target="#giftModal" class="btn btn-white px-4 py-3"> Regalar </button></p>
         </div>
     </div>
     <div class="flip">
@@ -178,4 +244,14 @@ border-radius: 10px;
 
     
 </body>
+<script>
+  $(document).ready(function(){
+  $(".acc").click(function(){
+    console.log("hola")
+    $(".register").toggle('fast');
+    $(".hH").toggle('fast');
+    $(".logging").toggle('fast')
+  });
+});
+</script>
 </html>
