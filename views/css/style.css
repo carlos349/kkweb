@@ -9883,7 +9883,7 @@ figure {
 }
 @media (max-width: 1360px) { 
   .card-body ul li {
-    font-size: 10px;
+    font-size: 12px;
     font-weight: 400;
     list-style: none;
     margin-bottom: 15px;}
@@ -9900,7 +9900,7 @@ figure {
     font-size: 14px;
 }
 .desc p {
-  font-size: 10px;
+  font-size: 14px;
 }
 .myaccordion{
   padding-top: 10px;
