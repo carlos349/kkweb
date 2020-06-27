@@ -264,6 +264,40 @@
 
 	$('.appointment_time').timepicker();
 
+	$(".accLog").click(function(){
+	  
+		$(".registerL").toggle('fast');
+		
+		$(".loggingL").toggle('fast')
+	  });
+
+
+	  $(".eye").on("click", function() {
+        $(this).siblings().removeClass("activePanel");
+        $(this).addClass("activePanel");
+        $(".dashboard").siblings().removeClass("showPanel").addClass("hidePanel");
+        $(".dashboard").addClass("showPanel");
+    });
+    $(".comments").on("click", function() {
+        $(this).siblings().removeClass("activePanel");
+        $(this).addClass("activePanel");
+        $(".comments-c").siblings().removeClass("showPanel").addClass("hidePanel");
+        $(".comments-c").addClass("showPanel");
+    });
+
+    $(".bell").on("click", function() {
+        $(this).siblings().removeClass("activePanel");
+        $(this).addClass("activePanel");
+        $(".notification").siblings().removeClass("showPanel").addClass("hidePanel");
+        $(".notification").addClass("showPanel");
+    });
+    $(".cog").on("click", function() {
+        $(this).siblings().removeClass("activePanel");
+        $(this).addClass("activePanel");
+        $(".settings").siblings().removeClass("showPanel").addClass("hidePanel");
+        $(".settings").addClass("showPanel");
+    });
+	
 	
 })(jQuery);
 

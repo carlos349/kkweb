@@ -113,6 +113,9 @@ border-radius: 10px;
     font-size: 1.1em;
   }
 }
+.hid{
+  display: none;
+}
 
     </style>
 </head>
@@ -129,7 +132,17 @@ border-radius: 10px;
         <div class="modal-body">
           <div class="row">
             <div  class="col-6 py-5">
-              <div class="text-center py-5" style="background-color: #fbf2f6;border-radius:5px"><h2 >Manicure y pedicure tradicional</h2><h4 style="font-weight: 600 !important;text-align: center;" ><i style="color: #77a464;" class="fa fa-money"></i> 15.000,00</h4></div>
+              <div class="text-center py-5 01 hid" style="background-color: #fbf2f6;border-radius:5px"><h2 >Manicure tradicional + Pedicure tradicional</h2><h4 style="font-weight: 600 !important;text-align: center;" ><i style="color: #77a464;" class="fa fa-money"></i> 15.000,00</h4></div>
+
+              <div class="text-center py-5 02 hid" style="background-color: #fbf2f6;border-radius:5px"><h2 >Manicure permanente</h2><h4 style="font-weight: 600 !important;text-align: center;" ><i style="color: #77a464;" class="fa fa-money"></i> 12.000,00</h4></div>
+
+              <div class="text-center py-5 03 hid" style="background-color: #fbf2f6;border-radius:5px"><h2 >Manicure y pedicure permanente</h2><h4 style="font-weight: 600 !important;text-align: center;" ><i style="color: #77a464;" class="fa fa-money"></i> 27.000,00</h4></div>
+
+              <div class="text-center py-5 04 hid" style="background-color: #fbf2f6;border-radius:5px"><h2 >Manicure permanente y ondulación de pestañas</h2><h4 style="font-weight: 600 !important;text-align: center;" ><i style="color: #77a464;" class="fa fa-money"></i> 26.500,00</h4></div>
+
+              <div class="text-center py-5 05 hid" style="background-color: #fbf2f6;border-radius:5px"><h2 >Ondulación con tinte</h2><h4 style="font-weight: 600 !important;text-align: center;" ><i style="color: #77a464;" class="fa fa-money"></i> 15.000,00</h4></div>
+
+              <div class="text-center py-5 06 hid" style="background-color: #fbf2f6;border-radius:5px"><h2 >Ondulación sin tinte</h2><h4 style="font-weight: 600 !important;text-align: center;" ><i style="color: #77a464;" class="fa fa-money"></i> 13.000,00</h4></div>
               
             </div>
             <div style="background-color: white;" class="col-6"> 
@@ -188,10 +201,10 @@ border-radius: 10px;
           
         </div>
         <div class="back">
-          <h3 style="font-weight:300" >Manicure y pedicure tradicional</h3>
+          <h3 style="font-weight:300" >Manicure tradicional + Pedicure tradicional</h3>
           
           <h4 style="font-weight: 600 !important;" ><i style="color: #77a464;" class="fa fa-money"></i> 15.000,00</h4>
-          <p><button data-toggle="modal" data-target="#giftModal" class="btn btn-white px-4 py-3"> Regalar </button></p>
+          <p><button data-toggle="modal" id="1" value="1" data-target="#giftModal" class="btn modG btn-white px-4 py-3"> Regalar </button></p>
         </div>
     </div>
     <div class="flip">
@@ -202,7 +215,7 @@ border-radius: 10px;
           <br>
           <h3 style="font-weight:300" >Manicure permanente</h3> 
           <h4 style="font-weight: 600 !important;" ><i style="color: #77a464;" class="fa fa-money"></i> 12.000,00</h4>
-          <p><a href="#" class="btn btn-white px-4 py-3"> Regalar </a></p>
+          <p><button data-toggle="modal" value="2" data-target="#giftModal" class="btn modG btn-white px-4 py-3"> Regalar </button></p>
         </div>
     </div>
     <div class="flip">
@@ -212,7 +225,7 @@ border-radius: 10px;
         <div class="back">
           <h3 style="font-weight:300" >Manicure y pedicure permanente</h3>
           <h4 style="font-weight: 600 !important;" ><i style="color: #77a464;" class="fa fa-money"></i> 27.000,00</h4>
-          <p><a href="#" class="btn btn-white px-4 py-3"> Regalar </a></p>
+          <p><button data-toggle="modal" value="3" data-target="#giftModal" class="btn modG btn-white px-4 py-3"> Regalar </button></p>
         </div>
     </div>
     <br>
@@ -224,7 +237,7 @@ border-radius: 10px;
         <h3 style="font-weight:300" >Manicure permanente y ondulación de pestañas</h3>
         
         <h4 style="font-weight: 600 !important;" > <i style="color: #77a464;" class="fa fa-money"></i> 26.500,00</h4>
-        <p><a href="#" class="btn btn-white px-4 py-3"> Regalar </a></p>
+        <p><button data-toggle="modal" value="4" data-target="#giftModal" class="btn modG btn-white px-4 py-3"> Regalar </button></p>
       </div>
   </div>
   <div class="flip">
@@ -235,7 +248,7 @@ border-radius: 10px;
       <br>
       <h3 style="font-weight:300" >Ondulación con tinte</h3>
       <h4  style="font-weight: 600 !important;"><i style="color: #77a464;" class="fa fa-money"></i> 15.000,00</h4>
-      <p><a href="#" class="btn btn-white px-4 py-3"> Regalar </a></p>
+      <p><button data-toggle="modal" value="5" data-target="#giftModal" class="btn modG btn-white px-4 py-3"> Regalar </button></p>
     </div>
 </div>
 <div class="flip">
@@ -246,7 +259,7 @@ border-radius: 10px;
     <br>
     <h3 style="font-weight:300" >Ondulación sin tinte</h3>
     <h4 style="font-weight: 600 !important;" ><i style="color: #77a464;" class="fa fa-money"></i> 13.000,00</h4>
-    <p><a href="#" class="btn btn-white px-4 py-3"> Regalar </a></p>
+    <p><button data-toggle="modal" value="6" data-target="#giftModal" class="btn modG btn-white px-4 py-3"> Regalar </button></p>
   </div>
 </div>
 
@@ -266,6 +279,12 @@ border-radius: 10px;
     $(".hH").toggle('fast');
     $(".logging").toggle('fast')
   });
+
+  $('.modG').click(function () {
+    var este = $(this).val()
+    $(".hid").hide()
+    $(".0"+este).show()
+  })
 });
 </script>
 </html>
