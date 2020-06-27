@@ -3,7 +3,7 @@
 		protected $conexion;
 		public function Conexion(){
 			try {
-				$this->conexion = new PDO("mysql:host=localhost; dbname=kkprettynails", "root", "");
+				$this->conexion = new PDO("mysql:host=kkprettynails.cl; dbname=u259161004_kkprettynails", "u259161004_kkweb", "l26151369");
 				$this->conexion->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 				$this->conexion->exec("set character set utf8");
 
