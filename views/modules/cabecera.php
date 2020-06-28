@@ -225,7 +225,7 @@
 								<div class="title">Historico de servicios</div>
 								<div class="description">
 									<table style="font-size: 12px;" class="table">
-										<thead class="thead-dark">
+										<thead class="thead-light">
 										  <tr>
 											<th scope="col">Fecha</th>
 											<th scope="col">Servicio(s)</th>
@@ -252,7 +252,7 @@
 								 <div class="title">Citas pendiente</div>
 								<div class="description">
 									<table style="font-size: 12px;" class="table">
-										<thead class="thead-dark">
+										<thead class="thead-light">
 										  <tr>
 											<th scope="col">Fecha</th>
 											<th scope="col">Servicio(s)</th>
@@ -267,7 +267,7 @@
 											<td>Manicure tradicional</td>
 											<td>Katriel Capacho</td>
 											<td>$ 15.000,00</td>
-											<td><button class="btn btn-success">Confirmar</button></td>
+											<td><button style="font-size: .7em;" class="btn btn-success">Confirmar</button></td>
 										  </tr>
 										  
 										</tbody>

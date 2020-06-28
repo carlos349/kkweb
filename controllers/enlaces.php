@@ -22,7 +22,7 @@ class Enlaces{
 
 		else{
 
-			$enlaces = "inicio";
+			$enlaces = "inicios";
 
 		}
 
