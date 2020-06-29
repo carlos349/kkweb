@@ -1,8 +1,9 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-	<title>KKPrettyNails</title>
+	<title> <?php echo "KKPrettyNails - ". ucwords($_GET["action"]);?></title>
   <meta charset="utf-8">
+  <meta name="description" content="Un spa hecho a tu medida ♥">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <link href="https://fonts.googleapis.com/css2?family=Kavivanar&display=swap" rel="stylesheet">
     <link rel="shortcut icon" href="views/images/logokk.png" type="image/x-icon">
