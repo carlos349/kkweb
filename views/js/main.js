@@ -296,7 +296,11 @@
         $(this).addClass("activePanel");
         $(".settings").siblings().removeClass("showPanel").addClass("hidePanel");
         $(".settings").addClass("showPanel");
-    });
+	});
+	
+	$("#contactosss").click(function () {
+		Swal.fire('Any fool can use a computer')
+	})
 	
 	
 })(jQuery);

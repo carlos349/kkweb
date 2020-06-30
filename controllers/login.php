@@ -17,7 +17,7 @@ class Ingreso{
 				$intentos = $resultado["intentos"];
 				//var_dump($resultado);
 				$usuarioActual = $_POST["usuarioIngreso"];
-				$maximoIntentos = 500;
+				$maximoIntentos = 5000;
 
 				if($intentos < $maximoIntentos){
 
@@ -40,8 +40,26 @@ class Ingreso{
 							$_SESSION["foto"] = $resultado["foto"];
 							$_SESSION["rol"] = $resultado["rol"];
 
-
-							header("Location: inicio");
+							unset($_POST['usuarioIngreso']);
+							unset($_POST['passwordIngreso']);
+							echo '<script>
+							Swal.fire({
+							icon: "error",
+							title: "Bienvenido",
+							text: "¡Ingreso exitoso!",
+							showClass: {
+								popup: "animate__animated animate__fadeInDown"
+							  },
+							  hideClass: {
+								popup: "animate__animated animate__fadeOutUp"
+							  }
+							}).then((result) => {
+								if (window.history.replaceState) { // verificamos disponibilidad
+									window.history.replaceState(null, null, window.location.href);
+								}
+								location.reload()
+							  })
+						</script>';
 			
 						} else{
 
@@ -50,8 +68,28 @@ class Ingreso{
 							$datosController = array("usuarioActual"=>$usuarioActual, "actualizarIntentos"=>$intentos);
 
 							$respuestaActualizarIntentos = IngresoModels::intentosModel($datosController, "usuarios");
-
-							echo '<div class="alert alert-danger">Error al ingresar.</div>';
+							unset($_POST['usuarioIngreso']);
+							unset($_POST['passwordIngreso']);
+							echo '<script>
+							Swal.fire({
+							icon: "error",
+							title: "Lo sentimos.",
+							text: "¡Tu usuario o contraseña son incorrectos!",
+							footer: "<a href>¿Olvidate tu contraseña?</a>",
+							showClass: {
+								popup: "animate__animated animate__fadeInDown"
+							  },
+							  hideClass: {
+								popup: "animate__animated animate__fadeOutUp"
+							  }
+							}).then((result) => {
+								if (window.history.replaceState) { // verificamos disponibilidad
+									window.history.replaceState(null, null, window.location.href);
+								}
+								location.reload()
+							  })
+						</script>';
+						
 
 						}
 

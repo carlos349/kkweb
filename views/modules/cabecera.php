@@ -11,7 +11,8 @@
 	          <li id="servicios" class="nav-item"><a href="servicios" class="nav-link"> <b>Servicios</b></a></li>
 	          <!-- <li id="especialistas" class="nav-item"><a href="Especialistas" class="nav-link">Especialistas</a></li> -->
 			  <li id="galery" class="nav-item"><a href="Galeria" class="nav-link"> <b>Galería</b></a></li>
-	          <li id="contacto" class="nav-item"><a href="Contacto" class="nav-link"> <b>Contacto</b></a></li>
+			  <li id="contacto" class="nav-item"><a href="Contacto" class="nav-link"> <b>Contacto</b></a></li>
+			 
 			  <li id="contacto" class="nav-item"><a href="http://syswa.net/#/agendamientoCliente" class="nav-link">Agendar</a></li>
 			  
 			  <li>
@@ -100,11 +101,11 @@
                 <a style="cursor: pointer;" class="text-center accLog">¿Ya tienes una cuenta?</a>
 			</form>
 			<?php
-
+				if ($_POST) {
 				$ingreso = new Ingreso();
 				$ingreso -> ingresoController();
-				if (!$_POST) {
-							
+				}
+				else{			
 			?>
             <form  class="loggingL p-4" method="post">
 				<h3  class="hH">Ingresar</h3>
