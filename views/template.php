@@ -11,6 +11,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;1,100;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@9"></script>
     <script src="https://cdn.jsdelivr.net/npm/promise-polyfill"></script>
+    <script src="https://cdn.jsdelivr.net/npm/clipboard@2.0.6/dist/clipboard.min.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css"/>
     <!-- <link href="https://fonts.googleapis.com/css2?family=Poiret+One&display=swap" rel="stylesheet"> -->
     <!-- <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700&display=swap" rel="stylesheet">
@@ -59,19 +60,85 @@
   <script src="views/js/main.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.19.2/axios.min.js"></script>
   <script>
+    var btns = document.querySelectorAll('button');
+    var clipboard = new ClipboardJS(btns);
+
+    clipboard.on('success', function(e) {
+        console.log(e);
+    });
+
+    clipboard.on('error', function(e) {
+        console.log(e);
+    });
+  </script>
+  <script>
     const endpoint = 'localhost:4200'
     $(document).ready(() => {
-      $('.system-login').on('click', () => {
-        fetch('https://jsonplaceholder.typicode.com/todos/1')
-        .then(res => {
-          console.log(res)
+      $('.system-register').on('click', () => {
+
+        var data = {
+          name:$("#nombreS").val(),
+          mail:$("#correoS").val()
+        }
+
+        fetch('http://kkprettynails.syswa.net:4200/clients/verifyClient', {
+          method: 'POST', // or 'PUT'
+          body: JSON.stringify(data),
+          headers:{
+            'Content-Type': 'application/json'
+          }
         })
-        .catch(err => {
-          console.log(err)
+        .then(res => res.json())
+        .catch(error => {
+          console.log(error)
+          Swal.fire({
+							icon: "error",
+							title: "Lo sentimos.",
+							text: "Estamos presentando errores tecnicos",
+							footer: "<a href>¿Olvidate tu contraseña?</a>",
+							showClass: {
+								popup: "animate__animated animate__fadeInDown"
+							  },
+							  hideClass: {
+								popup: "animate__animated animate__fadeOutUp"
+							  }
+					}).then((result) => {
+              if (window.history.replaceState) { // verificamos disponibilidad
+                window.history.replaceState(null, null, window.location.href);
+              }
+              // location.reload()
+						})
         })
+        .then(response => {
+          console.log(response.data._id)
+          $("#idSyst").val(response.data._id)
+          $("#registroCliente").submit()
+        })
+        
+      })
+
+      
+      
+      $("#verPerfil").on( 'click', ()  => {
+        const idSys = $("#valSys").val()
+        fetch('http://kkprettynails.syswa.net:4200/clients/findOne/'+idSys) 
+        .then(function(response) {
+          return response.json();
+        })
+        .catch(error => {
+          console.log(error)
+         
+        })
+        .then(function(myJson) {
+          $("#serviciosSys").text(myJson.participacion)
+          $("#referidoSys").text("https://kkprettynails.cl/refer="+myJson._id)
+        });
       })
       
     });
+    
+	
+  
   </script>
 </body>
 

@@ -273,12 +273,14 @@
 
 
 	  $(".eye").on("click", function() {
+		  $(".blockear").prop('disabled' , true )
         $(this).siblings().removeClass("activePanel");
         $(this).addClass("activePanel");
         $(".dashboard").siblings().removeClass("showPanel").addClass("hidePanel");
         $(".dashboard").addClass("showPanel");
     });
     $(".comments").on("click", function() {
+		$(".blockear").prop('disabled' , true )
         $(this).siblings().removeClass("activePanel");
         $(this).addClass("activePanel");
         $(".comments-c").siblings().removeClass("showPanel").addClass("hidePanel");
@@ -286,12 +288,14 @@
     });
 
     $(".bell").on("click", function() {
+		$(".blockear").prop('disabled' , true )
         $(this).siblings().removeClass("activePanel");
         $(this).addClass("activePanel");
         $(".notification").siblings().removeClass("showPanel").addClass("hidePanel");
         $(".notification").addClass("showPanel");
     });
     $(".cog").on("click", function() {
+		$(".blockear").prop('disabled' , false )
         $(this).siblings().removeClass("activePanel");
         $(this).addClass("activePanel");
         $(".settings").siblings().removeClass("showPanel").addClass("hidePanel");
@@ -302,6 +306,35 @@
 		Swal.fire('Any fool can use a computer')
 	})
 	
+	$(".showPass").on('click', function() {
+		if ($(".passHide").attr('type') == "password") {
+			$(".passHide").attr('type' , 'text')
+			$(".showPass").addClass('showPassActive')
+		}
+		else if ($(".passHide").attr('type') == 'text') {
+			$(".showPass").removeClass('showPassActive')
+			$(".passHide").attr('type' , 'password')
+		}
+	})
+
+	$(".botonChangePass").on('click', function() {
+		if ($(".passValid").val() == $(".passRepeat").val()) {
+			$(".chagePassForm").submit()
+		}
+		else {
+			Swal.fire({
+				icon: "error",
+				title: "Error",
+				text: "¡Las contraseñas no coinciden inténtalo de nuevo!",
+				showClass: {
+					popup: "animate__animated animate__fadeInDown"
+				  },
+				  hideClass: {
+					popup: "animate__animated animate__fadeOutUp"
+				  }
+				})
+		}
+	})
 	
 })(jQuery);
 
@@ -342,4 +375,6 @@ function draw() {
   }
 }
 loop();
+
+
 

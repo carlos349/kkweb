@@ -8,6 +8,7 @@ require_once 'models/signup.php';
 require_once 'controllers/enlaces.php';
 require_once 'controllers/signup.php';
 require_once 'controllers/login.php';
+require_once 'controllers/send.php';
 
 require_once 'controllers/template.php';
 

@@ -33,6 +33,10 @@ class Ingreso{
 							$_SESSION["validar"] = true;
 							$_SESSION["usuario"] = $resultado["usuario"];
 							$_SESSION["id"] = $resultado["id"];
+							$_SESSION["idSys"] = $resultado["idSistema"];
+							$_SESSION["numero"] = $resultado["numero"];
+							$_SESSION["descuentos"] = $resultado["descuentos"];
+							$_SESSION["recomendaciones"] = $resultado["recomendaciones"];
 							$_SESSION["password"] = $resultado["contrasena"];
 							$_SESSION["correo"] = $resultado["correo"];
 							$_SESSION["nombre"] = $resultado["nombre"];
@@ -44,7 +48,7 @@ class Ingreso{
 							unset($_POST['passwordIngreso']);
 							echo '<script>
 							Swal.fire({
-							icon: "error",
+							icon: "success",
 							title: "Bienvenido",
 							text: "¡Ingreso exitoso!",
 							showClass: {

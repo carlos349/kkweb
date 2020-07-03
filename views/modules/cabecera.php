@@ -25,7 +25,7 @@
 						<?php echo $_SESSION['nombre']." ".$_SESSION['apellido']?>
 					</button>
 					<div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-					  <a class="dropdown-item" data-toggle="modal" data-target="#panelModal" href="#">Perfil de usuario</a>
+					  <a class="dropdown-item" id="verPerfil" data-toggle="modal" data-target="#panelModal" href="#">Perfil de usuario</a>
 					  <a class="dropdown-item" href="cerrarSesion">Cerrar sesion</a>
 					</div>
 				  </div>
@@ -44,21 +44,18 @@
 		  </div>
 	  </nav>
 
-	  
+	  <input type="hidden"  id="valSys" value="<?php echo $_SESSION['idSys']; ?>">
 
 	  <div class="modal fade" id="logModal" data-backdrop="static" data-keyboard="false" tabindex="-1" role="dialog" aria-labelledby="staticBackdropLabel" aria-hidden="true">
     <div class="modal-dialog modal-md">
       <div class="modal-content">
-        <div class="modal-header">
-         
-          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-            <span aria-hidden="true">&times;</span>
-          </button>
-        </div>
+        
         <div class="modal-body p-3">
           <div class="row">
-            <div style="background-color: white;" class="col-12 p-3"> 
-              
+            <div style="background-color: white;" class="col-12 px-3"> 
+				<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+					<span aria-hidden="true">&times;</span>
+				  </button>
 				<center>
 					<img style="width:35%" src="views/images/logokk.png" alt="">
 				</center>
@@ -74,28 +71,37 @@
 				}  
 			
 			 ?>
-              <form style="display: none;" class="p-3 registerL" method="post">
-               <h3 class="hH">Registrate</h3>
+              <form style="display: none;" class="p-3 registerL" id="registroCliente"  method="post">
+               <h3 class="hH text-center">Regístrate</h3>
                 <div class="contact-form">
                     <div class="form-group">
-                        <input type="text" class="form-control Mail-login" name="nombre" placeholder="Nombre">
+                        <input type="text" class="form-control Mail-login" id="nombreS" name="nombre" placeholder="Nombre">
                     </div>
                     <div class="form-group">
                         <input type="text" class="form-control Mail-login" name="apellido" placeholder="Apellido">
                     </div>
 
                     <div class="form-group">
-                        <input type="email" class="form-control Mail-login" name="correo" placeholder="Correo">
+                        <input type="email" class="form-control Mail-login" id="correoS" name="correo" placeholder="Correo">
 					</div>
 					<div class="form-group">
-                        <input type="text" class="form-control Mail-login" name="apellido" placeholder="Numero de telefono">
+                        <input type="text" class="form-control Mail-login" name="numero" placeholder="Número de teléfono">
                     </div>
                     <div class="form-group">
-                      <input type="password" class="form-control Mail-login" name="pass" placeholder="Contraseña">
-                  </div>
+						<div class="row">
+							<div class="col-sm-10">
+								<input type="password" class="form-control Mail-login passHide" name="pass" placeholder="Contraseña">
+							</div>
+							<div style="margin-top: 25px;" class="col-sm-2">
+								<i class="fa fa-eye showPass"></i>
+							</div>
+					  
+						</div>
+					  
+				  </div>
+				  <input hidden type="text" id="idSyst" name="idSys" >
                     <div class="form-group align-items-rigth" style="display: inline-block" >
-                        <input type="submit" value="Proceder" class="btn btn-primary py-2 px-4 system-login">
-                        
+                        <button type="button"  class="btn btn-primary py-2 px-4 system-login system-register"> Registrarme </button>
                     </div>
                 </div> 
                 <a style="cursor: pointer;" class="text-center accLog">¿Ya tienes una cuenta?</a>
@@ -108,13 +114,22 @@
 				else{			
 			?>
             <form  class="loggingL p-4" method="post">
-				<h3  class="hH">Ingresar</h3>
+				
               <div class="contact-form">
                   <div class="form-group">
                       <input type="text" class="form-control Mail-login" name="usuarioIngreso" placeholder="Correo">
                   </div>
                   <div class="form-group">
-                      <input type="text" class="form-control Pass-login" name="passwordIngreso" placeholder="Contraseña">
+					<div class="row">
+						<div class="col-sm-10">
+							<input type="password" class="form-control Mail-login passHide" name="passwordIngreso" placeholder="Contraseña">
+						</div>
+						<div style="margin-top: 25px;" class="col-sm-2">
+							<i class="fa fa-eye showPass"></i>
+						</div>
+				  
+					</div>
+                      
                   </div>
                   <div class="form-group align-items-rigth" style="display: inline-block" >
                       <input type="submit" value="Ingresar" class="btn btn-primary py-2 px-4 system-login">
@@ -157,13 +172,14 @@
 							<div class="icons-right">
 								<div class="icons-container">
 									<div class="search"><button type="button" class="close" data-dismiss="modal" aria-label="Close">
-										<span aria-hidden="true">&times;</span>
+										<span style="color: #605b56;" aria-hidden="true">&times;</span>
 									  </button></div>
 								</div>
 							</div>
 						</div>
 						<div class="bottom">
 							<div class="dashboard">
+											
 								<div class="title">Estadisticas</div>
 								<div class="description">
 									
@@ -172,7 +188,7 @@
 										  <div class="card__flipper">
 											<div class="card__front">
 											  <p class="card__name mt-3">Servicios <br> realizados</p>
-											  <p class="card__num">9</p>
+											  <p id="serviciosSys" class="card__num"></p>
 											</div>
 											<div class="card__back">
 											  <svg height="180" width="180">
@@ -185,8 +201,8 @@
 										<li class="cardPanel">
 										  <div class="card__flipper">
 											<div class="card__front">
-											  <p class="card__name mt-3">Recomendaciones totales</p>
-											  <p class="card__num">12</p>
+											  <p class="card__name mt-3">Citas <br> pendientes</p>
+											  <p class="card__num">0</p>
 											</div>
 											<div class="card__back">
 											  <svg height="180" width="180">
@@ -199,8 +215,8 @@
 										<li class="cardPanel">
 										  <div class="card__flipper">
 											<div class="card__front">
-											  <p class="card__name mt-3">Descuentos disponibles</p>
-											  <p class="card__num">7</p>
+											  <p class="card__name mt-3">Recomendaciones (Descuentos 15%)</p>
+											  <p class="card__num">0</p>
 											</div>
 											<div class="card__back">
 											  <svg height="180" width="180">
@@ -213,8 +229,16 @@
 										
 									  </ul>
 									  <center>
-										 <p style="    font-size: 16px;
-										 text-align: center;"> <span style="background-color: #302e2b;padding: 10px;border:1px solid #302e2b;">Link de referido:</span> <span style="border:1px solid #302e2b;padding: 10px;margin-left: -10px; ">https://kkprettynails.cl/refer=09039344</span> <span style="border:1px solid #302e2b;padding: 10px;margin-left: -10px;background-color: #302e2b; ">Copiar</span> </p> 
+										 <p style="font-size: 16px;text-align: center;"> 
+											<span style="background-color: #605b56;padding: 10px;border:1px solid #605b56;">Link de referido:</span> 
+											<span id="referidoSys" style="border:1px solid #605b56;padding: 10px;margin-left: -10px;padding-left:20px;padding-right:20px "></span> 
+											<button data-clipboard-target="#referidoSys" style="    border: none;
+											padding: 5px;
+											padding-left: 15px;
+											padding-right: 15px;
+											color: white;
+											background-color: #605b56; ">Copiar</button> 
+										</p> 
 									  </center>
 									  
 									  
@@ -241,7 +265,7 @@
 											<td>Manicure tradicional</td>
 											<td>Katriel Capacho</td>
 											<td>$ 15.000,00</td>
-											<td><button class="btn btn-success">Reagendar</button></td>
+											<td><button style="font-size: .7em;" class="btn btn-success">Reagendar</button></td>
 										  </tr>
 										  
 										</tbody>
@@ -282,24 +306,24 @@
 										<div class="row">
 											<div class="col-sm-6">
 												<div class="form-group">
-													<input type="text" class="form-control Mail-login" name="nombre" placeholder="Nombre">
+													<input type="text" value="<?php echo $_SESSION['nombre']; ?>" class="form-control Mail-login" disabled="true" name="nombre" placeholder="Nombre">
 												</div>
 												<div class="form-group">
-													<input type="email" class="form-control Mail-login" name="correo" placeholder="Correo">
+													<input type="email" value="<?php echo $_SESSION['correo']; ?>" class="form-control Mail-login" disabled="true" name="correo" placeholder="Correo">
 												</div>
 												<div class="form-group">
-													<input type="password" class="form-control Mail-login" name="pass" placeholder="Contraseña">
+													<input type="password" value="**************" class="form-control Mail-login" disabled="true" name="pass" placeholder="Contraseña">
 												</div>
 											</div>
 											<div class="col-sm-6">
 												<div class="form-group">
-													<input type="text" class="form-control Mail-login" name="apellido" placeholder="Apellido">
+													<input type="text" value="<?php echo $_SESSION['apellido']; ?>" class="form-control Mail-login" disabled="true" name="apellido" placeholder="Apellido">
 												</div>
 												<div class="form-group">
-													<input type="text" class="form-control Mail-login" name="apellido" placeholder="Numero de telefono">
+													<input type="text" value="<?php echo $_SESSION['numero']; ?>" class="form-control Mail-login" disabled="true" name="apellido" placeholder="Numero de telefono">
 												</div>
 												<div class="form-group align-items-rigth m-3" style="display: inline-block" >
-													<input type="submit" value="Actualizar datos" class="btn btn-primary py-3 px-3 system-login">
+													<input type="button" value="Cambiar contraseña" data-toggle="modal" data-target="#changeModal" class="btn btn-primary py-3 px-3 blockear" disabled="true">
 													
 												</div>
 											</div>
@@ -318,6 +342,84 @@
 					</div>
 				</div>
 				
+            </div>
+          </div>
+        </div>
+      
+      </div>
+    </div>
+  </div>
+  <?php 
+
+  if (isset($_POST["passOld"])) {
+	  
+	  $cambio = new Registro();
+	  $respuesta = $cambio -> cambioPass();
+	  
+  }  
+
+?>
+  <div class="modal fade" id="changeModal" data-backdrop="static" data-keyboard="false" tabindex="-1" role="dialog" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+    <div class="modal-dialog modal-md">
+      <div class="modal-content">
+   
+        <div class="modal-body p-3">
+			
+          <div class="row">
+            <div style="background-color: white;" class="col-12 p-3"> 
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+				<span aria-hidden="true">&times;</span>
+			  </button>
+				<center>
+					<img style="width:35%" src="views/images/logokk.png" alt="">
+				</center>
+		
+            <form  class="p-4 chagePassForm" method="post">
+				<h3 >Cambiar contraseña</h3>
+              <div class="contact-form">
+                  <div class="form-group">
+					<div class="row">
+						<div class="col-sm-10">
+							<input type="password" class="form-control Mail-login passHide" name="passOld" placeholder="Contraseña actual">
+						</div>
+						<div style="margin-top: 25px;" class="col-sm-2">
+							<i class="fa fa-eye showPass"></i>
+						</div>
+				  
+					</div>
+                     
+                  </div>
+                  <div class="form-group">
+					<div class="row">
+						<div class="col-sm-10">
+							<input type="password" class="form-control Pass-login passValid passHide" name="passNew" placeholder="Nueva contraseña">
+						</div>
+						<div style="margin-top: 25px;" class="col-sm-2">
+							<i class="fa fa-eye showPass"></i>
+						</div>
+				  
+					</div>
+                      
+				  </div>
+				  <div class="form-group">
+					<div class="row">
+						<div class="col-sm-10">
+							<input type="password" class="form-control passRepeat passHide" name="passNewR" placeholder="Repetir nueva contraseña">
+						</div>
+						<div style="margin-top: 25px;" class="col-sm-2">
+							<i class="fa fa-eye showPass"></i>
+						</div>
+				  
+					</div>
+                      
+                  </div>
+                  <div class="form-group align-items-rigth" style="display: inline-block" >
+                      <input type="button" value="Cambiar" class="btn btn-primary py-2 px-4 botonChangePass  system-login">
+                      
+                  </div>
+              </div>
+            </form> 
+			
             </div>
           </div>
         </div>

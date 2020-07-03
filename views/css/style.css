@@ -10346,3 +10346,12 @@ background: linear-gradient(90deg, rgba(169,229,229,1) 12%, rgba(175,173,194,1) 
 .coming_content h3 a {
   text-decoration: underline;
 }
+
+.showPassActive{
+  color: black !important;
+}
+
+.showPass{
+  color: lightgray;
+  cursor: pointer;
+}

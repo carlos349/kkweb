@@ -9,12 +9,14 @@ class RegistroModel{
 		$correo = $datos["correo"];
 		$nombre = $datos["nombre"];
 		$apellido = $datos["apellido"];
+		$numero = $datos["numero"];
 		$photo = "views/images/perfiles/avatar.jpg";
+		$idSys = $datos["idSys"];
 
 		$opciones = [  'cost' => 11 ];
 		$encriptacion = password_hash($password, PASSWORD_DEFAULT, $opciones);
 
-		$sql = "INSERT INTO usuarios (usuario, contrasena, correo, foto, rol, nombre , apellido) values ('$usuario','$encriptacion','$correo', '$photo','$nombre', '$apellido', 1)";
+		$sql = "INSERT INTO usuarios (usuario, contrasena, correo, foto, rol, nombre , apellido, numero, servicios,recomendaciones, descuentos, idSistema) values ('$usuario','$encriptacion','$correo', '$photo',1,'$nombre', '$apellido', '$numero', 0,0,0, '$idSys')";
 
 		$resultado = $consulta -> nuevo_registro($sql);
 
