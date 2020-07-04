@@ -9,9 +9,9 @@ class Mails {
         require 'PHPMailer/PHPMailer.php';
         require 'PHPMailer/SMTP.php';
 
-        $firtName = $nombre
-        $lastName = $apellido
-        $mail = $correo
+        $firtName = $nombre;
+        $lastName = $apellido;
+        $mail = $correo;
 
         $origenNombre = 'Registro KKPrettynails';
         $origenEmail = 'cristiansleonardo@gmail.com';
@@ -47,7 +47,7 @@ class Mails {
             <div style="width:60%;">
                 <center>
                 <p style="text-align:center;font-size:12px;"> +56 9 7262 8949 &nbsp;&nbsp;   kkprettynails@gmail.com</p> 
-                <p style="text-align:center;font-size:12px;">Te atendemos todos los dias, solo contáctanos.</p>
+                <p style="text-align:center;font-size:12px;">Contáctanos.</p>
                 <a href="https://kkprettynails.cl" style="text-decoration: none;color:#172b4d;" style="text-align:center;margin-top:12px;"><strong>kkprettynails.cl</strong></a>&nbsp;&nbsp;
                 <a href="https://www.instagram.com/kkprettynails/?hl=es-la" style="text-decoration: none;color:#172b4d;" style="text-align:center;margin-top:12px;"><strong>@kkprettynails</strong></a>
                 </center>
@@ -97,7 +97,7 @@ class Mails {
 
                     //Recipients
                     $mailTwo->setFrom($origenEmail, 'Registro KKPrettynails');
-                    $mail­>AddReplyTo($origenEmail, 'Registro KKPrettynails');
+                  
                     $mailTwo->addAddress($destinatarioEmailTwo, $firtName);     // Add a recipient
 
                     // Content
@@ -106,57 +106,12 @@ class Mails {
                     $mailTwo->Body    = $cuerpoMensajeDos;
                     
                     $mailTwo->send();
-                    echo '
-                    <script>
-                        Swal.fire({
-                        icon: "success",
-                        title: "¡Listo!",
-                        text: "Nos pondremos en contacto contigo lo antes posible.",
-                        showClass: {
-                            popup: "animate__animated animate__fadeInDown"
-                            },
-                            hideClass: {
-                            popup: "animate__animated animate__fadeOutUp"
-                            }
-                        }).then((result) => {
-                            window.location="http://syswa.net/servicios";
-                        })
-                    </script>';
+                    
                 } catch (Exception $e) {
-                    echo $e. '
-                    <script>
-                        Swal.fire({
-                        icon: "error",
-                        title: "¡No Enviado!",
-                        text: "Experimentamos problemas con el correo.",
-                        showClass: {
-                            popup: "animate__animated animate__fadeInDown"
-                            },
-                            hideClass: {
-                            popup: "animate__animated animate__fadeOutUp"
-                            }
-                        }).then((result) => {
-                            
-                        })
-                    </script>';
+                    echo $e;
                 }
         } catch (Exception $e) {
-            echo $e. '
-            <script>
-                Swal.fire({
-                icon: "error",
-                title: "¡No Enviado!",
-                text: "Experimentamos problemas con el correo.",
-                showClass: {
-                    popup: "animate__animated animate__fadeInDown"
-                    },
-                    hideClass: {
-                    popup: "animate__animated animate__fadeOutUp"
-                    }
-                }).then((result) => {
-                    
-                })
-            </script>';
+            echo $e;
         }
     }
     

@@ -80,7 +80,7 @@ class Registro{
 			$respuesta = $registroModel -> nuevoRegistroModel($datos);
 
 			$send = new Mails();
-			$sendresponse = $send -> constractMail($datos["nombre"],$datos["apellido"],$datos["correo"])
+			$sendresponse = $send -> constractMail($datos["nombre"],$datos["apellido"],$datos["correo"]);
 			echo '<script>
 							Swal.fire({
 							icon: "success",
