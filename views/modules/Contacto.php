@@ -28,36 +28,47 @@
 	              <p><span>Direción:</span> Av. Pedro de Valdivia 3474 Caracol Ñuñoa, Local 53-B Ñuñoa, Chile</p>
 	            </div>
 	            <div class="col-md-12 mb-3">
-	              <p><span>Teléfono:</span> <a href="tel://1234567920">+56 9 7262 8949</a></p>
+	              <p><span>Teléfono:</span> <a href="https://wa.me/56972628949">+56 9 7262 8949</a></p>
 	            </div>
 	            <div class="col-md-12 mb-3">
-	              <p><span>Correo:</span> <a href="mailto:info@yoursite.com">kkprettynails@gmail.com</a></p>
+	              <p><span>Correo:</span> <a href="mailto:kkprettynails@gmail.com">kkprettynails@gmail.com</a></p>
 	            </div>
 	            <div class="col-md-12 mb-3">
 	              <p><span>Instagram:</span> <a href="#">@kkprettynails</a></p>
 	            </div>
 						</div>
 					</div>
-					<!-- <div class="col-md-1"></div> -->
+          <!-- <div class="col-md-1"></div> -->
+          
+          <?php 
+
+				if (isset($_POST["correoC"])) {
+					
+					$contacto = new mails();
+					$respuesta = $contacto -> contactMail();
+					
+				}  
+			
+			 ?>
           <div class="col-md-6 ftco-animate">
-            <form action="#" class="contact-form">
+            <form  method="post" class="contact-form">
             	<div class="row">
             		<div class="col-md-6">
 	                <div class="form-group">
-	                  <input type="text" class="form-control" placeholder="Tu nombre">
+	                  <input type="text" class="form-control" name="nombreC" placeholder="Tu nombre">
 	                </div>
                 </div>
                 <div class="col-md-6">
 	                <div class="form-group">
-	                  <input type="text" class="form-control" placeholder="Tu correo">
+	                  <input type="text" class="form-control" name="correoC" placeholder="Tu correo">
 	                </div>
 	                </div>
               </div>
               <div class="form-group">
-                <input type="text" class="form-control" placeholder="Asunto">
+                <input type="text" class="form-control" name="asuntoC" placeholder="Asunto">
               </div>
               <div class="form-group">
-                <textarea name="" id="" cols="30" rows="7" class="form-control" placeholder="Mensaje"></textarea>
+                <textarea name="mensajeC" id="" cols="30" rows="7" class="form-control" placeholder="Mensaje"></textarea>
               </div>
               <div class="form-group">
                 <input type="submit" value="Contactar" class="btn btn-primary py-3 px-5">

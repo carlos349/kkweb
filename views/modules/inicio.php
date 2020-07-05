@@ -50,7 +50,7 @@
 		          <div class="col-md-6 col-lg-3 d-flex justify-content-center counter-wrap ftco-animate">
 		            <div class="block-18 text-center">
 		              <div class="text">
-		              	<strong class="number" data-number="60">0</strong>
+		              	<strong class="number nClients" data-number="60">0</strong>
 		              	<span>Clientes</span>
 		              </div>
 		            </div>
@@ -146,7 +146,7 @@
 							<div class="text mt-4">
 								<h3 class="mb-4" style="font-size: 30px;">Primer servicio</h3>
 								<p class="mb-5">Si quieres agendar con nosotros y este es el primer servicio tendrás automáticamente un 10% de descuento en tu primera atención, con excepción de los servicios tradicionales.</p>
-								<p><a href="http://syswa.net/#/agendamientoCliente" class="btn btn-white px-4 py-3"> ¡Agenda tu servicio! </a></p>
+								<p><a href="http://kkprettynails.syswa.net/#/agendamientoCliente" class="btn btn-white px-4 py-3"> ¡Agenda tu servicio! </a></p>
 							</div>
 						</div>
 					</div>
@@ -156,7 +156,7 @@
 							<div class="text mt-4">
 								<h3 class="mb-4" style="font-size: 30px;">Recomendaciones</h3>
 								<p class="mb-5">Premiamos tu fidelidad y recomendación con un 15% por cada persona que recomiendes en todos los servicios con excepción de los servicios tradicionales.</p><br>
-								<p><a href="#" class="btn btn-white px-4 py-3"> Próximamente </a></p>
+								<p><button style="cursor: not-allowed;" href="" disabled class="btn btn-white px-4 py-3"> Próximamente </button></p>
 							</div>
 						</div>
 					</div>
@@ -166,7 +166,7 @@
 							<div class="text mt-4">
 								<h3 class="mb-4" style="font-size: 30px;">Promoción del mes</h3> 
 								<p class="mb-5">Próximamente </p><br><br><br><br><br>
-								<p><a disabled href="#" class="btn btn-white px-4 py-3"> Deshabilitado </a></p>
+								<p><button style="cursor: not-allowed;" disabled href="" class="btn btn-white px-4 py-3"> Deshabilitado </button></p>
 							</div>
 						</div>
 					</div>

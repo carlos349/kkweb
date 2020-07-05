@@ -9843,6 +9843,11 @@ figure {
     grid-template-columns: repeat(2, 1fr);
   }
 }
+@media (max-height: 540px) {
+  .yaPs {
+    margin-top: 10%;
+  }
+}
 @media (max-width: 1400px) { 
   .card-body ul li {
     font-size: 14px;

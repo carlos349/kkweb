@@ -13,7 +13,7 @@
 			  <li id="galery" class="nav-item"><a href="Galeria" class="nav-link"> <b>Galería</b></a></li>
 			  <li id="contacto" class="nav-item"><a href="Contacto" class="nav-link"> <b>Contacto</b></a></li>
 			 
-			  <li id="contacto" class="nav-item"><a href="http://syswa.net/#/agendamientoCliente" class="nav-link">Agendar</a></li>
+			  <li id="contacto" class="nav-item"><a href="http://kkprettynails.syswa.net/#/agendamientoCliente" class="nav-link">Agendar</a></li>
 			  
 			  <li>
 			  <?php 
@@ -78,19 +78,29 @@
                         <input type="text" class="form-control Mail-login" id="nombreS" name="nombre" placeholder="Nombre">
                     </div>
                     <div class="form-group">
-                        <input type="text" class="form-control Mail-login" name="apellido" placeholder="Apellido">
+                        <input type="text" class="form-control Mail-login" id="apellidoS" name="apellido" placeholder="Apellido">
                     </div>
 
                     <div class="form-group">
                         <input type="email" class="form-control Mail-login" id="correoS" name="correo" placeholder="Correo">
 					</div>
 					<div class="form-group">
-                        <input type="text" class="form-control Mail-login" name="numero" placeholder="Número de teléfono">
+						<div class="row">
+							<div class="col-sm-2"><input type="text" class="form-control Mail-login" disabled value="+56"></div>
+							<div class="col-sm-10"><input type="text" class="form-control Mail-login phone phone1" maxlength="9" name="numero" placeholder="Número de teléfono"></div>
+						</div>
+                        
                     </div>
                     <div class="form-group">
 						<div class="row">
 							<div class="col-sm-10">
-								<input type="password" class="form-control Mail-login passHide" name="pass" placeholder="Contraseña">
+								<input type="password" class="form-control passOne Mail-login passHide" name="pass" placeholder="Contraseña">
+							</div>
+							<div style="margin-top: 25px;" class="col-sm-2">
+								<i class="fa fa-eye showPass"></i>
+							</div>
+							<div class="col-sm-10">
+								<input type="password" class="form-control passTwo Mail-login passHide" name="passR" placeholder="Repetir contraseña">
 							</div>
 							<div style="margin-top: 25px;" class="col-sm-2">
 								<i class="fa fa-eye showPass"></i>

@@ -65,9 +65,9 @@ class Mails {
             $mail->SMTPDebug = SMTP::DEBUG_SERVER;                      // Enable verbose debug output
             $mail->isSMTP();                                            // Send using SMTP
             $mail->SMTPAuth   = true;                                   // Enable SMTP authentication
-            $mail->Username   = 'cristiansleonardo@gmail.com';                     // SMTP username
+            $mail->Username   = 'kkprettynails@gmail.com';                     // SMTP username
             $mail->Host       = 'smtp.gmail.com';                    // Set the SMTP server to send through
-            $mail->Password   = 'Cris26151369';                               // SMTP password
+            $mail->Password   = 'Carla589*-';                               // SMTP password
             $mail->SMTPSecure = 'tls';         // Enable TLS encryption; `PHPMailer::ENCRYPTION_SMTPS` encouraged
             $mail->Port       = 587;                                    // TCP port to connect to, use 465 for `PHPMailer::ENCRYPTION_SMTPS` above
 
@@ -89,9 +89,9 @@ class Mails {
                     $mailTwo->SMTPDebug = SMTP::DEBUG_SERVER;                      // Enable verbose debug output
                     $mailTwo->isSMTP();                                            // Send using SMTP
                     $mailTwo->SMTPAuth   = true;                                   // Enable SMTP authentication
-                    $mailTwo->Username   = 'cristiansleonardo@gmail.com';                     // SMTP username
+                    $mailTwo->Username   = 'kkprettynails@gmail.com';                     // SMTP username
                     $mailTwo->Host       = 'smtp.gmail.com';                    // Set the SMTP server to send through
-                    $mailTwo->Password   = 'Cris26151369';                               // SMTP password
+                    $mailTwo->Password   = 'Carla589*-';                               // SMTP password
                     $mailTwo->SMTPSecure = 'tls';         // Enable TLS encryption; `PHPMailer::ENCRYPTION_SMTPS` encouraged
                     $mailTwo->Port       = 587;                                    // TCP port to connect to, use 465 for `PHPMailer::ENCRYPTION_SMTPS` above
 
@@ -121,19 +121,19 @@ class Mails {
         require 'PHPMailer/PHPMailer.php';
         require 'PHPMailer/SMTP.php';
 
-        $nombre = $_POST['nombre'];
-        $correo = $_POST['correo'];
-        $mensaje = $_POST['mensaje'];
-        $asuntoEmail = $_POST['asunto']; 
+        $nombre = $_POST['nombreC'];
+        $correo = $_POST['correoC'];
+        $mensaje = $_POST['mensajeC'];
+        $asuntoEmail = $_POST['asuntoC']; 
 
-        $origenNombre = 'Información a cliente';
-        $origenEmail = 'syswainfo@gmail.com';
-        $destinatarioEmail = "syswainfo@gmail.com"; 
+        $origenNombre = 'Información de cliente';
+        $origenEmail = 'kkprettynails@gmail.com';
+        $destinatarioEmail = "kkprettynails@gmail.com"; 
 
         //cuerpo del email:
-        $cuerpoMensaje = "Nombre:".$nombre."\r\n";
-        $cuerpoMensaje .= "Correo:".$correo."\r\n";
-        $cuerpoMensaje .= "Mensaje:\r\n".$mensaje."\r\n";
+        $cuerpoMensaje = "Nombre:".$nombre."<br>";
+        $cuerpoMensaje .= "Correo:".$correo."<br>";
+        $cuerpoMensaje .= "Mensaje:\r\n".$mensaje."<br>";
         //fin cuerpo del email.
 
         $mail = new PHPMailer(true);
@@ -143,9 +143,9 @@ class Mails {
             $mail->SMTPDebug = SMTP::DEBUG_SERVER;                      // Enable verbose debug output
             $mail->isSMTP();                                            // Send using SMTP
             $mail->SMTPAuth   = true;                                   // Enable SMTP authentication
-            $mail->Username   = 'AKIA3PQB77VV744RUZEU';                     // SMTP username
-            $mail->Host       = 'email-smtp.sa-east-1.amazonaws.com';                    // Set the SMTP server to send through
-            $mail->Password   = 'BDlDydRxcHML6fDvoaCHLYsgwEf8OrLXZ8cB+3anDD/s';                               // SMTP password
+            $mail->Username   = 'kkprettynails@gmail.com';                     // SMTP username
+            $mail->Host       = 'smtp.gmail.com';                    // Set the SMTP server to send through
+            $mail->Password   = 'Carla589*-';                               // SMTP password
             $mail->SMTPSecure = 'tls';         // Enable TLS encryption; `PHPMailer::ENCRYPTION_SMTPS` encouraged
             $mail->Port       = 587;                                    // TCP port to connect to, use 465 for `PHPMailer::ENCRYPTION_SMTPS` above
 
@@ -161,6 +161,8 @@ class Mails {
             $mail->send();
             echo '
             <script>
+                document.querySelector("body").style.color = "white";
+                
                 Swal.fire({
                 icon: "success",
                 title: "¡Enviado!",
@@ -172,12 +174,16 @@ class Mails {
                     popup: "animate__animated animate__fadeOutUp"
                     }
                 }).then((result) => {
-                    window.location="http://syswa.net/servicios";
+                    if (window.history.replaceState) { // verificamos disponibilidad
+                        window.history.replaceState(null, null, window.location.href);
+                    }
+                    location.reload()
                 })
             </script>';
         } catch (Exception $e) {
             echo '
             <script>
+            document.querySelector("body").style.color = "white";
                 Swal.fire({
                 icon: "error",
                 title: "¡No Enviado!",
@@ -189,7 +195,10 @@ class Mails {
                     popup: "animate__animated animate__fadeOutUp"
                     }
                 }).then((result) => {
-                    window.location="http://syswa.net/servicios";
+                    if (window.history.replaceState) { // verificamos disponibilidad
+                        window.history.replaceState(null, null, window.location.href);
+                    }
+                    location.reload()
                 })
             </script>';
         }

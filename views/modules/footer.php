@@ -40,8 +40,8 @@
               <div class="block-23 mb-3">
                 <ul>
                   <li><span class="icon icon-map-marker"></span><span class="text">Av. Pedro de Valdivia 3474 Caracol Ñuñoa, Local 53-B Ñuñoa, Chile</span></li>
-                  <li><a href="#"><span class="icon icon-phone"></span><span class="text">+56 9 7262 8949</span></a></li>
-                  <li><a href="#"><span class="icon icon-envelope"></span><span class="text">kkprettynails@gmail.com</span></a></li>
+                  <li><a href="https://wa.me/56972628949"><span class="icon icon-phone"></span><span class="text">+56 9 7262 8949</span></a></li>
+                  <li><a href="mailto:kkprettynails@gmail.com"><span class="icon icon-envelope"></span><span class="text">kkprettynails@gmail.com</span></a></li>
                 </ul>
               </div>
             </div>

@@ -278,7 +278,7 @@
 	  	</div>
       </section>
       <section class="ftco-section prom ftco-no-pt ftco-no-pb">
-        <div class="container">
+        <div class="container yaPs">
             <div class="row justify-content-center mb-0 pb-0">
                 <div class="col-md-7 heading-section ftco-animate text-center">
                   <h2 style="font-family: 'Prata', serif;" class="mb-1">Promociones</h2>
@@ -301,7 +301,7 @@
                         <div class="text mt-4">
                             <h3 class="mb-4" style="font-size: 30px;">Recomendaciones</h3>
                             <p class="mb-5">Premiamos tu fidelidad y recomendación con un 15% por cada persona que recomiendes en todos los servicios con excepción de los servicios tradicionales.</p><br>
-                            <p><a href="#" class="btn btn-white px-4 py-3"> Próximamente </a></p>
+                            <p><button style="cursor:not-allowed" href="" disabled class="btn btn-white px-4 py-3"> Próximamente </button></p>
                         </div>
                     </div>
                 </div>
@@ -311,7 +311,7 @@
                         <div class="text mt-4">
                             <h3 class="mb-4" style="font-size: 30px;">Promoción del mes</h3> 
                             <p class="mb-5">Próximamente </p><br><br><br><br><br>
-                            <p><a disabled href="#" class="btn btn-white px-4 py-3"> Deshabilitado </a></p>
+                            <p><button style="cursor:not-allowed" disabled href="" class="btn btn-white px-4 py-3"> Deshabilitado </button></p>
                         </div>
                     </div>
                 </div>

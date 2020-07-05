@@ -73,7 +73,7 @@ class Registro{
 			$datos["correo"] = $correo;
 			$datos["nombre"] = $nombre;
 			$datos["apellido"] = $apellido;
-			$datos["numero"] = $numero;
+			$datos["numero"] = "+56 ".$numero;
 			$datos["idSys"] = $idSys;
 
 			$registroModel = new RegistroModel();
@@ -81,11 +81,32 @@ class Registro{
 
 			$send = new Mails();
 			$sendresponse = $send -> constractMail($datos["nombre"],$datos["apellido"],$datos["correo"]);
+
+			session_start();
+
+			$datosController = array("usuario"=>$datos["usuario"],"password"=>$datos["password"]);
+			$respuesta = IngresoModels::ingresoModel($datosController, "usuarios");
+			$resultado = $respuesta[0];
+
+			$_SESSION["validar"] = true;
+			$_SESSION["usuario"] = $resultado["usuario"];
+			$_SESSION["id"] = $resultado["id"];
+			$_SESSION["idSys"] = $resultado["idSistema"];
+			$_SESSION["numero"] = $resultado["numero"];
+			$_SESSION["descuentos"] = $resultado["descuentos"];
+			$_SESSION["recomendaciones"] = $resultado["recomendaciones"];
+			$_SESSION["password"] = $resultado["contrasena"];
+			$_SESSION["correo"] = $resultado["correo"];
+			$_SESSION["nombre"] = $resultado["nombre"];
+			$_SESSION["apellido"] = $resultado["apellido"];
+			$_SESSION["foto"] = $resultado["foto"];
+			$_SESSION["rol"] = $resultado["rol"];
+
 			echo '<script>
 							Swal.fire({
 							icon: "success",
 							title: "Bienvenido",
-							text: "¡Registro exitoso!",
+							text: "¡Registro exitoso sera ingresado automaticamente!",
 							showClass: {
 								popup: "animate__animated animate__fadeInDown"
 							  },

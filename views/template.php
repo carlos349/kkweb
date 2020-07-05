@@ -74,46 +74,79 @@
   <script>
     const endpoint = 'localhost:4200'
     $(document).ready(() => {
-      $('.system-register').on('click', () => {
 
-        var data = {
-          name:$("#nombreS").val(),
-          mail:$("#correoS").val()
-        }
-
-        fetch('http://kkprettynails.syswa.net:4200/clients/verifyClient', {
-          method: 'POST', // or 'PUT'
-          body: JSON.stringify(data),
-          headers:{
-            'Content-Type': 'application/json'
-          }
+      fetch('http://kkprettynails.syswa.net:4200/clients/countClient') 
+        .then(function(response) {
+          return response.json();
         })
-        .then(res => res.json())
         .catch(error => {
           console.log(error)
+         
+        })
+        .then(function(myJson) {
+          $(".nClients").attr('data-number', myJson);
+          console.log(myJson);
+        })
+
+
+      $('.system-register').on('click', () => {
+        if ($(".passOne").val() != $(".passTwo").val()) {
           Swal.fire({
 							icon: "error",
-							title: "Lo sentimos.",
-							text: "Estamos presentando errores tecnicos",
-							footer: "<a href>¿Olvidate tu contraseña?</a>",
+							title: "",
+							text: "Las contraseñas deben coincidir",
+							
 							showClass: {
 								popup: "animate__animated animate__fadeInDown"
 							  },
 							  hideClass: {
 								popup: "animate__animated animate__fadeOutUp"
 							  }
-					}).then((result) => {
-              if (window.history.replaceState) { // verificamos disponibilidad
-                window.history.replaceState(null, null, window.location.href);
-              }
-              // location.reload()
-						})
-        })
-        .then(response => {
-          console.log(response.data._id)
-          $("#idSyst").val(response.data._id)
-          $("#registroCliente").submit()
-        })
+					})
+        }
+
+        else{
+          var data = {
+          name:$("#nombreS").val()+" "+$("#apellidoS").val(),
+          mail:$("#correoS").val(),
+          number: "+56 " + $(".phone1").val()
+          }
+
+          fetch('http://kkprettynails.syswa.net:4200/clients/verifyClient', {
+            method: 'POST', // or 'PUT'
+            body: JSON.stringify(data),
+            headers:{
+              'Content-Type': 'application/json'
+            }
+          })
+          .then(res => res.json())
+          .catch(error => {
+            console.log(error)
+            Swal.fire({
+                icon: "error",
+                title: "Lo sentimos.",
+                text: "Estamos presentando errores tecnicos",
+                footer: "<a href>¿Olvidate tu contraseña?</a>",
+                showClass: {
+                  popup: "animate__animated animate__fadeInDown"
+                  },
+                  hideClass: {
+                  popup: "animate__animated animate__fadeOutUp"
+                  }
+            }).then((result) => {
+                if (window.history.replaceState) { // verificamos disponibilidad
+                  window.history.replaceState(null, null, window.location.href);
+                }
+                // location.reload()
+              })
+          })
+          .then(response => {
+            console.log(response.data)
+            $("#idSyst").val(response.data._id)
+            $("#registroCliente").submit()
+          })
+        }
+        
         
       })
 
