@@ -14,8 +14,8 @@ class Mails {
         $mail = $correo;
 
         $origenNombre = 'Registro KKPrettynails';
-        $origenEmail = 'cristiansleonardo@gmail.com';
-        $destinatarioEmail = "cristiansleonardo@gmail.com"; 
+        $origenEmail = 'kkprettynails@gmail.com';
+        $destinatarioEmail = "kkprettynails@gmail.com"; 
         $destinatarioEmailTwo = $mail;
         //cuerpo del email:
         $cuerpoMensaje = "El cliente:".$firtName." ".$lastName." se ha registrado.<br>";
