@@ -180,4 +180,47 @@ class Registro{
 						</script>';
 		}
 	}
+
+	public function changeByEmail($id,$verify){
+		
+		$passNewer = $_POST['passNewer'];
+		$consulta = new Consulta();
+		$sql="SELECT * FROM usuarios WHERE  verify='$verify' AND idSistema='$id' ";
+		$resultado = $consulta -> ver_registros($sql);
+
+		if ($resultado) {
+			$opciones = [  'cost' => 11 ];
+			$encriptacion2 = password_hash($passNewer, PASSWORD_DEFAULT, $opciones);
+
+			$sql2="UPDATE usuarios SET contrasena = '$encriptacion2' WHERE idSistema='$id'";
+			$sql3="UPDATE usuarios SET verify = 'kk2615' WHERE idSistema='$id'";
+			$resultado2 = $consulta -> actualizar_registro($sql2);
+			$resultado3 = $consulta -> actualizar_registro($sql3);
+			echo '<script>console.log("hola")
+						</script>';
+			
+				
+			
+		}
+		else {
+			echo '<script>
+					Swal.fire({
+					icon: "error",
+					title: "Lo sentimos",
+					text: "¡El link no es valido o ha expirado!",
+					showClass: {
+						popup: "animate__animated animate__fadeInDown"
+						},
+						hideClass: {
+						popup: "animate__animated animate__fadeOutUp"
+						}
+					}).then((result) => {
+						if (window.history.replaceState) { // verificamos disponibilidad
+							window.history.replaceState(null, null, window.location.href);
+						}
+						window.location.href = "inicio"
+						})
+				</script>';
+		}
+	}
 }

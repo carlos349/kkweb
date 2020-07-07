@@ -79,7 +79,7 @@ class Ingreso{
 							icon: "error",
 							title: "Lo sentimos.",
 							text: "¡Tu usuario o contraseña son incorrectos!",
-							footer: "<a href>¿Olvidaste tu contraseña?</a>",
+							footer: `<button class="btn forgot">¿Olvidaste tu contraseña?</button>`,
 							showClass: {
 								popup: "animate__animated animate__fadeInDown"
 							  },

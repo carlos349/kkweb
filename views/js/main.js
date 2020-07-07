@@ -276,14 +276,16 @@
 		  $(".blockear").prop('disabled' , true )
         $(this).siblings().removeClass("activePanel");
         $(this).addClass("activePanel");
-        $(".dashboard").siblings().removeClass("showPanel").addClass("hidePanel");
+		$(".dashboard").siblings().removeClass("showPanel").addClass("hidePanel");
+		$(".dashboard").removeClass("hidePanel");
         $(".dashboard").addClass("showPanel");
     });
     $(".comments").on("click", function() {
 		$(".blockear").prop('disabled' , true )
         $(this).siblings().removeClass("activePanel");
         $(this).addClass("activePanel");
-        $(".comments-c").siblings().removeClass("showPanel").addClass("hidePanel");
+		$(".comments-c").siblings().removeClass("showPanel").addClass("hidePanel");
+		$(".comments-c").removeClass("hidePanel");
         $(".comments-c").addClass("showPanel");
     });
 
@@ -291,14 +293,16 @@
 		$(".blockear").prop('disabled' , true )
         $(this).siblings().removeClass("activePanel");
         $(this).addClass("activePanel");
-        $(".notification").siblings().removeClass("showPanel").addClass("hidePanel");
+		$(".notification").siblings().removeClass("showPanel").addClass("hidePanel");
+		$(".notification").removeClass("hidePanel");
         $(".notification").addClass("showPanel");
     });
     $(".cog").on("click", function() {
 		$(".blockear").prop('disabled' , false )
         $(this).siblings().removeClass("activePanel");
         $(this).addClass("activePanel");
-        $(".settings").siblings().removeClass("showPanel").addClass("hidePanel");
+		$(".settings").siblings().removeClass("showPanel").addClass("hidePanel");
+		$(".settings").removeClass("hidePanel");
         $(".settings").addClass("showPanel");
 	});
 	
@@ -345,6 +349,40 @@
 		}
 		$(this).val(number)
 	  });
+
+	  $(".forgot").on('click', function () {
+		Swal.fire({
+			icon: "question",
+			title: "Por favor introduce tu correo para recuperar tu contraseña",
+			showConfirmButton: false,
+			html:
+			`<form  class="rescue p-4" method="post">
+				
+			<div class="contact-form">
+				<div class="form-group">
+					<input type="text" class="form-control Mail-login" name="correoRescue" placeholder="Introduce tu correo">
+				</div>
+				
+				<div class="form-group align-items-rigth" style="display: inline-block" >
+					<input type="submit" value="Recuperar" class="btn btn-primary py-2 px-4 system-login">
+					
+				</div>
+			</div>
+		  </form> `,
+			showClass: {
+				popup: "animate__animated animate__fadeInDown"
+			  },
+			  hideClass: {
+				popup: "animate__animated animate__fadeOutUp"
+			  }
+			})
+			.then((result) => {
+				if (window.history.replaceState) { // verificamos disponibilidad
+					window.history.replaceState(null, null, window.location.href);
+				}
+				location.reload()
+			  })
+	  })
 	
 })(jQuery);
 

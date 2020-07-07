@@ -15,6 +15,7 @@ class EnlacesModels{
 			$enlaces == "servicios" ||
 			$enlaces == "Disenos" ||
 			$enlaces == "panel" ||
+			$enlaces == "passRescue" ||
 			$enlaces == "Registro" ||
 			$enlaces == "Ingreso"  ) {
 

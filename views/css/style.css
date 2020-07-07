@@ -10049,6 +10049,8 @@ figure {
 .box .bottom .description {
   display: -webkit-box;
   display: flex;
+  overflow-y: scroll;
+    height: 370px;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
           flex-direction: column;
@@ -10093,7 +10095,7 @@ figure {
 }
 
 .showPanel {
-  
+  z-index: 1 !important;
   -webkit-animation: show 1s 1 forwards;
           animation: show 1s 1 forwards;
 }
@@ -10125,6 +10127,7 @@ figure {
 }
 .hidePanel {
   opacity: 0;
+  z-index: 0 !important;
 }
 
 .cardPanel {
@@ -10359,4 +10362,27 @@ background: linear-gradient(90deg, rgba(169,229,229,1) 12%, rgba(175,173,194,1) 
 .showPass{
   color: lightgray;
   cursor: pointer;
+}
+
+.description::-webkit-scrollbar {
+  width: 8px;     /* Tamaño del scroll en vertical */
+  height: 8px;    /* Tamaño del scroll en horizontal */
+  
+}
+
+
+.description1::-webkit-scrollbar {
+  width: 8px;     /* Tamaño del scroll en vertical */
+  height: 8px;    /* Tamaño del scroll en horizontal */
+  
+}
+
+.description1::-webkit-scrollbar-thumb {
+  background: #ccc;
+  border-radius: 4px;
+}
+
+.description1::-webkit-scrollbar-track {
+  background: #e1e1e1;
+  border-radius: 4px;
 }

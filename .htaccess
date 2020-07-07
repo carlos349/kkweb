@@ -9,4 +9,4 @@ RewriteEngine on
 
 RewriteRule ^(\w+)/(\w+)$ index.php?action=$1&action2=$2 [L]
 
-RewriteRule ^(\w+)$ index.php?action=$1 [L]
+RewriteRule ^(\w+)$ index.php?action=$1 [L,QSA]

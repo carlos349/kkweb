@@ -114,10 +114,11 @@
                         <button type="button"  class="btn btn-primary py-2 px-4 system-login system-register"> Registrarme </button>
                     </div>
                 </div> 
-                <a style="cursor: pointer;" class="text-center accLog">¿Ya tienes una cuenta?</a>
+				<a style="cursor: pointer;" class="text-center accLog">¿Ya tienes una cuenta?</a>
 			</form>
+			
 			<?php
-				if ($_POST) {
+				if (isset($_POST['usuarioIngreso'])) {
 				$ingreso = new Ingreso();
 				$ingreso -> ingresoController();
 				}
@@ -142,7 +143,7 @@
                       
                   </div>
                   <div class="form-group align-items-rigth" style="display: inline-block" >
-                      <input type="submit" value="Ingresar" class="btn btn-primary py-2 px-4 system-login">
+                      <input type="submit" value="Ingresar" class="btn btn-primary py-2 px-4">
                       <a style="cursor: pointer;" class="accLog ml-3">¿No estás registrado?</a>
                   </div>
               </div>
@@ -212,7 +213,7 @@
 										  <div class="card__flipper">
 											<div class="card__front">
 											  <p class="card__name mt-3">Citas <br> pendientes</p>
-											  <p class="card__num">0</p>
+											  <p class="card__num citasPendi"></p>
 											</div>
 											<div class="card__back">
 											  <svg height="180" width="180">
@@ -226,7 +227,7 @@
 										  <div class="card__flipper">
 											<div class="card__front">
 											  <p class="card__name mt-3">Recomendaciones (Descuentos 15%)</p>
-											  <p class="card__num">0</p>
+											  <p class="card__num reco"></p>
 											</div>
 											<div class="card__back">
 											  <svg height="180" width="180">
@@ -258,7 +259,7 @@
 							</div>
 							<div class="comments-c">
 								<div class="title">Historico de servicios</div>
-								<div class="description">
+								<div class="description description1">
 									<table style="font-size: 12px;" class="table">
 										<thead class="thead-light">
 										  <tr>
@@ -269,14 +270,8 @@
 											<th scope="col">Reagendar</th>
 										  </tr>
 										</thead>
-										<tbody>
-										  <tr>
-											<th scope="row">15-04-2020</th>
-											<td>Manicure tradicional</td>
-											<td>Katriel Capacho</td>
-											<td>$ 15.000,00</td>
-											<td><button style="font-size: .7em;" class="btn btn-success">Reagendar</button></td>
-										  </tr>
+										<tbody id="histServices">
+										  
 										  
 										</tbody>
 									  </table>
@@ -285,25 +280,19 @@
 							</div>
 							<div class="notification">
 								 <div class="title">Citas pendiente</div>
-								<div class="description">
+								<div class="description description1">
 									<table style="font-size: 12px;" class="table">
 										<thead class="thead-light">
 										  <tr>
 											<th scope="col">Fecha</th>
 											<th scope="col">Servicio(s)</th>
 											<th scope="col">Prestador</th>
-											<th scope="col">Total</th>
+											<th scope="col"></th>
 											<th scope="col">Confirmar</th>
 										  </tr>
 										</thead>
-										<tbody>
-										  <tr>
-											<th scope="row">15-04-2020</th>
-											<td>Manicure tradicional</td>
-											<td>Katriel Capacho</td>
-											<td>$ 15.000,00</td>
-											<td><button style="font-size: .7em;" class="btn btn-success">Confirmar</button></td>
-										  </tr>
+										<tbody class="bodyCitas">
+										 
 										  
 										</tbody>
 									  </table>
@@ -319,7 +308,7 @@
 													<input type="text" value="<?php echo $_SESSION['nombre']; ?>" class="form-control Mail-login" disabled="true" name="nombre" placeholder="Nombre">
 												</div>
 												<div class="form-group">
-													<input type="email" value="<?php echo $_SESSION['correo']; ?>" class="form-control Mail-login" disabled="true" name="correo" placeholder="Correo">
+													<input type="email" value="<?php echo $_SESSION['correo']; ?>" class="form-control Mail-login correoClienteRequest" disabled="true" name="correo" placeholder="Correo">
 												</div>
 												<div class="form-group">
 													<input type="password" value="**************" class="form-control Mail-login" disabled="true" name="pass" placeholder="Contraseña">
@@ -359,6 +348,19 @@
       </div>
     </div>
   </div>
+
+  <?php 
+
+  if (isset($_POST["correoRescue"])) {
+	  
+	  $rescue = new Mails();
+	  $respuesta = $rescue -> rescue();
+	  
+  }  
+
+?>
+
+
   <?php 
 
   if (isset($_POST["passOld"])) {

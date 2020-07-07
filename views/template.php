@@ -165,7 +165,57 @@
         .then(function(myJson) {
           $("#serviciosSys").text(myJson.participacion)
           $("#referidoSys").text("https://kkprettynails.cl/refer="+myJson._id)
-        });
+          $(".reco").text(myJson.recomendaciones)
+
+          for (let i = 0; i < 2; i++) {
+            var date = new Date(myJson.historical[i].fecha)
+            var fecha = date.getDate()+"-"+date.getMonth()+"-"+date.getFullYear()
+            var td = `<tr>
+											<th scope="row">${fecha}</th>
+											<td>${myJson.historical[i].servicios[0].servicio}</td>
+											<td>${myJson.historical[i].manicurista}</td>
+											<td>$ ${myJson.historical[i].total.toFixed(2).replace(/(\d)(?=(\d{3})+\.)/g, "$1,").toString()}</td>
+											<td><button style="font-size: .7em;" class="btn btn-success">Reagendar</button></td>
+										  </tr>`
+            $("#histServices").append(td)
+          }
+          var data2 = {
+          client:$(".correoClienteRequest").val()
+          }
+
+          fetch('http://kkprettynails.syswa.net:4200/clients/datesPerClient', {
+            method: 'POST', // or 'PUT'
+            body: JSON.stringify(data2),
+            headers:{
+              'Content-Type': 'application/json'
+            }
+          })
+          .then(res => res.json())
+          .catch(error => {
+            console.log(error)
+          })
+          .then(response => {
+            $(".citasPendi").text(response.length)
+
+            for (let i = 0; i < response.length; i++) {
+            var date = new Date(response[i].date)
+            var fecha = date.getDate()+"-"+date.getMonth()+"-"+date.getFullYear()
+            var td = `<tr>
+											<th scope="row">${fecha}</th>
+											<td>${response[i].services[0].servicio}</td>
+											<td>${response[i].employe}</td>
+											<td></td>
+											<td><button style="font-size: .7em;" class="btn btn-success">Confirmar</button></td>
+										  </tr>`
+            $(".bodyCitas").append(td)
+          }
+            console.log(response)
+            
+          })
+          
+        })
+
+        
       })
       
     });
