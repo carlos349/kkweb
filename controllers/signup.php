@@ -196,7 +196,23 @@ class Registro{
 			$sql3="UPDATE usuarios SET verify = 'kk2615' WHERE idSistema='$id'";
 			$resultado2 = $consulta -> actualizar_registro($sql2);
 			$resultado3 = $consulta -> actualizar_registro($sql3);
-			echo '<script>console.log("hola")
+			echo '<script>
+							Swal.fire({
+							icon: "success",
+							title: "",
+							text: "¡Cambio exitoso!",
+							showClass: {
+								popup: "animate__animated animate__fadeInDown"
+							  },
+							  hideClass: {
+								popup: "animate__animated animate__fadeOutUp"
+							  }
+							}).then((result) => {
+								if (window.history.replaceState) { // verificamos disponibilidad
+									window.history.replaceState(null, null, window.location.href);
+								}
+								window.location.href = "inicio"
+							  })
 						</script>';
 			
 				
