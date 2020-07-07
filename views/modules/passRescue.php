@@ -10,10 +10,18 @@ Swal.fire({
 			`<form  class="rescue p-4" method="post">
 				
 			<div class="contact-form">
-				<div class="form-group">
-					<input type="text" class="form-control Mail-login" name="passNewer" placeholder="Introduce tu nueva contraseña">
-				</div>
-				
+            <div class="form-group">
+					<div class="row">
+						<div class="col-sm-10">
+							<input type="password" required class="form-control Pass-login passValid passHide" name="passNewer" placeholder="Nueva contraseña">
+						</div>
+						<div style="margin-top: 25px;" class="col-sm-2">
+							<i class="fa fa-eye showPass"></i>
+						</div>
+				  
+					</div>
+                      
+				  </div>
 				<div class="form-group align-items-rigth" style="display: inline-block" >
 					<input type="submit" value="Cambiar" class="btn btn-primary py-2 px-4 system-login">
 					
