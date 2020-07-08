@@ -9848,6 +9848,11 @@ figure {
     margin-top: 10%;
   }
 }
+@media (max-height: 410px) {
+  .yaPs {
+    margin-top: 20%;
+  }
+}
 @media (max-width: 1400px) { 
   .card-body ul li {
     font-size: 14px;
