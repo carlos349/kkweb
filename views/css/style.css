@@ -9843,14 +9843,19 @@ figure {
     grid-template-columns: repeat(2, 1fr);
   }
 }
-@media (max-height: 540px) {
+@media (max-height: 685px) {
   .yaPs {
     margin-top: 10%;
   }
 }
-@media (max-height: 410px) {
+@media (max-height: 525px) {
   .yaPs {
     margin-top: 20%;
+  }
+}
+@media (max-height: 410px) {
+  .yaPs {
+    margin-top: 30%;
   }
 }
 @media (max-width: 1400px) { 
