@@ -11,7 +11,7 @@
             <h1 style="color:#605B56;font-size: 2vw !important;">K&KPRETTYNAILS.COM</h1>
             <div class="row justify-content-center">
             <p>
-            	<a href="http://kkprettynails.syswa.net/#/agendamientoCliente" style="font-size: 1em;" class="btn btn-primary p-3 px-5 py-4 mr-md-2">Agendar</a>
+            	<a href="nada" style="font-size: 1em;" class="btn btn-primary p-3 px-5 py-4 mr-md-2">Agendar</a>
             	<a href="Galeria" style="font-size: 1em;" class="btn btn-outline-primary p-3 px-5 py-4 ml-md-2">Galeria</a>
             </p>
           </div>
@@ -146,7 +146,7 @@
 							<div class="text mt-4">
 								<h3 class="mb-4" style="font-size: 30px;">Primer servicio</h3>
 								<p class="mb-5">Si quieres agendar con nosotros y este es el primer servicio tendrás automáticamente un 10% de descuento en tu primera atención, con excepción de los servicios tradicionales.</p>
-								<p><a href="http://kkprettynails.syswa.net/#/agendamientoCliente" class="btn btn-white px-4 py-3"> ¡Agenda tu servicio! </a></p>
+								<p><a href="nada" class="btn btn-white px-4 py-3"> ¡Agenda tu servicio! </a></p>
 							</div>
 						</div>
 					</div>
@@ -196,49 +196,54 @@
         <div class="row justify-content-center mb-5 pb-3">
           <div class="col-md-7 heading-section ftco-animate text-center">
             
-            <h2 style="font-family: 'Prata', serif;" class="mb-1">INSTAGRAM</h2>
+            <h2 style="font-family: 'Prata', serif;" class="mb-1">KKPrettynails en YouTube</h2>
           </div>
         </div>
         <div class="row d-flex">
-          <div class="col-md-4 d-flex ftco-animate">
+          <div class="col-md-4 mx-auto d-flex ftco-animate">
           	<div class="blog-entry justify-content-end">
-              <a href="blog-single.html" class="block-20" style="background-image: url('views/images/image_1.jpg');">
+			  <!-- <a href="blog-single.html" class="block-20" style="background-image: url('views/images/image_1.jpg');"> -->
+			  <iframe  class="block-20"
+				src="https://www.youtube.com/embed/BNQVe-EgD9w">
+			  </iframe>
               </a>
               <div class="text p-4 float-right d-block">
               	<div class="d-flex align-items-center pt-2 mb-4">
               		<div class="one">
-              			<span class="day">25</span>
+              			<span class="day">6</span>
               		</div>
               		<div class="two">
-              			<span class="yr">2019</span>
-              			<span class="mos">September</span>
+              			<span class="yr">2020</span>
+              			<span class="mos">Julio</span>
               		</div>
               	</div>
-                <h3 class="heading mt-2"><a href="#">Is wellness the new luxury</a></h3>
-                <p>A small river named Duden flows by their place and supplies it with the necessary regelialia.</p>
+                <h3 class="heading mt-2"><a href="#">Diseño a mano alzada | Esmalte permanente.</a></h3>
+                <p>En esta oportunidad les mostramos como realizar un diseño a mano alzada en uña con esmalte permanente.</p>
               </div>
             </div>
           </div>
-          <div class="col-md-4 d-flex ftco-animate">
+          <div class="col-md-4 mx-auto d-flex ftco-animate">
           	<div class="blog-entry justify-content-end">
-              <a href="blog-single.html" class="block-20" style="background-image: url('views/images/image_2.jpg');">
+              <iframe  class="block-20"
+				src="https://www.youtube.com/embed/jpxY3NpZ-EE">
+			  </iframe>
               </a>
               <div class="text p-4 float-right d-block">
               	<div class="d-flex align-items-center pt-2 mb-4">
               		<div class="one">
-              			<span class="day">25</span>
+              			<span class="day">7</span>
               		</div>
               		<div class="two">
-              			<span class="yr">2019</span>
-              			<span class="mos">September</span>
+              			<span class="yr">2020</span>
+              			<span class="mos">Julio</span>
               		</div>
               	</div>
-                <h3 class="heading mt-2"><a href="#">Is wellness the new luxury</a></h3>
-                <p>A small river named Duden flows by their place and supplies it with the necessary regelialia.</p>
+                <h3 class="heading mt-2"><a href="#">Diseño de técnica con hilo | Esmalte Permanente</a></h3>
+                <p>En esta oportunidad te mostramos el diseño con hilo, con un lindo resultado.</p>
               </div>
             </div>
           </div>
-          <div class="col-md-4 d-flex ftco-animate">
+          <!-- <div class="col-md-4 d-flex ftco-animate">
           	<div class="blog-entry">
               <a href="blog-single.html" class="block-20" style="background-image: url('views/images/image_3.jpg');">
               </a>
@@ -256,7 +261,7 @@
                 <p>A small river named Duden flows by their place and supplies it with the necessary regelialia.</p>
               </div>
             </div>
-          </div>
+          </div> -->
         </div>
       </div>
     </section>

@@ -267,7 +267,8 @@
 	$(".accLog").click(function(){
 	  
 		$(".registerL").toggle('fast');
-		
+		$(".hH").toggle('fast');
+		$(".hH2").toggle('fast');
 		$(".loggingL").toggle('fast')
 	  });
 
@@ -340,6 +341,23 @@
 		}
 	})
 
+	$(".acc").click(function(){
+		console.log("hola")
+		$(".register").toggle('fast');
+		$(".hH").toggle('fast');
+		$(".logging").toggle('fast')
+	  });
+	
+	  $('.modG').click(function () {
+		$(".hH").show()
+		$(".hH2").hide()
+		$(".registerL").show()
+		$(".loggingL").hide()
+		var este = $(this).val()
+		$(".hid").hide()
+		$(".0"+este).show()
+	  })
+
 	$('.phone').on('input', function() {
 		var number = $(this).val().replace(/[^\d]/g, '')
 		if (number.length == 9) {
@@ -352,8 +370,8 @@
 
 	  $(".forgot").on('click', function () {
 		Swal.fire({
-			icon: "question",
-			title: "Por favor introduce tu correo para recuperar tu contraseña",
+			icon: "",
+			title: "Recuperar contraseña",
 			showConfirmButton: false,
 			html:
 			`<form  class="rescue p-4" method="post">

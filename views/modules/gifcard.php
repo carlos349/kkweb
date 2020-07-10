@@ -84,6 +84,9 @@ border-radius: 10px;
   transition-duration: .5s;
   transition-property: transform, opacity;
 }
+.flip h3 {
+    font-size: 1.1em;
+  }
 
 @media (max-width: 1400px) {
   .flip {
@@ -132,13 +135,13 @@ border-radius: 10px;
         <div class="modal-body">
           <div class="row">
             <div  class="col-6 py-5">
-              <div class="text-center py-5 01 hid" style="background-color: #fbf2f6;border-radius:5px"><h2 >Manicure tradicional + <br> Pedicure tradicional</h2><h4 style="font-weight: 600 !important;text-align: center;" ><i style="color: #77a464;" class="fa fa-money"></i> 15.000,00</h4></div>
+              <div class="text-center py-5 01 hid" style="background-color: #fbf2f6;border-radius:5px"><h2 >Manicure tradicional <br> + <br>  Pedicure tradicional</h2><h4 style="font-weight: 600 !important;text-align: center;" ><i style="color: #77a464;" class="fa fa-money"></i> 15.000,00</h4></div>
 
               <div class="text-center py-5 02 hid" style="background-color: #fbf2f6;border-radius:5px"><h2 >Manicure permanente</h2><h4 style="font-weight: 600 !important;text-align: center;" ><i style="color: #77a464;" class="fa fa-money"></i> 12.000,00</h4></div>
 
-              <div class="text-center py-5 03 hid" style="background-color: #fbf2f6;border-radius:5px"><h2 >Manicure permanente + <br> pedicure permanente</h2><h4 style="font-weight: 600 !important;text-align: center;" ><i style="color: #77a464;" class="fa fa-money"></i> 27.000,00</h4></div>
+              <div class="text-center py-5 03 hid" style="background-color: #fbf2f6;border-radius:5px"><h2 >Manicure permanente <br> + <br>  pedicure permanente</h2><h4 style="font-weight: 600 !important;text-align: center;" ><i style="color: #77a464;" class="fa fa-money"></i> 27.000,00</h4></div>
 
-              <div class="text-center py-5 04 hid" style="background-color: #fbf2f6;border-radius:5px"><h2 >Manicure permanente + <br> ondulación de pestañas</h2><h4 style="font-weight: 600 !important;text-align: center;" ><i style="color: #77a464;" class="fa fa-money"></i> 26.500,00</h4></div>
+              <div class="text-center py-5 04 hid" style="background-color: #fbf2f6;border-radius:5px"><h2 >Manicure permanente <br> + <br>  ondulación de pestañas</h2><h4 style="font-weight: 600 !important;text-align: center;" ><i style="color: #77a464;" class="fa fa-money"></i> 26.500,00</h4></div>
 
               <div class="text-center py-5 05 hid" style="background-color: #fbf2f6;border-radius:5px"><h2 >Ondulación con tinte</h2><h4 style="font-weight: 600 !important;text-align: center;" ><i style="color: #77a464;" class="fa fa-money"></i> 15.000,00</h4></div>
 
@@ -146,54 +149,9 @@ border-radius: 10px;
               
             </div>
             <div style="background-color: white;" class="col-6"> 
-              <h3 class="hH">Registrate para continuar</h3>
-              <h3 style="display: none;" class="hH">Ingresa para continuar</h3>
-              <form class="py-2 register" method="post">
-               
-                <div class="contact-form">
-                    <div class="form-group">
-                        <input type="text" class="form-control Mail-login" name="nombre" placeholder="Nombre">
-                    </div>
-                    <div class="form-group">
-                        <input type="text" class="form-control Mail-login" name="apellido" placeholder="Apellido">
-                    </div>
-
-                    <div class="form-group">
-                        <input type="text" class="form-control Mail-login" name="correo" placeholder="Correo">
-                    </div>
-                    <div class="form-group">
-                      <input type="password" class="form-control Mail-login" name="pass" placeholder="Contraseña">
-                    </div>
-                    <div class="form-group">
-                      <input type="password" class="form-control Mail-login" name="passR" placeholder="Repetir contraseña">
-                    </div>
-                    <div class="form-group align-items-rigth" style="display: inline-block" >
-                    <div class="row">
-                      <div class="col-sm-5"><input type="submit" value="Proceder" class="btn btn-primary py-2 px-4 system-login"></div>
-                      <div class="col-sm-7"><a style="cursor: pointer;" class="text-center acc">¿Ya tienes una cuenta?</a></div>
-                      
-                    </div>
-                        
-                        
-                    </div>
-                </div> 
-                
-            </form>
-            <form style="display: none;" class="logging py-2" method="post">
-              <div class="contact-form">
-                  <div class="form-group">
-                      <input type="text" class="form-control Mail-login" name="usuarioIngreso" placeholder="Correo">
-                  </div>
-                  <div class="form-group">
-                      <input type="text" class="form-control Pass-login" name="passwordIngreso" placeholder="Contraseña">
-                  </div>
-                  <div class="form-group align-items-rigth" style="display: inline-block" >
-                   
-                      <input type="submit" value="Procesar" class="btn btn-primary py-2 px-4 system-login">
-                      <a style="cursor: pointer;" class="acc">¿No estás registrado?</a>
-                  </div>
-              </div>
-            </form> 
+              <h3 class="hH text-center">Registrate para continuar</h3>
+              <h3 style="display: none;" class="hH2">Ingresa para continuar</h3>
+              <?php include 'loginAndRegister.php'; ?>
            
             </div>
           </div>
@@ -210,7 +168,7 @@ border-radius: 10px;
           
         </div>
         <div class="back">
-          <h3 style="font-weight:300" >Manicure tradicional + <br> Pedicure tradicional</h3>
+          <h3 style="font-weight:300" >Manicure tradicional <br> + <br> Pedicure tradicional</h3>
           
           <h4 style="font-weight: 600 !important;" ><i style="color: #77a464;" class="fa fa-money"></i> 15.000,00</h4>
           <p><button data-toggle="modal" id="1" value="1" data-target="#giftModal" class="btn modG btn-white px-4 py-3"> Regalar </button></p>
@@ -232,7 +190,7 @@ border-radius: 10px;
           
         </div>
         <div class="back">
-          <h3 style="font-weight:300" >Manicure permanente + <br> Pedicure permanente</h3>
+          <h3 style="font-weight:300" >Manicure permanente <br>+ <br> Pedicure permanente</h3>
           <h4 style="font-weight: 600 !important;" ><i style="color: #77a464;" class="fa fa-money"></i> 27.000,00</h4>
           <p><button data-toggle="modal" value="3" data-target="#giftModal" class="btn modG btn-white px-4 py-3"> Regalar </button></p>
         </div>
@@ -243,7 +201,7 @@ border-radius: 10px;
         
       </div>
       <div class="back">
-        <h3 style="font-weight:300" >Manicure permanente + <br> Ondulación de pestañas</h3>
+        <h3 style="font-weight:300" >Manicure permanente <br>+ <br> Ondulación de pestañas</h3>
         
         <h4 style="font-weight: 600 !important;" > <i style="color: #77a464;" class="fa fa-money"></i> 26.500,00</h4>
         <p><button data-toggle="modal" value="4" data-target="#giftModal" class="btn modG btn-white px-4 py-3"> Regalar </button></p>
@@ -280,20 +238,5 @@ border-radius: 10px;
 
     
 </body>
-<script>
-  $(document).ready(function(){
-  $(".acc").click(function(){
-    console.log("hola")
-    $(".register").toggle('fast');
-    $(".hH").toggle('fast');
-    $(".logging").toggle('fast')
-  });
 
-  $('.modG').click(function () {
-    var este = $(this).val()
-    $(".hid").hide()
-    $(".0"+este).show()
-  })
-});
-</script>
 </html>

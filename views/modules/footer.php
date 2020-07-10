@@ -6,8 +6,9 @@
               <h2 class="ftco-heading-2">K&K Pretty Nails</h2>
               <p>Simplemente un spa hecho a tu medida.</p>
               <ul class="ftco-footer-social list-unstyled float-lft mt-3">
-                <li class="ftco-animate"><a href="https://www.facebook.com/kkprettynails"><span class="icon-facebook"></span></a></li>
-                <li class="ftco-animate"><a href="https://www.instagram.com/kkprettynails/?hl=es-la"><span class="icon-instagram"></span></a></li>
+                <li class="ftco-animate"><a href="https://www.facebook.com/kkprettynails" target="_blank"><span class="icon-facebook"></span></a></li>
+                <li class="ftco-animate"><a href="https://www.instagram.com/kkprettynails/?hl=es-la" target="_blank"><span class="icon-instagram"></span></a></li>
+                <li class="ftco-animate"><a href="https://www.youtube.com/channel/UCg9tufEPhKadP4JM-GiDNNQ" target="_blank"><span class="icon-youtube"></span></a></li>
               </ul>
             </div>
           </div>
@@ -40,7 +41,7 @@
               <div class="block-23 mb-3">
                 <ul>
                   <li><span class="icon icon-map-marker"></span><span class="text">Av. Pedro de Valdivia 3474 Caracol Ñuñoa, Local 53-B Ñuñoa, Chile</span></li>
-                  <li><a href="https://wa.me/56972628949"><span class="icon icon-phone"></span><span class="text">+56 9 7262 8949</span></a></li>
+                  <li><a href="https://wa.me/56972628949" target="_blank"><span class="icon icon-phone"></span><span class="text">+56 9 7262 8949</span></a></li>
                   <li><a href="mailto:kkprettynails@gmail.com"><span class="icon icon-envelope"></span><span class="text">kkprettynails@gmail.com</span></a></li>
                 </ul>
               </div>
@@ -55,7 +56,7 @@
               Copyright &copy;<script>
                 document.write(new Date().getFullYear());
 
-              </script> Todos los derechos reservados | K&K Prettynails
+              </script> Todos los derechos reservados | Desarrollado por <a href="http://syswa.net" target="_blank"> <b>SYSWA</b> </a>
               <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
             </p>
           </div>

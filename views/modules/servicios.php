@@ -291,7 +291,7 @@
                         <div class="text mt-4">
                             <h3 class="mb-4" style="font-size: 30px;">Primer servicio</h3>
                             <p class="mb-5">Si quieres agendar con nosotros y este es el primer servicio tendrás automáticamente un 10% de descuento en tu primera atención, con excepción de los servicios tradicionales.</p>
-                            <p><a href="http://kkprettynails.syswa.net/#/agendamientoCliente" class="btn btn-white px-4 py-3"> ¡Agenda tu servicio! </a></p>
+                            <p><a href="nada" class="btn btn-white px-4 py-3"> ¡Agenda tu servicio! </a></p>
                         </div>
                     </div>
                 </div>

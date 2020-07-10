@@ -90,11 +90,39 @@
 
 
       $('.system-register').on('click', () => {
-        if ($(".passOne").val() != $(".passTwo").val()) {
+        if ($(".passOne").val().length < 8) {
+          Swal.fire({
+							icon: "error",
+							title: "",
+							text: "La contraseña debe 8 o más caracteres",
+							
+							showClass: {
+								popup: "animate__animated animate__fadeInDown"
+							  },
+							  hideClass: {
+								popup: "animate__animated animate__fadeOutUp"
+							  }
+					})
+        }
+        else if ($(".passOne").val() != $(".passTwo").val()) {
           Swal.fire({
 							icon: "error",
 							title: "",
 							text: "Las contraseñas deben coincidir",
+							
+							showClass: {
+								popup: "animate__animated animate__fadeInDown"
+							  },
+							  hideClass: {
+								popup: "animate__animated animate__fadeOutUp"
+							  }
+					})
+        }
+        else if ($(".phone1").val().length < 9) {
+          Swal.fire({
+							icon: "error",
+							title: "",
+							text: "Introduce un numero de telefono valido",
 							
 							showClass: {
 								popup: "animate__animated animate__fadeInDown"
@@ -167,7 +195,7 @@
           $("#referidoSys").text("https://kkprettynails.cl/refer="+myJson._id)
           $(".reco").text(myJson.recomendaciones)
 
-          for (let i = 0; i < 2; i++) {
+          for (let i = 0; i < 5; i++) {
             var date = new Date(myJson.historical[i].fecha)
             var fecha = date.getDate()+"-"+date.getMonth()+"-"+date.getFullYear()
             var td = `<tr>

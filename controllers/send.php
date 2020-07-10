@@ -247,9 +247,36 @@ class Mails {
                 <center>
                     <div style="width:60%;text-align: center;">
                         <h1 style="text-align: center;color:#172b4d;">Bienvenid@ </h1>
-                        <p style="text-align:center;margin-top:10px;font-size:18px;"> <strong>Hola '.$nombre.' '.$apellido.'.</p>
+                        <p style="text-align:center;margin-top:10px;font-size:18px;"> <strong>Estimado(a) '.$nombre.' '.$apellido.'.</p>
                         <p style="text-align:left;font-size:14px;font-weight: 300;text-align: center;width: 60%;margin:auto;"><strong> 
-                        Puedes recuperar tu contraseña por medio de este enlace: https://kkprettynails.cl/passRescue?id='.$id.'&verify='.$verify.'</strong>
+                        Puedes recuperar tu contraseña por medio de este <a style="cursor: pointer;" href="https://kkprettynails.cl/passRescue?id='.$id.'&verify='.$verify.'" class="text-center accLog">ENLACE</a> o por medio del siguiente boton: </strong>
+                        </p>
+
+                        <a style="display: inline-block;
+                        font-weight: 400;
+                        background: #605B56 !important;
+                        text-decoration: none;
+                        color: white;
+                        text-align: center;
+                        vertical-align: middle;
+                        -webkit-user-select: none;
+                        -moz-user-select: none;
+                        -ms-user-select: none;
+                        user-select: none;
+                        margin-top: 5%;
+                        border: 1px solid transparent;
+                        padding: 0.375rem 0.75rem;
+                        font-size: 1rem;
+                        line-height: 1.5;
+                        border-radius: 0.25rem;
+                        -webkit-transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, -webkit-box-shadow 0.15s ease-in-out;
+                        transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, -webkit-box-shadow 0.15s ease-in-out;
+                        -o-transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+                        transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+                        transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out, -webkit-box-shadow 0.15s ease-in-out;" href="https://kkprettynails.cl/passRescue?id='.$id.'&verify='.$verify.'" class="text-center ">Cambiar contraseña</a>
+
+                        <p style="text-align:left;font-size:14px;font-weight: 300;text-align: center;width: 60%;margin:auto;"><strong> <br>
+                        Este link solo podrá ser utilizado una sola vez. <br> Si usted no realizó esta acción, ignore este correo. </strong>
                         </p>
                     <div>
                 </center>

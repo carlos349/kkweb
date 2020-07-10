@@ -13,7 +13,7 @@
 			  <li id="galery" class="nav-item"><a href="Galeria" class="nav-link"> <b>Galería</b></a></li>
 			  <li id="contacto" class="nav-item"><a href="Contacto" class="nav-link"> <b>Contacto</b></a></li>
 			 
-			  <li id="contacto" class="nav-item"><a href="http://kkprettynails.syswa.net/#/agendamientoCliente" class="nav-link">Agendar</a></li>
+			  <li id="contacto" class="nav-item"><a href="nada" class="nav-link">Agendar</a></li>
 			  
 			  <li>
 			  <?php 
@@ -152,7 +152,7 @@
 									  </ul>
 									  <center>
 										 <p style="font-size: 16px;text-align: center;"> 
-											<span style="background-color: #605b56;padding: 10px;border:1px solid #605b56;">Link de referido:</span> 
+											<span style="background-color: #605b56;padding: 10px;border:1px solid #605b56;">Link de recomendaciòn:</span> 
 											<span id="referidoSys" style="border:1px solid #605b56;padding: 10px;margin-left: -10px;padding-left:20px;padding-right:20px "></span> 
 											<button data-clipboard-target="#referidoSys" style="    border: none;
 											padding: 5px;
@@ -169,7 +169,7 @@
 								
 							</div>
 							<div class="comments-c">
-								<div class="title">Historico de servicios</div>
+								<div class="title">Històrico de servicios</div>
 								<div class="description description1">
 									<table style="font-size: 12px;" class="table">
 										<thead class="thead-light">
@@ -315,7 +315,7 @@
                   <div class="form-group">
 					<div class="row">
 						<div class="col-sm-10">
-							<input type="password" required class="form-control Pass-login passValid passHide" name="passNew" placeholder="Nueva contraseña">
+							<input type="password" required class="form-control Pass-login passValid passHide" name="passNew" placeholder=" Contraseña nueva">
 						</div>
 						<div style="margin-top: 25px;" class="col-sm-2">
 							<i class="fa fa-eye showPass"></i>
@@ -327,7 +327,7 @@
 				  <div class="form-group">
 					<div class="row">
 						<div class="col-sm-10">
-							<input type="password" required class="form-control passRepeat passHide" name="passNewR" placeholder="Repetir nueva contraseña">
+							<input type="password" required class="form-control passRepeat passHide" name="passNewR" placeholder="Repetir  contraseña nueva">
 						</div>
 						<div style="margin-top: 25px;" class="col-sm-2">
 							<i class="fa fa-eye showPass"></i>
