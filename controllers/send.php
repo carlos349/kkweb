@@ -169,7 +169,7 @@ class Mails {
                 Swal.fire({
                 icon: "success",
                 title: "¡Enviado!",
-                text: "Nos pondremos en contacto contigo lo antes posible.",
+                text: "Te contactaremos lo antes posible.",
                 showClass: {
                     popup: "animate__animated animate__fadeInDown"
                     },
