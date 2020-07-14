@@ -10,16 +10,12 @@ class Registro{
 		$nombre = $_POST["nombre"];
 		$apellido = $_POST["apellido"];
 		$idSys = $_POST["idSys"];
-
-		if ($usuario != "") {
-				
-			$sql="SELECT * FROM usuarios WHERE usuario ='$usuario'";
-			$resultado = $consulta -> ver_registros($sql);
-
-			if ($resultado) {
-				$error="El correo ya esta siendo utilizado.";
-			}
-		}
+		unset($_POST['correo']);
+		unset($_POST['numero']);
+		unset($_POST['pass']);
+		unset($_POST['apellido']);
+		unset($_POST['nombre']);
+		
 
 		if ($correo != "") {
 
@@ -43,9 +39,7 @@ class Registro{
 		if ($usuario=="" || $password == "" || $correo == "" || $numero == "" || $nombre == "" || $apellido == "") {
 			$error="Todos los campos deben ser completados.";
 		}
-		if ($password == $numero) {
-			$error="Las contraseñas no coinciden.";
-		}
+	
 
 		if (isset($error)) {
 			echo '<script>
@@ -76,6 +70,8 @@ class Registro{
 			$datos["numero"] = "+56 ".$numero;
 			$datos["idSys"] = $idSys;
 
+			$correo = "";
+			
 			$registroModel = new RegistroModel();
 			$respuesta = $registroModel -> nuevoRegistroModel($datos);
 
@@ -101,7 +97,8 @@ class Registro{
 			$_SESSION["apellido"] = $resultado["apellido"];
 			$_SESSION["foto"] = $resultado["foto"];
 			$_SESSION["rol"] = $resultado["rol"];
-
+			$error = null;
+			
 			echo '<script>
 							Swal.fire({
 							icon: "success",

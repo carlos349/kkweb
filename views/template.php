@@ -94,7 +94,7 @@
           Swal.fire({
 							icon: "error",
 							title: "",
-							text: "La contraseña debe 8 o más caracteres",
+							text: "La contraseña debe tener 8 o más caracteres",
 							
 							showClass: {
 								popup: "animate__animated animate__fadeInDown"
@@ -104,6 +104,8 @@
 							  }
 					})
         }
+
+        
         else if ($(".passOne").val() != $(".passTwo").val()) {
           Swal.fire({
 							icon: "error",
@@ -132,48 +134,80 @@
 							  }
 					})
         }
-
-        else{
-          var data = {
-          name:$("#nombreS").val()+" "+$("#apellidoS").val(),
-          mail:$("#correoS").val(),
-          number: "+56 " + $(".phone1").val()
-          }
-
-          fetch('http://kkprettynails.syswa.net:4200/clients/verifyClient', {
-            method: 'POST', // or 'PUT'
-            body: JSON.stringify(data),
-            headers:{
-              'Content-Type': 'application/json'
-            }
-          })
-          .then(res => res.json())
-          .catch(error => {
-            console.log(error)
-            Swal.fire({
-                icon: "error",
-                title: "Lo sentimos.",
-                text: "Estamos presentando errores tecnicos",
-                footer: "<a href>¿Olvidate tu contraseña?</a>",
-                showClass: {
-                  popup: "animate__animated animate__fadeInDown"
-                  },
-                  hideClass: {
-                  popup: "animate__animated animate__fadeOutUp"
-                  }
-            }).then((result) => {
-                if (window.history.replaceState) { // verificamos disponibilidad
-                  window.history.replaceState(null, null, window.location.href);
-                }
-                // location.reload()
-              })
-          })
-          .then(response => {
-            console.log(response.data)
-            $("#idSyst").val(response.data._id)
-            $("#registroCliente").submit()
-          })
+        else if ($(".comprobar").val() == "") {
+          Swal.fire({
+							icon: "error",
+							title: "",
+							text: "Debe rellenar todos los campos",
+							
+							showClass: {
+								popup: "animate__animated animate__fadeInDown"
+							  },
+							  hideClass: {
+								popup: "animate__animated animate__fadeOutUp"
+							  }
+					})
         }
+        
+        else{
+          
+          if ($("#correoS").val().includes('@')) {
+            var data = {
+            name:$("#nombreS").val()+" "+$("#apellidoS").val(),
+            mail:$("#correoS").val(),
+            number: "+56 " + $(".phone1").val()
+            }
+
+            fetch('http://kkprettynails.syswa.net:4200/clients/verifyClient', {
+              method: 'POST', // or 'PUT'
+              body: JSON.stringify(data),
+              headers:{
+                'Content-Type': 'application/json'
+              }
+            })
+            .then(res => res.json())
+            .catch(error => {
+              console.log(error)
+              Swal.fire({
+                  icon: "error",
+                  title: "Lo sentimos.",
+                  text: "Estamos presentando errores tecnicos",
+                  footer: "<a href>¿Olvidate tu contraseña?</a>",
+                  showClass: {
+                    popup: "animate__animated animate__fadeInDown"
+                    },
+                    hideClass: {
+                    popup: "animate__animated animate__fadeOutUp"
+                    }
+              }).then((result) => {
+                  if (window.history.replaceState) { // verificamos disponibilidad
+                    window.history.replaceState(null, null, window.location.href);
+                  }
+                  // location.reload()
+                })
+            })
+            .then(response => {
+              console.log(response.data)
+              $("#idSyst").val(response.data._id)
+              $("#registroCliente").submit()
+            })
+          }
+          else{
+          Swal.fire({
+							icon: "error",
+							title: "",
+							text: "Introduce un correo valido",
+							
+							showClass: {
+								popup: "animate__animated animate__fadeInDown"
+							  },
+							  hideClass: {
+								popup: "animate__animated animate__fadeOutUp"
+							  }
+					})
+        }
+        }
+        
         
         
       })

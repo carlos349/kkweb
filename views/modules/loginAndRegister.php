@@ -12,32 +12,32 @@
                <h3 class="hH text-center">Regístrate</h3>
                 <div class="contact-form">
                     <div class="form-group">
-                        <input type="text" required class="form-control Mail-login" id="nombreS" name="nombre" placeholder="Nombre">
+                        <input type="text" required class="form-control  comprobar Mail-login" id="nombreS" name="nombre" placeholder="Nombre">
                     </div>
                     <div class="form-group">
-                        <input type="text" required class="form-control Mail-login" id="apellidoS" name="apellido" placeholder="Apellido">
+                        <input type="text" required class="form-control  comprobar Mail-login" id="apellidoS" name="apellido" placeholder="Apellido">
                     </div>
 
                     <div class="form-group">
-                        <input type="email" required class="form-control Mail-login" id="correoS" name="correo" placeholder="Correo">
+                        <input type="email" required class="form-control  comprobar Mail-login" id="correoS" name="correo" placeholder="Correo">
 					</div>
 					<div class="form-group">
 						<div class="row">
 							<div class="col-sm-2"><input type="text" class="form-control Mail-login" disabled value="+56"></div>
-							<div class="col-sm-10"><input type="text" required class="form-control Mail-login phone phone1" maxlength="9" name="numero" placeholder="Número de teléfono"></div>
+							<div class="col-sm-10"><input type="text" required class="form-control Mail-login comprobar  phone phone1" maxlength="9" name="numero" placeholder="Número de teléfono"></div>
 						</div>
                         
                     </div>
                     <div class="form-group">
 						<div class="row">
 							<div class="col-sm-10">
-								<input type="password" required class="form-control passOne Mail-login passHide" name="pass" placeholder="Contraseña">
+								<input type="password" required class="form-control passOne  comprobar Mail-login passHide" name="pass" placeholder="Contraseña">
 							</div>
 							<div style="margin-top: 25px;" class="col-sm-2">
 								<i class="fa fa-eye showPass"></i>
 							</div>
 							<div class="col-sm-10">
-								<input type="password" required class="form-control passTwo Mail-login passHide" name="passR" placeholder="Repetir contraseña">
+								<input type="password" required class="form-control passTwo  comprobar Mail-login passHide" name="passR" placeholder="Repetir contraseña">
 							</div>
 							<div style="margin-top: 25px;" class="col-sm-2">
 								<i class="fa fa-eye showPass"></i>
