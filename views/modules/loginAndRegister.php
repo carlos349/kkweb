@@ -48,8 +48,8 @@
 				  </div>
 				  <input hidden type="text" id="idSyst" name="idSys" >
                     <div class="form-group align-items-rigth" style="display: inline-block" >
-						<button type="button"  class="btn btn-primary py-2 px-4 system-login system-register"> Registrarme </button>
-						<a style="cursor: pointer;" class="text-center accLog">¿Ya tienes una cuenta?</a>
+						<button type="button"  class="btn btn-primary py-2 px-2 system-login system-register"> Registrarme </button>
+						<a style="cursor: pointer;" class="text-center accLog ml-1">¿Ya tienes una cuenta?</a>
                     </div>
                 </div> 
 				

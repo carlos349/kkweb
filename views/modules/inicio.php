@@ -12,7 +12,7 @@
             <div class="row justify-content-center">
             <p>
             	<a href="nada" style="font-size: 1em;" class="btn btn-primary p-3 px-5 py-4 mr-md-2">Agendar</a>
-            	<a href="Galeria" style="font-size: 1em;" class="btn btn-outline-primary p-3 px-5 py-4 ml-md-2">Galeria</a>
+            	<a href="Galeria" style="font-size: 1em;" class="btn btn-outline-primary p-3 px-5 py-4 ml-md-2">Galería</a>
             </p>
           </div>
         </div>

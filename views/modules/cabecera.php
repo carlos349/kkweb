@@ -169,7 +169,7 @@
 								
 							</div>
 							<div class="comments-c">
-								<div class="title">Històrico de servicios</div>
+								<div class="title">Histórico de servicios</div>
 								<div class="description description1">
 									<table style="font-size: 12px;" class="table">
 										<thead class="thead-light">
