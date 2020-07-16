@@ -1,43 +1,43 @@
 <?php 
 
-				if (isset($_POST["correo"])) {
+				if (isset($_POST["correoG"])) {
 					$error = true;
 					$registro = new Registro();
-					$respuesta = $registro -> registroController();
+					$respuesta = $registro -> registroControllerG();
 					
 				}  
 			
 			 ?>
-              <form style="display: none;" class="p-3 registerL" id="registroCliente"  method="post">
+              <form style="display: none;" class="p-3 registerL" id="registroClienteG"  method="post">
                <h3 class="hH text-center">Regístrate</h3>
                 <div class="contact-form">
                     <div class="form-group">
-                        <input type="text" required class="form-control  comprobar Mail-login" id="nombreS" name="nombre" placeholder="Nombre">
+                        <input type="text" required class="form-control  comprobar Mail-login" id="nombreS" name="nombreG" placeholder="Nombre">
                     </div>
                     <div class="form-group">
-                        <input type="text" required class="form-control  comprobar Mail-login" id="apellidoS" name="apellido" placeholder="Apellido">
+                        <input type="text" required class="form-control  comprobar Mail-login" id="apellidoS" name="apellidoG" placeholder="Apellido">
                     </div>
 
                     <div class="form-group">
-                        <input type="email" required class="form-control correoReg  comprobar Mail-login" id="correoS" name="correo" placeholder="Correo">
+                        <input type="email" required class="form-control correoReg  comprobar Mail-login" id="correoS" name="correoG" placeholder="Correo">
 					</div>
 					<div class="form-group">
 						<div class="row">
 							<div class="col-sm-2"><input type="text" class="form-control Mail-login" disabled value="+56"></div>
-							<div class="col-sm-10"><input type="text" required class="form-control Mail-login comprobar  phone phone1" maxlength="9" name="numero" placeholder="Número de teléfono"></div>
+							<div class="col-sm-10"><input type="text" required class="form-control Mail-login comprobar  phone phone1" maxlength="9" name="numeroG" placeholder="Número de teléfono"></div>
 						</div>
                         
                     </div>
                     <div class="form-group">
 						<div class="row">
 							<div class="col-sm-10">
-								<input type="password" required class="form-control passOne  comprobar Mail-login passHide" name="pass" placeholder="Contraseña">
+								<input type="password" required class="form-control passOne  comprobar Mail-login passHide" name="passG" placeholder="Contraseña">
 							</div>
 							<div style="margin-top: 25px;" class="col-sm-2">
 								<i class="fa fa-eye showPass"></i>
 							</div>
 							<div class="col-sm-10">
-								<input type="password" required class="form-control passTwo  comprobar Mail-login passHide" name="passR" placeholder="Repetir contraseña">
+								<input type="password" required class="form-control passTwo  comprobar Mail-login passHide" name="passRG" placeholder="Repetir contraseña">
 							</div>
 							<div style="margin-top: 25px;" class="col-sm-2">
 								<i class="fa fa-eye showPass"></i>

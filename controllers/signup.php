@@ -122,6 +122,127 @@ class Registro{
 
 	}
 
+	public function registroControllerG(){
+		$consulta = new Consulta();
+		$usuario = $_POST["correoG"];
+		$password = $_POST["passG"];
+		$numero = $_POST["numeroG"];
+		$correo = $_POST["correoG"];
+		$nombre = $_POST["nombreG"];
+		$apellido = $_POST["apellidoG"];
+		$idSys = $_POST["idSys"];
+		unset($_POST['correoG']);
+		unset($_POST['numeroG']);
+		unset($_POST['passG']);
+		unset($_POST['apellidoG']);
+		unset($_POST['nombreG']);
+		
+
+		if ($correo != "") {
+
+			$sql="SELECT * FROM usuarios WHERE correo ='$correo'";
+			$resultado = $consulta -> ver_registros($sql);
+
+			if ($resultado) {
+				$error="El correo ya esta siendo utilizado.";
+			}
+		}
+		if ($numero != "") {
+
+			$sql="SELECT * FROM usuarios WHERE numero ='$numero'";
+			$resultado = $consulta -> ver_registros($sql);
+
+			if ($resultado) {
+				$error="El número ya esta siendo utilizado.";
+			}
+		}
+
+		if ($usuario=="" || $password == "" || $correo == "" || $numero == "" || $nombre == "" || $apellido == "") {
+			$error="Todos los campos deben ser completados.";
+		}
+	
+
+		if (isset($error)) {
+			echo '<script>
+							Swal.fire({
+							icon: "error",
+							title: "Error",
+							text: "'.$error.'",
+							showClass: {
+								popup: "animate__animated animate__fadeInDown"
+							  },
+							  hideClass: {
+								popup: "animate__animated animate__fadeOutUp"
+							  }
+							}).then((result) => {
+								if (window.history.replaceState) { // verificamos disponibilidad
+									window.history.replaceState(null, null, window.location.href);
+								}
+								location.reload()
+							  })
+						</script>';
+
+		} else{
+			$datos["usuario"] = $usuario;
+			$datos["password"] = $password;	
+			$datos["correo"] = $correo;
+			$datos["nombre"] = $nombre;
+			$datos["apellido"] = $apellido;
+			$datos["numero"] = "+56 ".$numero;
+			$datos["idSys"] = $idSys;
+
+			$correo = "";
+			
+			$registroModel = new RegistroModel();
+			$respuesta = $registroModel -> nuevoRegistroModel($datos);
+
+			$send = new Mails();
+			$sendresponse = $send -> constractMail($datos["nombre"],$datos["apellido"],$datos["correo"]);
+
+			session_start();
+
+			$datosController = array("usuario"=>$datos["usuario"],"password"=>$datos["password"]);
+			$respuesta = IngresoModels::ingresoModel($datosController, "usuarios");
+			$resultado = $respuesta[0];
+
+			$_SESSION["validar"] = true;
+			$_SESSION["usuario"] = $resultado["usuario"];
+			$_SESSION["id"] = $resultado["id"];
+			$_SESSION["idSys"] = $resultado["idSistema"];
+			$_SESSION["numero"] = $resultado["numero"];
+			$_SESSION["descuentos"] = $resultado["descuentos"];
+			$_SESSION["recomendaciones"] = $resultado["recomendaciones"];
+			$_SESSION["password"] = $resultado["contrasena"];
+			$_SESSION["correo"] = $resultado["correo"];
+			$_SESSION["nombre"] = $resultado["nombre"];
+			$_SESSION["apellido"] = $resultado["apellido"];
+			$_SESSION["foto"] = $resultado["foto"];
+			$_SESSION["rol"] = $resultado["rol"];
+			$error = null;
+			
+			echo '<script>
+							Swal.fire({
+							icon: "success",
+							title: "Bienvenido",
+							text: "¡Registro exitoso sera ingresado automaticamente!",
+							showClass: {
+								popup: "animate__animated animate__fadeInDown"
+							  },
+							  hideClass: {
+								popup: "animate__animated animate__fadeOutUp"
+							  }
+							}).then((result) => {
+								if (window.history.replaceState) { // verificamos disponibilidad
+									window.history.replaceState(null, null, window.location.href);
+								}
+								location.reload()
+								
+							  })
+						</script>';
+		}
+
+	}
+
 	public function cambioPass(){
 		$consulta2 = new Consulta();
 		$passOld = $_POST['passOld'];

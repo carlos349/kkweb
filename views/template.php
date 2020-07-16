@@ -90,7 +90,7 @@
 
 
       $('.system-register').on('click', () => {
-        if ($(".passOne").val().length < 8) {
+        if ($(".passOne").eq(0).val().length < 8 && $(".passOne").eq(1).val().length < 8) {
           Swal.fire({
 							icon: "error",
 							title: "",
@@ -106,7 +106,7 @@
         }
 
         
-        else if ($(".passOne").val() != $(".passTwo").val()) {
+        else if ($(".passOne").eq(1).val() != $(".passTwo").eq(1).val() && $(".passOne").eq(1).val() != $(".passTwo").eq(1).val()) {
           Swal.fire({
 							icon: "error",
 							title: "",
@@ -120,7 +120,7 @@
 							  }
 					})
         }
-        else if ($(".phone1").val().length < 9) {
+        else if ($(".phone1").eq(0).val().length < 9 && $(".phone1").eq(1).val().length < 9) {
           Swal.fire({
 							icon: "error",
 							title: "",
@@ -134,24 +134,24 @@
 							  }
 					})
         }
-        else if ($(".comprobar").val() == "") {
-          Swal.fire({
-							icon: "error",
-							title: "",
-							text: "Debe rellenar todos los campos",
+        // else if ($(".comprobar").eq(0).val() == "" || $(".comprobar").eq(1).val() == "" || $(".comprobar").eq(2).val() == "" || $(".comprobar").eq(3).val() == "" || $(".comprobar").eq(4).val() == "" || $(".comprobar").eq(5).val() == ""   && $(".comprobar").eq(6).val() == "" || $(".comprobar").eq(7).val() == "" || $(".comprobar").eq(8).val() == "" || $(".comprobar").eq(9).val() == "" || $(".comprobar").eq(10).val() == "" || $(".comprobar").eq(11).val() == "")  {
+        //   Swal.fire({
+				// 			icon: "error",
+				// 			title: "",
+				// 			text: "Debe rellenar todos los campos",
 							
-							showClass: {
-								popup: "animate__animated animate__fadeInDown"
-							  },
-							  hideClass: {
-								popup: "animate__animated animate__fadeOutUp"
-							  }
-					})
-        }
+				// 			showClass: {
+				// 				popup: "animate__animated animate__fadeInDown"
+				// 			  },
+				// 			  hideClass: {
+				// 				popup: "animate__animated animate__fadeOutUp"
+				// 			  }
+				// 	})
+        // }
         
         else{
           
-          if ($("#correoS").val().includes('@')) {
+          if ($(".correoReg").eq(0).val().includes('@') || $(".correoReg").eq(1).val().includes('@')) {
             var data = {
             name:$("#nombreS").val()+" "+$("#apellidoS").val(),
             mail:$("#correoS").val(),
@@ -189,7 +189,13 @@
             .then(response => {
               console.log(response.data)
               $("#idSyst").val(response.data._id)
-              $("#registroCliente").submit()
+              if ($(".correoReg").eq(0).val().includes('@')) {
+                 $("#registroCliente").submit()
+              }
+              else{
+                $("#registroClienteG").submit()
+              }
+             
             })
           }
           else{

@@ -151,7 +151,7 @@ border-radius: 10px;
             <div style="background-color: white;" class="col-6"> 
              
               <h3 style="display: none;" class="hH2">Ingresa para continuar</h3>
-              <?php include 'loginAndRegister.php'; ?>
+              <?php include 'loginAndRegisterG.php'; ?>
            
             </div>
           </div>
