@@ -74,8 +74,8 @@ src="https://www.facebook.com/tr?id=2650063728607003&ev=PageView
   <script src="views/js/bootstrap-datepicker.js"></script>
   <script src="views/js/jquery.timepicker.min.js"></script>
   <script src="views/js/scrollax.min.js"></script>
-  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBVWaKrjvy3MaE7SQ74_uJiULgl1JY0H2s&sensor=false"></script>
-  <script src="views/js/google-map.js"></script>
+  
+ 
   <script src="views/js/main.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.19.2/axios.min.js"></script>
   <script>
@@ -109,7 +109,24 @@ src="https://www.facebook.com/tr?id=2650063728607003&ev=PageView
 
 
       $('.system-register').on('click', () => {
-        if ($(".passOne").eq(0).val().length < 8 && $(".passOne").eq(1).val().length < 8) {
+        if ($(".correoReg").eq(0).val().includes('@') || $(".correoReg").eq(1).val().includes('@')) {
+
+         if ($(".phone1").eq(0).val().length < 9 && $(".phone1").eq(1).val().length < 9) {
+          Swal.fire({
+							icon: "error",
+							title: "",
+							text: "Introduce un número de teléfono válido",
+							
+							showClass: {
+								popup: "animate__animated animate__fadeInDown"
+							  },
+							  hideClass: {
+								popup: "animate__animated animate__fadeOutUp"
+							  }
+					})
+        }
+
+        else if ($(".passOne").eq(0).val().length < 8 && $(".passOne").eq(1).val().length < 8) {
           Swal.fire({
 							icon: "error",
 							title: "",
@@ -125,7 +142,7 @@ src="https://www.facebook.com/tr?id=2650063728607003&ev=PageView
         }
 
         
-        else if ($(".passOne").eq(1).val() != $(".passTwo").eq(1).val() && $(".passOne").eq(1).val() != $(".passTwo").eq(1).val()) {
+        else if ($(".passOne").eq(0).val() != $(".passTwo").eq(0).val() || $(".passOne").eq(1).val() != $(".passTwo").eq(1).val()) {
           Swal.fire({
 							icon: "error",
 							title: "",
@@ -139,11 +156,63 @@ src="https://www.facebook.com/tr?id=2650063728607003&ev=PageView
 							  }
 					})
         }
-        else if ($(".phone1").eq(0).val().length < 9 && $(".phone1").eq(1).val().length < 9) {
+
+        else{
+          
+          
+          var data = {
+          name:$("#nombreS").val()+" "+$("#apellidoS").val(),
+          mail:$("#correoS").val(),
+          number: "+56 " + $(".phone1").val()
+          }
+
+          fetch('http://kkprettynails.syswa.net:4200/clients/verifyClient', {
+            method: 'POST', // or 'PUT'
+            body: JSON.stringify(data),
+            headers:{
+              'Content-Type': 'application/json'
+            }
+          })
+          .then(res => res.json())
+          .catch(error => {
+            console.log(error)
+            Swal.fire({
+                icon: "error",
+                title: "Lo sentimos.",
+                text: "Estamos presentando errores tecnicos",
+                footer: "<a href>¿Olvidate tu contraseña?</a>",
+                showClass: {
+                  popup: "animate__animated animate__fadeInDown"
+                  },
+                  hideClass: {
+                  popup: "animate__animated animate__fadeOutUp"
+                  }
+            }).then((result) => {
+                if (window.history.replaceState) { // verificamos disponibilidad
+                  window.history.replaceState(null, null, window.location.href);
+                }
+                // location.reload()
+              })
+          })
+          .then(response => {
+            console.log(response.data)
+            $("#idSyst").val(response.data._id)
+            if ($(".correoReg").eq(0).val().includes('@')) {
+               $("#registroCliente").submit()
+            }
+            else{
+              $("#registroClienteG").submit()
+            }
+           
+          })
+        
+        
+      }
+      }else{
           Swal.fire({
 							icon: "error",
 							title: "",
-							text: "Introduce un numero de telefono valido",
+							text: "Introduce un correo valido",
 							
 							showClass: {
 								popup: "animate__animated animate__fadeInDown"
@@ -153,6 +222,7 @@ src="https://www.facebook.com/tr?id=2650063728607003&ev=PageView
 							  }
 					})
         }
+        
         // else if ($(".comprobar").eq(0).val() == "" || $(".comprobar").eq(1).val() == "" || $(".comprobar").eq(2).val() == "" || $(".comprobar").eq(3).val() == "" || $(".comprobar").eq(4).val() == "" || $(".comprobar").eq(5).val() == ""   && $(".comprobar").eq(6).val() == "" || $(".comprobar").eq(7).val() == "" || $(".comprobar").eq(8).val() == "" || $(".comprobar").eq(9).val() == "" || $(".comprobar").eq(10).val() == "" || $(".comprobar").eq(11).val() == "")  {
         //   Swal.fire({
 				// 			icon: "error",
@@ -168,70 +238,7 @@ src="https://www.facebook.com/tr?id=2650063728607003&ev=PageView
 				// 	})
         // }
         
-        else{
-          
-          if ($(".correoReg").eq(0).val().includes('@') || $(".correoReg").eq(1).val().includes('@')) {
-            var data = {
-            name:$("#nombreS").val()+" "+$("#apellidoS").val(),
-            mail:$("#correoS").val(),
-            number: "+56 " + $(".phone1").val()
-            }
-
-            fetch('http://kkprettynails.syswa.net:4200/clients/verifyClient', {
-              method: 'POST', // or 'PUT'
-              body: JSON.stringify(data),
-              headers:{
-                'Content-Type': 'application/json'
-              }
-            })
-            .then(res => res.json())
-            .catch(error => {
-              console.log(error)
-              Swal.fire({
-                  icon: "error",
-                  title: "Lo sentimos.",
-                  text: "Estamos presentando errores tecnicos",
-                  footer: "<a href>¿Olvidate tu contraseña?</a>",
-                  showClass: {
-                    popup: "animate__animated animate__fadeInDown"
-                    },
-                    hideClass: {
-                    popup: "animate__animated animate__fadeOutUp"
-                    }
-              }).then((result) => {
-                  if (window.history.replaceState) { // verificamos disponibilidad
-                    window.history.replaceState(null, null, window.location.href);
-                  }
-                  // location.reload()
-                })
-            })
-            .then(response => {
-              console.log(response.data)
-              $("#idSyst").val(response.data._id)
-              if ($(".correoReg").eq(0).val().includes('@')) {
-                 $("#registroCliente").submit()
-              }
-              else{
-                $("#registroClienteG").submit()
-              }
-             
-            })
-          }
-          else{
-          Swal.fire({
-							icon: "error",
-							title: "",
-							text: "Introduce un correo valido",
-							
-							showClass: {
-								popup: "animate__animated animate__fadeInDown"
-							  },
-							  hideClass: {
-								popup: "animate__animated animate__fadeOutUp"
-							  }
-					})
-        }
-        }
+        
         
         
         
@@ -253,19 +260,22 @@ src="https://www.facebook.com/tr?id=2650063728607003&ev=PageView
           $("#serviciosSys").text(myJson.participacion)
           $("#referidoSys").text("https://kkprettynails.cl/refer="+myJson._id)
           $(".reco").text(myJson.recomendaciones)
-
-          for (let i = 0; i < 5; i++) {
-            var date = new Date(myJson.historical[i].fecha)
-            var fecha = date.getDate()+"-"+date.getMonth()+"-"+date.getFullYear()
-            var td = `<tr>
-											<th scope="row">${fecha}</th>
-											<td>${myJson.historical[i].servicios[0].servicio}</td>
-											<td>${myJson.historical[i].manicurista}</td>
-											<td>$ ${myJson.historical[i].total.toFixed(2).replace(/(\d)(?=(\d{3})+\.)/g, "$1,").toString()}</td>
-											<td><button style="font-size: .7em;" class="btn btn-success">Reagendar</button></td>
-										  </tr>`
-            $("#histServices").append(td)
+          console.log(myJson.historical.length)
+          if (myJson.historical.length > 0) {
+            for (let i = 0; i < 5; i++) {
+              var date = new Date(myJson.historical[i].fecha)
+              var fecha = date.getDate()+"-"+date.getMonth()+"-"+date.getFullYear()
+              var td = `<tr>
+                        <th scope="row">${fecha}</th>
+                        <td>${myJson.historical[i].servicios[0].servicio}</td>
+                        <td>${myJson.historical[i].manicurista}</td>
+                        <td>$ ${myJson.historical[i].total.toFixed(2).replace(/(\d)(?=(\d{3})+\.)/g, "$1,").toString()}</td>
+                        <td><button style="font-size: .7em;" class="btn btn-success">Reagendar</button></td>
+                        </tr>`
+              $("#histServices").append(td)
+            }
           }
+          
           var data2 = {
           client:$(".correoClienteRequest").val()
           }
@@ -282,7 +292,11 @@ src="https://www.facebook.com/tr?id=2650063728607003&ev=PageView
             console.log(error)
           })
           .then(response => {
-            $(".citasPendi").text(response.length)
+            
+             
+              $(".citasPendi").text(response.length)
+            
+            
 
             for (let i = 0; i < response.length; i++) {
             var date = new Date(response[i].date)

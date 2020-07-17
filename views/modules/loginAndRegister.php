@@ -11,12 +11,15 @@
               <form style="display: none;" class="p-3 registerL" id="registroCliente"  method="post">
                <h3 class="hH text-center">Regístrate</h3>
                 <div class="contact-form">
-                    <div class="form-group">
+				<div class="row">
+				<div class="form-group col-sm-6">
                         <input type="text" required class="form-control  comprobar Mail-login" id="nombreS" name="nombre" placeholder="Nombre">
                     </div>
-                    <div class="form-group">
+                    <div class="form-group col-sm-6">
                         <input type="text" required class="form-control  comprobar Mail-login" id="apellidoS" name="apellido" placeholder="Apellido">
                     </div>
+				</div>
+                    
 
                     <div class="form-group">
                         <input type="email" required class="form-control correoReg  comprobar Mail-login" id="correoS" name="correo" placeholder="Correo">
@@ -30,18 +33,16 @@
                     </div>
                     <div class="form-group">
 						<div class="row">
-							<div class="col-sm-10">
+							<div class="col-sm-5">
 								<input type="password" required class="form-control passOne  comprobar Mail-login passHide" name="pass" placeholder="Contraseña">
 							</div>
-							<div style="margin-top: 25px;" class="col-sm-2">
-								<i class="fa fa-eye showPass"></i>
-							</div>
-							<div class="col-sm-10">
+							<div class="col-sm-5">
 								<input type="password" required class="form-control passTwo  comprobar Mail-login passHide" name="passR" placeholder="Repetir contraseña">
 							</div>
 							<div style="margin-top: 25px;" class="col-sm-2">
 								<i class="fa fa-eye showPass"></i>
 							</div>
+							
 					  
 						</div>
 					  

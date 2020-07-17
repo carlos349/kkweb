@@ -23,7 +23,7 @@ class Registro{
 			$resultado = $consulta -> ver_registros($sql);
 
 			if ($resultado) {
-				$error="El correo ya esta siendo utilizado.";
+				$error="El correo ya está siendo utilizado.";
 			}
 		}
 		if ($numero != "") {
