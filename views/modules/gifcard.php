@@ -150,8 +150,17 @@ border-radius: 10px;
             </div>
             <div style="background-color: white;" class="col-6"> 
              
-              <h3 style="display: none;" class="hH2">Ingresa para continuar</h3>
-              <?php include 'loginAndRegisterG.php'; ?>
+              
+              <?php 
+              if (isset($_SESSION['id'])) {
+                include 'giftForm.php';
+              
+              }
+              else {
+                echo '<h3 style="display: none;" class="hH2">Ingresa para continuar</h3>';
+                include 'loginAndRegisterG.php';
+              }  
+              ?>
            
             </div>
           </div>
@@ -236,6 +245,7 @@ border-radius: 10px;
     
   </center>
 
+  
     
 </body>
 

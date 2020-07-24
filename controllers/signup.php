@@ -127,6 +127,7 @@ class Registro{
 		$usuario = $_POST["correoG"];
 		$password = $_POST["passG"];
 		$numero = $_POST["numeroG"];
+		$validator = $_POST['cardValidator'] - 1;
 		$correo = $_POST["correoG"];
 		$nombre = $_POST["nombreG"];
 		$apellido = $_POST["apellidoG"];
@@ -224,7 +225,7 @@ class Registro{
 							Swal.fire({
 							icon: "success",
 							title: "Bienvenido",
-							text: "¡Registro exitoso sera ingresado automaticamente!",
+							text: "¡Registro exitoso procediendo a la compra!",
 							showClass: {
 								popup: "animate__animated animate__fadeInDown"
 							  },
@@ -235,7 +236,7 @@ class Registro{
 								if (window.history.replaceState) { // verificamos disponibilidad
 									window.history.replaceState(null, null, window.location.href);
 								}
-								location.reload()
+								window.location.href = "giftFormWindow?validator='.$validator.'"
 								
 							  })
 						</script>';

@@ -17,6 +17,7 @@ class EnlacesModels{
 			$enlaces == "panel" ||
 			$enlaces == "passRescue" ||
 			$enlaces == "Registro" ||
+			$enlaces == "giftFormWindow" ||
 			$enlaces == "Ingreso"  ) {
 
 			$module = "views/modules/".$enlaces.".php";

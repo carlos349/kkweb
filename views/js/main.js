@@ -340,7 +340,63 @@
 				})
 		}
 	})
-
+	$(".proccessGift").on('click', function() {
+		var esta = $(".modG").eq($(".cardValidatorF").val()).parent().prev().prev().text()
+		var esto = $(".modG").eq($(".cardValidatorF").val()).parent().prev().text()
+		var otro = $("#typePay").val()
+		if ($("#typePay").val() == "") {
+			Swal.fire({
+				icon: "error",
+				title: "Error",
+				text: "¡Debe elegir un metodo de pago!",
+				showClass: {
+					popup: "animate__animated animate__fadeInDown"
+				  },
+				  hideClass: {
+					popup: "animate__animated animate__fadeOutUp"
+				  }
+				})
+		}
+		else{
+			Swal.fire({
+				icon: "",
+				title: "Detalles de tu compra",
+				showConfirmButton: true,
+				showCancelButton: true,
+				confirmButtonColor: '#3085d6',
+				cancelButtonColor: '#d33',
+				confirmButtonText: '¡Confirmar!',
+				cancelButtonText: '¡Cancelar!',
+				html:
+				`<h3>Resumen final</h3>
+				<p> <b>Gift card:</b> ${esta} </p>
+				<p> <b>Precio:</b> $ ${esto} </p>
+				<p> <b>Tipo de pago:</b> ${otro} </p>
+				
+				`,
+				showClass: {
+					popup: "animate__animated animate__fadeInDown"
+				  },
+				  hideClass: {
+					popup: "animate__animated animate__fadeOutUp"
+				  }
+				})
+				.then((result) => {
+					if (result.value) {
+						
+						Swal.fire(
+						  '¡Completado!',
+						  'Recibiras un correo con información.',
+						  'success'
+						)
+						$(".formGiftWindow").submit()
+					  }
+					
+				  })
+			
+		}
+	})
+	$(".hid").eq($("#cardValidatorWindow").val()).show()
 	$(".acc").click(function(){
 		console.log("hola")
 		$(".register").toggle('fast');
@@ -355,9 +411,13 @@
 		$(".loggingL").hide()
 		var este = $(this).val()
 		$(".hid").hide()
+		$(".giftPrice").text("$ "+$(this).parent().prev().text())
+		$(".cardValidator").val(este)
+		$(".cardValidatorF").val(este)
+		
 		$(".0"+este).show()
 	  })
-
+	  $("#giftModalForm").modal("show")
 	$('.phone').on('input', function() {
 		var number = $(this).val().replace(/[^\d]/g, '')
 		if (number.length == 9) {

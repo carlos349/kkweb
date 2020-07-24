@@ -24,6 +24,7 @@
                     <div class="form-group">
                         <input type="email" required class="form-control correoReg  comprobar Mail-login" id="correoS" name="correoG" placeholder="Correo">
 					</div>
+					<input type="hidden" name="cardValidator" class="cardValidator" value="">
 					<div class="form-group">
 						<div class="row">
 							<div class="col-sm-2"><input type="text" class="form-control Mail-login" disabled value="+56"></div>
@@ -68,7 +69,8 @@
               <div class="contact-form">
                   <div class="form-group">
                       <input type="text" required class="form-control Mail-login" name="usuarioIngreso" placeholder="Correo">
-                  </div>
+				  </div>
+				  <input type="hidden" name="cardValidatorL" class="cardValidator" value="">
                   <div class="form-group">
 					<div class="row">
 						<div class="col-sm-10">
