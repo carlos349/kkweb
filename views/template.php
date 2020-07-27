@@ -296,7 +296,7 @@ src="https://www.facebook.com/tr?id=2650063728607003&ev=PageView
                 total: $(".totalGift").val()
                 }
 
-                fetch('http://localhost:4200/pedidos', {
+                fetch('http://kkprettynails.syswa.net:4200/pedidos', {
                   method: 'POST', // or 'PUT'
                   body: JSON.stringify(data),
                   headers:{
