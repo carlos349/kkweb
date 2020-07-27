@@ -16,6 +16,9 @@
 <div> <div style="float: left;">Total:</div> <div class="giftPrice" style="float: right;margin-right: 20px;"> </div></div>
 <br><br>
 <input type="hidden"  class="cardValidatorF" value="">
+
+<input type="hidden"  class="nombreGift" value="<?php echo $_SESSION['nombre'].' '.$_SESSION['apellido']; ?>">		  
+	  <input type="hidden"  class="contactoGift" value="<?php echo $_SESSION['correo'] ?>">
 <form id="formGiftWindow" method="post">
   <select id="typePay" class="btn btn-primary py-2 px-2" name="typePay">
     <option value="" selected>Selecciona un tipo de pago</option>
@@ -24,6 +27,9 @@
     <!-- <option value="fiat">Otro</option>
     <option value="audi">Audi</option> -->
   </select>
+  <input type="hidden"  class="articuloGift" value="" name="articulogift">
+  <input type="hidden"  class="totalGift" value="" name="totalGift">
+  <input type="hidden" value="<?php echo $_SESSION['correo'] ?>" name="correoGift">
 </form>
 
 <br><br>

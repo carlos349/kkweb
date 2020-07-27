@@ -43,7 +43,7 @@
 	      </div>
 		  </div>
 	  </nav>
-
+	  
 	  <input type="hidden"  id="valSys" value="<?php echo $_SESSION['idSys']; ?>">
 
 	  <div class="modal fade" id="logModal" data-backdrop="static" data-keyboard="false" tabindex="-1" role="dialog" aria-labelledby="staticBackdropLabel" aria-hidden="true">

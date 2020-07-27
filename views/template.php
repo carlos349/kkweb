@@ -243,7 +243,100 @@ src="https://www.facebook.com/tr?id=2650063728607003&ev=PageView
         
         
       })
+      $(".proccessGift").on('click', function() {
+        var esta = $(".modG").eq($(".cardValidatorF").val()).parent().prev().prev().text()
+        var esto = $(".modG").eq($(".cardValidatorF").val()).parent().prev().text()
+        var otro = $("#typePay").val()
 
+        var mas = $(".articuloGift").val()
+        var mes = $(".totalGift").val()
+        if ($("#typePay").val() == "") {
+          Swal.fire({
+            icon: "error",
+            title: "Error",
+            text: "¡Debe elegir un metodo de pago!",
+            showClass: {
+              popup: "animate__animated animate__fadeInDown"
+              },
+              hideClass: {
+              popup: "animate__animated animate__fadeOutUp"
+              }
+            })
+        }
+        else{
+          Swal.fire({
+            icon: "",
+            title: "Detalles de tu compra",
+            showConfirmButton: true,
+            showCancelButton: true,
+            confirmButtonColor: '#3085d6',
+            cancelButtonColor: '#d33',
+            confirmButtonText: '¡Confirmar!',
+            cancelButtonText: '¡Cancelar!',
+            html:
+            `<h3>Resumen final</h3>
+            <p> <b>Gift card:</b> ${mas} </p>
+            <p> <b>Precio:</b>  ${mes} </p>
+            <p> <b>Tipo de pago:</b> ${otro} </p>
+            
+            `,
+            showClass: {
+              popup: "animate__animated animate__fadeInDown"
+              },
+              hideClass: {
+              popup: "animate__animated animate__fadeOutUp"
+              }
+            })
+            .then((result) => {
+              if (result.value) {
+                var data = {
+                cliente:$(".nombreGift").val(),
+                identidad:$(".contactoGift").val(),
+                articulo: $(".articuloGift").val(),
+                total: $(".totalGift").val()
+                }
+
+                fetch('http://localhost:4200/pedidos', {
+                  method: 'POST', // or 'PUT'
+                  body: JSON.stringify(data),
+                  headers:{
+                    'Content-Type': 'application/json'
+                  }
+                })
+                .then(res => res.json())
+                .catch(error => {
+                  console.log(error)
+                  Swal.fire({
+                      icon: "error",
+                      title: "Lo sentimos.",
+                      text: "Estamos presentando errores tecnicos",
+                      footer: "<a href>¿Olvidate tu contraseña?</a>",
+                      showClass: {
+                        popup: "animate__animated animate__fadeInDown"
+                        },
+                        hideClass: {
+                        popup: "animate__animated animate__fadeOutUp"
+                        }
+                  }).then((result) => {
+                      if (window.history.replaceState) { // verificamos disponibilidad
+                        window.history.replaceState(null, null, window.location.href);
+                      }
+                       location.reload()
+                    })
+                })
+                .then(response => {
+                  
+                $("#formGiftWindow").submit()
+                  
+                
+                })
+                
+                }
+              
+              })
+          
+        }
+      })
       
       
       $("#verPerfil").on( 'click', ()  => {

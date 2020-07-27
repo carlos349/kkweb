@@ -391,6 +391,140 @@ class Mails {
         }
         
     }
+
+
+public function giftMail()
+    {
+        require 'PHPMailer/Exception.php';
+        require 'PHPMailer/PHPMailer.php';
+        require 'PHPMailer/SMTP.php';
+        include 'private/mailCredentials.php';
+
+        $correo = $_SESSION["correo"];
+        $nombre = $_SESSION["nombre"];
+        $apellido = $_SESSION["apellido"];
+        $articulo = $_POST['articulogift'];
+        $total = $_POST['totalGift'];
+        $metodo = $_POST['typePay'];
+            
+            echo  ' <script>document.querySelector("body").style.color = "white"</script>';
+            $origenNombre = 'Compra de gift card';
+            $origenEmail = 'kkprettynails@gmail.com';
+            $destinatarioEmail = $correo; 
+
+            //cuerpo del email:
+            $cuerpoMensaje = '
+            <div style="width: 100%; padding:0;text-align:center;">
+            <div style="width: 85%;height: 8vh;margin: auto;background-color: #fdd3d7;box-shadow: 0 2px 5px 0 rgba(0,0,0,.14);padding: 20px;font-family: Roboto,RobotoDraft,Helvetica,Arial,sans-serif;color:#172b4d;text-align:justify;-webkit-box-shadow: 0px 6px 8px -8px rgba(0,0,0,0.73);-moz-box-shadow: 0px 6px 8px -8px rgba(0,0,0,0.73);box-shadow: 0px 6px 8px -8px rgba(0,0,0,0.73);">
+                <div style="width: 100px;margin:auto;border-radius:55%;background-color:#f8f9fa;padding: 10px;">     
+                    <img style="width: 100%;" src="http://kkprettynails.cl/views/images/logokk.png" alt="Logo kkprettynails">
+                </div>
+            </div>
+            <div style="width: 100%;margin: auto;padding-top: 5%;font-family: Roboto,RobotoDraft,Helvetica,Arial,sans-serif;color:#172b4d;padding-bottom: 40px;">
+                <center>
+                    <div style="width:60%;text-align: center;">
+                        <h1 style="text-align: center;color:#172b4d;">Bienvenid@ </h1>
+                        <p style="text-align:center;margin-top:10px;font-size:18px;"> <strong>Estimado(a) '.$nombre.' '.$apellido.'. Usted realizo una compra por la Gift Card: '.$articulo.' y su metodo de pago es: '.$metodo.' </p>
+                        <p style="text-align:left;font-size:14px;font-weight: 300;text-align: center;width: 60%;margin:auto;"><strong> 
+                        Estos son los datos de tu compra y los pasos para realizar el pago:  </strong>
+                        </p>
+
+                        
+
+                        <p style="text-align:left;font-size:14px;font-weight: 300;text-align: center;width: 60%;margin:auto;"><strong> <br>
+                         Si usted no realizó esta acción, ignore este correo. </strong>
+                        </p>
+                    <div>
+                </center>
+            </div>
+            <div style="width: 85%;background-color: #f0f1f3;box-shadow: 0 2px 5px 0 rgba(0,0,0,.14);margin: auto;padding: 20px;font-family: Roboto,RobotoDraft,Helvetica,Arial,sans-serif;color:#172b4d;padding-bottom:20px;-webkit-box-shadow: 0px -4px 11px 0px rgba(0,0,0,0.12);-moz-box-shadow: 0px -4px 11px 0px rgba(0,0,0,0.12);box-shadow: 0px -4px 11px 0px rgba(0,0,0,0.12);">
+                <center>
+                <div style="width:60%;">
+                    <center>
+                    <p style="text-align:center;font-size:12px;"> +56 9 7262 8949 &nbsp;&nbsp;   kkprettynails@gmail.com</p> 
+                    <p style="text-align:center;font-size:12px;">Contáctanos.</p>
+                    <a href="https://kkprettynails.cl" style="text-decoration: none;color:#172b4d;" style="text-align:center;margin-top:12px;"><strong>kkprettynails.cl</strong></a>&nbsp;&nbsp;
+                    <a href="https://www.instagram.com/kkprettynails/?hl=es-la" style="text-decoration: none;color:#172b4d;" style="text-align:center;margin-top:12px;"><strong>@kkprettynails</strong></a>
+                    </center>
+                </div>
+                </center>
+            </div>
+        </div>
+            ';
+           
+        
+            //fin cuerpo del email.
+
+            $mail = new PHPMailer(true);
+
+            try {
+                //Server settings
+                $mail->CharSet = 'UTF-8';
+                $mail->SMTPDebug = SMTP::DEBUG_SERVER;                      // Enable verbose debug output
+                $mail->isSMTP();                                            // Send using SMTP
+                $mail->SMTPAuth   = true;                                   // Enable SMTP authentication
+                $mail->Username   = 'kkprettynails@gmail.com';                     // SMTP username
+                $mail->Host       = 'smtp.gmail.com';                    // Set the SMTP server to send through
+                $mail->Password   = $passSend;                               // SMTP password
+                $mail->SMTPSecure = 'tls';         // Enable TLS encryption; `PHPMailer::ENCRYPTION_SMTPS` encouraged
+                $mail->Port       = 587;                                    // TCP port to connect to, use 465 for `PHPMailer::ENCRYPTION_SMTPS` above
+
+                //Recipients
+                $mail->setFrom($origenEmail, 'Compra de Gift Card');
+                $mail->addAddress($destinatarioEmail, 'KKPrettynails');     // Add a recipient
+
+                // Content
+                $mail->isHTML(true);                                  // Set email format to HTML
+                $mail->Subject = 'Compra de Gift Card';
+                $mail->Body    = $cuerpoMensaje;
+
+                $mail->send();
+                echo '
+                <script>
+                    document.querySelector("body").style.color = "white";
+                    
+                    Swal.fire({
+                    icon: "success",
+                    title: "¡Listo!",
+                    text: "Revisa tu correo para seguir los pasos.",
+                    showClass: {
+                        popup: "animate__animated animate__fadeInDown"
+                        },
+                        hideClass: {
+                        popup: "animate__animated animate__fadeOutUp"
+                        }
+                    }).then((result) => {
+                        if (window.history.replaceState) { // verificamos disponibilidad
+                            window.history.replaceState(null, null, window.location.href);
+                        }
+                        window.location.href= "inicio"
+                    })
+                </script>';
+            } catch (Exception $e) {
+                echo '
+                <script>
+                document.querySelector("body").style.color = "white";
+                    Swal.fire({
+                    icon: "error",
+                    title: "¡No Enviado!",
+                    text: "Experimentamos problemas con el correo.",
+                    showClass: {
+                        popup: "animate__animated animate__fadeInDown"
+                        },
+                        hideClass: {
+                        popup: "animate__animated animate__fadeOutUp"
+                        }
+                    }).then((result) => {
+                        if (window.history.replaceState) { // verificamos disponibilidad
+                            window.history.replaceState(null, null, window.location.href);
+                        }
+                        location.reload()
+                    })
+                </script>';
+        }
+      
+        
+    }
 }
 
 

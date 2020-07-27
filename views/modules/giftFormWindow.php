@@ -4,12 +4,13 @@
   display: none;
 }</style>
 <input type="hidden" value="<?php echo $_GET['validator'] ?>" id="cardValidatorWindow">
+
 <div class="modal fade" id="giftModalForm" data-backdrop="static" data-keyboard="false" tabindex="-1" role="dialog" aria-labelledby="staticBackdropLabel" aria-hidden="true">
     <div class="modal-dialog modal-lg">
       <div class="modal-content">
         <div class="modal-header">
           <h5 class="modal-title" id="staticBackdropLabel">Gift Card</h5>
-          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <button type="button" id="closeGiftWin" class="close" data-dismiss="modal" aria-label="Close">
             <span aria-hidden="true">&times;</span>
           </button>
         </div>

@@ -46,7 +46,29 @@ class Ingreso{
 
 							unset($_POST['usuarioIngreso']);
 							unset($_POST['passwordIngreso']);
-							echo '<script>
+							if (isset($_POST['cardValidatorL'])) {
+									echo '<script>
+								Swal.fire({
+								icon: "success",
+								title: "Bienvenido",
+								text: "¡Ingreso exitoso procediendo a la compra!",
+								showClass: {
+									popup: "animate__animated animate__fadeInDown"
+								},
+								hideClass: {
+									popup: "animate__animated animate__fadeOutUp"
+								}
+								}).then((result) => {
+									if (window.history.replaceState) { // verificamos disponibilidad
+										window.history.replaceState(null, null, window.location.href);
+									}
+									window.location.href = "giftFormWindow?validator='.$_POST['cardValidatorL'].'"
+									
+								})
+							</script>';
+							}
+							else{
+								echo '<script>
 							Swal.fire({
 							icon: "success",
 							title: "Bienvenido",
@@ -64,6 +86,8 @@ class Ingreso{
 								location.reload()
 							  })
 						</script>';
+							}
+							
 			
 						} else{
 
