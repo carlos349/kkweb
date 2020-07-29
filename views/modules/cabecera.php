@@ -100,10 +100,10 @@
 							</div>
 						</div>
 						<div class="bottom">
-							<div class="dashboard">
+							<div class="dashboard showPanel">
 											
 								<div class="title">Estadisticas</div>
-								<div class="description">
+								<div class="description description1">
 									
 									  <ul >
 										<li class="cardPanel">
@@ -151,15 +151,15 @@
 										
 									  </ul>
 									  <center>
-										 <p style="font-size: 16px;text-align: center;"> 
-											<span style="background-color: #605b56;padding: 10px;border:1px solid #605b56;">Link de recomendaciòn:</span> 
+										 <p style="font-size: 16px;text-align: center;" class="Lp"> 
+											<button style="background-color: #605b56;padding: 10px;border:1px solid #605b56;cursor:default;color:white" class="lReco">Link de recomendaciòn:</button> 
 											<span id="referidoSys" style="border:1px solid #605b56;padding: 10px;margin-left: -10px;padding-left:20px;padding-right:20px "></span> 
 											<button data-clipboard-target="#referidoSys" style="    border: none;
 											padding: 5px;
 											padding-left: 15px;
 											padding-right: 15px;
 											color: white;
-											background-color: #605b56; ">Copiar</button> 
+											background-color: #605b56; " class="lCopy">Copiar</button> 
 										</p> 
 									  </center>
 									  

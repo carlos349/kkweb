@@ -16,7 +16,7 @@
         </div>
         <div class="modal-body">
           <div class="row">
-            <div  class="col-6 py-5">
+            <div  class="col-md-6 col-sm-12 py-5">
               <div class="text-center py-5 01 hid" style="background-color: #fbf2f6;border-radius:5px"><h2 >Manicure tradicional <br> + <br>  Pedicure tradicional</h2><h4 style="font-weight: 600 !important;text-align: center;" ><i style="color: #77a464;" class="fa fa-money"></i> 15.000,00</h4></div>
 
               <div class="text-center py-5 02 hid" style="background-color: #fbf2f6;border-radius:5px"><h2 >Manicure permanente</h2><h4 style="font-weight: 600 !important;text-align: center;" ><i style="color: #77a464;" class="fa fa-money"></i> 12.000,00</h4></div>
@@ -30,7 +30,7 @@
               <div class="text-center py-5 06 hid" style="background-color: #fbf2f6;border-radius:5px"><h2 >Ondulación sin tinte</h2><h4 style="font-weight: 600 !important;text-align: center;" ><i style="color: #77a464;" class="fa fa-money"></i> 13.000,00</h4></div>
               
             </div>
-            <div style="background-color: white;" class="col-6"> 
+            <div style="background-color: white;" class="col-md-6 col-sm-12"> 
              
               
               <?php 

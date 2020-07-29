@@ -8178,8 +8178,23 @@ h1, h2, h3, h4, h5,
   z-index: 3;
   padding: 0; }
   @media (max-width: 991.98px) {
+    .accLog{
+      font-size: 12px;
+    }
+    .lReco{
+      margin-bottom: 5% !important;
+    }
+    .lCopy{
+      margin-top: 5% !important;
+    }
+    .Lp{
+      font-size: 8px !important;
+    }
+    .containerPanel{
+      width: 315px !important;
+    }
     .ftco-navbar-light {
-      background: #000 !important;
+      background: rgb(255, 255, 255) !important;
       position: relative;
       top: 0;
       padding: 10px 15px; } }
@@ -10265,7 +10280,8 @@ figure {
   }
   .cardPanel .card__front,
   .cardPanel .card__back {
-    height: 290px;
+    height: 220px;
+    margin-left: 20px;
   }
 }
 
