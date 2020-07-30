@@ -1,9 +1,14 @@
-<nav class="navbar navbar-expand-lg navbar-dark ftco_navbar bg-dark ftco-navbar-light" id="ftco-navbar">
+<nav class="navbar navbar-expand-lg navbar-dark ftco_navbar bg-dark ftco-navbar-light awake" id="ftco-navbar">
 	    <div class="container">
-	      <a style="color:#605B56;margin-right:150px;font-family: 'Prata', serif;" class="navbar-brand" href="inicio"><img style="width:30%" src="views/images/logokk.png" alt="">K&K Pretty Nails</a>
-	      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
-	        <span class="oi oi-menu"></span> Menu
-	      </button>
+			<div class="row">
+				<a style="color:#605B56;margin-right:150px;font-family: 'Prata', serif;" class="navbar-brand jodiendo2" href="inicio"><img style="width:30%" src="views/images/logokk.png" alt=""> <span id="pageTitleK">K&K Pretty Nails</span> 
+		   
+			</a>
+			<button class="navbar-toggler jodiendo" type="button" data-toggle="collapse" data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
+				<span class="oi oi-menu"></span> 
+			</button>
+			</div>
+	      
 	      <div class="collapse navbar-collapse" id="ftco-nav">
 	        <ul class="navbar-nav ml-auto">
 	          <li id="inicio" class="nav-item"><a href="inicio" class="nav-link"> <b>Inicio</b> </a></li>
@@ -20,7 +25,7 @@
 			  if (isset($_SESSION['correo'])) {
 				  
 				  ?>
-				  <div style="margin-top: 15px;" class="dropdown">
+				  <div style="margin-top: 10px;" class="dropdown">
 					<button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
 						<?php echo $_SESSION['nombre']." ".$_SESSION['apellido']?>
 					</button>

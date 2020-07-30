@@ -8181,6 +8181,19 @@ h1, h2, h3, h4, h5,
     .accLog{
       font-size: 12px;
     }
+    .yaPs{
+      margin-top: -100% !important;
+    }
+    .ftco-intro{
+      background-image: none !important;
+    }
+    #pageTitleK{
+      display: none;
+    }
+    .jodiendo2{
+      margin-right: 0px !important;
+      width: 63% !important;
+    }
     .lReco{
       margin-bottom: 5% !important;
     }
@@ -8205,7 +8218,7 @@ h1, h2, h3, h4, h5,
     color: #605b56; }
     .ftco-navbar-light .navbar-brand span {
       color: #605b56;
-      font-size: 28px; }
+      font-size: 15px; }
     .ftco-navbar-light .navbar-brand:hover, .ftco-navbar-light .navbar-brand:focus {
       color: #000; }
     @media (max-width: 991.98px) {
@@ -8233,7 +8246,7 @@ h1, h2, h3, h4, h5,
         padding-right: 0;
         padding-top: .9rem;
         padding-bottom: .9rem;
-        color: rgba(255, 255, 255, 0.7); }
+         }
         .ftco-navbar-light .navbar-nav > .nav-item > .nav-link:hover {
           color: #fff; } }
   .ftco-navbar-light .navbar-nav > .nav-item .dropdown-menu {
@@ -10410,4 +10423,7 @@ background: linear-gradient(90deg, rgba(169,229,229,1) 12%, rgba(175,173,194,1) 
 .description1::-webkit-scrollbar-track {
   background: #e1e1e1;
   border-radius: 4px;
+}
+.jodiendo{
+  margin-left: 20%;
 }
