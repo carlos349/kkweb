@@ -10,12 +10,15 @@
     <link rel="icon" href="views/images/logokk.png" type="image/x-icon">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;1,100;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@9"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/2.3.0/socket.io.js"></script>
+    
     <script src="https://cdn.jsdelivr.net/npm/promise-polyfill"></script>
     <script src="https://cdn.jsdelivr.net/npm/clipboard@2.0.6/dist/clipboard.min.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css"/>
     <!-- <link href="https://fonts.googleapis.com/css2?family=Poiret+One&display=swap" rel="stylesheet"> -->
     <!-- <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Prata&display=swap" rel="stylesheet"> -->
+    
     <link rel="stylesheet" href="views/css/open-iconic-bootstrap.min.css">
     <link rel="stylesheet" href="views/css/animate.css">
     <link rel="stylesheet" href="views/css/owl.carousel.min.css">
@@ -91,9 +94,9 @@ src="https://www.facebook.com/tr?id=2650063728607003&ev=PageView
     });
   </script>
   <script>
-    const endpoint = 'localhost:4200'
+    const endpoint = 'http://localhost:4200'
+    
     $(document).ready(() => {
-
       fetch('http://kkprettynails.syswa.net:4200/clients/countClient') 
         .then(function(response) {
           return response.json();
@@ -269,8 +272,8 @@ src="https://www.facebook.com/tr?id=2650063728607003&ev=PageView
             title: "Detalles de tu compra",
             showConfirmButton: true,
             showCancelButton: true,
-            confirmButtonColor: '#3085d6',
-            cancelButtonColor: '#d33',
+            confirmButtonColor: '#2dce89',
+            cancelButtonColor: '#f5365c',
             confirmButtonText: '¡Confirmar!',
             cancelButtonText: '¡Cancelar!',
             html:
@@ -318,6 +321,8 @@ src="https://www.facebook.com/tr?id=2650063728607003&ev=PageView
                         popup: "animate__animated animate__fadeOutUp"
                         }
                   }).then((result) => {
+                    
+                    
                       if (window.history.replaceState) { // verificamos disponibilidad
                         window.history.replaceState(null, null, window.location.href);
                       }
@@ -325,7 +330,25 @@ src="https://www.facebook.com/tr?id=2650063728607003&ev=PageView
                     })
                 })
                 .then(response => {
-                  
+                  axios.post('http://localhost:4200'+'/notifications', {
+                        userName:'El cliente: '+ $(".nombreGift").val(),
+                        userImage:'',
+                        detail:'Creo un Pedido',
+                        link: 'pedidos'
+                    })
+                    .then(res => {
+                        var socket = io('http://localhost:4200')
+                        socket.emit('sendNotification', res.data)
+                    })
+                    var socket1 = io(endpoint)
+                    var sockData = {
+                      userName: '',
+                      userImage: '',
+                      detail: '',
+                      link: '',
+                      date: new Date()
+                    }
+                    socket1.emit('sendNotification', sockData )
                 $("#formGiftWindow").submit()
                   
                 
