@@ -42,6 +42,8 @@
 				  ?><li id="contacto" class="nav-item"><a href="" data-toggle="modal" data-target="#logModal" class="nav-link">Ingresar</a></li><?php
 			  } 
 			  ?>
+
+			  
 			  </li>
 			  
 	        </ul>

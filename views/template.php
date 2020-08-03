@@ -440,6 +440,22 @@ src="https://www.facebook.com/tr?id=2650063728607003&ev=PageView
 	
   
   </script>
+  <?php 
+			  if(isset($_GET['register'])){
+        echo '<script>
+        
+          $(document).ready(function(){
+            $("#logModal").modal("show")
+            $(".registerL").toggle("fast")
+            $(".hH").toggle("fast")
+            $(".hH2").toggle("fast")
+            $(".loggingL").toggle("fast")
+						console.log("epale")
+					});
+					
+				</script>';
+			  }
+			  ?>
 </body>
 
 </html>
