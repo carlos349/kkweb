@@ -142,7 +142,7 @@ class Mails {
 
         //cuerpo del email:
         $cuerpoMensaje = "Se ha recibido una solicitud de contacto con los siguientes datos:
-        "
+        ";
         $cuerpoMensaje .= "Nombre:".$nombre."<br>";
         $cuerpoMensaje .= "Correo:".$correo."<br>";
         $cuerpoMensaje .= "Mensaje:\r\n".$mensaje."<br>";
