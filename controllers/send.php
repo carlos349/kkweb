@@ -37,9 +37,11 @@ class Mails {
             <center>
                 <div style="width:60%;text-align: center;">
                     <h1 style="text-align: center;color:#172b4d;">Bienvenid@ </h1>
-                    <p style="text-align:center;margin-top:10px;font-size:18px;"> <strong>Hola '.$firtName.' '.$lastName.'.</p>
-                    <p style="text-align:left;font-size:14px;font-weight: 300;text-align: center;width: 60%;margin:auto;"><strong> 
-                        Nos alegra que te hayas registrado en nuestra página web, ya puedes disfrutar de nuestros servicios.</strong>
+                    <p style="text-align:left;margin-top:10px;font-size:18px;"> <strong>Hola '.$firtName.' '.$lastName.'.</p>
+                    <p style="text-align:left;font-size:16px;font-weight: 300;margin:auto;"><strong> 
+                        Nos alegra darte la bienvenida a nuestra comunidad de uñas lindas y sanas, por este medio te estaremos
+                        informando todas las novedades de nuestros servicios. <br><br>
+                        Cualquier consulta, no dudes en escribirnos, estaremos encantadas de atenderte.</strong>
                     </p>
                 <div>
             </center>
@@ -48,10 +50,15 @@ class Mails {
             <center>
             <div style="width:60%;">
                 <center>
-                <p style="text-align:center;font-size:12px;"> +56 9 7262 8949 &nbsp;&nbsp;   kkprettynails@gmail.com</p> 
-                <p style="text-align:center;font-size:12px;">Contáctanos.</p>
-                <a href="https://kkprettynails.cl" style="text-decoration: none;color:#172b4d;" style="text-align:center;margin-top:12px;"><strong>kkprettynails.cl</strong></a>&nbsp;&nbsp;
-                <a href="https://www.instagram.com/kkprettynails/?hl=es-la" style="text-decoration: none;color:#172b4d;" style="text-align:center;margin-top:12px;"><strong>@kkprettynails</strong></a>
+                
+                <p style="text-align:center;font-size:18px;">Contáctanos.</p>
+                <a href="mailto:kkprettynails@gmail.com"><img style="width: 45px;" src="http://kkprettynails.cl/views/images/mail.png" alt=""></a>
+                <a href="https://www.instagram.com/kkprettynails/?hl=es-la"><img style="width: 40px;margin-left:40px" src="http://kkprettynails.cl/views/images/ig.png" alt=""></a>
+                <a href="https://wa.me/56972628949"><img style="width:38px;margin-left:40px" src="http://kkprettynails.cl/views/images/ws.png" alt=""></a>
+                <a href="https://kkprettynails.cl"><img style="width: 40px;margin-left:40px" src="http://kkprettynails.cl/views/images/web.png" alt=""></a>
+                <br>
+                <p>Av. Pedro de Valdivia 3474, Ñuñoa, Región Metropolitana de Santiago
+                </p>
                 </center>
             </div>
             </center>
@@ -134,7 +141,9 @@ class Mails {
         $destinatarioEmail = "kkprettynails@gmail.com"; 
 
         //cuerpo del email:
-        $cuerpoMensaje = "Nombre:".$nombre."<br>";
+        $cuerpoMensaje = "Se ha recibido una solicitud de contacto con los siguientes datos:
+        "
+        $cuerpoMensaje .= "Nombre:".$nombre."<br>";
         $cuerpoMensaje .= "Correo:".$correo."<br>";
         $cuerpoMensaje .= "Mensaje:\r\n".$mensaje."<br>";
         //fin cuerpo del email.
@@ -276,7 +285,7 @@ class Mails {
                         transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out, -webkit-box-shadow 0.15s ease-in-out;" href="https://kkprettynails.cl/passRescue?id='.$id.'&verify='.$verify.'" class="text-center ">Cambiar contraseña</a>
 
                         <p style="text-align:left;font-size:14px;font-weight: 300;text-align: center;width: 60%;margin:auto;"><strong> <br>
-                        Este link solo podrá ser utilizado una sola vez. <br> Si usted no realizó esta acción, ignore este correo. </strong>
+                        Este link solo podrá ser utilizado una sola vez. <br> Si usted no realizó esta acción, ignore este correo. <br><br> Cualquier consulta, no dudes en escribirnos, estaremos encantadas de atenderte. </strong>
                         </p>
                     <div>
                 </center>
@@ -285,10 +294,14 @@ class Mails {
                 <center>
                 <div style="width:60%;">
                     <center>
-                    <p style="text-align:center;font-size:12px;"> +56 9 7262 8949 &nbsp;&nbsp;   kkprettynails@gmail.com</p> 
-                    <p style="text-align:center;font-size:12px;">Contáctanos.</p>
-                    <a href="https://kkprettynails.cl" style="text-decoration: none;color:#172b4d;" style="text-align:center;margin-top:12px;"><strong>kkprettynails.cl</strong></a>&nbsp;&nbsp;
-                    <a href="https://www.instagram.com/kkprettynails/?hl=es-la" style="text-decoration: none;color:#172b4d;" style="text-align:center;margin-top:12px;"><strong>@kkprettynails</strong></a>
+                    <p style="text-align:center;font-size:18px;">Contáctanos.</p>
+                <a href="mailto:kkprettynails@gmail.com"><img style="width: 45px;" src="http://kkprettynails.cl/views/images/mail.png" alt=""></a>
+                <a href="https://www.instagram.com/kkprettynails/?hl=es-la"><img style="width: 40px;margin-left:40px" src="http://kkprettynails.cl/views/images/ig.png" alt=""></a>
+                <a href="https://wa.me/56972628949"><img style="width:38px;margin-left:40px" src="http://kkprettynails.cl/views/images/ws.png" alt=""></a>
+                <a href="https://kkprettynails.cl"><img style="width: 40px;margin-left:40px" src="http://kkprettynails.cl/views/images/web.png" alt=""></a>
+                <br>
+                <p>Av. Pedro de Valdivia 3474, Ñuñoa, Región Metropolitana de Santiago
+                </p>
                     </center>
                 </div>
                 </center>
@@ -441,10 +454,14 @@ public function giftMail()
                 <center>
                 <div style="width:60%;">
                     <center>
-                    <p style="text-align:center;font-size:12px;"> +56 9 7262 8949 &nbsp;&nbsp;   kkprettynails@gmail.com</p> 
-                    <p style="text-align:center;font-size:12px;">Contáctanos.</p>
-                    <a href="https://kkprettynails.cl" style="text-decoration: none;color:#172b4d;" style="text-align:center;margin-top:12px;"><strong>kkprettynails.cl</strong></a>&nbsp;&nbsp;
-                    <a href="https://www.instagram.com/kkprettynails/?hl=es-la" style="text-decoration: none;color:#172b4d;" style="text-align:center;margin-top:12px;"><strong>@kkprettynails</strong></a>
+                        <p style="text-align:center;font-size:18px;">Contáctanos.</p>
+                        <a href="mailto:kkprettynails@gmail.com"><img style="width: 45px;" src="http://kkprettynails.cl/views/images/mail.png" alt=""></a>
+                        <a href="https://www.instagram.com/kkprettynails/?hl=es-la"><img style="width: 40px;margin-left:40px" src="http://kkprettynails.cl/views/images/ig.png" alt=""></a>
+                        <a href="https://wa.me/56972628949"><img style="width:38px;margin-left:40px" src="http://kkprettynails.cl/views/images/ws.png" alt=""></a>
+                        <a href="https://kkprettynails.cl"><img style="width: 40px;margin-left:40px" src="http://kkprettynails.cl/views/images/web.png" alt=""></a>
+                        <br>
+                        <p>Av. Pedro de Valdivia 3474, Ñuñoa, Región Metropolitana de Santiago
+                        </p>
                     </center>
                 </div>
                 </center>
