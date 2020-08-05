@@ -8181,6 +8181,41 @@ h1, h2, h3, h4, h5,
     .accLog{
       font-size: 12px;
     }
+    .sBorde{
+      border: none !important;
+    }
+    .containerPanel{
+      margin-left: 0px !important;
+    }
+    #referidoSys{
+      padding-right: 30px !important;
+      margin-left:0px !important ;
+    }
+    .d0001{
+      top: 1% !important;
+      left: 12.5% !important;
+    }
+    .d0002{
+      top: 1% !important;
+      left: 41.8% !important;
+    }
+    .d0003{
+      top: 1% !important;
+      left: 71% !important;
+    }
+    .lCopy{
+      right: 0 !important;
+      top: 1.7% !important;
+    }
+    .pInfo{
+      font-size: 14px !important;
+    }
+    .tit2{
+      display: none !important;
+    }
+    .bgT{
+      margin-bottom: 10px;
+    }
     .yaPs{
       margin-top: -70% !important;
     }
@@ -9965,10 +10000,10 @@ figure {
 
 
 .containerPanel {
-  width: 800px;
+  width: 1200px;
   height: 400px;
-  
   margin: auto;
+  margin-left: -200px;
   display: -webkit-box;
   display: flex;
   -webkit-box-align: center;
@@ -9986,7 +10021,7 @@ figure {
           flex-direction: column;
   position: relative;
   width: 1000px;
-  height: 500px;
+  height: 540px;
   background: white;
   box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.29);
 }
@@ -10087,7 +10122,7 @@ figure {
   display: -webkit-box;
   display: flex;
   overflow-y: scroll;
-    height: 370px;
+    height: 450px;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
           flex-direction: column;
@@ -10124,9 +10159,7 @@ figure {
   opacity: 0;
 }
 
-.activePanel {
-  background: #605b56;
-}
+
 .activePanel i {
   color: white !important;
 }
@@ -10426,4 +10459,79 @@ background: linear-gradient(90deg, rgba(169,229,229,1) 12%, rgba(175,173,194,1) 
 }
 .jodiendo{
   margin-left: 20%;
+}
+.activePanel .imgSel {
+  display: block;
+}
+.d0001{
+  position: absolute;
+  top: 2%; 
+  left: 4.8%;
+  font-size: 50px;
+  color: white;
+  display: none;
+}
+.d0002{
+  position: absolute;
+  top: 2%; 
+  left: 15.8%;
+  font-size: 50px;
+  color: white;
+  display: none;
+}
+.d0003{
+  position: absolute;
+  top: 2%; 
+  left: 26.8%;
+  font-size: 50px;
+  color: white;
+  display: none;
+}
+
+.bgc1{
+  background-image: url("../images/T1.png");
+  height: 360px;
+  background-size: cover;
+  font-size: 18px;
+}
+
+.bgc2{
+  background-image: url("../images/T2.png");
+  height: 360px;
+  background-size: cover;
+  font-size: 18px;
+}
+
+.bgc3{
+  background-image: url("../images/T3.png");
+  height: 360px;
+  background-size: cover;
+  font-size: 18px;
+}
+
+.bgT{
+  text-align: center;
+  color: white;
+  
+}
+
+.pInfo{
+  border-radius: 5px;
+  background-color: white;
+
+}
+
+.infoPanel{
+  background-color: whitesmoke;
+  border-top: 5px solid #afadc2;
+  border-radius: 5px;
+  border-bottom: 5px solid #afadc2;
+}
+
+.tit2{
+  position: absolute;
+  top: -15%;
+  right: 42%;
+  color: white !important;
+  font-size: 18px !important;
 }

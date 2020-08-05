@@ -92,10 +92,10 @@
 						<div class="top">
 							<div class="icons-left">
 								<div class="icons-container">
-									<div class="eye activePanel"><i class="fa fa-eye" aria-hidden="true"></i></div>
-									<div class="comments"><i class="fa fa-calendar"></i> <i class="fa fa-accusoft"></i></div>
-									<div class="bell"><i class="fa fa-calendar-check-o" aria-hidden="true"></i></div>
-									<div class="cog"><i class="fa fa-cog" aria-hidden="true"></i></div>
+									<div class="eye activePanel"><center><img style="width:50%;" src="views/images/user.png" alt=""></center><span class="imgSel d0001">·</span></div>
+									<div class="comments"><center><img style="width:50%;" src="views/images/calendar.png" alt=""></center><span class="imgSel d0002">·</span></div>
+									<div class="bell"><center><img style="width:50%;" src="views/images/check.png" alt=""></center><span class="imgSel d0003">·</span></div>
+									
 								</div>
 							</div>
 							<div class="icons-right">
@@ -109,66 +109,66 @@
 						<div class="bottom">
 							<div class="dashboard showPanel">
 											
-								<div class="title">Estadisticas</div>
+								<!-- <div class="title">Estadisticas</div> -->
 								<div class="description description1">
-									
-									  <ul >
-										<li class="cardPanel">
-										  <div class="card__flipper">
-											<div class="card__front">
-											  <p class="card__name mt-3">Servicios <br> realizados</p>
-											  <p id="serviciosSys" class="card__num"></p>
+									<div class="title tit2">Panel de usuario</div>
+									<div class="col-sm-12">
+										<div class="row">
+											<div class="col-md-4">
+												<center>
+													<img style="width: 50%;border-radius: 50%;" src="views/images/person_1.jpg" alt="">
+												</center>
+												
+												<div class="col-sm-12 infoPanel mt-3">
+													<p style="font-size: 12px;" class="text-center mb-0">Nombre</p>
+													<p class="p-1 pInfo text-center"><?php echo $_SESSION['nombre']; ?> <?php echo $_SESSION['apellido']; ?></p>
+													<p style="font-size: 12px;" class="text-center mb-0">Número de telefono</p>
+													<p class="p-1 pInfo text-center"><?php echo $_SESSION['numero']; ?></p>
+													<p style="font-size: 12px;" class="text-center mb-0">Correo electronico</p>
+													<p class="p-1 pInfo text-center"><?php echo $_SESSION['correo']; ?></p>
+													<p style="font-size: 12px;cursor: pointer;" data-toggle="modal" data-target="#changeModal" class="text-right mb-0">Cambiar contraseña</p>
+												</div>
 											</div>
-											<div class="card__back">
-											  <svg height="180" width="180">
-												<circle cx="90" cy="90" r="55" stroke="#514d9b" stroke-width="35" />
-											  </svg>
-											  <span>113.2</span>
+											<div style="border-left: 3px solid #afadc2;" class="col-md-8 sBorde">
+												<div class="col-sm-12">
+													
+														<div style="font-size: 12px;text-align: center;" class="Lp row p-2"> 
+														   <span style="background-color: #afadc2;cursor:default;color:white;border-radius: 5px;" class="lReco col-sm-3 ">¡Invita a un amigo y gana descuento!</span>
+														   
+															   <span id="referidoSys" class="col-md-9 col-sm-12" style="background-color: whitesmoke;padding: 10px;margin-left: -10px;border-radius: 5px;"></span> 
+														   <button data-clipboard-target="#referidoSys" style=" border: none;color: white;border-radius: 5px;background-color: transparent;position: absolute;
+														   right: 4%;
+														   top: 3%;" class="lCopy"><img style="width: 30px;" src="views/images/clip.png" alt=""></button> 
+														   
+														   
+													   </div> 
+													 
+													<div class="row">
+														<div class="col-sm-4">
+															<div class="col-sm-12 bgT bgc1">
+																Servicios <br> realizados
+																<p id="serviciosSys" class="card__num mt-5"></p>
+															</div>
+														</div>
+														<div class="col-sm-4">
+															<div class="col-sm-12 bgT bgc2">
+																Citas <br> pendientes
+																<p class="card__num citasPendi mt-5"></p>
+															</div>
+														</div>
+														<div class="col-sm-4">
+															<div class="col-sm-12 p-0 bgT bgc3">
+																Recomendaciones <br> (Descuentos 15%)
+																<p class="card__num reco mt-5"></p>
+															</div>
+														</div>
+													</div>
+												</div>
 											</div>
-										  </div>
-										</li>
-										<li class="cardPanel">
-										  <div class="card__flipper">
-											<div class="card__front">
-											  <p class="card__name mt-3">Citas <br> pendientes</p>
-											  <p class="card__num citasPendi"></p>
-											</div>
-											<div class="card__back">
-											  <svg height="180" width="180">
-												<circle cx="90" cy="90" r="55" stroke="#35a541" stroke-width="35" />
-											  </svg>
-											  <span>112.2</span>
-											</div>
-										  </div>
-										</li>
-										<li class="cardPanel">
-										  <div class="card__flipper">
-											<div class="card__front">
-											  <p class="card__name mt-3">Recomendaciones (Descuentos 15%)</p>
-											  <p class="card__num reco"></p>
-											</div>
-											<div class="card__back">
-											  <svg height="180" width="180">
-												<circle cx="90" cy="90" r="55" stroke="#bdb235" stroke-width="35" />
-											  </svg>
-											  <span>103.3</span>
-											</div>
-										  </div>
-										</li>
-										
-									  </ul>
-									  <center>
-										 <p style="font-size: 16px;text-align: center;" class="Lp"> 
-											<button style="background-color: #605b56;padding: 10px;border:1px solid #605b56;cursor:default;color:white" class="lReco">Link de recomendaciòn:</button> 
-											<span id="referidoSys" style="border:1px solid #605b56;padding: 10px;margin-left: -10px;padding-left:20px;padding-right:20px "></span> 
-											<button data-clipboard-target="#referidoSys" style="    border: none;
-											padding: 5px;
-											padding-left: 15px;
-											padding-right: 15px;
-											color: white;
-											background-color: #605b56; " class="lCopy">Copiar</button> 
-										</p> 
-									  </center>
+										</div>
+									</div>
+									  
+									 
 									  
 									  
 								</div>
@@ -176,7 +176,7 @@
 								
 							</div>
 							<div class="comments-c">
-								<div class="title">Histórico de servicios</div>
+								<div class="title tit2">Histórico de servicios</div>
 								<div class="description description1">
 									<table style="font-size: 12px;" class="table">
 										<thead class="thead-light">
@@ -197,7 +197,7 @@
 								</div>
 							</div>
 							<div class="notification">
-								 <div class="title">Citas pendiente</div>
+								 <div class="title tit2">Citas pendiente</div>
 								<div class="description description1">
 									<table style="font-size: 12px;" class="table">
 										<thead class="thead-light">
