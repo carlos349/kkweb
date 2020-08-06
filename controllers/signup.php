@@ -7,12 +7,14 @@ class Registro{
 		$password = $_POST["pass"];
 		$numero = $_POST["numero"];
 		$correo = $_POST["correo"];
+		$nacimiento = $_POST["nacimiento"];
 		$nombre = $_POST["nombre"];
 		$apellido = $_POST["apellido"];
 		$idSys = $_POST["idSys"];
 		unset($_POST['correo']);
 		unset($_POST['numero']);
 		unset($_POST['pass']);
+		unset($_POST['nacimiento']);
 		unset($_POST['apellido']);
 		unset($_POST['nombre']);
 		
@@ -66,6 +68,7 @@ class Registro{
 			$datos["password"] = $password;	
 			$datos["correo"] = $correo;
 			$datos["nombre"] = $nombre;
+			$datos["nacimiento"] = $nacimiento;
 			$datos["apellido"] = $apellido;
 			$datos["numero"] = "+56 ".$numero;
 			$datos["idSys"] = $idSys;
@@ -89,6 +92,7 @@ class Registro{
 			$_SESSION["id"] = $resultado["id"];
 			$_SESSION["idSys"] = $resultado["idSistema"];
 			$_SESSION["numero"] = $resultado["numero"];
+			$_SESSION["nacimiento"] = $resultado["nacimiento"];
 			$_SESSION["descuentos"] = $resultado["descuentos"];
 			$_SESSION["recomendaciones"] = $resultado["recomendaciones"];
 			$_SESSION["password"] = $resultado["contrasena"];
@@ -129,6 +133,7 @@ class Registro{
 		$numero = $_POST["numeroG"];
 		$validator = $_POST['cardValidator'] - 1;
 		$correo = $_POST["correoG"];
+		$nacimiento = $_POST['nacimiento'];
 		$nombre = $_POST["nombreG"];
 		$apellido = $_POST["apellidoG"];
 		$idSys = $_POST["idSys"];
@@ -136,6 +141,7 @@ class Registro{
 		unset($_POST['numeroG']);
 		unset($_POST['passG']);
 		unset($_POST['apellidoG']);
+		unset($_POST['nacimiento']);
 		unset($_POST['nombreG']);
 		
 
@@ -188,6 +194,7 @@ class Registro{
 			$datos["password"] = $password;	
 			$datos["correo"] = $correo;
 			$datos["nombre"] = $nombre;
+			$datos["nacimiento"] = $nacimiento;
 			$datos["apellido"] = $apellido;
 			$datos["numero"] = "+56 ".$numero;
 			$datos["idSys"] = $idSys;
@@ -215,6 +222,7 @@ class Registro{
 			$_SESSION["recomendaciones"] = $resultado["recomendaciones"];
 			$_SESSION["password"] = $resultado["contrasena"];
 			$_SESSION["correo"] = $resultado["correo"];
+			$_SESSION["nacimiento"] = $resultado["nacimiento"];
 			$_SESSION["nombre"] = $resultado["nombre"];
 			$_SESSION["apellido"] = $resultado["apellido"];
 			$_SESSION["foto"] = $resultado["foto"];

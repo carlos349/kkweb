@@ -119,23 +119,26 @@
 													<img style="width: 50%;border-radius: 50%;" src="views/images/person_1.jpg" alt="">
 												</center>
 												
-												<div class="col-sm-12 infoPanel mt-3">
-													<p style="font-size: 12px;" class="text-center mb-0">Nombre</p>
+												<div class="col-sm-11 infoPanel mt-3">
+													<p style="font-size: 12px;font-weight: bold;" class="text-center mb-0">Nombre</p>
 													<p class="p-1 pInfo text-center"><?php echo $_SESSION['nombre']; ?> <?php echo $_SESSION['apellido']; ?></p>
-													<p style="font-size: 12px;" class="text-center mb-0">Número de telefono</p>
+													<p style="font-size: 12px;font-weight: bold;" class="text-center mb-0">Número de teléfono</p>
 													<p class="p-1 pInfo text-center"><?php echo $_SESSION['numero']; ?></p>
-													<p style="font-size: 12px;" class="text-center mb-0">Correo electronico</p>
+													<p style="font-size: 12px;font-weight: bold;" class="text-center mb-0">Correo electrónico</p>
 													<p class="p-1 pInfo text-center"><?php echo $_SESSION['correo']; ?></p>
+													<p style="font-size: 12px;font-weight: bold;" class="text-center mb-0">Fecha de nacimiento</p>
+													<p class="p-1 pInfo text-center"><?php echo $_SESSION['nacimiento']; ?></p>
 													<p style="font-size: 12px;cursor: pointer;" data-toggle="modal" data-target="#changeModal" class="text-right mb-0">Cambiar contraseña</p>
 												</div>
 											</div>
-											<div style="border-left: 3px solid #afadc2;" class="col-md-8 sBorde">
+											<div style="border-left: 3px solid #afadc2;overflow: hidden;
+											height: 445px;" class="col-md-8 sBorde">
 												<div class="col-sm-12">
 													
-														<div style="font-size: 12px;text-align: center;" class="Lp row p-2"> 
+														<div style="font-size: 12px;text-align: center;margin-top: -16px;" class="Lp row p-3"> 
 														   <span style="background-color: #afadc2;cursor:default;color:white;border-radius: 5px;" class="lReco col-sm-3 ">¡Invita a un amigo y gana descuento!</span>
 														   
-															   <span id="referidoSys" class="col-md-9 col-sm-12" style="background-color: whitesmoke;padding: 10px;margin-left: -10px;border-radius: 5px;"></span> 
+															   <span id="referidoSys" class="col-md-9 col-sm-12" style="background-color: whitesmoke;padding: 10px;margin-left: -10px;border-radius: 5px;font-weight: bold;color: black;"></span> 
 														   <button data-clipboard-target="#referidoSys" style=" border: none;color: white;border-radius: 5px;background-color: transparent;position: absolute;
 														   right: 4%;
 														   top: 3%;" class="lCopy"><img style="width: 30px;" src="views/images/clip.png" alt=""></button> 
@@ -145,21 +148,21 @@
 													 
 													<div class="row">
 														<div class="col-sm-4">
-															<div class="col-sm-12 bgT bgc1">
+															<div class="col-sm-12 pt-2 mb-5 bgT bgc1">
 																Servicios <br> realizados
-																<p id="serviciosSys" class="card__num mt-5"></p>
+																<p style="margin-top: 1.1em;" id="serviciosSys" class="card__num"></p>
 															</div>
 														</div>
 														<div class="col-sm-4">
-															<div class="col-sm-12 bgT bgc2">
+															<div class="col-sm-12 pt-2 mb-5 bgT bgc2">
 																Citas <br> pendientes
-																<p class="card__num citasPendi mt-5"></p>
+																<p style="margin-top: 1.1em;" class="card__num citasPendi"></p>
 															</div>
 														</div>
 														<div class="col-sm-4">
-															<div class="col-sm-12 p-0 bgT bgc3">
+															<div class="col-sm-12 p-0 pt-2 mb-5 bgT bgc3">
 																Recomendaciones <br> (Descuentos 15%)
-																<p class="card__num reco mt-5"></p>
+																<p style="margin-top: 1.1em;" class="card__num reco"></p>
 															</div>
 														</div>
 													</div>

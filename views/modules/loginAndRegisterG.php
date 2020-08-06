@@ -27,11 +27,18 @@
 					<input type="hidden" name="cardValidator" class="cardValidator" value="">
 					<div class="form-group">
 						<div class="row">
-							<div class="col-sm-2"><input type="text" class="form-control Mail-login" disabled value="+56"></div>
+							<div class="col-sm-2"><input style="font-weight: bold;" type="text" class="form-control Mail-login" disabled value="+56"></div>
 							<div class="col-sm-10"><input type="text" required class="form-control Mail-login comprobar  phone phone1" maxlength="9" name="numeroG" placeholder="Número de teléfono"></div>
 						</div>
                         
-                    </div>
+					</div>
+					<div class="form-group">
+						<div class="row">
+							<div class="col-sm-4"><input type="text" style="font-weight: bold;" class="form-control Mail-login" disabled value="Fecha de nacimiento:"></div>
+							<div class="col-sm-8"><input type="date" required class="form-control naciReg  comprobar Mail-login" id="nacimientoS" name="nacimiento" placeholder="Fecha de nacimiento"></div>
+						</div>
+                        
+					</div>
                     <div class="form-group">
 						<div class="row">
 							<div class="col-sm-5">
