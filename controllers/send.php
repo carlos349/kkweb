@@ -57,8 +57,9 @@ class Mails {
                 <a href="https://wa.me/56972628949"><img style="width:38px;margin-left:40px" src="http://kkprettynails.cl/views/images/ws.png" alt=""></a>
                 <a href="https://kkprettynails.cl"><img style="width: 40px;margin-left:40px" src="http://kkprettynails.cl/views/images/web.png" alt=""></a>
                 <br>
-                <p>Av. Pedro de Valdivia 3474, Ñuñoa, Región Metropolitana de Santiago
-                </p>
+                <a href="https://goo.gl/maps/GhvcDBH1ppBDae1KA">
+                    <p>Av. Pedro de Valdivia 3474, Ñuñoa, Región Metropolitana de Santiago</p>
+                   </a>
                 </center>
             </div>
             </center>
@@ -300,8 +301,9 @@ class Mails {
                 <a href="https://wa.me/56972628949"><img style="width:38px;margin-left:40px" src="http://kkprettynails.cl/views/images/ws.png" alt=""></a>
                 <a href="https://kkprettynails.cl"><img style="width: 40px;margin-left:40px" src="http://kkprettynails.cl/views/images/web.png" alt=""></a>
                 <br>
-                <p>Av. Pedro de Valdivia 3474, Ñuñoa, Región Metropolitana de Santiago
-                </p>
+                   <a href="https://goo.gl/maps/GhvcDBH1ppBDae1KA">
+                    <p>Av. Pedro de Valdivia 3474, Ñuñoa, Región Metropolitana de Santiago</p>
+                   </a>
                     </center>
                 </div>
                 </center>
@@ -460,8 +462,9 @@ public function giftMail()
                         <a href="https://wa.me/56972628949"><img style="width:38px;margin-left:40px" src="http://kkprettynails.cl/views/images/ws.png" alt=""></a>
                         <a href="https://kkprettynails.cl"><img style="width: 40px;margin-left:40px" src="http://kkprettynails.cl/views/images/web.png" alt=""></a>
                         <br>
-                        <p>Av. Pedro de Valdivia 3474, Ñuñoa, Región Metropolitana de Santiago
-                        </p>
+                        <a href="https://goo.gl/maps/GhvcDBH1ppBDae1KA">
+                    <p>Av. Pedro de Valdivia 3474, Ñuñoa, Región Metropolitana de Santiago</p>
+                   </a>
                     </center>
                 </div>
                 </center>
