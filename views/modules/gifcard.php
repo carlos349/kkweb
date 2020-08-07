@@ -126,13 +126,10 @@ border-radius: 10px;
   <div class="modal fade" id="giftModal" data-backdrop="static" data-keyboard="false" tabindex="-1" role="dialog" aria-labelledby="staticBackdropLabel" aria-hidden="true">
     <div class="modal-dialog modal-lg">
       <div class="modal-content">
-        <div class="modal-header">
-          <h5 class="modal-title" id="staticBackdropLabel">Gift Card</h5>
-          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+       
+        <div class="modal-body"><button type="button" class="close" data-dismiss="modal" aria-label="Close">
             <span aria-hidden="true">&times;</span>
           </button>
-        </div>
-        <div class="modal-body">
           <div class="row">
             <div  class="col-md-6 col-sm-12 py-5">
               <div class="text-center py-5 01 hid" style="background-color: #fbf2f6;border-radius:5px"><h2 >Manicure tradicional <br> + <br>  Pedicure tradicional</h2><h4 style="font-weight: 600 !important;text-align: center;" ><i style="color: #77a464;" class="fa fa-money"></i> 15.000,00</h4></div>
