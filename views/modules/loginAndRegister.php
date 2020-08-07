@@ -40,13 +40,13 @@
 					</div>
                     <div class="form-group">
 						<div class="row">
-							<div class="col-sm-5">
+							<div class="col-md-5 col-sm-11">
 								<input type="password" required class="form-control passOne  comprobar Mail-login passHide" name="pass" placeholder="Contraseña">
 							</div>
-							<div class="col-sm-5">
+							<div class="col-md-5 col-sm-11">
 								<input type="password" required class="form-control passTwo  comprobar Mail-login passHide" name="passR" placeholder="Repetir contraseña">
 							</div>
-							<div style="margin-top: 25px;" class="col-sm-2">
+							<div style="margin-top: 25px;" class="col-md-2 col-sm-1 showPassn">
 								<i class="fa fa-eye showPass"></i>
 							</div>
 							
@@ -81,7 +81,7 @@
 						<div class="col-sm-10">
 							<input type="password" required class="form-control Mail-login passHide" name="passwordIngreso" placeholder="Contraseña">
 						</div>
-						<div style="margin-top: 25px;" class="col-sm-2">
+						<div style="margin-top: 25px;" class="col-sm-2 showPassm">
 							<i class="fa fa-eye showPass"></i>
 						</div>
 				  

@@ -47,7 +47,7 @@
 							<div class="col-sm-5">
 								<input type="password" required class="form-control passTwo  comprobar Mail-login passHide" name="passRG" placeholder="Repetir contraseña">
 							</div>
-							<div style="margin-top: 25px;" class="col-sm-2">
+							<div style="margin-top: 25px;" class="col-sm-2 showPassn">
 								<i class="fa fa-eye showPass"></i>
 							</div>
 							
@@ -83,7 +83,7 @@
 						<div class="col-sm-10">
 							<input type="password" required class="form-control Mail-login passHide" name="passwordIngreso" placeholder="Contraseña">
 						</div>
-						<div style="margin-top: 25px;" class="col-sm-2">
+						<div style="margin-top: 25px;" class="col-sm-2 showPassm">
 							<i class="fa fa-eye showPass"></i>
 						</div>
 				  

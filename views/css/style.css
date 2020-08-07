@@ -8181,6 +8181,18 @@ h1, h2, h3, h4, h5,
     .accLog{
       font-size: 12px;
     }
+    .showPassn{
+      position: absolute;
+    top: 40%;
+    
+    left: 86%;
+    }
+    .showPassm{
+      position: absolute;
+      left: 82%;
+      top: -7%;
+    }
+   
     .sBorde{
       border: none !important;
     }
