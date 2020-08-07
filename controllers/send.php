@@ -490,6 +490,7 @@ public function giftMail()
         $apellido = $_SESSION["apellido"];
         $articulo = $_POST['articulogift'];
         $total = $_POST['totalGift'];
+        $NpedidoG = $_POST['NpedidoG'];
         $metodo = $_POST['typePay'];
         $date = date("d-m-Y");
         if ($metodo == "Transferencia") {
@@ -524,7 +525,7 @@ public function giftMail()
             <center>
                 <div style="width:60%;text-align: left;border-bottom: 3px solid #fdd3d7;">
                     <p style="text-align:left;margin-top:10px;font-size:18px;"> Estimado(a) '.$nombre.' '.$apellido.', <br> Hemos recibido una solicitud de compra por pagar en '.$metodo.'. Para realizar este pago debes
-                        presentar en caja el siguiente código: 1. </p>
+                        presentar en caja el siguiente código: '.$NpedidoG.'. </p>
                     </div>
                 <div style="width:60%;text-align: left;border-bottom: 3px solid #fdd3d7;"> <br>
                     <p style="text-align:left;margin-top:10px;font-size:18px;"> <span style="font-weight: bold">Información importante:</span>  '.$datosMetodo.'
@@ -535,7 +536,7 @@ public function giftMail()
                     <p style="text-align:left;margin-top:10px;font-size:18px;"> <span style="font-weight: bold">A continuación te dejamos os detalles de tu compra: <br><br>
                         Nombre: '.$nombre.' '.$apellido.' <br>
                         Monto: '.$total.'<br>
-                        Código de compra: 1 <br>
+                        Código de compra: '.$NpedidoG.' <br>
                         Teléfono: '.$numero.' <br>
                         Email: '.$correo.' <br>
                         Fecha de compra: '.$date.' <br>

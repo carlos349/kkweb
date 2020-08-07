@@ -29,6 +29,7 @@
   </select>
   <input type="hidden"  class="articuloGift" value="" name="articulogift">
   <input type="hidden"  class="totalGift" value="" name="totalGift">
+  <input type="hidden"  class="nPedidoG" value="" name="nPedidoG">
   <input type="hidden" value="<?php echo $_SESSION['correo'] ?>" name="correoGift">
 </form>
 <br>

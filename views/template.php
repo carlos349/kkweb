@@ -330,14 +330,16 @@ src="https://www.facebook.com/tr?id=2650063728607003&ev=PageView
                     })
                 })
                 .then(response => {
-                  axios.post('http://localhost:4200'+'/notifications', {
+                  console.log(response)
+                  $(".nPedidoG").val(response.datos.nPedido)
+                  axios.post('http://kkprettynails.syswa.net:4200'+'/notifications', {
                         userName:'El cliente: '+ $(".nombreGift").val(),
                         userImage:'',
                         detail:'Creo un Pedido',
                         link: 'pedidos'
                     })
                     .then(res => {
-                        var socket = io('http://localhost:4200')
+                        var socket = io('http://kkprettynails.syswa.net:4200')
                         socket.emit('sendNotification', res.data)
                     })
                     var socket1 = io(endpoint)
@@ -349,7 +351,7 @@ src="https://www.facebook.com/tr?id=2650063728607003&ev=PageView
                       date: new Date()
                     }
                     socket1.emit('sendNotification', sockData )
-                $("#formGiftWindow").submit()
+                // $("#formGiftWindow").submit()
                   
                 
                 })
