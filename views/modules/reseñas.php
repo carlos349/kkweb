@@ -13,7 +13,7 @@
                 <div class="testimony-wrap p-4 pb-3">
                   <div class="text">
                   	<div class="line pl-5">
-	                    <p class="mb-4 pb-1"> <br><br> Las más lindas del mundo mundial. No puedo creer las uñas que tenían antes, y ahora... ¡Bellas bellas!<br></p>
+	                    <p class="mb-4 pb-1">  Las más lindas del mundo mundial. No puedo creer las uñas que tenían antes, y ahora... ¡Bellas bellas!<br></p>
 	                    <span class="quote d-flex align-items-center justify-content-center">
 	                      <i class="icon-quote-left"></i>
 	                    </span>
@@ -32,7 +32,7 @@
               <div class="item">
                 <div class="testimony-wrap p-4 pb-5">
                   <div class="text">
-                    <div class="line pl-5"><br><br>
+                    <div class="line pl-5">
 	                    <p class="mb-4 pb-1">Me encanta su tranajo y atención, detallista y delicadas al momento de realizar el servicio. Muchas gracias chicas.</p>
 	                    <span class="quote d-flex align-items-center justify-content-center">
 	                      <i class="icon-quote-left"></i>
@@ -96,7 +96,7 @@
                 <div class="testimony-wrap p-4 pb-5">
                   <div class="text">
                     <div class="line pl-5">
-	                    <p class="mb-4 pb-1"> <br> <br> Las extraño con todo mi ser, las espero, no he engañado a K&K por nada del mundo, prefiero esperar que hacerme las uñas con quien no confío.</p>
+	                    <p class="mb-4 pb-1">  Las extraño con todo mi ser, las espero, no he engañado a K&K por nada del mundo, prefiero esperar que hacerme las uñas con quien no confío.</p>
 	                    <span class="quote d-flex align-items-center justify-content-center">
 	                      <i class="icon-quote-left"></i>
 	                    </span>

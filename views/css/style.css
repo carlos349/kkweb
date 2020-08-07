@@ -9935,7 +9935,7 @@ figure {
     margin-top: 30%;
   }
 }
-@media (max-width: 1400px) { 
+@media (min-width: 1400px) { 
   .card-body ul li {
     font-size: 14px;
     font-weight: 400;
@@ -9973,7 +9973,7 @@ figure {
 }
     
 }
-@media (max-width: 1360px) { 
+@media (min-width: 1360px) { 
   .card-body ul li {
     font-size: 12px;
     font-weight: 400;
