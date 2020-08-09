@@ -345,7 +345,7 @@
 	$(".articuloGift").val($(".hid").eq($("#cardValidatorWindow").val()).children().prev().text())
 	$(".totalGift").val("$"+ $(".hid").eq($("#cardValidatorWindow").val()).children().next().text())
 
-	$(".giftPrice").text("$ "+$(".hid").eq($("#cardValidatorWindow").val()).children().next().text())
+	$(".giftPrice").text("$"+$(".hid").eq($("#cardValidatorWindow").val()).children().next().text())
 	$(".acc").click(function(){
 		console.log("hola")
 		$(".register").toggle('fast');

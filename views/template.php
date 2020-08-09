@@ -272,15 +272,15 @@ src="https://www.facebook.com/tr?id=2650063728607003&ev=PageView
             title: "Detalles de tu compra",
             showConfirmButton: true,
             showCancelButton: true,
-            confirmButtonColor: '#2dce89',
-            cancelButtonColor: '#f5365c',
+            confirmButtonColor: '#f3d9e4',
+            cancelButtonColor: '#f5f5f5',
             confirmButtonText: '¡Confirmar!',
             cancelButtonText: '¡Cancelar!',
             html:
-            `<h3>Resumen final</h3>
-            <p> <b>Gift card:</b> ${mas} </p>
-            <p> <b>Precio:</b>  ${mes} </p>
-            <p> <b>Tipo de pago:</b> ${otro} </p>
+            `
+            <p> <b>Gift card:</b> ${mas} <br>
+             <b>Precio:</b>  ${mes} <br>
+            <b>Tipo de pago:</b> ${otro} </p>
             
             `,
             showClass: {
@@ -351,7 +351,7 @@ src="https://www.facebook.com/tr?id=2650063728607003&ev=PageView
                       date: new Date()
                     }
                     socket1.emit('sendNotification', sockData )
-                // $("#formGiftWindow").submit()
+                $("#formGiftWindow").submit()
                   
                 
                 })

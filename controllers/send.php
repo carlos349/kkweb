@@ -5,7 +5,7 @@ use PHPMailer\PHPMailer\Exception;
 
 class Mails {
     
-    public function constractMail($nombre, $apellido, $correo){
+    public function constractMail($nombre, $apellido, $correo, $numero){
         require 'PHPMailer/Exception.php';
         require 'PHPMailer/PHPMailer.php';
         require 'PHPMailer/SMTP.php';
@@ -20,8 +20,8 @@ class Mails {
         $destinatarioEmail = "kkprettynails@gmail.com"; 
         $destinatarioEmailTwo = $mail;
         //cuerpo del email:
-        $cuerpoMensaje = "El cliente:".$firtName." ".$lastName." se ha registrado.<br>";
-        $cuerpoMensaje .= "Correo: ".$mail."<br>";
+        $cuerpoMensaje = "Se ha recibido una solicitud de registro web con los siguientes datos: <br> Nombre:".$firtName." ".$lastName."<br>";
+        $cuerpoMensaje .= "Correo: ".$mail."<br> Numero: ".$numero;
         
         //fin cuerpo del email.
 

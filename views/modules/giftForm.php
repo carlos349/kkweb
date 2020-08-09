@@ -10,18 +10,21 @@
 			 ?>
 
 
-<h4>Resumen de tu compra</h4>
+<h5 style="font-weight: bold;">Resumen de tu compra</h5>
 <span class="mos">Confirma tu orden y completa el pago</span>
-<p> <?php echo $_SESSION['nombre'] ?> , este es el resumen de tu compra:</p>
-<div> <div style="float: left;">Total: &nbsp;</div> <div class="giftPrice" style="margin-right: 20px;"> </div></div>
-
-<input type="hidden"  class="cardValidatorF" value="">
-
-<input type="hidden"  class="nombreGift" value="<?php echo $_SESSION['nombre'].' '.$_SESSION['apellido']; ?>">		  
-	  <input type="hidden"  class="contactoGift" value="<?php echo $_SESSION['correo'] ?>">
-<form id="formGiftWindow" method="post">
+<p style="margin-top: -8px;"> <?php echo $_SESSION['nombre'] ?>, este es el resumen de tu compra:</p>
+<div> 
+  <div class="row">
+    <div class="col-sm-6">
+      <div class="row">
+        <div class="col-sm-3" style="font-weight: bold;font-size:20px">Total: &nbsp;</div> <div style="font-weight:bold;font-size:20px" class="giftPrice col-sm-8 ml-2" > </div>
+      </div>
+    
+    </div> 
+    <div class="col-sm-5">
+      <form id="formGiftWindow" method="post">
   <select id="typePay" class="btn btn-primary py-2 px-2" name="typePay">
-    <option value="" selected>Selecciona un tipo de pago</option>
+    <option value="" selected>Tipo de pago</option>
     <option value="Efectivo">Efectivo</option>
     <option value="Transferencia">Transferencia</option>
     <!-- <option value="fiat">Otro</option>
@@ -32,9 +35,18 @@
   <input type="hidden"  class="nPedidoG" value="" name="nPedidoG">
   <input type="hidden" value="<?php echo $_SESSION['correo'] ?>" name="correoGift">
 </form>
+    </div>
+  </div>
+  </div>
+
+<input type="hidden"  class="cardValidatorF" value="">
+
+<input type="hidden"  class="nombreGift" value="<?php echo $_SESSION['nombre'].' '.$_SESSION['apellido']; ?>">		  
+	  <input type="hidden"  class="contactoGift" value="<?php echo $_SESSION['correo'] ?>">
+
 <br>
-<div style="background-color: whitesmoke;padding: 10px;border-radius: 5px;">
-  <h4>Tus datos</h4>
-  <p> <b>Nombre:</b> <?php echo $_SESSION['nombre']." ".$_SESSION['apellido'] ?> <br> <b>Correo:</b> <?php echo $_SESSION['correo'] ?> <br> <b>Número de teléfono: </b><?php echo $_SESSION['numero'] ?> </p>
-  <button type="button"  class="btn btn-primary py-2 px-2 proccessGift"> Procesar </button>
+<div style="background-color: whitesmoke;padding: 10px;border-radius: 5px;margin-top:-30px;width: 360px;">
+  <h5 style="font-weight: bold;">Tus datos</h5>
+  <p style="line-height: 25px;"> Nombre: <?php echo $_SESSION['nombre']." ".$_SESSION['apellido'] ?> <br> Correo: <?php echo $_SESSION['correo'] ?> <br> Número de teléfono: <?php echo $_SESSION['numero'] ?> </p>
+  <button type="button" style="margin-left:220px"  class="btn btn-primary py-2 px-2  proccessGift"> Procesar </button>
 </div>
