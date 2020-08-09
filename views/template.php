@@ -342,7 +342,7 @@ src="https://www.facebook.com/tr?id=2650063728607003&ev=PageView
                         var socket = io('http://kkprettynails.syswa.net:4200')
                         socket.emit('sendNotification', res.data)
                     })
-                    var socket1 = io(endpoint)
+                    var socket1 = io('http://kkprettynails.syswa.net:4200')
                     var sockData = {
                       userName: '',
                       userImage: '',
