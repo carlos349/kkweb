@@ -58,7 +58,7 @@ class Mails {
                 <a href="https://kkprettynails.cl"><img style="width: 40px;margin-left:40px" src="http://kkprettynails.cl/views/images/web.png" alt=""></a>
                 <br>
                 <a href="https://goo.gl/maps/GhvcDBH1ppBDae1KA">
-                    <p>Av. Pedro de Valdivia 3474, Ñuñoa, Región Metropolitana de Santiago</p>
+                    <p>Av. Pedro de Valdivia 3474, local 53B, Ñuñoa, Región Metropolitana de Santiago</p>
                    </a>
                 </center>
             </div>
@@ -182,7 +182,7 @@ class Mails {
                 <a href="https://kkprettynails.cl"><img style="width: 40px;margin-left:40px" src="http://kkprettynails.cl/views/images/web.png" alt=""></a>
                 <br>
                 <a href="https://goo.gl/maps/GhvcDBH1ppBDae1KA">
-                    <p>Av. Pedro de Valdivia 3474, Ñuñoa, Región Metropolitana de Santiago</p>
+                    <p>Av. Pedro de Valdivia 3474, local 53B, Ñuñoa, Región Metropolitana de Santiago</p>
                    </a>
                 </center>
             </div>
@@ -371,7 +371,7 @@ class Mails {
                 <a href="https://kkprettynails.cl"><img style="width: 40px;margin-left:40px" src="http://kkprettynails.cl/views/images/web.png" alt=""></a>
                 <br>
                    <a href="https://goo.gl/maps/GhvcDBH1ppBDae1KA">
-                    <p>Av. Pedro de Valdivia 3474, Ñuñoa, Región Metropolitana de Santiago</p>
+                    <p>Av. Pedro de Valdivia 3474, local 53B, Ñuñoa, Región Metropolitana de Santiago</p>
                    </a>
                     </center>
                 </div>
@@ -490,7 +490,7 @@ public function giftMail()
         $apellido = $_SESSION["apellido"];
         $articulo = $_POST['articulogift'];
         $total = $_POST['totalGift'];
-        $NpedidoG = $_POST['NpedidoG'];
+        $NpedidoG = $_POST['nPedidoG'];
         $metodo = $_POST['typePay'];
         $date = date("d-m-Y");
         if ($metodo == "Transferencia") {
@@ -498,14 +498,15 @@ public function giftMail()
             $metodoInfo = '<center>   
             <div style="padding: 10px;border-radius: 5px;width: 60%;text-align: left;background-color: #fdd3d7;margin-top: 10px;">
             <span style="font-weight: bold">Datos bancarios para la transferencia:</span>
-            <p>Nombre: <br> RUT: <br> Cuenta: <br> Banco: <br> Email: kkprettynails@gmail.com <br> Comentario: *Por favor indicar el código del pedido*</p>
+            <p>Nombre: Ángela Capacho <br> RUT: 26.125.092-6 <br>Tipo de cuenta: Corriente <br> Número de cuenta: 0-000-74-80916-2  <br> Banco: Banco Santander  <br> Email: kkprettynails@gmail.com <br> Comentario: *Por favor indicar el código del pedido*</p>
             </div>
         </center>';
         }
         else{
-            $datosMetodo = "Este código tiene fecha de vencimiento de 7 días hábiles a pagar en la
-            dirección correspondiente en la siguiente dirección: Av. Pedro de Valdivia 3474, local 53B, Ñuñoa,
-            Región Metropolitana de Santiago.";
+            $datosMetodo = 'Este código tiene fecha de vencimiento de <b> 7 días hábiles </b> a pagar en la
+             siguiente dirección: <a href="https://goo.gl/maps/GhvcDBH1ppBDae1KA">
+             <p>Av. Pedro de Valdivia 3474, local 53B, Ñuñoa, Región Metropolitana de Santiago</p>
+            </a>';
             $metodoInfo = '';
         }    
             echo  ' <script>document.querySelector("body").style.color = "white"</script>';
@@ -525,7 +526,7 @@ public function giftMail()
             <center>
                 <div style="width:60%;text-align: left;border-bottom: 3px solid #fdd3d7;">
                     <p style="text-align:left;margin-top:10px;font-size:18px;"> Estimado(a) '.$nombre.' '.$apellido.', <br> Hemos recibido una solicitud de compra por pagar en '.$metodo.'. Para realizar este pago debes
-                        presentar en caja el siguiente código: '.$NpedidoG.'. </p>
+                        presentar en caja el siguiente código: 000'.$NpedidoG.'. </p>
                     </div>
                 <div style="width:60%;text-align: left;border-bottom: 3px solid #fdd3d7;"> <br>
                     <p style="text-align:left;margin-top:10px;font-size:18px;"> <span style="font-weight: bold">Información importante:</span>  '.$datosMetodo.'
@@ -533,10 +534,10 @@ public function giftMail()
                 </div>
                 '.$metodoInfo.'
                 <div style="width:60%;text-align: left;border-bottom: 3px solid #fdd3d7;"> <br>
-                    <p style="text-align:left;margin-top:10px;font-size:18px;"> <span style="font-weight: bold">A continuación te dejamos os detalles de tu compra: <br><br>
+                    <p style="text-align:left;margin-top:10px;font-size:18px;"> <span style="font-weight: bold">A continuación te dejamos el detalle de tu compra: <br><br>
                         Nombre: '.$nombre.' '.$apellido.' <br>
                         Monto: '.$total.'<br>
-                        Código de compra: '.$NpedidoG.' <br>
+                        Código de compra: 000'.$NpedidoG.' <br>
                         Teléfono: '.$numero.' <br>
                         Email: '.$correo.' <br>
                         Fecha de compra: '.$date.' <br>
@@ -583,7 +584,7 @@ public function giftMail()
                     <a href="https://kkprettynails.cl"><img style="width: 40px;margin-left:40px" src="http://kkprettynails.cl/views/images/web.png" alt=""></a>
                     <br>
                    <a href="https://goo.gl/maps/GhvcDBH1ppBDae1KA">
-                    <p>Av. Pedro de Valdivia 3474, Ñuñoa, Región Metropolitana de Santiago</p>
+                    <p>Av. Pedro de Valdivia 3474, local 53B, Ñuñoa, Región Metropolitana de Santiago</p>
                    </a>
                 </center>
             </div>
