@@ -36,6 +36,7 @@ class Ingreso{
 							$_SESSION["idSys"] = $resultado["idSistema"];
 							$_SESSION["numero"] = $resultado["numero"];
 							$_SESSION["descuentos"] = $resultado["descuentos"];
+							$_SESSION["nacimiento"] = $resultado["nacimiento"];
 							$_SESSION["recomendaciones"] = $resultado["recomendaciones"];
 							$_SESSION["password"] = $resultado["contrasena"];
 							$_SESSION["correo"] = $resultado["correo"];

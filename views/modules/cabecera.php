@@ -127,6 +127,7 @@
 													<p style="font-size: 12px;font-weight: bold;" class="text-center mb-0">Correo electrónico</p>
 													<p class="p-1 pInfo text-center"><?php echo $_SESSION['correo']; ?></p>
 													<p style="font-size: 12px;font-weight: bold;" class="text-center mb-0">Fecha de nacimiento</p>
+													
 													<p class="p-1 pInfo text-center"><?php echo $_SESSION['nacimiento']; ?></p>
 													<p style="font-size: 12px;cursor: pointer;" data-toggle="modal" data-target="#changeModal" class="text-right mb-0">Cambiar contraseña</p>
 												</div>
