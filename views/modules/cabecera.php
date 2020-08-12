@@ -111,7 +111,7 @@
 											
 								<!-- <div class="title">Estadisticas</div> -->
 								<div class="description description1">
-									<div class="title tit2">Panel de usuario</div>
+									<div class="title tit2 confirmDate">Panel de usuario</div>
 									<div class="col-sm-12">
 										<div class="row">
 											<div class="col-md-4">

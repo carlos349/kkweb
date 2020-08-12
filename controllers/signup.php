@@ -284,6 +284,8 @@ class Registro{
 								location.reload()
 							  })
 						</script>';
+						$send2 = new Mails();
+						$sendresponse2 = $send2 -> passInfoChange($_SESSION['correo']);
 			}
 		}
 		else{
@@ -314,7 +316,7 @@ class Registro{
 		$consulta = new Consulta();
 		$sql="SELECT * FROM usuarios WHERE  verify='$verify' AND idSistema='$id' ";
 		$resultado = $consulta -> ver_registros($sql);
-
+		$respuesta = $resultado[0];
 		if ($resultado) {
 			$opciones = [  'cost' => 11 ];
 			$encriptacion2 = password_hash($passNewer, PASSWORD_DEFAULT, $opciones);
@@ -341,7 +343,8 @@ class Registro{
 								window.location.href = "inicio"
 							  })
 						</script>';
-			
+						$send3 = new Mails();
+						$sendresponse3 = $send3 -> passInfoChange($respuesta['correo']);
 				
 			
 		}

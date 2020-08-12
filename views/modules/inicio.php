@@ -8,7 +8,7 @@
           	<div class="icon">
 				<img style="width:30%" src="views/images/logokk.png" alt="">
           	</div>
-            <h1 style="color:#605B56;font-size: 2vw !important;">K&KPRETTYNAILS.COM</h1>
+            <h1 style="color:#605B56;font-size: 2vw !important;" >K&KPRETTYNAILS.COM</h1>
             <div class="row justify-content-center">
             <p>
             	<a href="nada" style="font-size: 1em;" class="btn btn-primary p-3 px-5 py-4 mr-md-2">Agendar</a>

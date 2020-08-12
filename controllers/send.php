@@ -87,7 +87,7 @@ class Mails {
 
             // Content
             $mail->isHTML(true);                                  // Set email format to HTML
-            $mail->Subject = 'Informacion a cliente';
+            $mail->Subject = 'Registro de nuevo cliente';
             $mail->Body    = $cuerpoMensaje;
 
             $mail->send();
@@ -160,11 +160,12 @@ class Mails {
                 <div style="width:60%;text-align: center;">
                     
                     <p style="text-align:center;margin-top:10px;font-size:30px;"> <strong>Hola '.$nombre.'.</p>
-                    <p style="text-align:left;font-size:16px;font-weight: 300;margin:auto;"><strong> 
+                    <p style="text-align:center;font-size:16px;font-weight: 300;margin:auto;"><strong> 
                     Hemos recibido tu solicitud de contacto, a la brevedad nos comunicaremos para responder tus dudas o
                     consultas.
-                    </strong> <br>
-                    Detalle del mensaje: '.$mensaje.'
+                    </strong> <br><br><br>
+                    <span style="text-align:center">Detalle del mensaje: '.$mensaje.'</span>
+                    
 
                     </p>
                 <div>
@@ -209,7 +210,7 @@ class Mails {
 
             // Content
             $mail->isHTML(true);                                  // Set email format to HTML
-            $mail->Subject = $asuntoEmail;
+            $mail->Subject = "Nueva solicitud de contacto";
             $mail->Body    = $cuerpoMensaje;
 
             $mail->send();
@@ -503,7 +504,7 @@ public function giftMail()
         </center>';
         }
         else{
-            $datosMetodo = 'Este código tiene fecha de vencimiento de <b> 7 días hábiles </b> a pagar en la
+            $datosMetodo = 'Este código tiene fecha de vencimiento de <b> 3 días hábiles </b> a pagar en la
              siguiente dirección: <a href="https://goo.gl/maps/GhvcDBH1ppBDae1KA">
              <p>Av. Pedro de Valdivia 3474, local 53B, Ñuñoa, Región Metropolitana de Santiago</p>
             </a>';
@@ -533,7 +534,7 @@ public function giftMail()
                          </p>
                 </div>
                 '.$metodoInfo.'
-                <div style="width:60%;text-align: left;border-bottom: 3px solid #fdd3d7;"> <br>
+                <div style="width:60%;text-align: left;"> <br>
                     <p style="text-align:left;margin-top:10px;font-size:18px;"> <span style="font-weight: bold">A continuación te dejamos el detalle de tu compra: <br><br>
                         Nombre: '.$nombre.' '.$apellido.' <br>
                         Monto: '.$total.'<br>
@@ -546,12 +547,12 @@ public function giftMail()
 
                 <table style="padding: 10px;width:63%">
                     <tr style="border-bottom: 3px solid #fdd3d7">
-                      <th style="padding: 10px;text-align: center;">ID</th>
-                      <th style="padding: 10px;text-align: center;">Producto</th>
-                      <th style="padding: 10px;text-align: center;">Compra</th>
-                      <th style="padding: 10px;text-align: center;">Valor</th>
-                      <th style="padding: 10px;text-align: center;">Cantidad</th>
-                      <th style="padding: 10px;text-align: center;">Subtotal</th>
+                      <th style="padding: 10px;text-align: center;border-bottom: 3px solid #fdd3d7 !important;">ID</th>
+                      <th style="padding: 10px;text-align: center;border-bottom: 3px solid #fdd3d7 !important;">Producto</th>
+                      <th style="padding: 10px;text-align: center;border-bottom: 3px solid #fdd3d7 !important;">Compra</th>
+                      <th style="padding: 10px;text-align: center;border-bottom: 3px solid #fdd3d7 !important;">Valor</th>
+                      <th style="padding: 10px;text-align: center;border-bottom: 3px solid #fdd3d7 !important;">Cantidad</th>
+                      <th style="padding: 10px;text-align: center;border-bottom: 3px solid #fdd3d7 !important;">Subtotal</th>
                     </tr>
                     <tr>
                       <td style="padding: 10px;text-align: center;">1</td>
@@ -563,12 +564,12 @@ public function giftMail()
                     </tr>
                    
                     <tr>
-                      <td></td>
-                      <td></td>
-                      <td></td>
-                      <td></td>
-                      <td style="padding: 10px;text-align: center;">Total:</td>
-                      <td style="padding: 10px;text-align: center;">'.$total.'</td>
+                      <td style="border-top: 3px solid #fdd3d7 !important;"></td>
+                      <td style="border-top: 3px solid #fdd3d7 !important;"></td>
+                      <td style="border-top: 3px solid #fdd3d7 !important;"></td>
+                      <td style="border-top: 3px solid #fdd3d7 !important;"></td>
+                      <td style="padding: 10px;text-align: center;border-top: 3px solid #fdd3d7 !important">Total:</td>
+                      <td style="padding: 10px;text-align: center;border-top: 3px solid #fdd3d7 !important">'.$total.'</td>
                     </tr>
                   </table>
             </center>
@@ -662,6 +663,99 @@ public function giftMail()
                         location.reload()
                     })
                 </script>';
+        }
+      
+        
+    }
+
+    public function passInfoChange($correo)
+    {
+        require 'PHPMailer/Exception.php';
+        require 'PHPMailer/PHPMailer.php';
+        require 'PHPMailer/SMTP.php';
+        include 'private/mailCredentials.php';
+
+        
+        $nombre = $_SESSION["nombre"];
+        $apellido = $_SESSION["apellido"];
+        $date = date("d-m-Y");   
+            echo  ' <script>document.querySelector("body").style.color = "white"</script>';
+            $origenNombre = 'Cambio de contraseña';
+            $origenEmail = 'kkprettynails@gmail.com';
+            $destinatarioEmail = $correo; 
+
+            //cuerpo del email:
+            $cuerpoMensaje = '<div style="width: 100%; padding:0;text-align:center;">
+            <div style="width: 60%;height: 8vh;margin: auto;background-color: #fdd3d7;box-shadow: 0 2px 5px 0 rgba(0,0,0,.14);padding: 20px;font-family: Roboto,RobotoDraft,Helvetica,Arial,sans-serif;color:#172b4d;text-align:justify;-webkit-box-shadow: 0px 6px 8px -8px rgba(0,0,0,0.73);-moz-box-shadow: 0px 6px 8px -8px rgba(0,0,0,0.73);box-shadow: 0px 6px 8px -8px rgba(0,0,0,0.73);">
+                <div style="width: 100px;margin:auto;border-radius:55%;background-color:#f8f9fa;padding: 10px;">     
+                    <img style="width: 100%;" src="http://kkprettynails.cl/views/images/logokk.png" alt="Logo kkprettynails">
+                </div>
+            </div>
+            <div style="width: 100%;margin: auto;padding-top: 5%;font-family: Roboto,RobotoDraft,Helvetica,Arial,sans-serif;color:#172b4d;padding-bottom: 40px;">
+                <center>
+                    <div style="width:60%;text-align: center;">
+                        
+                        <p style="text-align:center;margin-top:10px;font-size:30px;"> <strong>Estimado(a) '.$nombre.' '.$apellido.'.</p>
+                        <p style="text-align:left;font-size:18px;font-weight: 300;width: 100%;margin:auto;border-top: 3px solid #fdd3d7 !important;padding-top: 20px;"><strong> 
+                            Confirmamos el cambio de clave realizado por ti, con fecha '.$date.' <br><br> Para volver a ingresar como usuario registrado solo debes ingresar tu correo electrónico y nueva clave
+                            personal. <br><br><br> Cualquier consulta, no dudes en escribirnos, estaremos encantadas de atenderte.
+                        </strong>
+                        </p>
+    
+                       
+                    <div>
+                </center>
+            </div>
+            <div style="width: 60%;background-color: #f0f1f3;box-shadow: 0 2px 5px 0 rgba(0,0,0,.14);margin: auto;padding: 5px;font-family: Roboto,RobotoDraft,Helvetica,Arial,sans-serif;color:#172b4d;padding-bottom:5px;-webkit-box-shadow: 0px -4px 11px 0px rgba(0,0,0,0.12);-moz-box-shadow: 0px -4px 11px 0px rgba(0,0,0,0.12);box-shadow: 0px -4px 11px 0px rgba(0,0,0,0.12);">
+                <center>
+                <div style="width:60%;">
+                    <center>
+                    <p style="text-align:center;font-size:18px;">Contáctanos.</p>
+                <a href="mailto:kkprettynails@gmail.com"><img style="width: 45px;" src="http://kkprettynails.cl/views/images/mail.png" alt=""></a>
+                <a href="https://www.instagram.com/kkprettynails/?hl=es-la"><img style="width: 40px;margin-left:40px" src="http://kkprettynails.cl/views/images/ig.png" alt=""></a>
+                <a href="https://wa.me/56972628949"><img style="width:38px;margin-left:40px" src="http://kkprettynails.cl/views/images/ws.png" alt=""></a>
+                <a href="https://kkprettynails.cl"><img style="width: 40px;margin-left:40px" src="http://kkprettynails.cl/views/images/web.png" alt=""></a>
+                <br>
+                   <a href="https://goo.gl/maps/GhvcDBH1ppBDae1KA">
+                    <p>Av. Pedro de Valdivia 3474, local 53B, Ñuñoa, Región Metropolitana de Santiago</p>
+                   </a>
+                    </center>
+                </div>
+                </center>
+            </div>
+        </div>
+            ';
+           
+        
+            //fin cuerpo del email.
+
+            $mail = new PHPMailer(true);
+
+            try {
+                //Server settings
+                $mail->CharSet = 'UTF-8';
+                $mail->SMTPDebug = SMTP::DEBUG_SERVER;                      // Enable verbose debug output
+                $mail->isSMTP();                                            // Send using SMTP
+                $mail->SMTPAuth   = true;                                   // Enable SMTP authentication
+                $mail->Username   = 'kkprettynails@gmail.com';                     // SMTP username
+                $mail->Host       = 'smtp.gmail.com';                    // Set the SMTP server to send through
+                $mail->Password   = $passSend;                               // SMTP password
+                $mail->SMTPSecure = 'tls';         // Enable TLS encryption; `PHPMailer::ENCRYPTION_SMTPS` encouraged
+                $mail->Port       = 587;                                    // TCP port to connect to, use 465 for `PHPMailer::ENCRYPTION_SMTPS` above
+
+                //Recipients
+                $mail->setFrom($origenEmail, 'Cambio de contraseña');
+                $mail->addAddress($destinatarioEmail, 'KKPrettynails');     // Add a recipient
+
+                // Content
+                $mail->isHTML(true);                                  // Set email format to HTML
+                $mail->Subject = 'Cambio de contraseña';
+                $mail->Body    = $cuerpoMensaje;
+
+                $mail->send();
+                
+            } catch (Exception $e) {
+                
         }
       
         

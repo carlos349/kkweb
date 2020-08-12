@@ -420,22 +420,111 @@ src="https://www.facebook.com/tr?id=2650063728607003&ev=PageView
             for (let i = 0; i < response.length; i++) {
             var date = new Date(response[i].date)
             var fecha = date.getDate()+"-"+date.getMonth()+"-"+date.getFullYear()
+            var confirm = ''
+            if (response[i].confirmation == true) {
+              confirm = "<button style='font-size: .7em;cursor:default' class='btn btn-secondary' disabled  >Confirmada</button>"
+            }
+            else{
+              confirm = `<button style="font-size: .7em;" class="btn btn-success confirmDate"  id="${response[i].confirmationId}">Confirmar</button>`
+            }
             var td = `<tr>
 											<th scope="row">${fecha}</th>
 											<td>${response[i].services[0].servicio}</td>
 											<td>${response[i].employe}</td>
 											<td></td>
-											<td><button style="font-size: .7em;" class="btn btn-success">Confirmar</button></td>
+											<td>${confirm}</td>
 										  </tr>`
             $(".bodyCitas").append(td)
           }
-            console.log(response)
+            
             
           })
           
         })
 
         
+      })
+      
+      $(document).on('click','.confirmDate', function(){
+        Swal.fire({
+            icon: "warning",
+            title: "¿Desea confirmar?",
+            showConfirmButton: true,
+            showCancelButton: true,
+            confirmButtonColor: '#f3d9e4',
+            cancelButtonColor: '#f5f5f5',
+            confirmButtonText: 'Si',
+            cancelButtonText: 'No',
+            showClass: {
+              popup: "animate__animated animate__fadeInDown"
+              },
+              hideClass: {
+              popup: "animate__animated animate__fadeOutUp"
+              }
+        })
+        .then((result) => {
+          if (result.value) {
+             var idDate = $(this).attr("id")
+        fetch('http://kkprettynails.syswa.net:4200/citas/confirmDate/'+idDate) 
+        .then(function(response) {
+          return response.json();
+        })
+        .catch(error => {
+          console.log(error)
+         
+        })
+        .then(function(myJson) {
+          $(".bodyCitas").empty()
+          var data2 = {
+          client:$(".correoClienteRequest").val()
+          }
+
+          fetch('http://kkprettynails.syswa.net:4200/clients/datesPerClient', {
+            method: 'POST', // or 'PUT'
+            body: JSON.stringify(data2),
+            headers:{
+              'Content-Type': 'application/json'
+            }
+          })
+          .then(res => res.json())
+          .catch(error => {
+            console.log(error)
+          })
+          .then(response => {
+            
+             
+              $(".citasPendi").text(response.length)
+            
+            
+
+            for (let i = 0; i < response.length; i++) {
+            var date = new Date(response[i].date)
+            var fecha = date.getDate()+"-"+date.getMonth()+"-"+date.getFullYear()
+            var confirm = ''
+            if (response[i].confirmation == true) {
+              confirm = "<button style='font-size: .7em;cursor:default' class='btn btn-secondary' disabled  >Confirmada</button>"
+            }
+            else{
+              confirm = `<button style="font-size: .7em;" class="btn btn-success confirmDate"  id="${response[i].confirmationId}">Confirmar</button>`
+            }
+            var td = `<tr>
+											<th scope="row">${fecha}</th>
+											<td>${response[i].services[0].servicio}</td>
+											<td>${response[i].employe}</td>
+											<td></td>
+											<td>${confirm}</td>
+										  </tr>`
+            $(".bodyCitas").append(td)
+          }
+            
+            
+          })
+          
+        })
+            
+            }   
+         })
+       
       })
       
     });
