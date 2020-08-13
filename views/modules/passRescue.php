@@ -7,13 +7,13 @@ Swal.fire({
 			title: "Introduce tu nueva contraseña",
 			showConfirmButton: false,
 			html:
-			`<form  class="rescue p-4" method="post">
+			`<form  class="rescue p-4 rescuePorsia" method="post">
 				
 			<div class="contact-form">
             <div class="form-group">
 					<div class="row">
 						<div class="col-sm-10">
-							<input type="password" required class="form-control Pass-login passValid passHide" name="passNewer" placeholder="Contraseña nueva">
+							<input type="password" required class="form-control Pass-login passValid2 passHide" name="passNewer" placeholder="Contraseña nueva">
 						</div>
 						<div style="margin-top: 25px;" class="col-sm-2">
 							<i class="fa fa-eye showPass"></i>
@@ -25,7 +25,7 @@ Swal.fire({
 				  <div class="form-group">
 					<div class="row">
 						<div class="col-sm-10">
-							<input type="password" required class="form-control Pass-login passValid passHide"  placeholder="Repetir Contraseña nueva">
+							<input type="password" required class="form-control Pass-login passRepeat2 passHide"  placeholder="Repetir Contraseña nueva">
 						</div>
 						<div style="margin-top: 25px;" class="col-sm-2">
 							<i class="fa fa-eye showPass"></i>
@@ -35,7 +35,7 @@ Swal.fire({
                       
 				  </div>
 				<div class="form-group align-items-rigth" style="display: inline-block" >
-					<input type="submit" value="Cambiar" class="btn btn-primary py-2 px-4 system-login">
+					<input type="button" value="Cambiar" class="btn btn-primary rescuePassC py-2 px-4 system-login">
 					
 				</div>
 			</div>

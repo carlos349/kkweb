@@ -70,7 +70,7 @@ class Registro{
 			$datos["nombre"] = $nombre;
 			$datos["nacimiento"] = $nacimiento;
 			$datos["apellido"] = $apellido;
-			$datos["numero"] = "+56 ".$numero;
+			$datos["numero"] = $numero;
 			$datos["idSys"] = $idSys;
 
 			$correo = "";
@@ -196,7 +196,7 @@ class Registro{
 			$datos["nombre"] = $nombre;
 			$datos["nacimiento"] = $nacimiento;
 			$datos["apellido"] = $apellido;
-			$datos["numero"] = "+56 ".$numero;
+			$datos["numero"] = $numero;
 			$datos["idSys"] = $idSys;
 
 			$correo = "";
@@ -309,7 +309,36 @@ class Registro{
 						</script>';
 		}
 	}
+	public function cambioData(){
+		$consulta2 = new Consulta();
+		$idSys = $_SESSION['idSys']; 
+		$idChange = $_SESSION['id'];
+		$nombre = $_POST['nombreChange'];
+		$apellido = $_POST['apellidoChange'];
+		$numero = $_POST['numeroChange'];
+		$correo = $_POST['correoChange'];
 
+		
+
+		
+			$sql2="UPDATE usuarios SET nombre = '$nombre', apellido = '$apellido', numero='$numero',correo = '$correo' WHERE id='$idChange'";
+			$resultado2 = $consulta2 -> actualizar_registro($sql2);
+
+			if ($resultado2) {
+				echo '<script>
+				document.querySelector("body").style.color = "white";
+						</script>';
+						$correoSend = $_SESSION['correo'];
+						session_start();
+						$_SESSION['nombre'] = $nombre;
+						$_SESSION['apellido'] = $apellido;
+						$_SESSION['correo'] = $correo;
+						$_SESSION['numero'] = $numero;
+						$send4 = new Mails();
+						$sendresponse4 = $send4 -> dataChangesEmail($nombre,$apellido,$correo,$numero,$correoSend);
+			}
+		
+	}
 	public function changeByEmail($id,$verify){
 		
 		$passNewer = $_POST['passNewer'];

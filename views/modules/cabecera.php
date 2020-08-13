@@ -129,7 +129,13 @@
 													<p style="font-size: 12px;font-weight: bold;" class="text-center mb-0">Fecha de nacimiento</p>
 													
 													<p class="p-1 pInfo text-center"><?php echo $_SESSION['nacimiento']; ?></p>
-													<p style="font-size: 12px;cursor: pointer;" data-toggle="modal" data-target="#changeModal" class="text-right mb-0">Cambiar contraseña</p>
+													<div class="row">
+														<div class="col-sm-5 p-0"><p style="font-size: 12px;cursor: pointer;" data-toggle="modal" data-target="#changeModalDatos" class="text-center mb-0">Cambiar datos</p></div>
+														<div class="col-sm-7 p-0"><p style="font-size: 12px;cursor: pointer;" data-toggle="modal" data-target="#changeModal" class="text-center mb-0">Cambiar contraseña</p></div>
+														
+														
+													</div>
+													
 												</div>
 											</div>
 											<div style="border-left: 3px solid #afadc2;overflow: hidden;
@@ -293,6 +299,17 @@
   }  
 
 ?>
+
+<?php 
+
+  if (isset($_POST["nombreChange"])) {
+	  
+	  $cambio = new Registro();
+	  $respuesta = $cambio -> cambioData();
+	  
+  }  
+
+?>
   <div class="modal fade" id="changeModal" data-backdrop="static" data-keyboard="false" tabindex="-1" role="dialog" aria-labelledby="staticBackdropLabel" aria-hidden="true">
     <div class="modal-dialog modal-md">
       <div class="modal-content">
@@ -354,6 +371,56 @@
               </div>
             </form> 
 			
+            </div>
+          </div>
+        </div>
+      
+      </div>
+    </div>
+  </div>
+
+  <div class="modal fade" id="changeModalDatos" data-backdrop="static" data-keyboard="false" tabindex="-1" role="dialog" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+    <div class="modal-dialog modal-md">
+      <div class="modal-content">
+   
+        <div class="modal-body p-3">
+			
+          <div class="row">
+            <div style="background-color: white;" class="col-12 p-3"> 
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+				<span aria-hidden="true">&times;</span>
+			  </button>
+				<center>
+					<img style="width:35%" src="views/images/logokk.png" alt="">
+				</center>
+		
+            <form  class="p-4 chageDataForm" method="post">
+				<h3 >Cambiar datos</h3>
+              <div class="contact-form">
+                  <div class="form-group">
+							<input type="text" required class="form-control Mail-login nameChange" name="nombreChange" value="<?php echo $_SESSION['nombre'] ?>" placeholder="Nombre">
+                  </div>
+				  <div class="form-group">
+					<input type="text" required class="form-control Mail-login apellidoChange" name="apellidoChange" value="<?php echo $_SESSION['apellido'] ?>" placeholder="Apellido">
+					</div>
+					<div class="form-group">
+						
+						<div class="row">
+							<div class="col-sm-2"><input style="font-weight: bold;" type="text" class="form-control Mail-login" disabled value="+56"></div>
+							<div class="col-sm-10"><input type="text" required class="form-control numberChange phone" name="numeroChange" value="<?php echo $_SESSION['numero'] ?>" maxlength="9"  placeholder="Número de teléfono"></div>
+							
+						</div>
+					</div>
+					<div class="form-group">
+						<input type="text" required class="form-control Mail-login correoChange" name="correoChange" value="<?php echo $_SESSION['correo'] ?>" placeholder="Correo">
+					</div>
+							
+              </div>
+            </form> 
+			<div class="form-group align-items-rigth" style="display: inline-block" >
+                      <input type="button" value="Cambiar" class="btn btn-primary py-2 px-4 botonChangeData">
+                      
+                  </div>
             </div>
           </div>
         </div>

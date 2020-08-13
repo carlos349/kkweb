@@ -287,6 +287,169 @@ class Mails {
         }
     }
 
+    public function dataChangesEmail($nombre,$apellido,$correo,$numero,$correoSend)
+    {
+        require 'PHPMailer/Exception.php';
+        require 'PHPMailer/PHPMailer.php';
+        require 'PHPMailer/SMTP.php';
+        include 'private/mailCredentials.php';
+
+        
+
+        $origenNombre = '';
+        $origenEmail = 'kkprettynails@gmail.com';
+        $destinatarioEmail = "kkprettynails@gmail.com"; 
+        $destinatarioEmailTwo = $correoSend;
+        //cuerpo del email:
+        $cuerpoMensaje = "Se ha realizado una actualización de datos de cliente con las siguientes especificaciones: <br>
+        ";
+        $cuerpoMensaje .= "Nombres:".$nombre." ".$apellido."<br>";
+        $cuerpoMensaje .= "Correo:".$correo."<br>";
+        $cuerpoMensaje .= "Numero:".$numero."<br>";
+        //fin cuerpo del email.
+        $cuerpoMensajeDos = '
+        <div style="width: 100%; padding:0;text-align:center;">
+        <div style="width: 60%;height: 8vh;margin: auto;background-color: #fdd3d7;box-shadow: 0 2px 5px 0 rgba(0,0,0,.14);padding: 20px;font-family: Roboto,RobotoDraft,Helvetica,Arial,sans-serif;color:#172b4d;text-align:justify;-webkit-box-shadow: 0px 6px 8px -8px rgba(0,0,0,0.73);-moz-box-shadow: 0px 6px 8px -8px rgba(0,0,0,0.73);box-shadow: 0px 6px 8px -8px rgba(0,0,0,0.73);">
+            <div style="width: 100px;margin:auto;border-radius:55%;background-color:#f8f9fa;padding: 10px;">     
+                <img style="width: 100%;" src="http://kkprettynails.cl/views/images/logokk.png" alt="Logo kkprettynails">
+            </div>
+        </div>
+        <div style="width: 100%;margin: auto;padding-top: 5%;font-family: Roboto,RobotoDraft,Helvetica,Arial,sans-serif;color:#172b4d;padding-bottom: 40px;">
+            <center>
+                <div style="width:60%;text-align: center;">
+                    
+                    <p style="text-align:center;margin-top:10px;font-size:30px;"> <strong>Estimado(a) '.$nombre.' '.$apellido.'.</p>
+                    <p style="text-align:left;font-size:18px;font-weight: 300;width: 100%;margin:auto;border-top: 3px solid #fdd3d7 !important;padding-top: 20px;"><strong> Actualización de datos</strong> <br><br>
+                        Queremos confirmar y verificar que los cambios que has ejecutado fueron realizados correctamente.
+                        <br><br>
+                        Nombre: '.$nombre.'  <br>
+                        Apellido: '.$apellido.'  <br>
+                        E-mail: '.$correo.'  <br>
+                        Teléfono: '.$numero.' <br><br>
+                        Cualquier consulta, no dudes en escribirnos, estaremos encantadas de atenderte.
+                    </p>
+
+                   
+                <div>
+            </center>
+        </div>
+        <div style="width: 60%;background-color: #f0f1f3;box-shadow: 0 2px 5px 0 rgba(0,0,0,.14);margin: auto;padding: 5px;font-family: Roboto,RobotoDraft,Helvetica,Arial,sans-serif;color:#172b4d;padding-bottom:5px;-webkit-box-shadow: 0px -4px 11px 0px rgba(0,0,0,0.12);-moz-box-shadow: 0px -4px 11px 0px rgba(0,0,0,0.12);box-shadow: 0px -4px 11px 0px rgba(0,0,0,0.12);">
+            <center>
+            <div style="width:60%;">
+                <center>
+                <p style="text-align:center;font-size:18px;">Contáctanos.</p>
+            <a href="mailto:kkprettynails@gmail.com"><img style="width: 45px;" src="http://kkprettynails.cl/views/images/mail.png" alt=""></a>
+            <a href="https://www.instagram.com/kkprettynails/?hl=es-la"><img style="width: 40px;margin-left:40px" src="http://kkprettynails.cl/views/images/ig.png" alt=""></a>
+            <a href="https://wa.me/56972628949"><img style="width:38px;margin-left:40px" src="http://kkprettynails.cl/views/images/ws.png" alt=""></a>
+            <a href="https://kkprettynails.cl"><img style="width: 40px;margin-left:40px" src="http://kkprettynails.cl/views/images/web.png" alt=""></a>
+            <br>
+               <a href="https://goo.gl/maps/GhvcDBH1ppBDae1KA">
+                <p>Av. Pedro de Valdivia 3474, local 53B, Ñuñoa, Región Metropolitana de Santiago</p>
+               </a>
+                </center>
+            </div>
+            </center>
+        </div>
+    </div>
+        ';
+        $mail = new PHPMailer(true);
+
+        try {
+            //Server settings
+            $mail->CharSet = 'UTF-8';
+            $mail->SMTPDebug = SMTP::DEBUG_SERVER;                      // Enable verbose debug output
+            $mail->isSMTP();                                            // Send using SMTP
+            $mail->SMTPAuth   = true;                                   // Enable SMTP authentication
+            $mail->Username   = 'kkprettynails@gmail.com';                     // SMTP username
+            $mail->Host       = 'smtp.gmail.com';                    // Set the SMTP server to send through
+            $mail->Password   = $passSend;                               // SMTP password
+            $mail->SMTPSecure = 'tls';         // Enable TLS encryption; `PHPMailer::ENCRYPTION_SMTPS` encouraged
+            $mail->Port       = 587;                                    // TCP port to connect to, use 465 for `PHPMailer::ENCRYPTION_SMTPS` above
+
+            //Recipients
+            $mail->setFrom($origenEmail, 'Actualización de datos del cliente');
+            $mail->addAddress($origenEmail, 'kkprettynails');     // Add a recipient
+
+            // Content
+            $mail->isHTML(true);                                  // Set email format to HTML
+            $mail->Subject = "Actualización de datos de cliente";
+            $mail->Body    = $cuerpoMensaje;
+
+            $mail->send();
+            $mailTwo = new PHPMailer(true);
+
+                try {
+                    //Server settings
+                    $mailTwo->CharSet = 'UTF-8';
+                    $mailTwo->SMTPDebug = SMTP::DEBUG_SERVER;                      // Enable verbose debug output
+                    $mailTwo->isSMTP();                                            // Send using SMTP
+                    $mailTwo->SMTPAuth   = true;                                   // Enable SMTP authentication
+                    $mailTwo->Username   = 'kkprettynails@gmail.com';                     // SMTP username
+                    $mailTwo->Host       = 'smtp.gmail.com';                    // Set the SMTP server to send through
+                    $mailTwo->Password   = $passSend;                               // SMTP password
+                    $mailTwo->SMTPSecure = 'tls';         // Enable TLS encryption; `PHPMailer::ENCRYPTION_SMTPS` encouraged
+                    $mailTwo->Port       = 587;                                    // TCP port to connect to, use 465 for `PHPMailer::ENCRYPTION_SMTPS` above
+
+                    //Recipients
+                    $mailTwo->setFrom($origenEmail, 'Actualización de datos');
+                  
+                    $mailTwo->addAddress($destinatarioEmailTwo, $nombre);     // Add a recipient
+
+                    // Content
+                    $mailTwo->isHTML(true);                      // Set email format to HTML
+                    $mailTwo->Subject = 'Actualización de datos';
+                    $mailTwo->Body    = $cuerpoMensajeDos;
+                    
+                    $mailTwo->send();
+                    
+                } catch (Exception $e) {
+                    echo $e;
+                }
+            echo '
+            <script>
+                document.querySelector("body").style.color = "white";
+                
+                Swal.fire({
+                icon: "success",
+                title: "",
+                text: "Cambio exitoso",
+                showClass: {
+                    popup: "animate__animated animate__fadeInDown"
+                    },
+                    hideClass: {
+                    popup: "animate__animated animate__fadeOutUp"
+                    }
+                }).then((result) => {
+                    if (window.history.replaceState) { // verificamos disponibilidad
+                        window.history.replaceState(null, null, window.location.href);
+                    }
+                    location.reload()
+                })
+            </script>';
+        } catch (Exception $e) {
+            echo '
+            <script>
+            document.querySelector("body").style.color = "white";
+                Swal.fire({
+                icon: "error",
+                title: "¡No Enviado!",
+                text: "Experimentamos problemas con el correo.",
+                showClass: {
+                    popup: "animate__animated animate__fadeInDown"
+                    },
+                    hideClass: {
+                    popup: "animate__animated animate__fadeOutUp"
+                    }
+                }).then((result) => {
+                    if (window.history.replaceState) { // verificamos disponibilidad
+                        window.history.replaceState(null, null, window.location.href);
+                    }
+                    location.reload()
+                })
+            </script>';
+        }
+    }
+
     public function rescue()
     {
         require 'PHPMailer/Exception.php';
@@ -325,7 +488,7 @@ class Mails {
             </div>
             <div style="width: 100%;margin: auto;padding-top: 5%;font-family: Roboto,RobotoDraft,Helvetica,Arial,sans-serif;color:#172b4d;padding-bottom: 40px;">
                 <center>
-                    <div style="width:60%;text-align: center;">
+                    <div style="width:100%;text-align: center;">
                         <h1 style="text-align: center;color:#172b4d;">Bienvenid@ </h1>
                         <p style="text-align:center;margin-top:10px;font-size:18px;"> <strong>Estimado(a) '.$nombre.' '.$apellido.'.</p>
                         <p style="text-align:left;font-size:14px;font-weight: 300;text-align: center;width: 60%;margin:auto;"><strong> 
@@ -353,10 +516,10 @@ class Mails {
                         transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, -webkit-box-shadow 0.15s ease-in-out;
                         -o-transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
                         transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
-                        transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out, -webkit-box-shadow 0.15s ease-in-out;" href="https://kkprettynails.cl/passRescue?id='.$id.'&verify='.$verify.'" class="text-center ">Cambiar contraseña</a>
+                        transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out, -webkit-box-shadow 0.15s ease-in-out;" href="https://kkprettynails.cl/passRescue?id='.$id.'&verify='.$verify.'" class="text-center ">Cambiar contraseña</a> <br><br><br>
 
                         <p style="text-align:left;font-size:14px;font-weight: 300;text-align: center;width: 60%;margin:auto;"><strong> <br>
-                        Este link solo podrá ser utilizado una sola vez. <br> Si usted no realizó esta acción, ignore este correo. <br><br> Cualquier consulta, no dudes en escribirnos, estaremos encantadas de atenderte. </strong>
+                        Este link solo podrá ser utilizado una sola vez. Si usted no realizó esta acción, ignore este correo. <br><br> Cualquier consulta, no dudes en escribirnos, estaremos encantadas de atenderte. </strong>
                         </p>
                     <div>
                 </center>

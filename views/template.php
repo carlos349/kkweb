@@ -444,7 +444,48 @@ src="https://www.facebook.com/tr?id=2650063728607003&ev=PageView
 
         
       })
-      
+      $(".botonChangeData").on('click', function(){
+        const idSys = $("#valSys").val()
+        var name = $(".nameChange").val() + " " + $(".apellidoChange").val()
+        var data3 = {
+          nombreClienteEditar:name,
+          identidadClienteEditar:$(".correoChange").val(),
+          correoClienteEditar:$(".numberChange").val(),
+          instagramClienteEditar:'',
+          }
+
+          fetch('http://kkprettynails.syswa.net:4200/clients/'+idSys, {
+            method: 'PUT', // or 'PUT'
+            body: JSON.stringify(data3),
+            headers:{
+              'Content-Type': 'application/json'
+            }
+          })
+          .then(res => res.json())
+          .catch(error => {
+            console.log(error)
+          })
+          .then(response => {
+            if (response.status = "Servicio actualizado") {
+              $(".chageDataForm").submit()
+            }
+            else{
+              Swal.fire({
+							icon: "error",
+							title: "",
+							text: "El correo introducido ya esta en uso",
+							
+							showClass: {
+								popup: "animate__animated animate__fadeInDown"
+							  },
+							  hideClass: {
+								popup: "animate__animated animate__fadeOutUp"
+							  }
+					})
+            }
+            
+          })
+      })
       $(document).on('click','.confirmDate', function(){
         Swal.fire({
             icon: "warning",

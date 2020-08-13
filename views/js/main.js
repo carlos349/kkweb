@@ -340,6 +340,25 @@
 				})
 		}
 	})
+
+	$(".rescuePassC").on('click', function() {
+		if ($(".passValid2").val() == $(".passRepeat2").val()) {
+			$(".rescuePorsia").submit()
+		}
+		else {
+			Swal.fire({
+				icon: "error",
+				title: "Error",
+				text: "¡Las contraseñas no coinciden inténtalo de nuevo!",
+				showClass: {
+					popup: "animate__animated animate__fadeInDown"
+				  },
+				  hideClass: {
+					popup: "animate__animated animate__fadeOutUp"
+				  }
+				})
+		}
+	})
 	
 	$(".hid").eq($("#cardValidatorWindow").val()).show()
 	$(".articuloGift").val($(".hid").eq($("#cardValidatorWindow").val()).children().prev().text())
