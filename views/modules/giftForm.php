@@ -22,10 +22,12 @@
     
     </div> 
     <div class="col-sm-5">
-      <form id="formGiftWindow" method="post">
-  <select id="typePay" class="btn btn-primary py-2 px-2" name="typePay">
+      <form style="margin-left: -17px;" id="formGiftWindow" method="post">
+  <select style="font-size: 10px;" id="typePay" class="btn btn-primary mr-5 py-2 px-2" name="typePay">
     <option value="" selected>Tipo de pago</option>
-    <option value="Efectivo">Efectivo</option>
+    <option value="Efectivo">Efectivo presencial</option>
+    <option value="Crédito presencial">Crédito presencial</option>
+    <option value="Débito presencial">Débito presencial</option>
     <option value="Transferencia">Transferencia</option>
     <!-- <option value="fiat">Otro</option>
     <option value="audi">Audi</option> -->
