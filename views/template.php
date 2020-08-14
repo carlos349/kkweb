@@ -277,6 +277,10 @@ src="https://www.facebook.com/tr?id=2650063728607003&ev=PageView
             cancelButtonColor: '#f5f5f5',
             confirmButtonText: '¡Confirmar!',
             cancelButtonText: '¡Cancelar!',
+            customClass: {
+              confirmButton: 'colorSweet',
+              cancelButton: 'colorSweet',
+            },
             html:
             `
             <p> <b>Gift card:</b> ${mas} <br>

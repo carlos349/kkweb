@@ -343,7 +343,25 @@
 
 	$(".rescuePassC").on('click', function() {
 		if ($(".passValid2").val() == $(".passRepeat2").val()) {
-			$(".rescuePorsia").submit()
+			if ($(".passValid2").val().length >= 8) {
+				$(".rescuePorsia").submit()
+			}
+			else{
+				Swal.fire({
+					icon: "error",
+					title: "Error",
+					text: "¡La contraseña debe ser mayor a 8 digitos!",
+					showClass: {
+						popup: "animate__animated animate__fadeInDown"
+					  },
+					  hideClass: {
+						popup: "animate__animated animate__fadeOutUp"
+					  }
+					})
+					.then((result) => {
+						location.reload()
+					  })
+			}
 		}
 		else {
 			Swal.fire({
@@ -357,6 +375,9 @@
 					popup: "animate__animated animate__fadeOutUp"
 				  }
 				})
+				.then((result) => {
+					location.reload()
+				  })
 		}
 	})
 	
