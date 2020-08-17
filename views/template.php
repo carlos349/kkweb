@@ -98,7 +98,7 @@ src="https://www.facebook.com/tr?id=2650063728607003&ev=PageView
     const endpoint = 'http://localhost:4200'
     
     $(document).ready(() => {
-      fetch('http://kkprettynails.syswa.net:4200/clients/countClient') 
+      fetch('https://18.231.122.2:4200/clients/countClient') 
         .then(function(response) {
           return response.json();
         })
@@ -170,7 +170,7 @@ src="https://www.facebook.com/tr?id=2650063728607003&ev=PageView
           number: "+56 " + $(".phone1").val()
           }
 
-          fetch('http://kkprettynails.syswa.net:4200/clients/verifyClient', {
+          fetch('https://18.231.122.2:4200/clients/verifyClient', {
             method: 'POST', // or 'PUT'
             body: JSON.stringify(data),
             headers:{
@@ -304,7 +304,7 @@ src="https://www.facebook.com/tr?id=2650063728607003&ev=PageView
                 total: $(".totalGift").val()
                 }
 
-                fetch('http://kkprettynails.syswa.net:4200/pedidos', {
+                fetch('https://18.231.122.2:4200/pedidos', {
                   method: 'POST', // or 'PUT'
                   body: JSON.stringify(data),
                   headers:{
@@ -337,17 +337,17 @@ src="https://www.facebook.com/tr?id=2650063728607003&ev=PageView
                 .then(response => {
                   console.log(response)
                   $(".nPedidoG").val(response.datos.nPedido)
-                  axios.post('http://kkprettynails.syswa.net:4200'+'/notifications', {
+                  axios.post('https://18.231.122.2:4200'+'/notifications', {
                         userName:'El cliente: '+ $(".nombreGift").val(),
                         userImage:'',
                         detail:'Creo un Pedido',
                         link: 'pedidos'
                     })
                     .then(res => {
-                        var socket = io('http://kkprettynails.syswa.net:4200')
+                        var socket = io('https://18.231.122.2:4200')
                         socket.emit('sendNotification', res.data)
                     })
-                    var socket1 = io('http://kkprettynails.syswa.net:4200')
+                    var socket1 = io('https://18.231.122.2:4200')
                     var sockData = {
                       userName: '',
                       userImage: '',
@@ -371,7 +371,7 @@ src="https://www.facebook.com/tr?id=2650063728607003&ev=PageView
       
       $("#verPerfil").on( 'click', ()  => {
         const idSys = $("#valSys").val()
-        fetch('http://kkprettynails.syswa.net:4200/clients/findOne/'+idSys) 
+        fetch('https://18.231.122.2:4200/clients/findOne/'+idSys) 
         .then(function(response) {
           return response.json();
         })
@@ -403,7 +403,7 @@ src="https://www.facebook.com/tr?id=2650063728607003&ev=PageView
           client:$(".correoClienteRequest").val()
           }
 
-          fetch('http://kkprettynails.syswa.net:4200/clients/datesPerClient', {
+          fetch('https://18.231.122.2:4200/clients/datesPerClient', {
             method: 'POST', // or 'PUT'
             body: JSON.stringify(data2),
             headers:{
@@ -458,7 +458,7 @@ src="https://www.facebook.com/tr?id=2650063728607003&ev=PageView
           instagramClienteEditar:'',
           }
 
-          fetch('http://kkprettynails.syswa.net:4200/clients/'+idSys, {
+          fetch('https://18.231.122.2:4200/clients/'+idSys, {
             method: 'PUT', // or 'PUT'
             body: JSON.stringify(data3),
             headers:{
@@ -510,7 +510,7 @@ src="https://www.facebook.com/tr?id=2650063728607003&ev=PageView
         .then((result) => {
           if (result.value) {
              var idDate = $(this).attr("id")
-        fetch('http://kkprettynails.syswa.net:4200/citas/confirmDate/'+idDate) 
+        fetch('https://18.231.122.2:4200/citas/confirmDate/'+idDate) 
         .then(function(response) {
           return response.json();
         })
@@ -524,7 +524,7 @@ src="https://www.facebook.com/tr?id=2650063728607003&ev=PageView
           client:$(".correoClienteRequest").val()
           }
 
-          fetch('http://kkprettynails.syswa.net:4200/clients/datesPerClient', {
+          fetch('https://18.231.122.2:4200/clients/datesPerClient', {
             method: 'POST', // or 'PUT'
             body: JSON.stringify(data2),
             headers:{
