@@ -11,6 +11,14 @@ class Registro{
 		$nombre = $_POST["nombre"];
 		$apellido = $_POST["apellido"];
 		$idSys = $_POST["idSys"];
+
+		if (isset($_GET['c'])) {
+			$referente = $_GET['c'];
+		}
+		else{
+			$referente = '';
+		}
+
 		unset($_POST['correo']);
 		unset($_POST['numero']);
 		unset($_POST['pass']);
@@ -72,6 +80,7 @@ class Registro{
 			$datos["apellido"] = $apellido;
 			$datos["numero"] = $numero;
 			$datos["idSys"] = $idSys;
+			$datos['referente'] = $referente;
 
 			$correo = "";
 			
@@ -133,7 +142,7 @@ class Registro{
 		$numero = $_POST["numeroG"];
 		$validator = $_POST['cardValidator'] - 1;
 		$correo = $_POST["correoG"];
-		$nacimiento = $_POST['nacimiento'];
+		$nacimiento = $_POST['nacimientoG'];
 		$nombre = $_POST["nombreG"];
 		$apellido = $_POST["apellidoG"];
 		$idSys = $_POST["idSys"];
@@ -141,7 +150,7 @@ class Registro{
 		unset($_POST['numeroG']);
 		unset($_POST['passG']);
 		unset($_POST['apellidoG']);
-		unset($_POST['nacimiento']);
+		unset($_POST['nacimientoG']);
 		unset($_POST['nombreG']);
 		
 

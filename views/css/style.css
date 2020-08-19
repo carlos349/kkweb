@@ -10557,3 +10557,6 @@ background: linear-gradient(90deg, rgba(169,229,229,1) 12%, rgba(175,173,194,1) 
 .colorSweet{
   color: #676666 !important;
 }
+.accLog{
+  font-size: 14px;
+}
