@@ -424,34 +424,84 @@
 				
 				<div class="row">
 					<div class="form-check form-check-inline col-sm-3 mx-auto">
-					<input class="form-check-input" type="radio" name="changePhoto" id="inlineRadio1" value="views/images/person_1.jpg">
-					<label class="form-check-label" for="inlineRadio1"><img class="imgSelects" src="views/images/person_1.jpg" alt=""></label>
+					<input class="form-check-input" type="radio" name="changePhoto" id="inlineRadio1" value="views/images/1.png">
+					<label class="form-check-label" for="inlineRadio1"><img class="imgSelects" src="views/images/1.png" alt=""></label>
 					</div>
 
 					<div class="form-check form-check-inline col-sm-3 mx-auto">
-						<input class="form-check-input" type="radio" name="changePhoto" id="inlineRadio2" value="option2">
-						<label class="form-check-label" for="inlineRadio2"><img class="imgSelects" src="views/images/person_1.jpg" alt=""></label>
+						<input class="form-check-input" type="radio" name="changePhoto" id="inlineRadio2" value="views/images/2.png">
+						<label class="form-check-label" for="inlineRadio2"><img class="imgSelects" src="views/images/2.png" alt=""></label>
 					</div>
 
 					<div class="form-check form-check-inline col-sm-3 mx-auto">
-						<input class="form-check-input" type="radio" name="changePhoto" id="inlineRadio2" value="option2">
-						<label class="form-check-label" for="inlineRadio2"><img class="imgSelects" src="views/images/person_1.jpg" alt=""></label>
+						<input class="form-check-input" type="radio" name="changePhoto" id="inlineRadio3" value="views/images/3.png">
+						<label class="form-check-label" for="inlineRadio3"><img class="imgSelects" src="views/images/3.png" alt=""></label>
 					</div>
 
 					<div class="form-check form-check-inline col-sm-3 mx-auto">
-						<input class="form-check-input" type="radio" name="changePhoto" id="inlineRadio1" value="option1">
-						<label class="form-check-label" for="inlineRadio1"><img class="imgSelects" src="views/images/person_1.jpg" alt=""></label>
+						<input class="form-check-input" type="radio" name="changePhoto" id="inlineRadio4" value="views/images/4.png">
+						<label class="form-check-label" for="inlineRadio4"><img class="imgSelects" src="views/images/4.png" alt=""></label>
 						</div>
 	
 						<div class="form-check form-check-inline col-sm-3 mx-auto">
-							<input class="form-check-input" type="radio" name="changePhoto" id="inlineRadio2" value="option2">
-							<label class="form-check-label" for="inlineRadio2"><img class="imgSelects" src="views/images/person_1.jpg" alt=""></label>
+							<input class="form-check-input" type="radio" name="changePhoto" id="inlineRadio5" value="views/images/5.png">
+							<label class="form-check-label" for="inlineRadio5"><img class="imgSelects" src="views/images/5.png" alt=""></label>
 						</div>
 	
 						<div class="form-check form-check-inline col-sm-3 mx-auto">
-							<input class="form-check-input" type="radio" name="changePhoto" id="inlineRadio2" value="option2">
-							<label class="form-check-label" for="inlineRadio2"><img class="imgSelects" src="views/images/person_1.jpg" alt=""></label>
+							<input class="form-check-input" type="radio" name="changePhoto" id="inlineRadio6" value="views/images/6.png">
+							<label class="form-check-label" for="inlineRadio6"><img class="imgSelects" src="views/images/6.png" alt=""></label>
 						</div>
+						<div class="form-check form-check-inline col-sm-3 mx-auto">
+							<input class="form-check-input" type="radio" name="changePhoto" id="inlineRadio7" value="views/images/7.png">
+							<label class="form-check-label" for="inlineRadio7"><img class="imgSelects" src="views/images/7.png" alt=""></label>
+						</div>
+						<div class="form-check form-check-inline col-sm-3 mx-auto">
+							<input class="form-check-input" type="radio" name="changePhoto" id="inlineRadio8" value="views/images/8.png">
+							<label class="form-check-label" for="inlineRadio8"><img class="imgSelects" src="views/images/8.png" alt=""></label>
+						</div>
+						<div class="form-check form-check-inline col-sm-3 mx-auto">
+							<input class="form-check-input" type="radio" name="changePhoto" id="inlineRadio9" value="views/images/9.png">
+							<label class="form-check-label" for="inlineRadio9"><img class="imgSelects" src="views/images/9.png" alt=""></label>
+						</div>
+						<div class="form-check form-check-inline col-sm-3 mx-auto">
+							<input class="form-check-input" type="radio" name="changePhoto" id="inlineRadio10" value="views/images/10.png">
+							<label class="form-check-label" for="inlineRadio10"><img class="imgSelects" src="views/images/10.png" alt=""></label>
+						</div>
+						<div class="form-check form-check-inline col-sm-3 mx-auto">
+							<input class="form-check-input" type="radio" name="changePhoto" id="inlineRadio11" value="views/images/11.png">
+							<label class="form-check-label" for="inlineRadio11"><img class="imgSelects" src="views/images/11.png" alt=""></label>
+						</div>
+						<div class="form-check form-check-inline col-sm-3 mx-auto">
+							<input class="form-check-input" type="radio" name="changePhoto" id="inlineRadio12" value="views/images/12.png">
+							<label class="form-check-label" for="inlineRadio12"><img class="imgSelects" src="views/images/12.png" alt=""></label>
+						</div>
+						<div class="form-check form-check-inline col-sm-3 mx-auto">
+							<input class="form-check-input" type="radio" name="changePhoto" id="inlineRadio13" value="views/images/13.png">
+							<label class="form-check-label" for="inlineRadio13"><img class="imgSelects" src="views/images/13.png" alt=""></label>
+						</div>
+						<div class="form-check form-check-inline col-sm-3 mx-auto">
+							<input class="form-check-input" type="radio" name="changePhoto" id="inlineRadio14" value="views/images/14.png">
+							<label class="form-check-label" for="inlineRadio14"><img class="imgSelects" src="views/images/14.png" alt=""></label>
+						</div>
+						<div class="form-check form-check-inline col-sm-3 mx-auto">
+							<input class="form-check-input" type="radio" name="changePhoto" id="inlineRadio15" value="views/images/15.png">
+							<label class="form-check-label" for="inlineRadio15"><img class="imgSelects" src="views/images/15.png" alt=""></label>
+						</div>
+						<div class="form-check form-check-inline col-sm-3 mx-auto">
+							<input class="form-check-input" type="radio" name="changePhoto" id="inlineRadio16" value="views/images/16.png">
+							<label class="form-check-label" for="inlineRadio16"><img class="imgSelects" src="views/images/16.png" alt=""></label>
+						</div>
+						<div class="form-check form-check-inline col-sm-3 mx-auto">
+							<input class="form-check-input" type="radio" name="changePhoto" id="inlineRadio17" value="views/images/17.png">
+							<label class="form-check-label" for="inlineRadio17"><img class="imgSelects" src="views/images/17.png" alt=""></label>
+						</div>
+						<div class="form-check form-check-inline col-sm-3 mx-auto">
+							<input class="form-check-input" type="radio" name="changePhoto" id="inlineRadio18" value="views/images/18.png">
+							<label class="form-check-label" for="inlineRadio18"><img class="imgSelects" src="views/images/18.png" alt=""></label>
+						</div>
+						
+
 				</div>
 				<div class="form-group align-items-rigth mt-4" style="display: inline-block" >
                     <input type="submit" value="Cambiar" class="btn btn-primary py-2 px-4"> 

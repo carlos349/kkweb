@@ -10577,4 +10577,6 @@ background: linear-gradient(90deg, rgba(169,229,229,1) 12%, rgba(175,173,194,1) 
 
 .imgSelects{
   width: 100%;
+  cursor: pointer;
+  border-radius: 50%;
 }
