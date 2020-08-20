@@ -42,7 +42,7 @@ class Registro{
 			$resultado = $consulta -> ver_registros($sql);
 
 			if ($resultado) {
-				$error="El número ya esta siendo utilizado.";
+				$error="El número ya está siendo utilizado.";
 			}
 		}
 
@@ -275,11 +275,12 @@ class Registro{
 			$resultado2 = $consulta2 -> actualizar_registro($sql2);
 
 			if ($resultado2) {
+				session_destroy();
 				echo '<script>
 							Swal.fire({
 							icon: "success",
 							title: "",
-							text: "¡Cambio exitoso!",
+							text: "¡Cambio exitoso inicie sección de nuevo!",
 							showClass: {
 								popup: "animate__animated animate__fadeInDown"
 							  },
@@ -338,13 +339,48 @@ class Registro{
 				document.querySelector("body").style.color = "white";
 						</script>';
 						$correoSend = $_SESSION['correo'];
-						session_start();
+						
 						$_SESSION['nombre'] = $nombre;
 						$_SESSION['apellido'] = $apellido;
 						$_SESSION['correo'] = $correo;
 						$_SESSION['numero'] = $numero;
 						$send4 = new Mails();
 						$sendresponse4 = $send4 -> dataChangesEmail($nombre,$apellido,$correo,$numero,$correoSend);
+			}
+		
+	}
+
+	public function cambioImg(){
+		$consulta2 = new Consulta();
+		$idSys = $_SESSION['idSys']; 
+		$idChange = $_SESSION['id'];
+		$img = $_POST['changePhoto'];
+		
+
+			$sql2="UPDATE usuarios SET foto = '$img' WHERE id='$idChange'";
+			$resultado2 = $consulta2 -> actualizar_registro($sql2);
+
+			if ($resultado2) {
+				
+			    $_SESSION['foto'] = $img;
+				echo '<script>
+							Swal.fire({
+							icon: "success",
+							title: "",
+							text: "¡Cambio exitoso!",
+							showClass: {
+								popup: "animate__animated animate__fadeInDown"
+							  },
+							  hideClass: {
+								popup: "animate__animated animate__fadeOutUp"
+							  }
+							}).then((result) => {
+								if (window.history.replaceState) { // verificamos disponibilidad
+									window.history.replaceState(null, null, window.location.href);
+								}
+								window.location.href = "inicio"
+							  })
+						</script>';
 			}
 		
 	}

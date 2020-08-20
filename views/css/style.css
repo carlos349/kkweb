@@ -10560,3 +10560,21 @@ background: linear-gradient(90deg, rgba(169,229,229,1) 12%, rgba(175,173,194,1) 
 .accLog{
   font-size: 14px;
 }
+.imgPerfil{
+  width: 50%;
+  border-radius: 50%;
+}
+.editFotoPerfil{
+  position: absolute;
+  top: 24%;
+  left: 60%;
+  background-color: #afadc2;
+  padding: 10px;
+  border-radius: 50%;
+  color: white;
+  cursor: pointer;
+}
+
+.imgSelects{
+  width: 100%;
+}

@@ -116,10 +116,14 @@
 										<div class="row">
 											<div class="col-md-4">
 												<center>
-													<img style="width: 50%;border-radius: 50%;" src="views/images/person_1.jpg" alt="">
+													<div class="imgPerfil">
+														<span data-toggle="modal" data-target="#selectImgP" class="editFotoPerfil fa fa-edit"></span>
+														<img style="width: 100%;border-radius: 50%;" src="<?php echo $_SESSION['foto']; ?>" alt="">
+													</div>
+													
 												</center>
 												
-												<div class="col-sm-11 infoPanel mt-3">
+												<div class="col-sm-11 infoPanel mt-4">
 													<p style="font-size: 12px;font-weight: bold;" class="text-center mb-0">Nombre</p>
 													<p class="p-1 pInfo text-center"><?php echo $_SESSION['nombre']; ?> <?php echo $_SESSION['apellido']; ?></p>
 													<p style="font-size: 12px;font-weight: bold;" class="text-center mb-0">Número de teléfono</p>
@@ -226,45 +230,7 @@
 									  </table>
 								</div>
 							</div>
-							<div class="settings">
-								 <div class="title">Datos de usuario</div>
-								<div class="description">
-									<div class="contact-form">
-										<div class="row">
-											<div class="col-sm-6">
-												<div class="form-group">
-													<input type="text" value="<?php echo $_SESSION['nombre']; ?>" class="form-control Mail-login" disabled="true" name="nombre" placeholder="Nombre">
-												</div>
-												<div class="form-group">
-													<input type="email" value="<?php echo $_SESSION['correo']; ?>" class="form-control Mail-login correoClienteRequest" disabled="true" name="correo" placeholder="Correo">
-												</div>
-												<div class="form-group">
-													<input type="password" value="**************" class="form-control Mail-login" disabled="true" name="pass" placeholder="Contraseña">
-												</div>
-											</div>
-											<div class="col-sm-6">
-												<div class="form-group">
-													<input type="text" value="<?php echo $_SESSION['apellido']; ?>" class="form-control Mail-login" disabled="true" name="apellido" placeholder="Apellido">
-												</div>
-												<div class="form-group">
-													<input type="text" value="<?php echo $_SESSION['numero']; ?>" class="form-control Mail-login" disabled="true" name="apellido" placeholder="Numero de telefono">
-												</div>
-												<div class="form-group align-items-rigth m-3" style="display: inline-block" >
-													<input type="button" value="Cambiar contraseña" data-toggle="modal" data-target="#changeModal" class="btn btn-primary py-3 px-3 blockear" disabled="true">
-													
-												</div>
-											</div>
-										</div>
-										
-										
-					
-									
-										
-										
-										
-									</div> 
-								</div>
-							</div>
+							
 						</div>
 					</div>
 				</div>
@@ -294,7 +260,7 @@
   if (isset($_POST["passOld"])) {
 	  
 	  $cambio = new Registro();
-	  $respuesta = $cambio -> cambioPass();
+	  $respuesta1 = $cambio -> cambioPass();
 	  
   }  
 
@@ -304,12 +270,25 @@
 
   if (isset($_POST["nombreChange"])) {
 	  
-	  $cambio = new Registro();
-	  $respuesta = $cambio -> cambioData();
+	  $cambio2 = new Registro();
+	  $respuesta2 = $cambio2 -> cambioData();
 	  
   }  
 
 ?>
+
+<?php 
+
+  if (isset($_POST["changePhoto"])) {
+	  
+	  $cambio3 = new Registro();
+	  $respuesta3 = $cambio3 -> cambioImg();
+	  
+  }  
+
+?>
+
+
   <div class="modal fade" id="changeModal" data-backdrop="static" data-keyboard="false" tabindex="-1" role="dialog" aria-labelledby="staticBackdropLabel" aria-hidden="true">
     <div class="modal-dialog modal-md">
       <div class="modal-content">
@@ -365,7 +344,7 @@
                       
                   </div>
                   <div class="form-group align-items-rigth" style="display: inline-block" >
-                      <input type="button" value="Cambiar" class="btn btn-primary py-2 px-4 botonChangePass  system-login">
+                      <input type="button" value="Cambiar" class="btn btn-primary py-2 px-4 botonChangePass">
                       
                   </div>
               </div>
@@ -421,6 +400,67 @@
                       <input type="button" value="Cambiar" class="btn btn-primary py-2 px-4 botonChangeData">
                       
                   </div>
+            </div>
+          </div>
+        </div>
+      
+      </div>
+    </div>
+  </div>
+
+  <div class="modal fade" id="selectImgP" data-backdrop="static" data-keyboard="false" tabindex="-1" role="dialog" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+    <div class="modal-dialog modal-md">
+      <div class="modal-content">
+   
+        <div class="modal-body p-3">
+			
+          <div class="row">
+            <div style="background-color: white;" class="col-12 p-3"> 
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+				<span aria-hidden="true">&times;</span>
+			  </button>
+			  
+			  <form method="POST">
+				
+				<div class="row">
+					<div class="form-check form-check-inline col-sm-3 mx-auto">
+					<input class="form-check-input" type="radio" name="changePhoto" id="inlineRadio1" value="views/images/person_1.jpg">
+					<label class="form-check-label" for="inlineRadio1"><img class="imgSelects" src="views/images/person_1.jpg" alt=""></label>
+					</div>
+
+					<div class="form-check form-check-inline col-sm-3 mx-auto">
+						<input class="form-check-input" type="radio" name="changePhoto" id="inlineRadio2" value="option2">
+						<label class="form-check-label" for="inlineRadio2"><img class="imgSelects" src="views/images/person_1.jpg" alt=""></label>
+					</div>
+
+					<div class="form-check form-check-inline col-sm-3 mx-auto">
+						<input class="form-check-input" type="radio" name="changePhoto" id="inlineRadio2" value="option2">
+						<label class="form-check-label" for="inlineRadio2"><img class="imgSelects" src="views/images/person_1.jpg" alt=""></label>
+					</div>
+
+					<div class="form-check form-check-inline col-sm-3 mx-auto">
+						<input class="form-check-input" type="radio" name="changePhoto" id="inlineRadio1" value="option1">
+						<label class="form-check-label" for="inlineRadio1"><img class="imgSelects" src="views/images/person_1.jpg" alt=""></label>
+						</div>
+	
+						<div class="form-check form-check-inline col-sm-3 mx-auto">
+							<input class="form-check-input" type="radio" name="changePhoto" id="inlineRadio2" value="option2">
+							<label class="form-check-label" for="inlineRadio2"><img class="imgSelects" src="views/images/person_1.jpg" alt=""></label>
+						</div>
+	
+						<div class="form-check form-check-inline col-sm-3 mx-auto">
+							<input class="form-check-input" type="radio" name="changePhoto" id="inlineRadio2" value="option2">
+							<label class="form-check-label" for="inlineRadio2"><img class="imgSelects" src="views/images/person_1.jpg" alt=""></label>
+						</div>
+				</div>
+				<div class="form-group align-items-rigth mt-4" style="display: inline-block" >
+                    <input type="submit" value="Cambiar" class="btn btn-primary py-2 px-4"> 
+                </div>
+
+			  </form>
+			  
+			  
+				
             </div>
           </div>
         </div>

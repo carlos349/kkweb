@@ -12,7 +12,7 @@ class RegistroModel{
 		$numero = $datos["numero"];
 		$nacimiento = $datos["nacimiento"];
 		$referente = $datos['referente'];
-		$photo = "views/images/perfiles/avatar.jpg";
+		$photo = "views/images/userImg.jpg";
 		$idSys = $datos["idSys"];
 
 		$opciones = [  'cost' => 11 ];

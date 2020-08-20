@@ -323,14 +323,30 @@
 	})
 
 	$(".botonChangePass").on('click', function() {
-		if ($(".passValid").val() == $(".passRepeat").val()) {
-			$(".chagePassForm").submit()
+		if ($(".passValid").val().length >= 8) {
+			if ($(".passValid").val() == $(".passRepeat").val()) {
+				$(".chagePassForm").submit()
+			}
+			else {
+				Swal.fire({
+					icon: "error",
+					title: "Error",
+					text: "¡Las contraseñas no coinciden inténtalo de nuevo!",
+					showClass: {
+						popup: "animate__animated animate__fadeInDown"
+					  },
+					  hideClass: {
+						popup: "animate__animated animate__fadeOutUp"
+					  }
+					})
+			}
 		}
+		
 		else {
 			Swal.fire({
 				icon: "error",
 				title: "Error",
-				text: "¡Las contraseñas no coinciden inténtalo de nuevo!",
+				text: "¡La contraseña debe tener más de 8 caracteres!",
 				showClass: {
 					popup: "animate__animated animate__fadeInDown"
 				  },

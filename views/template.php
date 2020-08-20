@@ -146,7 +146,7 @@ src="https://www.facebook.com/tr?id=2650063728607003&ev=PageView
         }
 
         
-        else if ($(".passOne").eq(0).val() != $(".passTwo").eq(0).val() || $(".passOne").eq(1).val() != $(".passTwo").eq(1).val()) {
+        else if ($(".passOne").eq(0).val() != $(".passTwo").eq(0).val() && $(".passOne").eq(1).val() != $(".passTwo").eq(1).val()) {
           Swal.fire({
 							icon: "error",
 							title: "",
@@ -416,9 +416,15 @@ src="https://www.facebook.com/tr?id=2650063728607003&ev=PageView
           })
           .then(response => {
             
+             if (response) {
+               $(".citasPendi").text(response.length) 
+          
+             }
+             else{
+              $(".citasPendi").text(0)
+              
+             } 
              
-              $(".citasPendi").text(response.length)
-            
             
 
             for (let i = 0; i < response.length; i++) {
@@ -500,6 +506,10 @@ src="https://www.facebook.com/tr?id=2650063728607003&ev=PageView
             cancelButtonColor: '#f5f5f5',
             confirmButtonText: 'Si',
             cancelButtonText: 'No',
+            customClass: {
+              confirmButton: 'colorSweet',
+              cancelButton: 'colorSweet',
+            },
             showClass: {
               popup: "animate__animated animate__fadeInDown"
               },
