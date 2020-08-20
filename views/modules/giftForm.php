@@ -12,16 +12,16 @@
 
 <h5 style="font-weight: bold;">Resumen de tu compra</h5>
 <span class="mos">Confirma tu orden y completa el pago</span>
-<p style="margin-top: -8px;"> <?php echo $_SESSION['nombre'] ?>, este es el resumen de tu compra:</p>
+<p class="mos2" style="margin-top: -8px;"> <?php echo $_SESSION['nombre'] ?>, este es el resumen de tu compra:</p>
 <div> 
   <div class="row">
-    <div class="col-sm-6">
+    <div class="col-md-6 col-sm-3">
       <div class="row">
-        <div class="col-sm-3" style="font-weight: bold;font-size:20px">Total: &nbsp;</div> <div style="font-weight:bold;font-size:20px" class="giftPrice col-sm-8 ml-2" > </div>
+        <div class="col-md-3 col-sm-2 total1" style="font-weight: bold;font-size:20px">Total: &nbsp;</div> <div style="font-weight:bold;font-size:20px" class="giftPrice col-md-8 col-sm-6 ml-2" > </div>
       </div>
     
     </div> 
-    <div class="col-sm-5">
+    <div class="col-md-5 col-sm-3">
       <form style="margin-left: -17px;" id="formGiftWindow" method="post">
   <select style="font-size: 10px;" id="typePay" class="btn btn-primary mr-5 py-2 px-2" name="typePay">
     <option value="" selected>Tipo de pago</option>
@@ -47,7 +47,7 @@
 	  <input type="hidden"  class="contactoGift" value="<?php echo $_SESSION['correo'] ?>">
 
 <br>
-<div style="background-color: whitesmoke;padding: 10px;border-radius: 5px;margin-top:-30px;width: 360px;">
+<div class="cuadritoGift" style="background-color: whitesmoke;padding: 10px;border-radius: 5px;margin-top:-30px;width: 360px;">
   <h5 style="font-weight: bold;">Tus datos</h5>
   <p style="line-height: 25px;"> Nombre: <?php echo $_SESSION['nombre']." ".$_SESSION['apellido'] ?> <br> Correo: <?php echo $_SESSION['correo'] ?> <br> Número de teléfono: <?php echo $_SESSION['numero'] ?> </p>
   <button type="button" style="margin-left:220px"  class="btn btn-primary py-2 px-2  proccessGift"> Procesar </button>

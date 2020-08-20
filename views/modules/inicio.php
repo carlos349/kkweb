@@ -6,7 +6,7 @@
         <div class="row no-gutters slider-text js-fullheight align-items-center justify-content-center">
           <div class="col-md-10 ftco-animate text-center">
           	<div class="icon">
-				<img style="width:30%" src="views/images/logokk.png" alt="">
+				<img class="imgHome" style="width:30%" src="views/images/logokk.png" alt="">
           	</div>
             <h1 style="color:#605B56;font-size: 2vw !important;" >K&KPRETTYNAILS.COM</h1>
             <div class="row justify-content-center">

@@ -48,7 +48,7 @@ class Mails {
         </div>
         <div style="width: 60%;background-color: #f0f1f3;box-shadow: 0 2px 5px 0 rgba(0,0,0,.14);margin: auto;padding: 20px;font-family: Roboto,RobotoDraft,Helvetica,Arial,sans-serif;color:#172b4d;padding-bottom:20px;-webkit-box-shadow: 0px -4px 11px 0px rgba(0,0,0,0.12);-moz-box-shadow: 0px -4px 11px 0px rgba(0,0,0,0.12);box-shadow: 0px -4px 11px 0px rgba(0,0,0,0.12);">
             <center>
-            <div style="width:60%;">
+            <div style="width:100%;">
                 <center>
                 
                 <p style="text-align:center;font-size:18px;">Contáctanos.</p>
@@ -173,7 +173,7 @@ class Mails {
         </div>
         <div style="width: 60%;background-color: #f0f1f3;box-shadow: 0 2px 5px 0 rgba(0,0,0,.14);margin: auto;padding: 20px;font-family: Roboto,RobotoDraft,Helvetica,Arial,sans-serif;color:#172b4d;padding-bottom:20px;-webkit-box-shadow: 0px -4px 11px 0px rgba(0,0,0,0.12);-moz-box-shadow: 0px -4px 11px 0px rgba(0,0,0,0.12);box-shadow: 0px -4px 11px 0px rgba(0,0,0,0.12);">
             <center>
-            <div style="width:60%;">
+            <div style="width:100%;">
                 <center>
                 
                 <p style="text-align:center;font-size:18px;">Contáctanos.</p>
@@ -335,7 +335,7 @@ class Mails {
         </div>
         <div style="width: 60%;background-color: #f0f1f3;box-shadow: 0 2px 5px 0 rgba(0,0,0,.14);margin: auto;padding: 5px;font-family: Roboto,RobotoDraft,Helvetica,Arial,sans-serif;color:#172b4d;padding-bottom:5px;-webkit-box-shadow: 0px -4px 11px 0px rgba(0,0,0,0.12);-moz-box-shadow: 0px -4px 11px 0px rgba(0,0,0,0.12);box-shadow: 0px -4px 11px 0px rgba(0,0,0,0.12);">
             <center>
-            <div style="width:60%;">
+            <div style="width:100%;">
                 <center>
                 <p style="text-align:center;font-size:18px;">Contáctanos.</p>
             <a href="mailto:kkprettynails@gmail.com"><img style="width: 45px;" src="http://kkprettynails.cl/views/images/mail.png" alt=""></a>
@@ -526,7 +526,7 @@ class Mails {
             </div>
             <div style="width: 60%;background-color: #f0f1f3;box-shadow: 0 2px 5px 0 rgba(0,0,0,.14);margin: auto;padding: 20px;font-family: Roboto,RobotoDraft,Helvetica,Arial,sans-serif;color:#172b4d;padding-bottom:20px;-webkit-box-shadow: 0px -4px 11px 0px rgba(0,0,0,0.12);-moz-box-shadow: 0px -4px 11px 0px rgba(0,0,0,0.12);box-shadow: 0px -4px 11px 0px rgba(0,0,0,0.12);">
                 <center>
-                <div style="width:60%;">
+                <div style="width:100%;">
                     <center>
                     <p style="text-align:center;font-size:18px;">Contáctanos.</p>
                 <a href="mailto:kkprettynails@gmail.com"><img style="width: 45px;" src="http://kkprettynails.cl/views/images/mail.png" alt=""></a>
@@ -739,7 +739,7 @@ public function giftMail()
         </div>
         <div style="width: 60%;background-color: #f0f1f3;box-shadow: 0 2px 5px 0 rgba(0,0,0,.14);margin: auto;padding: 20px;font-family: Roboto,RobotoDraft,Helvetica,Arial,sans-serif;color:#172b4d;padding-bottom:20px;-webkit-box-shadow: 0px -4px 11px 0px rgba(0,0,0,0.12);-moz-box-shadow: 0px -4px 11px 0px rgba(0,0,0,0.12);box-shadow: 0px -4px 11px 0px rgba(0,0,0,0.12);">
             <center>
-            <div style="width:60%;">
+            <div style="width:100%;">
                 <center>
                     <p style="text-align:center;font-size:18px;">Contáctanos.</p>
                     <a href="mailto:kkprettynails@gmail.com"><img style="width: 45px;" src="http://kkprettynails.cl/views/images/mail.png" alt=""></a>
@@ -871,7 +871,7 @@ public function giftMail()
             </div>
             <div style="width: 60%;background-color: #f0f1f3;box-shadow: 0 2px 5px 0 rgba(0,0,0,.14);margin: auto;padding: 5px;font-family: Roboto,RobotoDraft,Helvetica,Arial,sans-serif;color:#172b4d;padding-bottom:5px;-webkit-box-shadow: 0px -4px 11px 0px rgba(0,0,0,0.12);-moz-box-shadow: 0px -4px 11px 0px rgba(0,0,0,0.12);box-shadow: 0px -4px 11px 0px rgba(0,0,0,0.12);">
                 <center>
-                <div style="width:60%;">
+                <div style="width:100%;">
                     <center>
                     <p style="text-align:center;font-size:18px;">Contáctanos.</p>
                 <a href="mailto:kkprettynails@gmail.com"><img style="width: 45px;" src="http://kkprettynails.cl/views/images/mail.png" alt=""></a>

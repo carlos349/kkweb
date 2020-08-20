@@ -29,8 +29,8 @@
 						
 
 						<div class="row">
-							<div class="col-sm-2"><input style="font-weight: bold;" type="text" class="form-control Mail-login" disabled value="+56"></div>
-							<div class="col-sm-5"><input type="text" required class="form-control Mail-login comprobar  phone phone1" maxlength="9" name="numeroG" placeholder="Número telefónico"></div>
+							<div class="col-2 col-sm-2"><input style="font-weight: bold;" type="text" class="form-control Mail-login" disabled value="+56"></div>
+							<div class="col-10 col-sm-5"><input type="text" required class="form-control Mail-login comprobar  phone phone1" maxlength="9" name="numeroG" placeholder="Número telefónico"></div>
 							<div class="col-sm-5"><input type="date" title="Fecha de nacimiento" required class="form-control naciReg  comprobar Mail-login" id="nacimientoS" name="nacimientoG" placeholder="Fecha de nacimiento"></div>
 						</div>
                         

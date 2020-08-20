@@ -116,7 +116,7 @@ class Registro{
 							Swal.fire({
 							icon: "success",
 							title: "Bienvenido",
-							text: "¡Registro exitoso sera ingresado automaticamente!",
+							text: "¡Registro exitoso será ingresado automáticamente!",
 							showClass: {
 								popup: "animate__animated animate__fadeInDown"
 							  },
@@ -280,7 +280,7 @@ class Registro{
 							Swal.fire({
 							icon: "success",
 							title: "",
-							text: "¡Cambio exitoso inicie sección de nuevo!",
+							text: "¡Cambio exitoso inicie sesión de nuevo!",
 							showClass: {
 								popup: "animate__animated animate__fadeInDown"
 							  },
