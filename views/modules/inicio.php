@@ -33,7 +33,7 @@
 						  <strong style="font-weight: 300;" >Año</strong>
 						  <strong class="number" data-number="3">0</strong>
 						  <strong style="font-weight: 300;">Meses</strong>
-						  <strong class="number" data-number="10">10</strong>
+						  <strong class="number" data-number="10">0</strong>
 						  <strong style="font-weight: 300;">Dias</strong>
 		              	<span>Tiempo de servicio</span>
 		              </div>
@@ -42,7 +42,7 @@
 		          <div class="col-md-6 col-lg-4 d-flex justify-content-center counter-wrap ftco-animate">
 		            <div class="block-18 text-center">
 		              <div class="text">
-		              	<strong class="number" data-number="10553">0</strong>
+		              	<strong class="number nSeguidores" data-number="10553">0</strong>
 		              	<span>Seguidores de instagram</span>
 		              </div>
 		            </div>

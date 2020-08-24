@@ -50,6 +50,14 @@ border-radius: 10px;
   transform: rotateX(0deg);
 }
 
+.flip.flip-vertical:focus > .front {
+  transform: rotateX(180deg);
+}
+.flip.flip-vertical:focus > .back {
+  transform: rotateX(0deg);
+}
+
+
 .flip {
   position: relative;
   display: inline-block;

@@ -111,6 +111,20 @@ src="https://www.facebook.com/tr?id=2650063728607003&ev=PageView
           console.log(myJson);
         })
 
+        fetch('https://www.instagram.com/kkprettynails/?__a=1') 
+        .then(function(response) {
+          return response.json();
+        })
+        .catch(error => {
+          console.log(error)
+         
+        })
+        .then(function(myJson) {
+          $(".nSeguidores").attr('data-number', myJson.graphql.user.edge_followed_by.count);
+          
+        })
+
+
 
       $('.system-register').on('click', () => {
         if ($(".correoReg").eq(0).val().includes('@') || $(".correoReg").eq(1).val().includes('@')) {
