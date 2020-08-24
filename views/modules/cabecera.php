@@ -193,7 +193,8 @@
 							</div>
 							<div class="comments-c">
 								<div class="title tit2">Histórico de servicios</div>
-								<div class="description description1">
+								<div style="overflow: hidden;
+								overflow-y: scroll;overflow-x: scroll;" class="description description1">
 									<table style="font-size: 12px;" class="table">
 										<thead class="thead-light">
 										  <tr>
@@ -215,7 +216,7 @@
 							<div class="notification">
 								 <div class="title tit2">Citas pendiente</div>
 								<div style="overflow: hidden;
-								overflow-y: scroll;" class="description description1">
+								overflow-y: scroll;overflow-x: scroll;" class="description description1">
 									<table style="font-size: 12px;" class="table">
 										<thead class="thead-light">
 										  <tr>
