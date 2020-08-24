@@ -52,6 +52,8 @@
 	  </nav>
 	  
 	  <input type="hidden"  id="valSys" value="<?php echo $_SESSION['idSys']; ?>">
+	  <input type="hidden"  class="correoClienteRequest" value="<?php echo $_SESSION['correo']; ?>">
+	  <input type="hidden"  class="idReferido" value="<?php if(isset($_GET['c'])){echo $_GET['c'];}else{echo 'no';} ?>">
 
 	  <div class="modal fade" id="logModal" data-backdrop="static" data-keyboard="false" tabindex="-1" role="dialog" aria-labelledby="staticBackdropLabel" aria-hidden="true">
     <div class="modal-dialog modal-md">

@@ -162,12 +162,16 @@ src="https://www.facebook.com/tr?id=2650063728607003&ev=PageView
         }
 
         else{
-          
+          var referidoID = ''
+          if ($(".idReferido").val() != "no" ) {
+            referidoID = $(".idReferido").val()
+          }
           
           var data = {
           name:$("#nombreS").val()+" "+$("#apellidoS").val(),
           mail:$("#correoS").val(),
-          number: "+56 " + $(".phone1").val()
+          number: "+56 " + $(".phone1").val(),
+          referidoId:referidoID
           }
 
           fetch('https://kkprettynailsback.syswa.net/clients/verifyClient', {

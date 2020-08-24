@@ -88,7 +88,7 @@
                       
                   </div>
                   <div class="form-group align-items-rigth" style="display: inline-block" >
-                      <input type="submit" value="Ingresar" class="btn btn-primary py-2 px-4">
+                      <input type="submit" value="Ingresar" class="btn btn-primary py-2 px-2">
                       <a style="cursor: pointer;" class="accLog ml-3">¿No estás registrado?</a>
                   </div>
               </div>
