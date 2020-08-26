@@ -52,10 +52,10 @@ class Mails {
                 <center>
                 
                 <p style="text-align:center;font-size:18px;">Contáctanos.</p>
-                <a href="mailto:kkprettynails@gmail.com"><img style="width: 45px;" src="http://kkprettynails.cl/views/images/mail.png" alt=""></a>
-                <a href="https://www.instagram.com/kkprettynails/?hl=es-la"><img style="width: 40px;margin-left:40px" src="http://kkprettynails.cl/views/images/ig.png" alt=""></a>
-                <a href="https://wa.me/56972628949"><img style="width:38px;margin-left:40px" src="http://kkprettynails.cl/views/images/ws.png" alt=""></a>
-                <a href="https://kkprettynails.cl"><img style="width: 40px;margin-left:40px" src="http://kkprettynails.cl/views/images/web.png" alt=""></a>
+                <a href="mailto:kkprettynails@gmail.com"><img style="width: 7%;" src="http://kkprettynails.cl/views/images/mail.png" alt=""></a>
+                <a href="https://www.instagram.com/kkprettynails/?hl=es-la"><img style="width: 7%;margin-left:10%" src="http://kkprettynails.cl/views/images/ig.png" alt=""></a>
+                <a href="https://wa.me/56972628949"><img style="width: 7%;margin-left:10%" src="http://kkprettynails.cl/views/images/ws.png" alt=""></a>
+                <a href="https://kkprettynails.cl"><img style="width: 7%;margin-left:10%" src="http://kkprettynails.cl/views/images/web.png" alt=""></a>
                 <br>
                 <a href="https://goo.gl/maps/GhvcDBH1ppBDae1KA">
                     <p>Av. Pedro de Valdivia 3474, local 53B, Ñuñoa, Región Metropolitana de Santiago</p>
@@ -177,10 +177,10 @@ class Mails {
                 <center>
                 
                 <p style="text-align:center;font-size:18px;">Contáctanos.</p>
-                <a href="mailto:kkprettynails@gmail.com"><img style="width: 45px;" src="http://kkprettynails.cl/views/images/mail.png" alt=""></a>
-                <a href="https://www.instagram.com/kkprettynails/?hl=es-la"><img style="width: 40px;margin-left:40px" src="http://kkprettynails.cl/views/images/ig.png" alt=""></a>
-                <a href="https://wa.me/56972628949"><img style="width:38px;margin-left:40px" src="http://kkprettynails.cl/views/images/ws.png" alt=""></a>
-                <a href="https://kkprettynails.cl"><img style="width: 40px;margin-left:40px" src="http://kkprettynails.cl/views/images/web.png" alt=""></a>
+                <a href="mailto:kkprettynails@gmail.com"><img style="width: 7%;" src="http://kkprettynails.cl/views/images/mail.png" alt=""></a>
+                <a href="https://www.instagram.com/kkprettynails/?hl=es-la"><img style="width: 7%;margin-left:10%" src="http://kkprettynails.cl/views/images/ig.png" alt=""></a>
+                <a href="https://wa.me/56972628949"><img style="width: 7%;margin-left:10%" src="http://kkprettynails.cl/views/images/ws.png" alt=""></a>
+                <a href="https://kkprettynails.cl"><img style="width: 7%;margin-left:10%" src="http://kkprettynails.cl/views/images/web.png" alt=""></a>
                 <br>
                 <a href="https://goo.gl/maps/GhvcDBH1ppBDae1KA">
                     <p>Av. Pedro de Valdivia 3474, local 53B, Ñuñoa, Región Metropolitana de Santiago</p>
@@ -338,10 +338,10 @@ class Mails {
             <div style="width:100%;">
                 <center>
                 <p style="text-align:center;font-size:18px;">Contáctanos.</p>
-            <a href="mailto:kkprettynails@gmail.com"><img style="width: 45px;" src="http://kkprettynails.cl/views/images/mail.png" alt=""></a>
-            <a href="https://www.instagram.com/kkprettynails/?hl=es-la"><img style="width: 40px;margin-left:40px" src="http://kkprettynails.cl/views/images/ig.png" alt=""></a>
-            <a href="https://wa.me/56972628949"><img style="width:38px;margin-left:40px" src="http://kkprettynails.cl/views/images/ws.png" alt=""></a>
-            <a href="https://kkprettynails.cl"><img style="width: 40px;margin-left:40px" src="http://kkprettynails.cl/views/images/web.png" alt=""></a>
+            <a href="mailto:kkprettynails@gmail.com"><img style="width: 7%;" src="http://kkprettynails.cl/views/images/mail.png" alt=""></a>
+            <a href="https://www.instagram.com/kkprettynails/?hl=es-la"><img style="width: 7%;margin-left:10%" src="http://kkprettynails.cl/views/images/ig.png" alt=""></a>
+            <a href="https://wa.me/56972628949"><img style="width: 7%;margin-left:10%" src="http://kkprettynails.cl/views/images/ws.png" alt=""></a>
+            <a href="https://kkprettynails.cl"><img style="width: 7%;margin-left:10%" src="http://kkprettynails.cl/views/images/web.png" alt=""></a>
             <br>
                <a href="https://goo.gl/maps/GhvcDBH1ppBDae1KA">
                 <p>Av. Pedro de Valdivia 3474, local 53B, Ñuñoa, Región Metropolitana de Santiago</p>
@@ -529,10 +529,10 @@ class Mails {
                 <div style="width:100%;">
                     <center>
                     <p style="text-align:center;font-size:18px;">Contáctanos.</p>
-                <a href="mailto:kkprettynails@gmail.com"><img style="width: 45px;" src="http://kkprettynails.cl/views/images/mail.png" alt=""></a>
-                <a href="https://www.instagram.com/kkprettynails/?hl=es-la"><img style="width: 40px;margin-left:40px" src="http://kkprettynails.cl/views/images/ig.png" alt=""></a>
-                <a href="https://wa.me/56972628949"><img style="width:38px;margin-left:40px" src="http://kkprettynails.cl/views/images/ws.png" alt=""></a>
-                <a href="https://kkprettynails.cl"><img style="width: 40px;margin-left:40px" src="http://kkprettynails.cl/views/images/web.png" alt=""></a>
+                <a href="mailto:kkprettynails@gmail.com"><img style="width: 7%;" src="http://kkprettynails.cl/views/images/mail.png" alt=""></a>
+                <a href="https://www.instagram.com/kkprettynails/?hl=es-la"><img style="width: 7%;margin-left:10%" src="http://kkprettynails.cl/views/images/ig.png" alt=""></a>
+                <a href="https://wa.me/56972628949"><img style="width: 7%;margin-left:10%" src="http://kkprettynails.cl/views/images/ws.png" alt=""></a>
+                <a href="https://kkprettynails.cl"><img style="width: 7%;margin-left:10%" src="http://kkprettynails.cl/views/images/web.png" alt=""></a>
                 <br>
                    <a href="https://goo.gl/maps/GhvcDBH1ppBDae1KA">
                     <p>Av. Pedro de Valdivia 3474, local 53B, Ñuñoa, Región Metropolitana de Santiago</p>
@@ -742,10 +742,10 @@ public function giftMail()
             <div style="width:100%;">
                 <center>
                     <p style="text-align:center;font-size:18px;">Contáctanos.</p>
-                    <a href="mailto:kkprettynails@gmail.com"><img style="width: 45px;" src="http://kkprettynails.cl/views/images/mail.png" alt=""></a>
-                    <a href="https://www.instagram.com/kkprettynails/?hl=es-la"><img style="width: 40px;margin-left:40px" src="http://kkprettynails.cl/views/images/ig.png" alt=""></a>
-                    <a href="https://wa.me/56972628949"><img style="width:38px;margin-left:40px" src="http://kkprettynails.cl/views/images/ws.png" alt=""></a>
-                    <a href="https://kkprettynails.cl"><img style="width: 40px;margin-left:40px" src="http://kkprettynails.cl/views/images/web.png" alt=""></a>
+                    <a href="mailto:kkprettynails@gmail.com"><img style="width: 7%;" src="http://kkprettynails.cl/views/images/mail.png" alt=""></a>
+                    <a href="https://www.instagram.com/kkprettynails/?hl=es-la"><img style="width: 7%;margin-left:10%" src="http://kkprettynails.cl/views/images/ig.png" alt=""></a>
+                    <a href="https://wa.me/56972628949"><img style="width: 7%;margin-left:10%" src="http://kkprettynails.cl/views/images/ws.png" alt=""></a>
+                    <a href="https://kkprettynails.cl"><img style="width: 7%;margin-left:10%" src="http://kkprettynails.cl/views/images/web.png" alt=""></a>
                     <br>
                    <a href="https://goo.gl/maps/GhvcDBH1ppBDae1KA">
                     <p>Av. Pedro de Valdivia 3474, local 53B, Ñuñoa, Región Metropolitana de Santiago</p>
@@ -874,10 +874,10 @@ public function giftMail()
                 <div style="width:100%;">
                     <center>
                     <p style="text-align:center;font-size:18px;">Contáctanos.</p>
-                <a href="mailto:kkprettynails@gmail.com"><img style="width: 45px;" src="http://kkprettynails.cl/views/images/mail.png" alt=""></a>
-                <a href="https://www.instagram.com/kkprettynails/?hl=es-la"><img style="width: 40px;margin-left:40px" src="http://kkprettynails.cl/views/images/ig.png" alt=""></a>
-                <a href="https://wa.me/56972628949"><img style="width:38px;margin-left:40px" src="http://kkprettynails.cl/views/images/ws.png" alt=""></a>
-                <a href="https://kkprettynails.cl"><img style="width: 40px;margin-left:40px" src="http://kkprettynails.cl/views/images/web.png" alt=""></a>
+                <a href="mailto:kkprettynails@gmail.com"><img style="width: 7%;" src="http://kkprettynails.cl/views/images/mail.png" alt=""></a>
+                <a href="https://www.instagram.com/kkprettynails/?hl=es-la"><img style="width: 7%;margin-left:10%" src="http://kkprettynails.cl/views/images/ig.png" alt=""></a>
+                <a href="https://wa.me/56972628949"><img style="width: 7%;margin-left:10%" src="http://kkprettynails.cl/views/images/ws.png" alt=""></a>
+                <a href="https://kkprettynails.cl"><img style="width: 7%;margin-left:10%" src="http://kkprettynails.cl/views/images/web.png" alt=""></a>
                 <br>
                    <a href="https://goo.gl/maps/GhvcDBH1ppBDae1KA">
                     <p>Av. Pedro de Valdivia 3474, local 53B, Ñuñoa, Región Metropolitana de Santiago</p>

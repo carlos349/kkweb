@@ -401,12 +401,12 @@ src="https://www.facebook.com/tr?id=2650063728607003&ev=PageView
           $("#serviciosSys").text(myJson.participacion)
           $("#referidoSys").text("https://kkprettynails.cl/inicio?r&c="+myJson._id)
           $(".reco").text(myJson.recomendaciones)
-          console.log(myJson.historical.length)
+          $(".removeH").remove()
           if (myJson.historical.length > 0) {
             for (let i = 0; i < 5; i++) {
               var date = new Date(myJson.historical[i].fecha)
               var fecha = date.getDate()+"-"+date.getMonth()+"-"+date.getFullYear()
-              var td = `<tr>
+              var td = `<tr class="removeH">
                         <th scope="row">${fecha}</th>
                         <td>${myJson.historical[i].servicios[0].servicio}</td>
                         <td>${myJson.historical[i].manicurista}</td>
@@ -444,7 +444,7 @@ src="https://www.facebook.com/tr?id=2650063728607003&ev=PageView
              } 
              
             
-
+            $(".removeC").remove()
             for (let i = 0; i < response.length; i++) {
             var date = new Date(response[i].date)
             var fecha = date.getDate()+"-"+date.getMonth()+"-"+date.getFullYear()
@@ -455,7 +455,7 @@ src="https://www.facebook.com/tr?id=2650063728607003&ev=PageView
             else{
               confirm = `<button style="font-size: .7em;" class="btn btn-success confirmDate"  id="${response[i].confirmationId}">Confirmar</button>`
             }
-            var td = `<tr>
+            var td = `<tr class="removeC">
 											<th scope="row">${fecha}</th>
 											<td>${response[i].services[0].servicio}</td>
 											<td>${response[i].employe}</td>
