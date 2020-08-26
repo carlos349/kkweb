@@ -15,13 +15,11 @@
 <p class="mos2" style="margin-top: -8px;"> <?php echo $_SESSION['nombre'] ?>, este es el resumen de tu compra:</p>
 <div> 
   <div class="row">
-    <div class="col-md-6 col-sm-3">
-      <div class="row">
-        <div class="col-md-3 col-sm-2 total1" style="font-weight: bold;font-size:20px">Total: &nbsp;</div> <div style="font-weight:bold;font-size:20px" class="giftPrice col-md-8 col-sm-6 ml-2" > </div>
-      </div>
-    
-    </div> 
-    <div class="col-md-5 col-sm-3">
+
+        <div class="col-md-2 col-2 total1" style="font-weight: bold;font-size:20px">Total: &nbsp;</div> 
+        <div style="font-weight:bold;font-size:20px" class="giftPrice col-md-4 col-5 ml-2" > </div>
+
+    <div class="col-md-4 col-4">
       <form style="margin-left: -17px;" id="formGiftWindow" method="post">
   <select style="font-size: 10px;" id="typePay" class="btn btn-primary mr-5 py-2 px-2" name="typePay">
     <option value="" selected>Tipo de pago</option>

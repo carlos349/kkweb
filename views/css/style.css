@@ -8220,8 +8220,12 @@ h1, h2, h3, h4, h5,
       font-size: 4vw;
     }
     #formGiftWindow{
-      margin-left: 0 !important;
+      margin-left: -40px !important;
       margin-bottom: 10px;
+      
+    }
+    #typePay{
+      font-size: 8px !important;
     }
     .cuadritoGift{
       width: 105% !important;
