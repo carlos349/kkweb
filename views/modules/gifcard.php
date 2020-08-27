@@ -40,6 +40,15 @@ border-radius: 10px;
   opacity: 1;
   transform: rotateY(0deg);
 }
+
+.flip:focus > .front {
+  transform: rotateY(180deg);
+}
+.flip:focus > .back {
+  opacity: 1;
+  transform: rotateY(0deg);
+}
+
 .flip.flip-vertical > .back {
   transform: rotateX(-180deg);
 }
@@ -127,7 +136,9 @@ border-radius: 10px;
 .hid{
   display: none;
 }
-
+.modG{
+  display: none;
+}
     </style>
 </head>
 <body>

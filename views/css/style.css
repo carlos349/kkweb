@@ -8187,6 +8187,20 @@ h1, h2, h3, h4, h5,
     
     left: 86%;
     }
+    input[type="date"]:before{
+      color:black;
+      position: absolute;
+      top: 45%;
+      content:attr(placeholder);
+    }
+    
+    input[type="date"].full:before {
+      color:black;
+      content:""!important;
+    }
+    .serviciosMid{
+      height: auto !important;
+    }
     .showPassm{
       position: absolute;
       left: 82%;
@@ -8214,7 +8228,7 @@ h1, h2, h3, h4, h5,
       width: 50%;
     }
     .treatment{
-      margin-top: 60px;
+      margin-top: 10px;
     }
     .mos{
       font-size: 4vw;
@@ -10638,3 +10652,4 @@ background: linear-gradient(90deg, rgba(169,229,229,1) 12%, rgba(175,173,194,1) 
   cursor: pointer;
   border-radius: 50%;
 }
+

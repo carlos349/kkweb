@@ -47,7 +47,7 @@
                         </div>
                     </div>
                 </div>
-                <div style="height: 110vh;"class="col-lg-4" >
+                <div style="height: 110vh;"class="col-lg-4 serviciosMid" >
                     <div  class=" d-flex align-items-stretch">
                         <div id="accordion"  class="myaccordion w-100 text-center py-3  px-1 px-md-4">
                             <div class="desc">

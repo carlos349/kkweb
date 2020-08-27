@@ -470,6 +470,32 @@
 				location.reload()
 			  })
 	  })
+
+	  $("#nacimientoS").on("input",function(){
+		if($(this).val().length>0){
+		$(this).addClass("full");
+		}
+		else{
+		$(this).removeClass("full");
+		}
+		});
+
+		$( ".flip" ).mouseenter(
+			function() {
+			  setTimeout(() => {
+				  $(".modG").show()
+			  }, 500);
+			}
+		  );
+
+		  $( ".flip" ).mouseleave(
+			function() {
+				
+					$(".modG").hide()
+				
+			}
+		  ); 
+		   
 	
 })(jQuery);
 
