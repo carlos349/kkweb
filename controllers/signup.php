@@ -72,7 +72,7 @@ class Registro{
 						</script>';
 
 		} else{
-			$datos["usuario"] = $usuario;
+			$datos["usuario"] = strtolower($usuario);
 			$datos["password"] = $password;	
 			$datos["correo"] = $correo;
 			$datos["nombre"] = $nombre;
@@ -199,7 +199,7 @@ class Registro{
 						</script>';
 
 		} else{
-			$datos["usuario"] = $usuario;
+			$datos["usuario"] = strtolower($usuario);
 			$datos["password"] = $password;	
 			$datos["correo"] = $correo;
 			$datos["nombre"] = $nombre;

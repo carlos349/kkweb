@@ -8,7 +8,7 @@ class Ingreso{
 
 			   	//$encriptar = crypt($_POST["passwordIngreso"], '$2a$07$asxx54ahjppf45sd87a5a4dDDGsystemdev$');
 
-				$datosController = array("usuario"=>$_POST["usuarioIngreso"],
+				$datosController = array("usuario"=>strtolower($_POST["usuarioIngreso"]),
 				                     "password"=>$_POST["passwordIngreso"]);
 
 				$respuesta = IngresoModels::ingresoModel($datosController, "usuarios");
@@ -23,7 +23,7 @@ class Ingreso{
 
 					if ($resultado["rol"]==1 || $resultado["rol"]==0) {
 						
-						if(strtolower($resultado["usuario"]) == $_POST["usuarioIngreso"] && password_verify($_POST["passwordIngreso"], $resultado["contrasena"])){
+						if(strtolower($resultado["usuario"]) == strtolower($_POST["usuarioIngreso"]) && password_verify($_POST["passwordIngreso"], $resultado["contrasena"])){
 
 
 							$intentos = 0;

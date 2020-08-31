@@ -46,24 +46,29 @@ class Mails {
                 <div>
             </center>
         </div>
-        <div style="width: 60%;background-color: #f0f1f3;box-shadow: 0 2px 5px 0 rgba(0,0,0,.14);margin: auto;padding: 20px;font-family: Roboto,RobotoDraft,Helvetica,Arial,sans-serif;color:#172b4d;padding-bottom:20px;-webkit-box-shadow: 0px -4px 11px 0px rgba(0,0,0,0.12);-moz-box-shadow: 0px -4px 11px 0px rgba(0,0,0,0.12);box-shadow: 0px -4px 11px 0px rgba(0,0,0,0.12);">
-            <center>
-            <div style="width:100%;">
+        <div style="width: 100%;background-color: #f0f1f3;box-shadow: 0 2px 5px 0 rgba(0,0,0,.14);margin: auto;font-family: Roboto,RobotoDraft,Helvetica,Arial,sans-serif;color:#181d81;padding-bottom:8px;-webkit-box-shadow: 0px -4px 11px 0px rgba(0,0,0,0.12);-moz-box-shadow: 0px -4px 11px 0px rgba(0,0,0,0.12);box-shadow: 0px -4px 11px 0px rgba(0,0,0,0.12);">
                 <center>
-                
-                <p style="text-align:center;font-size:18px;">Contáctanos.</p>
-                <a href="mailto:kkprettynails@gmail.com"><img style="width: 7%;" src="http://kkprettynails.cl/views/images/mail.png" alt=""></a>
-                <a href="https://www.instagram.com/kkprettynails/?hl=es-la"><img style="width: 7%;margin-left:10%" src="http://kkprettynails.cl/views/images/ig.png" alt=""></a>
-                <a href="https://wa.me/56972628949"><img style="width: 7%;margin-left:10%" src="http://kkprettynails.cl/views/images/ws.png" alt=""></a>
-                <a href="https://kkprettynails.cl"><img style="width: 7%;margin-left:10%" src="http://kkprettynails.cl/views/images/web.png" alt=""></a>
-                <br>
-                <a href="https://goo.gl/maps/GhvcDBH1ppBDae1KA">
-                    <p>Av. Pedro de Valdivia 3474, local 53B, Ñuñoa, Región Metropolitana de Santiago</p>
-                   </a>
+                <div style="width:100%;">
+                    <center>
+                    <p style="text-align:center;font-size:14px;"><strong> Contáctanos</strong></p>
+                      <a  href="mailto:kkprettynails@gmail.com" style="margin-left:40px;text-decoration:none;"> 
+                        <img style="width:4%;" src="http://kkprettynails.cl/views/images/mail.png" alt="Logo mail">
+                      </a>
+                      <a  href="https://www.instagram.com/kkprettynails/" style="margin-left:40px;text-decoration:none;">
+                        <img style="width:4%;" src="http://kkprettynails.cl/views/images/ig.png" alt="Logo ig">
+                      </a>
+                      <a  href="https://api.whatsapp.com/send?phone=56972628949&text=&source=&data=&app_absent=" style="margin-left:20px;text-decoration:none;">
+                        <img style="width:4%;" src="http://kkprettynails.cl/views/images/ws.png" alt="Logo ws">
+                      </a>
+                      <a  href="https://kkprettynails.cl/inicio" style="margin-left:40px;text-decoration:none;">
+                        <img style="width:4%;" src="http://kkprettynails.cl/views/images/web.png" alt="Logo web">
+                      </a>
+                    <br>
+                    <a style="text-align:center;font-size:14px;" href="https://goo.gl/maps/m5rVWDEiPj7q1Hxh9"> Av. Pedro de Valdivia 3474 Caracol Ñuñoa, Local 53-B Ñuñoa, Chile.</a>
+                    </center>
+                </div>
                 </center>
             </div>
-            </center>
-        </div>
     </div>
         ';
         //fin cuerpo dos del email.
@@ -171,24 +176,29 @@ class Mails {
                 <div>
             </center>
         </div>
-        <div style="width: 60%;background-color: #f0f1f3;box-shadow: 0 2px 5px 0 rgba(0,0,0,.14);margin: auto;padding: 20px;font-family: Roboto,RobotoDraft,Helvetica,Arial,sans-serif;color:#172b4d;padding-bottom:20px;-webkit-box-shadow: 0px -4px 11px 0px rgba(0,0,0,0.12);-moz-box-shadow: 0px -4px 11px 0px rgba(0,0,0,0.12);box-shadow: 0px -4px 11px 0px rgba(0,0,0,0.12);">
-            <center>
-            <div style="width:100%;">
+        <div style="width: 100%;background-color: #f0f1f3;box-shadow: 0 2px 5px 0 rgba(0,0,0,.14);margin: auto;font-family: Roboto,RobotoDraft,Helvetica,Arial,sans-serif;color:#181d81;padding-bottom:8px;-webkit-box-shadow: 0px -4px 11px 0px rgba(0,0,0,0.12);-moz-box-shadow: 0px -4px 11px 0px rgba(0,0,0,0.12);box-shadow: 0px -4px 11px 0px rgba(0,0,0,0.12);">
                 <center>
-                
-                <p style="text-align:center;font-size:18px;">Contáctanos.</p>
-                <a href="mailto:kkprettynails@gmail.com"><img style="width: 7%;" src="http://kkprettynails.cl/views/images/mail.png" alt=""></a>
-                <a href="https://www.instagram.com/kkprettynails/?hl=es-la"><img style="width: 7%;margin-left:10%" src="http://kkprettynails.cl/views/images/ig.png" alt=""></a>
-                <a href="https://wa.me/56972628949"><img style="width: 7%;margin-left:10%" src="http://kkprettynails.cl/views/images/ws.png" alt=""></a>
-                <a href="https://kkprettynails.cl"><img style="width: 7%;margin-left:10%" src="http://kkprettynails.cl/views/images/web.png" alt=""></a>
-                <br>
-                <a href="https://goo.gl/maps/GhvcDBH1ppBDae1KA">
-                    <p>Av. Pedro de Valdivia 3474, local 53B, Ñuñoa, Región Metropolitana de Santiago</p>
-                   </a>
+                <div style="width:100%;">
+                    <center>
+                    <p style="text-align:center;font-size:14px;"><strong> Contáctanos</strong></p>
+                      <a  href="mailto:kkprettynails@gmail.com" style="margin-left:40px;text-decoration:none;"> 
+                        <img style="width:4%;" src="http://kkprettynails.cl/views/images/mail.png" alt="Logo mail">
+                      </a>
+                      <a  href="https://www.instagram.com/kkprettynails/" style="margin-left:40px;text-decoration:none;">
+                        <img style="width:4%;" src="http://kkprettynails.cl/views/images/ig.png" alt="Logo ig">
+                      </a>
+                      <a  href="https://api.whatsapp.com/send?phone=56972628949&text=&source=&data=&app_absent=" style="margin-left:20px;text-decoration:none;">
+                        <img style="width:4%;" src="http://kkprettynails.cl/views/images/ws.png" alt="Logo ws">
+                      </a>
+                      <a  href="https://kkprettynails.cl/inicio" style="margin-left:40px;text-decoration:none;">
+                        <img style="width:4%;" src="http://kkprettynails.cl/views/images/web.png" alt="Logo web">
+                      </a>
+                    <br>
+                    <a style="text-align:center;font-size:14px;" href="https://goo.gl/maps/m5rVWDEiPj7q1Hxh9"> Av. Pedro de Valdivia 3474 Caracol Ñuñoa, Local 53-B Ñuñoa, Chile.</a>
+                    </center>
+                </div>
                 </center>
             </div>
-            </center>
-        </div>
     </div>
         ';
         $mail = new PHPMailer(true);
@@ -333,23 +343,29 @@ class Mails {
                 <div>
             </center>
         </div>
-        <div style="width: 60%;background-color: #f0f1f3;box-shadow: 0 2px 5px 0 rgba(0,0,0,.14);margin: auto;padding: 5px;font-family: Roboto,RobotoDraft,Helvetica,Arial,sans-serif;color:#172b4d;padding-bottom:5px;-webkit-box-shadow: 0px -4px 11px 0px rgba(0,0,0,0.12);-moz-box-shadow: 0px -4px 11px 0px rgba(0,0,0,0.12);box-shadow: 0px -4px 11px 0px rgba(0,0,0,0.12);">
-            <center>
-            <div style="width:100%;">
+        <div style="width: 100%;background-color: #f0f1f3;box-shadow: 0 2px 5px 0 rgba(0,0,0,.14);margin: auto;font-family: Roboto,RobotoDraft,Helvetica,Arial,sans-serif;color:#181d81;padding-bottom:8px;-webkit-box-shadow: 0px -4px 11px 0px rgba(0,0,0,0.12);-moz-box-shadow: 0px -4px 11px 0px rgba(0,0,0,0.12);box-shadow: 0px -4px 11px 0px rgba(0,0,0,0.12);">
                 <center>
-                <p style="text-align:center;font-size:18px;">Contáctanos.</p>
-            <a href="mailto:kkprettynails@gmail.com"><img style="width: 7%;" src="http://kkprettynails.cl/views/images/mail.png" alt=""></a>
-            <a href="https://www.instagram.com/kkprettynails/?hl=es-la"><img style="width: 7%;margin-left:10%" src="http://kkprettynails.cl/views/images/ig.png" alt=""></a>
-            <a href="https://wa.me/56972628949"><img style="width: 7%;margin-left:10%" src="http://kkprettynails.cl/views/images/ws.png" alt=""></a>
-            <a href="https://kkprettynails.cl"><img style="width: 7%;margin-left:10%" src="http://kkprettynails.cl/views/images/web.png" alt=""></a>
-            <br>
-               <a href="https://goo.gl/maps/GhvcDBH1ppBDae1KA">
-                <p>Av. Pedro de Valdivia 3474, local 53B, Ñuñoa, Región Metropolitana de Santiago</p>
-               </a>
+                <div style="width:100%;">
+                    <center>
+                    <p style="text-align:center;font-size:14px;"><strong> Contáctanos</strong></p>
+                      <a  href="mailto:kkprettynails@gmail.com" style="margin-left:40px;text-decoration:none;"> 
+                        <img style="width:4%;" src="http://kkprettynails.cl/views/images/mail.png" alt="Logo mail">
+                      </a>
+                      <a  href="https://www.instagram.com/kkprettynails/" style="margin-left:40px;text-decoration:none;">
+                        <img style="width:4%;" src="http://kkprettynails.cl/views/images/ig.png" alt="Logo ig">
+                      </a>
+                      <a  href="https://api.whatsapp.com/send?phone=56972628949&text=&source=&data=&app_absent=" style="margin-left:20px;text-decoration:none;">
+                        <img style="width:4%;" src="http://kkprettynails.cl/views/images/ws.png" alt="Logo ws">
+                      </a>
+                      <a  href="https://kkprettynails.cl/inicio" style="margin-left:40px;text-decoration:none;">
+                        <img style="width:4%;" src="http://kkprettynails.cl/views/images/web.png" alt="Logo web">
+                      </a>
+                    <br>
+                    <a style="text-align:center;font-size:14px;" href="https://goo.gl/maps/m5rVWDEiPj7q1Hxh9"> Av. Pedro de Valdivia 3474 Caracol Ñuñoa, Local 53-B Ñuñoa, Chile.</a>
+                    </center>
+                </div>
                 </center>
             </div>
-            </center>
-        </div>
     </div>
         ';
         $mail = new PHPMailer(true);
@@ -524,19 +540,25 @@ class Mails {
                     <div>
                 </center>
             </div>
-            <div style="width: 60%;background-color: #f0f1f3;box-shadow: 0 2px 5px 0 rgba(0,0,0,.14);margin: auto;padding: 20px;font-family: Roboto,RobotoDraft,Helvetica,Arial,sans-serif;color:#172b4d;padding-bottom:20px;-webkit-box-shadow: 0px -4px 11px 0px rgba(0,0,0,0.12);-moz-box-shadow: 0px -4px 11px 0px rgba(0,0,0,0.12);box-shadow: 0px -4px 11px 0px rgba(0,0,0,0.12);">
+            <div style="width: 100%;background-color: #f0f1f3;box-shadow: 0 2px 5px 0 rgba(0,0,0,.14);margin: auto;font-family: Roboto,RobotoDraft,Helvetica,Arial,sans-serif;color:#181d81;padding-bottom:8px;-webkit-box-shadow: 0px -4px 11px 0px rgba(0,0,0,0.12);-moz-box-shadow: 0px -4px 11px 0px rgba(0,0,0,0.12);box-shadow: 0px -4px 11px 0px rgba(0,0,0,0.12);">
                 <center>
                 <div style="width:100%;">
                     <center>
-                    <p style="text-align:center;font-size:18px;">Contáctanos.</p>
-                <a href="mailto:kkprettynails@gmail.com"><img style="width: 7%;" src="http://kkprettynails.cl/views/images/mail.png" alt=""></a>
-                <a href="https://www.instagram.com/kkprettynails/?hl=es-la"><img style="width: 7%;margin-left:10%" src="http://kkprettynails.cl/views/images/ig.png" alt=""></a>
-                <a href="https://wa.me/56972628949"><img style="width: 7%;margin-left:10%" src="http://kkprettynails.cl/views/images/ws.png" alt=""></a>
-                <a href="https://kkprettynails.cl"><img style="width: 7%;margin-left:10%" src="http://kkprettynails.cl/views/images/web.png" alt=""></a>
-                <br>
-                   <a href="https://goo.gl/maps/GhvcDBH1ppBDae1KA">
-                    <p>Av. Pedro de Valdivia 3474, local 53B, Ñuñoa, Región Metropolitana de Santiago</p>
-                   </a>
+                    <p style="text-align:center;font-size:14px;"><strong> Contáctanos</strong></p>
+                      <a  href="mailto:kkprettynails@gmail.com" style="margin-left:40px;text-decoration:none;"> 
+                        <img style="width:4%;" src="http://kkprettynails.cl/views/images/mail.png" alt="Logo mail">
+                      </a>
+                      <a  href="https://www.instagram.com/kkprettynails/" style="margin-left:40px;text-decoration:none;">
+                        <img style="width:4%;" src="http://kkprettynails.cl/views/images/ig.png" alt="Logo ig">
+                      </a>
+                      <a  href="https://api.whatsapp.com/send?phone=56972628949&text=&source=&data=&app_absent=" style="margin-left:20px;text-decoration:none;">
+                        <img style="width:4%;" src="http://kkprettynails.cl/views/images/ws.png" alt="Logo ws">
+                      </a>
+                      <a  href="https://kkprettynails.cl/inicio" style="margin-left:40px;text-decoration:none;">
+                        <img style="width:4%;" src="http://kkprettynails.cl/views/images/web.png" alt="Logo web">
+                      </a>
+                    <br>
+                    <a style="text-align:center;font-size:14px;" href="https://goo.gl/maps/m5rVWDEiPj7q1Hxh9"> Av. Pedro de Valdivia 3474 Caracol Ñuñoa, Local 53-B Ñuñoa, Chile.</a>
                     </center>
                 </div>
                 </center>
@@ -737,23 +759,29 @@ public function giftMail()
                   </table>
             </center>
         </div>
-        <div style="width: 60%;background-color: #f0f1f3;box-shadow: 0 2px 5px 0 rgba(0,0,0,.14);margin: auto;padding: 20px;font-family: Roboto,RobotoDraft,Helvetica,Arial,sans-serif;color:#172b4d;padding-bottom:20px;-webkit-box-shadow: 0px -4px 11px 0px rgba(0,0,0,0.12);-moz-box-shadow: 0px -4px 11px 0px rgba(0,0,0,0.12);box-shadow: 0px -4px 11px 0px rgba(0,0,0,0.12);">
-            <center>
-            <div style="width:100%;">
+        <div style="width: 100%;background-color: #f0f1f3;box-shadow: 0 2px 5px 0 rgba(0,0,0,.14);margin: auto;font-family: Roboto,RobotoDraft,Helvetica,Arial,sans-serif;color:#181d81;padding-bottom:8px;-webkit-box-shadow: 0px -4px 11px 0px rgba(0,0,0,0.12);-moz-box-shadow: 0px -4px 11px 0px rgba(0,0,0,0.12);box-shadow: 0px -4px 11px 0px rgba(0,0,0,0.12);">
                 <center>
-                    <p style="text-align:center;font-size:18px;">Contáctanos.</p>
-                    <a href="mailto:kkprettynails@gmail.com"><img style="width: 7%;" src="http://kkprettynails.cl/views/images/mail.png" alt=""></a>
-                    <a href="https://www.instagram.com/kkprettynails/?hl=es-la"><img style="width: 7%;margin-left:10%" src="http://kkprettynails.cl/views/images/ig.png" alt=""></a>
-                    <a href="https://wa.me/56972628949"><img style="width: 7%;margin-left:10%" src="http://kkprettynails.cl/views/images/ws.png" alt=""></a>
-                    <a href="https://kkprettynails.cl"><img style="width: 7%;margin-left:10%" src="http://kkprettynails.cl/views/images/web.png" alt=""></a>
+                <div style="width:100%;">
+                    <center>
+                    <p style="text-align:center;font-size:14px;"><strong> Contáctanos</strong></p>
+                      <a  href="mailto:kkprettynails@gmail.com" style="margin-left:40px;text-decoration:none;"> 
+                        <img style="width:4%;" src="http://kkprettynails.cl/views/images/mail.png" alt="Logo mail">
+                      </a>
+                      <a  href="https://www.instagram.com/kkprettynails/" style="margin-left:40px;text-decoration:none;">
+                        <img style="width:4%;" src="http://kkprettynails.cl/views/images/ig.png" alt="Logo ig">
+                      </a>
+                      <a  href="https://api.whatsapp.com/send?phone=56972628949&text=&source=&data=&app_absent=" style="margin-left:20px;text-decoration:none;">
+                        <img style="width:4%;" src="http://kkprettynails.cl/views/images/ws.png" alt="Logo ws">
+                      </a>
+                      <a  href="https://kkprettynails.cl/inicio" style="margin-left:40px;text-decoration:none;">
+                        <img style="width:4%;" src="http://kkprettynails.cl/views/images/web.png" alt="Logo web">
+                      </a>
                     <br>
-                   <a href="https://goo.gl/maps/GhvcDBH1ppBDae1KA">
-                    <p>Av. Pedro de Valdivia 3474, local 53B, Ñuñoa, Región Metropolitana de Santiago</p>
-                   </a>
+                    <a style="text-align:center;font-size:14px;" href="https://goo.gl/maps/m5rVWDEiPj7q1Hxh9"> Av. Pedro de Valdivia 3474 Caracol Ñuñoa, Local 53-B Ñuñoa, Chile.</a>
+                    </center>
+                </div>
                 </center>
             </div>
-            </center>
-        </div>
     </div>
             ';
            
@@ -869,19 +897,25 @@ public function giftMail()
                     <div>
                 </center>
             </div>
-            <div style="width: 60%;background-color: #f0f1f3;box-shadow: 0 2px 5px 0 rgba(0,0,0,.14);margin: auto;padding: 5px;font-family: Roboto,RobotoDraft,Helvetica,Arial,sans-serif;color:#172b4d;padding-bottom:5px;-webkit-box-shadow: 0px -4px 11px 0px rgba(0,0,0,0.12);-moz-box-shadow: 0px -4px 11px 0px rgba(0,0,0,0.12);box-shadow: 0px -4px 11px 0px rgba(0,0,0,0.12);">
+            <div style="width: 100%;background-color: #f0f1f3;box-shadow: 0 2px 5px 0 rgba(0,0,0,.14);margin: auto;font-family: Roboto,RobotoDraft,Helvetica,Arial,sans-serif;color:#181d81;padding-bottom:8px;-webkit-box-shadow: 0px -4px 11px 0px rgba(0,0,0,0.12);-moz-box-shadow: 0px -4px 11px 0px rgba(0,0,0,0.12);box-shadow: 0px -4px 11px 0px rgba(0,0,0,0.12);">
                 <center>
                 <div style="width:100%;">
                     <center>
-                    <p style="text-align:center;font-size:18px;">Contáctanos.</p>
-                <a href="mailto:kkprettynails@gmail.com"><img style="width: 7%;" src="http://kkprettynails.cl/views/images/mail.png" alt=""></a>
-                <a href="https://www.instagram.com/kkprettynails/?hl=es-la"><img style="width: 7%;margin-left:10%" src="http://kkprettynails.cl/views/images/ig.png" alt=""></a>
-                <a href="https://wa.me/56972628949"><img style="width: 7%;margin-left:10%" src="http://kkprettynails.cl/views/images/ws.png" alt=""></a>
-                <a href="https://kkprettynails.cl"><img style="width: 7%;margin-left:10%" src="http://kkprettynails.cl/views/images/web.png" alt=""></a>
-                <br>
-                   <a href="https://goo.gl/maps/GhvcDBH1ppBDae1KA">
-                    <p>Av. Pedro de Valdivia 3474, local 53B, Ñuñoa, Región Metropolitana de Santiago</p>
-                   </a>
+                    <p style="text-align:center;font-size:14px;"><strong> Contáctanos</strong></p>
+                      <a  href="mailto:kkprettynails@gmail.com" style="margin-left:40px;text-decoration:none;"> 
+                        <img style="width:4%;" src="http://kkprettynails.cl/views/images/mail.png" alt="Logo mail">
+                      </a>
+                      <a  href="https://www.instagram.com/kkprettynails/" style="margin-left:40px;text-decoration:none;">
+                        <img style="width:4%;" src="http://kkprettynails.cl/views/images/ig.png" alt="Logo ig">
+                      </a>
+                      <a  href="https://api.whatsapp.com/send?phone=56972628949&text=&source=&data=&app_absent=" style="margin-left:20px;text-decoration:none;">
+                        <img style="width:4%;" src="http://kkprettynails.cl/views/images/ws.png" alt="Logo ws">
+                      </a>
+                      <a  href="https://kkprettynails.cl/inicio" style="margin-left:40px;text-decoration:none;">
+                        <img style="width:4%;" src="http://kkprettynails.cl/views/images/web.png" alt="Logo web">
+                      </a>
+                    <br>
+                    <a style="text-align:center;font-size:14px;" href="https://goo.gl/maps/m5rVWDEiPj7q1Hxh9"> Av. Pedro de Valdivia 3474 Caracol Ñuñoa, Local 53-B Ñuñoa, Chile.</a>
                     </center>
                 </div>
                 </center>

@@ -183,7 +183,7 @@ src="https://www.facebook.com/tr?id=2650063728607003&ev=PageView
           
           var data = {
           name:$("#nombreS").val()+" "+$("#apellidoS").val(),
-          mail:$("#correoS").val(),
+          mail:$("#correoS").val().toLowerCase(),
           number: "+56 " + $(".phone1").val(),
           referidoId:referidoID
           }
@@ -405,7 +405,19 @@ src="https://www.facebook.com/tr?id=2650063728607003&ev=PageView
           if (myJson.historical.length > 0) {
             for (let i = 0; i < 5; i++) {
               var date = new Date(myJson.historical[i].fecha)
-              var fecha = date.getDate()+"-"+date.getMonth()+"-"+date.getFullYear()
+              if (date.getDate() < 10) {
+                var one = "0" + date.getDate()
+              }
+              else {
+                var one = date.getDate()
+              }
+              if (date.getMonth() < 10 ) {
+                var two = "0" + date.getMonth()
+              }
+              else{
+                var two = date.getMonth()
+              }
+              var fecha = one+"-"+two+"-"+date.getFullYear()
               var td = `<tr class="removeH">
                         <th scope="row">${fecha}</th>
                         <td>${myJson.historical[i].servicios[0].servicio}</td>
@@ -447,7 +459,20 @@ src="https://www.facebook.com/tr?id=2650063728607003&ev=PageView
             $(".removeC").remove()
             for (let i = 0; i < response.length; i++) {
             var date = new Date(response[i].date)
-            var fecha = date.getDate()+"-"+date.getMonth()+"-"+date.getFullYear()
+            if (date.getDate() < 10) {
+              var one = "0" + date.getDate()
+            }
+            else {
+              var one = date.getDate()
+            }
+            if (date.getMonth() < 10 ) {
+              var two = "0" + date.getMonth()
+            }
+            else{
+              var two = date.getMonth()
+            }
+            
+            var fecha = one+"-"+two+"-"+date.getFullYear()
             var confirm = ''
             if (response[i].confirmation == true) {
               confirm = "<button style='font-size: .7em;cursor:default' class='btn btn-secondary' disabled  >Confirmada</button>"
@@ -456,7 +481,7 @@ src="https://www.facebook.com/tr?id=2650063728607003&ev=PageView
               confirm = `<button style="font-size: .7em;" class="btn btn-success confirmDate"  id="${response[i].confirmationId}">Confirmar</button>`
             }
             var td = `<tr class="removeC">
-											<th scope="row">${fecha}</th>
+											<th class="text-center" scope="row">${fecha}</th>
 											<td>${response[i].services[0].servicio}</td>
 											<td>${response[i].employe}</td>
 											<td></td>
